@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type HTMLAttributes, type ReactNode } from "react";
 
 /**
  * Subtle CSS-only appearance on entering the viewport.
@@ -9,13 +9,14 @@ export function Reveal({
   className = "",
   as: Tag = "div",
   delay = 0,
+  ...rest
 }: {
   children: ReactNode;
   className?: string;
   as?: "div" | "section" | "li" | "article";
   /** Stagger in ms for lists of cards. */
   delay?: number;
-}) {
+} & HTMLAttributes<HTMLElement>) {
   const ref = useRef<HTMLElement | null>(null);
   const [visible, setVisible] = useState(false);
 
@@ -45,6 +46,7 @@ export function Reveal({
       className={["jr-reveal", visible ? "jr-reveal-in" : "", className]
         .filter(Boolean)
         .join(" ")}
+      {...rest}
     >
       {children}
     </Tag>

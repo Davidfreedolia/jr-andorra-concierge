@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { IconTile } from "@/components/IconTile";
@@ -16,17 +17,18 @@ import ccWellness from "@/assets/cc-wellness.jpg";
 type Area = { title: string; text: string };
 
 const AREA_IMAGES = [
-  ccGastronomy,
-  ccWellness,
-  ccSki,
-  ccCasino,
-  ccHotel,
-  ccCoordination,
+  { src: ccGastronomy, label: "Gastronomia" },
+  { src: ccWellness, label: "Wellness" },
+  { src: ccSki, label: "Activitats i muntanya" },
+  { src: ccCasino, label: "Oci nocturn" },
+  { src: ccHotel, label: "Estades a mida" },
+  { src: ccCoordination, label: "Coordinació integral" },
 ];
 
 export function ConciergerieAreas() {
   const { t } = useTranslation();
   const areas = tList<Area>(t, "cm.concierge.items");
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
     <section className="jr-section relative overflow-hidden">
@@ -43,8 +45,26 @@ export function ConciergerieAreas() {
           className="h-full w-full object-cover"
         />
       </div>
+
+      {/* Section background changes on card hover — not the cards themselves */}
+      <div className="absolute inset-0 -z-[15]" aria-hidden="true">
+        {AREA_IMAGES.map((image, i) => (
+          <img
+            key={image.label}
+            src={image.src}
+            alt=""
+            loading="eager"
+            width={1600}
+            height={1067}
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-out ${
+              activeIndex === i ? "opacity-45" : "opacity-0"
+            }`}
+          />
+        ))}
+      </div>
+
       <div
-        className="absolute inset-0 -z-10 bg-gradient-to-b from-jr-black/88 via-jr-black/80 to-jr-black/92"
+        className="absolute inset-0 -z-10 bg-gradient-to-b from-jr-black/90 via-jr-black/82 to-jr-black/94"
         aria-hidden="true"
       />
 
@@ -59,21 +79,10 @@ export function ConciergerieAreas() {
               as="li"
               key={area.title}
               delay={index * 70}
-              className="jr-panel jr-card-hover group relative flex min-w-0 flex-col gap-4 overflow-hidden"
+              className="jr-panel jr-card-hover relative flex min-w-0 flex-col gap-4"
+              onMouseEnter={() => setActiveIndex(index)}
+              onMouseLeave={() => setActiveIndex(null)}
             >
-              {/* Ambit image revealed on hover/focus */}
-              <div className="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
-                <img
-                  src={AREA_IMAGES[index % AREA_IMAGES.length]}
-                  alt=""
-                  loading="lazy"
-                  width={1200}
-                  height={800}
-                  className="h-full w-full scale-105 object-cover opacity-25 transition-all duration-[900ms] ease-out group-hover:scale-100 group-hover:opacity-70 group-focus-within:scale-100 group-focus-within:opacity-70"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-jr-black via-jr-black/85 to-jr-black/55 transition-opacity duration-[900ms] group-hover:from-jr-black/95 group-hover:via-jr-black/70 group-hover:to-jr-black/35" />
-              </div>
-
               <IconTile index={index + 10} />
               <h3 className="font-display text-2xl text-jr-bone">{area.title}</h3>
               <p className="text-muted-foreground">{area.text}</p>
