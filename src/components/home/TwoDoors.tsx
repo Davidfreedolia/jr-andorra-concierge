@@ -45,7 +45,7 @@ export function TwoDoors({ lang }: { lang: Language }) {
           />
           <div className="jr-door-veil" aria-hidden="true" />
           <div className="relative flex flex-col gap-3">
-            <h2 className="jr-display-2 text-jr-white">{door.title}</h2>
+            <h2 className="jr-display-2 text-jr-gold">{door.title}</h2>
             <p className="jr-measure text-muted-foreground">{door.line}</p>
             <span className="jr-label">{door.link}</span>
           </div>
