@@ -424,5 +424,134 @@
       "cta": "Zum Kontaktformular",
       "whatsapp": "WhatsApp"
     }
+  },
+  "about": {
+    "letter": {
+      "label": "Brief des Gründers",
+      "title": "Ein privates Büro, eine einzige Ansprechperson",
+      "paragraphs": [
+        "Ich habe mein gesamtes Berufsleben damit verbracht, Häuser zu betreuen, die nicht meine sind, und Menschen, die darauf vertrauen, dass alles an seinem Platz ist.",
+        "Ich habe JR gegründet, um in Andorra das anzubieten, was mir immer gefehlt hat: ein diskretes Büro, das antwortet, vorausdenkt und nie erinnert werden muss.",
+        "Ich arbeite weder mit Katalogen noch mit anonymen Abläufen: Ich kenne jedes Haus, jeden Schlüssel und jede Vorliebe.",
+        "Mein Versprechen ist einfach: Sie kommen an und entspannen sich, und in Ihrer Abwesenheit bleibt nichts unbeachtet."
+      ],
+      "signature": "Jaume Roca",
+      "role": "Gründer",
+      "portraitAlt": "Zurückhaltendes Porträt von Jaume Roca, Gründer von JR Hospitality, in warm beleuchtetem Interieur"
+    },
+    "milestones": {
+      "label": "Dreißig Jahre",
+      "title": "Ein Weg in drei Etappen",
+      "items": [
+        {
+          "period": "Die ersten Jahre",
+          "title": "Gehobene Hotellerie",
+          "text": "Ausbildung in anspruchsvollen Häusern, in denen man das Detail im Dienst am Gast lernt."
+        },
+        {
+          "period": "Die Jahre in der Leitung",
+          "title": "Leitung von Betrieb und Kundenerlebnis",
+          "text": "Jahre der Koordination von Teams, Dienstleistern und Standards für internationale Kundschaft."
+        },
+        {
+          "period": "Heute",
+          "title": "Privates Büro in Andorra",
+          "text": "Ein eigener Dienst im direkten Kontakt, für Zweitwohnsitzbesitzer und Premium-Kundschaft."
+        }
+      ]
+    },
+    "principles": {
+      "label": "Die Grundsätze",
+      "title": "Vier Arten zu arbeiten",
+      "items": [
+        {
+          "title": "Vertrauen",
+          "line": "Die Schlüssel eines Hauses werden einmal übergeben; gehütet werden sie immer."
+        },
+        {
+          "title": "Diskretion",
+          "line": "Was in Ihrem Haus geschieht, wird nirgendwo besprochen."
+        },
+        {
+          "title": "Exzellenz",
+          "line": "Ein beständiger Standard, keine einmalige Anstrengung."
+        },
+        {
+          "title": "Persönliche Betreuung",
+          "line": "Eine Ansprechperson, die Ihr Haus und Ihre Vorlieben kennt."
+        }
+      ]
+    },
+    "andorra": {
+      "label": "Andorra",
+      "title": "Warum hier und warum jetzt",
+      "text": "Andorra verbindet Berge, Ruhe und eine internationale Gemeinschaft, die immer längere Zeiträume hier verbringt. Häuser werden wochenweise genutzt, nicht monatelang, und brauchen jemanden, der sie zwischen den Aufenthalten lebendig hält. Wir leben und arbeiten hier: Wir kennen die Täler, die Gewerke und die vertrauenswürdigen Menschen, die es braucht, damit alles funktioniert.",
+      "imageAlt": "Andorranisches Tal zur blauen Stunde mit beleuchteter Residenz zwischen verschneiten Bergen"
+    }
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Sprechen wir darüber",
+    "intro": "Sagen Sie uns, was Sie brauchen, und wir schlagen den diskretesten Weg vor, es zu lösen.",
+    "promise": "Wir antworten in weniger als 24 Stunden.",
+    "whatsapp": "Über WhatsApp schreiben",
+    "form": {
+      "name": "Vor- und Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "service": "Gewünschte Leistung",
+      "servicePlaceholder": "Bitte wählen",
+      "services": [
+        "Home Stay Safe",
+        "Conciergerie",
+        "Mobility",
+        "Hospitality Consulting",
+        "Sonstiges"
+      ],
+      "message": "Nachricht",
+      "consent": "Ich stimme der Verarbeitung meiner Daten zur Beantwortung dieser Anfrage gemäß der Datenschutzerklärung zu.",
+      "submit": "Senden",
+      "sent": "Vielen Dank. Wir haben Ihre Nachricht erhalten und antworten in weniger als 24 Stunden.",
+      "errors": {
+        "name": "Bitte geben Sie Ihren Namen an.",
+        "email": "Bitte geben Sie eine gültige E-Mail an.",
+        "phone": "Bitte geben Sie eine gültige Telefonnummer an.",
+        "required": "Bitte wählen Sie eine Option.",
+        "message": "Bitte schreiben Sie ein paar Zeilen zu Ihrer Anfrage.",
+        "long": "Der Text ist zu lang.",
+        "consent": "Wir benötigen Ihre Zustimmung, um antworten zu können."
+      }
+    },
+    "company": {
+      "title": "Unternehmensangaben",
+      "note": "Angaben stehen noch aus.",
+      "items": [
+        {
+          "label": "Firmenname",
+          "value": "[Firmenname ausstehend]"
+        },
+        {
+          "label": "Adresse",
+          "value": "[Adresse ausstehend] — Andorra"
+        },
+        {
+          "label": "Telefon",
+          "value": "[Telefon ausstehend]"
+        },
+        {
+          "label": "E-Mail",
+          "value": "[E-Mail ausstehend]"
+        },
+        {
+          "label": "Registernummer",
+          "value": "[Registernummer ausstehend]"
+        }
+      ]
+    }
+  },
+  "actionBar": {
+    "assessment": "Bewertung anfordern",
+    "whatsapp": "WhatsApp",
+    "whatsappAria": "Über WhatsApp schreiben"
   }
 }
