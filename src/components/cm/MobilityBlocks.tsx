@@ -19,7 +19,16 @@ export function MobilityBlocks() {
       <div className="jr-container flex flex-col gap-12 lg:gap-20">
         <Reveal className="flex flex-col gap-4">
           <p className="jr-label">{t("cm.mobility.label")}</p>
-          <h2 className="jr-display-2 jr-measure text-jr-gold">{t("cm.mobility.title")}</h2>
+          <h2 className="jr-display-2 jr-measure text-jr-white">
+            <Trans
+              i18nKey="cm.mobility.title"
+              components={[
+                <span className="text-jr-gold" />,
+                <span className="text-jr-gold" />,
+                <span className="text-jr-gold" />,
+              ]}
+            />
+          </h2>
         </Reveal>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
