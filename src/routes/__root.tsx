@@ -131,8 +131,9 @@ function RootComponent() {
         <PageTransition>
           <Outlet />
         </PageTransition>
+        <ChatWidget />
       </AuthProvider>
     </QueryClientProvider>
-
   );
 }
+
