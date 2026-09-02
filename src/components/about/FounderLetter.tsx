@@ -25,14 +25,14 @@ export function FounderLetter() {
 
         <Reveal className="flex min-w-0 flex-col gap-6">
           <p className="jr-label">{t("about.letter.label")}</p>
-          <h1 className="jr-display-1 jr-measure text-jr-bone">{t("about.letter.title")}</h1>
+          <h1 className="jr-display-1 jr-measure text-jr-gold">{t("about.letter.title")}</h1>
           <div className="jr-measure flex flex-col gap-4 text-lg text-muted-foreground">
             {paragraphs.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
           <p className="mt-2 flex flex-col gap-1">
-            <span className="jr-display-2 text-jr-bone">{t("about.letter.signature")}</span>
+            <span className="jr-display-2 text-jr-gold">{t("about.letter.signature")}</span>
             <span className="jr-label">{t("about.letter.role")}</span>
           </p>
         </Reveal>

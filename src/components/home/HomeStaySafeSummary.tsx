@@ -15,7 +15,7 @@ export function HomeStaySafeSummary({ lang }: { lang: Language }) {
     <section className="jr-section">
       <div className="jr-container flex flex-col gap-10">
         <Reveal>
-          <h2 className="jr-display-2 jr-measure text-jr-bone">{t("home.hss.title")}</h2>
+          <h2 className="jr-display-2 jr-measure text-jr-gold">{t("home.hss.title")}</h2>
         </Reveal>
 
         <Reveal className="jr-panel">

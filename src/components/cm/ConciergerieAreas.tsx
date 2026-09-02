@@ -14,7 +14,7 @@ export function ConciergerieAreas() {
     <section className="jr-section">
       <div className="jr-container flex flex-col gap-10">
         <Reveal className="flex flex-col gap-4">
-          <h2 className="jr-display-2 jr-measure text-jr-bone">{t("cm.concierge.title")}</h2>
+          <h2 className="jr-display-2 jr-measure text-jr-gold">{t("cm.concierge.title")}</h2>
         </Reveal>
 
         <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

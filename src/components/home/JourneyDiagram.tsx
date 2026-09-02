@@ -12,7 +12,7 @@ export function JourneyDiagram() {
       <div className="jr-container flex flex-col gap-12">
         <div className="flex flex-col gap-4">
           <p className="jr-label">{t("home.journey.label")}</p>
-          <h2 className="jr-display-2 jr-measure text-jr-bone">{t("home.journey.title")}</h2>
+          <h2 className="jr-display-2 jr-measure text-jr-gold">{t("home.journey.title")}</h2>
         </div>
 
         <ol className="jr-journey">

@@ -17,7 +17,7 @@ export function MobilityCards({ lang }: { lang: Language }) {
     <section className="jr-section">
       <div className="jr-container flex flex-col gap-10">
         <Reveal>
-          <h2 className="jr-display-2 jr-measure text-jr-bone">{t("home.mobility.title")}</h2>
+          <h2 className="jr-display-2 jr-measure text-jr-gold">{t("home.mobility.title")}</h2>
         </Reveal>
 
         <ul className="grid grid-cols-1 gap-5 md:grid-cols-3">

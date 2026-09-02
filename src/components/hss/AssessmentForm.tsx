@@ -81,7 +81,7 @@ export function AssessmentForm() {
       <div className="jr-container flex flex-col gap-10">
         <div className="flex flex-col gap-4">
           <p className="jr-label">{t("hss.form.label")}</p>
-          <h2 className="jr-display-2 jr-measure text-jr-bone">{t("hss.form.title")}</h2>
+          <h2 className="jr-display-2 jr-measure text-jr-gold">{t("hss.form.title")}</h2>
           <p className="text-muted-foreground">{t("hss.form.promise")}</p>
         </div>
 

@@ -54,7 +54,7 @@ export function ContactForm() {
       <div className="jr-container flex flex-col gap-10">
         <div className="flex flex-col gap-4">
           <p className="jr-label">{t("contact.label")}</p>
-          <h1 className="jr-display-1 jr-measure text-jr-bone">{t("contact.title")}</h1>
+          <h1 className="jr-display-1 jr-measure text-jr-gold">{t("contact.title")}</h1>
           <p className="jr-measure text-lg text-muted-foreground">{t("contact.intro")}</p>
           <p className="jr-label">{t("contact.promise")}</p>
         </div>

@@ -9,7 +9,7 @@ export function SingleVoice() {
     <section className="jr-section">
       <div className="jr-container">
         <Reveal className="jr-panel flex flex-col items-center gap-8 text-center">
-          <p className="jr-display-2 max-w-[22ch] text-jr-bone">{t("home.voice.quote")}</p>
+          <p className="jr-display-2 max-w-[22ch] text-jr-gold">{t("home.voice.quote")}</p>
           <hr className="jr-divider w-full" />
           <div className="jr-measure flex flex-col gap-3 text-muted-foreground">
             <p>{t("home.voice.line1")}</p>
