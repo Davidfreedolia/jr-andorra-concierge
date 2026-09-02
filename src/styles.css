@@ -242,3 +242,10 @@
     font-size: 44px;
   }
 }
+
+@utility jr-logo {
+  display: block;
+  width: 168px;
+  max-width: 100%;
+  height: auto;
+}
