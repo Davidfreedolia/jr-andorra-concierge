@@ -206,7 +206,7 @@
       "alt": "Résidence de montagne fermée, lumière chaude à l'intérieur"
     },
     "promise": {
-      "quote": "Arrivez et détendez-vous. Tout est prêt.",
+      "quote": "Arrivez et <0>détendez-vous</0>. Tout est prêt.",
       "line": "Un seul interlocuteur pour votre propriété en Andorre, toute l'année."
     },
     "includes": {
