@@ -202,7 +202,7 @@
   },
   "hss": {
     "hero": {
-      "title": "Votre maison, veillée en votre absence.",
+      "title": "Votre maison, <0>soignée</0> pendant votre absence.",
       "alt": "Résidence de montagne fermée, lumière chaude à l'intérieur"
     },
     "promise": {

@@ -202,7 +202,7 @@
   },
   "hss": {
     "hero": {
-      "title": "Ihr Haus, betreut in Ihrer Abwesenheit.",
+      "title": "Ihr Zuhause, <0>gepflegt</0>, während Sie nicht da sind.",
       "alt": "Geschlossene Bergresidenz mit warmem Licht im Inneren"
     },
     "promise": {

@@ -202,7 +202,7 @@
   },
   "hss": {
     "hero": {
-      "title": "La seva casa, cuidada mentre vostè no hi és.",
+      "title": "La seva casa, <0>cuidada</0> mentre vostè no hi és.",
       "alt": "Residència de muntanya tancada, amb llum càlida a l'interior"
     },
     "promise": {

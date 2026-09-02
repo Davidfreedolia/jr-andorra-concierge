@@ -202,7 +202,7 @@
   },
   "hss": {
     "hero": {
-      "title": "Your home, cared for while you are away.",
+      "title": "Your home, <0>cared for</0> while you are away.",
       "alt": "Closed mountain residence with warm light inside"
     },
     "promise": {
