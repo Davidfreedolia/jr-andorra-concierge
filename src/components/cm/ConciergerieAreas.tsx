@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { IconTile } from "@/components/IconTile";
@@ -16,6 +16,9 @@ import ccWellness from "@/assets/cc-wellness.jpg";
 
 type Area = { title: string; text: string };
 
+// Default image index: activities / mountains — shown when no card is hovered.
+const DEFAULT_INDEX = 2;
+
 const AREA_IMAGES = [
   { src: ccGastronomy, label: "Gastronomia" },
   { src: ccWellness, label: "Wellness" },
@@ -28,7 +31,26 @@ const AREA_IMAGES = [
 export function ConciergerieAreas() {
   const { t } = useTranslation();
   const areas = tList<Area>(t, "cm.concierge.items");
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [hoverIndex, setHoverIndex] = useState<number | null>(null);
+  const [displayIndex, setDisplayIndex] = useState(DEFAULT_INDEX);
+  const [visible, setVisible] = useState(true);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    const target = hoverIndex ?? DEFAULT_INDEX;
+    if (target === displayIndex) return;
+
+    if (timerRef.current) clearTimeout(timerRef.current);
+    setVisible(false);
+    timerRef.current = setTimeout(() => {
+      setDisplayIndex(target);
+      setVisible(true);
+    }, 350);
+
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
+  }, [hoverIndex, displayIndex]);
 
   return (
     <section className="jr-section relative overflow-hidden">
@@ -46,21 +68,18 @@ export function ConciergerieAreas() {
         />
       </div>
 
-      {/* Section background changes on card hover — not the cards themselves */}
+      {/* Section background changes on card hover — only one image at a time */}
       <div className="absolute inset-0 -z-[15]" aria-hidden="true">
-        {AREA_IMAGES.map((image, i) => (
-          <img
-            key={image.label}
-            src={image.src}
-            alt=""
-            loading="eager"
-            width={1600}
-            height={1067}
-            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-out ${
-              activeIndex === i ? "opacity-45" : "opacity-0"
-            }`}
-          />
-        ))}
+        <img
+          src={AREA_IMAGES[displayIndex]!.src}
+          alt=""
+          loading="eager"
+          width={1600}
+          height={1067}
+          className={`h-full w-full object-cover transition-opacity duration-700 ease-out ${
+            visible ? "opacity-45" : "opacity-0"
+          }`}
+        />
       </div>
 
       <div
@@ -80,8 +99,8 @@ export function ConciergerieAreas() {
               key={area.title}
               delay={index * 70}
               className="jr-panel jr-card-hover relative flex min-w-0 flex-col gap-4"
-              onMouseEnter={() => setActiveIndex(index)}
-              onMouseLeave={() => setActiveIndex(null)}
+              onMouseEnter={() => setHoverIndex(index)}
+              onMouseLeave={() => setHoverIndex(null)}
             >
               <IconTile index={index + 10} />
               <h3 className="font-display text-2xl text-jr-bone">{area.title}</h3>
