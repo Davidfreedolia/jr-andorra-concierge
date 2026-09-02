@@ -211,7 +211,7 @@
     },
     "includes": {
       "label": "Qué incluye",
-      "title": "El servicio, punto por punto.",
+      "title": "El <0>servicio</0>, punto por punto.",
       "items": [
         "Custodia segura y controlada de llaves",
         "Visitas programadas y supervisión interior y exterior",
