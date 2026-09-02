@@ -429,7 +429,11 @@
     },
     "closing": {
       "title": "Tell us what you <gold>need</gold>.",
-      "text": "Write to us and we will study your case discreetly.",
+      "lines": [
+        "Write to us and we will study your case discreetly.",
+        "We reply in under 24 hours.",
+        "Every proposal is tailored, with no obligation."
+      ],
       "cta": "Go to the contact form",
       "whatsapp": "WhatsApp",
       "alt": "Luxury vehicle in an Andorran mountain setting"

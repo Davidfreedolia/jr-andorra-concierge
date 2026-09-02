@@ -429,7 +429,11 @@
     },
     "closing": {
       "title": "Cuéntenos qué <gold>necesita</gold>.",
-      "text": "Escríbanos y estudiamos su caso con discreción.",
+      "lines": [
+        "Escríbanos y estudiamos su caso con discreción.",
+        "Le respondemos en menos de 24 horas.",
+        "Cada propuesta se prepara a medida, sin compromiso."
+      ],
       "cta": "Ir al formulario de contacto",
       "whatsapp": "WhatsApp",
       "alt": "Vehículo de lujo en un entorno de montaña andorrana"
