@@ -553,5 +553,274 @@
     "assessment": "Sol·licitar valoració",
     "whatsapp": "WhatsApp",
     "whatsappAria": "Escriure per WhatsApp"
+  },
+  "area": {
+    "demo": "Interfície provisional amb dades d'exemple.",
+    "roleLabel": "Veure com",
+    "langLabel": "Idioma",
+    "roles": {
+      "owner": "Titular",
+      "family": "Familiar",
+      "manager": "Gestor",
+      "guest": "Convidat"
+    },
+    "nav": {
+      "home": "La meva casa",
+      "reports": "Informes",
+      "arrival": "Arribada",
+      "requests": "Peticions",
+      "property": "La casa",
+      "billing": "Facturació",
+      "people": "Persones",
+      "guest": "Vista convidat",
+      "main": "Principal",
+      "more": "Més",
+      "menu": "Navegació de l'àrea"
+    },
+    "restricted": "Aquesta secció no està disponible per al seu perfil.",
+    "download": "Descarregar",
+    "close": "Tancar",
+    "previous": "Anterior",
+    "next": "Següent",
+    "access": {
+      "title": "Àrea privada",
+      "intro": "Li enviem un enllaç d'accés al seu correu.",
+      "email": "Email",
+      "submit": "Enviar enllaç",
+      "sent": "Si la seva adreça consta a la nostra oficina, rebrà l'enllaç en uns minuts.",
+      "error": "Indiqui un email vàlid.",
+      "preview": "Entrar a la demostració",
+      "backdropAlt": "Residència a Andorra a l'hora blava"
+    },
+    "home": {
+      "greeting": "Bon dia, {{name}}",
+      "property": "{{property}}",
+      "nextVisit": "Propera visita",
+      "lastReport": "Últim informe",
+      "lastReportLink": "Veure informe",
+      "status": "Estat de la casa",
+      "statusOk": "Tot correcte",
+      "statusIssue": "Incidència oberta",
+      "level": "El seu nivell de servei",
+      "quickArrival": "Anunciar una arribada",
+      "quickRequest": "Sol·licitar un servei",
+      "timeline": "Últims moviments",
+      "timelineEmpty": "Encara no hi ha moviments registrats. Apareixeran aquí després de la propera visita."
+    },
+    "timeline": {
+      "visit": "Visita realitzada",
+      "report": "Informe publicat",
+      "issue": "Incidència registrada",
+      "arrival": "Arribada anunciada",
+      "request": "Petició rebuda"
+    },
+    "reports": {
+      "title": "Informes",
+      "intro": "Cada visita queda documentada. El més recent, a dalt.",
+      "year": "Any",
+      "allYears": "Tots",
+      "date": "Data",
+      "technician": "Tècnic",
+      "photos": "Fotografies",
+      "status": "Estat",
+      "ok": "Correcte",
+      "issue": "Amb incidència",
+      "open": "Obrir informe",
+      "empty": "Encara no hi ha informes. El primer arribarà després de la propera visita.",
+      "emptyYear": "No hi ha informes d'aquest any. Provi amb un altre."
+    },
+    "report": {
+      "back": "Tornar als informes",
+      "title": "Home Report",
+      "property": "Propietat",
+      "address": "Adreça",
+      "visit": "Visita",
+      "by": "Realitzada per",
+      "download": "Descarregar en PDF",
+      "checklist": "Checklist de la visita",
+      "states": {
+        "ok": "Correcte",
+        "attention": "A revisar",
+        "na": "No aplica"
+      },
+      "points": {
+        "doors": "Portes, finestres i tancaments",
+        "water": "Aigua i fuites",
+        "heating": "Calefacció i aigua calenta",
+        "electricity": "Electricitat i quadre",
+        "humidity": "Humitat i ventilació",
+        "appliances": "Electrodomèstics",
+        "exterior": "Exterior i accessos",
+        "alarm": "Alarma i càmeres"
+      },
+      "photosTitle": "Fotografies de la visita",
+      "photosEmpty": "Aquesta visita no inclou fotografies.",
+      "photoOf": "Fotografia {{index}} de {{total}}",
+      "issuesTitle": "Incidències detectades",
+      "issuesEmpty": "No es va detectar cap incidència en aquesta visita.",
+      "issueStatus": {
+        "open": "Oberta",
+        "inProgress": "En gestió",
+        "resolved": "Resolta"
+      },
+      "followUp": "Seguiment",
+      "issueTexts": {
+        "boiler": "Pressió de la caldera per sota del valor recomanat.",
+        "terrace": "Junta de la porta de la terrassa desgastada.",
+        "lamp": "Punt de llum del passadís sense funcionar."
+      },
+      "followUps": {
+        "notified": "Comunicat a la propietat. Pressupost sol·licitat al tècnic.",
+        "scheduled": "Intervenció prevista a la propera visita.",
+        "done": "Substituït i comprovat a la visita següent."
+      },
+      "notFound": "No trobem aquest informe. Torni a la llista d'informes."
+    },
+    "zones": {
+      "entrance": "Entrada",
+      "living": "Sala",
+      "kitchen": "Cuina",
+      "bedroom": "Dormitori principal",
+      "bathroom": "Bany",
+      "exterior": "Exterior",
+      "technical": "Sala tècnica"
+    },
+    "arrival": {
+      "title": "Anunciar una arribada",
+      "intro": "Amb conèixer les seves dates n'hi ha prou: preparem la casa abans que arribi.",
+      "checkIn": "Data d'entrada",
+      "checkOut": "Data de sortida",
+      "guests": "Nombre de persones",
+      "pet": "Vénen amb mascota",
+      "transfer": "Necessiten transfer",
+      "fridge": "Nevera abastida",
+      "notes": "Notes",
+      "submit": "Anunciar arribada",
+      "sent": "Arribada anunciada. Li confirmem la preparació en menys de 24 hores.",
+      "listTitle": "Arribades anunciades",
+      "empty": "Encara no hi ha arribades anunciades. Quan n'anunciï una, apareixerà aquí amb el seu estat.",
+      "prep": {
+        "received": "Rebuda",
+        "preparing": "En preparació",
+        "ready": "Casa preparada"
+      },
+      "nights": "{{count}} nits",
+      "errors": {
+        "date": "Indiqui una data.",
+        "order": "La sortida ha de ser posterior a l'entrada.",
+        "guests": "Indiqui quantes persones seran.",
+        "long": "El text és massa llarg."
+      }
+    },
+    "requests": {
+      "title": "Sol·licitar un servei",
+      "intro": "Digui'ns què necessita i ens ocupem de la gestió.",
+      "type": "Tipus de servei",
+      "typePlaceholder": "Seleccioni una opció",
+      "types": {
+        "restaurant": "Restaurant",
+        "wellness": "Wellness",
+        "ski": "Esquí",
+        "chauffeur": "Xofer",
+        "shopping": "Compres",
+        "other": "Altres"
+      },
+      "date": "Data",
+      "people": "Nombre de persones",
+      "details": "Detalls",
+      "submit": "Enviar petició",
+      "sent": "Petició rebuda. La veurà a la llista amb el seu estat.",
+      "listTitle": "Les seves peticions",
+      "empty": "Encara no hi ha peticions. Quan sol·liciti un servei, apareixerà aquí.",
+      "status": {
+        "received": "Rebuda",
+        "inProgress": "En gestió",
+        "confirmed": "Confirmada"
+      },
+      "errors": {
+        "required": "Seleccioni una opció.",
+        "date": "Indiqui una data.",
+        "people": "Indiqui quantes persones seran.",
+        "details": "Escrigui unes línies sobre la seva petició.",
+        "long": "El text és massa llarg."
+      }
+    },
+    "property": {
+      "title": "La casa",
+      "details": "Dades de la casa",
+      "detailLabels": {
+        "name": "Nom",
+        "address": "Adreça",
+        "parish": "Parròquia",
+        "type": "Tipus",
+        "area": "Superfície",
+        "bedrooms": "Dormitoris"
+      },
+      "instructions": "Instruccions pràctiques",
+      "wifi": "Wifi",
+      "wifiNetwork": "Xarxa",
+      "wifiPassword": "Contrasenya",
+      "contacts": "Contactes útils",
+      "documents": "Documents",
+      "documentsEmpty": "Encara no hi ha documents. Els anirem afegint amb cada visita.",
+      "ownerOnly": "Les dades administratives només són visibles per al titular.",
+      "instructionsList": [
+        "La calefacció es controla des del termòstat del rebedor.",
+        "L'aigua general es tanca a la sala tècnica, al costat de la caldera.",
+        "La recollida de residus és els dimarts i els divendres al matí.",
+        "El comandament del garatge és al calaix de l'entrada."
+      ],
+      "contactRoles": {
+        "concierge": "Consergeria JR",
+        "plumber": "Lampisteria",
+        "electrician": "Electricitat",
+        "emergency": "Emergències"
+      },
+      "documentsList": {
+        "insurance": "Pòlissa d'assegurança (exemple)",
+        "manual": "Manual de la caldera (exemple)",
+        "inventory": "Inventari de la casa (exemple)"
+      }
+    },
+    "billing": {
+      "title": "Facturació",
+      "invoices": "Factures",
+      "date": "Data",
+      "concept": "Concepte",
+      "amount": "Import",
+      "statusLabel": "Estat",
+      "paid": "Pagada",
+      "pending": "Pendent",
+      "subscription": "Subscripció",
+      "plan": "Nivell de servei",
+      "renewal": "Propera renovació",
+      "method": "Mètode de pagament",
+      "empty": "Encara no hi ha factures. La primera s'emetrà després del primer mes de servei.",
+      "concepts": {
+        "monthly": "Servei mensual",
+        "extra": "Servei addicional"
+      }
+    },
+    "people": {
+      "title": "Persones amb accés",
+      "intro": "Qui pot veure aquesta casa i amb quin abast.",
+      "person": "Persona",
+      "role": "Rol",
+      "validity": "Validesa",
+      "permanent": "Accés permanent",
+      "until": "Fins al {{date}}",
+      "invite": "Convidar algú",
+      "inviteNote": "La invitació s'envia per correu amb una data de caducitat.",
+      "empty": "De moment només vostè té accés a aquesta casa."
+    },
+    "guest": {
+      "welcome": "Benvingut a {{property}}",
+      "intro": "Tot el que necessita per a la seva estada, en una pantalla.",
+      "wifi": "Wifi",
+      "instructions": "Instruccions pràctiques",
+      "concierge": "Contactar amb el conserge",
+      "expiry": "El seu accés està disponible fins al {{date}}.",
+      "note": "Si necessita qualsevol cosa durant la seva estada, escrigui'ns."
+    }
   }
 }

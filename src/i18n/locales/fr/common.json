@@ -553,5 +553,274 @@
     "assessment": "Demander une évaluation",
     "whatsapp": "WhatsApp",
     "whatsappAria": "Écrire sur WhatsApp"
+  },
+  "area": {
+    "demo": "Interface provisoire avec des données d'exemple.",
+    "roleLabel": "Voir en tant que",
+    "langLabel": "Langue",
+    "roles": {
+      "owner": "Titulaire",
+      "family": "Proche",
+      "manager": "Gestionnaire",
+      "guest": "Invité"
+    },
+    "nav": {
+      "home": "Ma maison",
+      "reports": "Rapports",
+      "arrival": "Arrivée",
+      "requests": "Demandes",
+      "property": "La maison",
+      "billing": "Facturation",
+      "people": "Personnes",
+      "guest": "Vue invité",
+      "main": "Principal",
+      "more": "Plus",
+      "menu": "Navigation de l'espace"
+    },
+    "restricted": "Cette section n'est pas disponible pour votre profil.",
+    "download": "Télécharger",
+    "close": "Fermer",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "access": {
+      "title": "Espace privé",
+      "intro": "Nous vous envoyons un lien d'accès par email.",
+      "email": "Email",
+      "submit": "Envoyer le lien",
+      "sent": "Si votre adresse figure dans notre bureau, vous recevrez le lien dans quelques minutes.",
+      "error": "Indiquez un email valide.",
+      "preview": "Entrer dans la démonstration",
+      "backdropAlt": "Résidence en Andorre à l'heure bleue"
+    },
+    "home": {
+      "greeting": "Bonjour, {{name}}",
+      "property": "{{property}}",
+      "nextVisit": "Prochaine visite",
+      "lastReport": "Dernier rapport",
+      "lastReportLink": "Voir le rapport",
+      "status": "État de la maison",
+      "statusOk": "Tout est en ordre",
+      "statusIssue": "Incident ouvert",
+      "level": "Votre niveau de service",
+      "quickArrival": "Annoncer une arrivée",
+      "quickRequest": "Demander un service",
+      "timeline": "Derniers mouvements",
+      "timelineEmpty": "Aucun mouvement enregistré pour l'instant. Ils apparaîtront ici après la prochaine visite."
+    },
+    "timeline": {
+      "visit": "Visite effectuée",
+      "report": "Rapport publié",
+      "issue": "Incident enregistré",
+      "arrival": "Arrivée annoncée",
+      "request": "Demande reçue"
+    },
+    "reports": {
+      "title": "Rapports",
+      "intro": "Chaque visite est documentée. Le plus récent en haut.",
+      "year": "Année",
+      "allYears": "Toutes",
+      "date": "Date",
+      "technician": "Technicien",
+      "photos": "Photographies",
+      "status": "État",
+      "ok": "Conforme",
+      "issue": "Avec incident",
+      "open": "Ouvrir le rapport",
+      "empty": "Il n'y a pas encore de rapports. Le premier arrivera après la prochaine visite.",
+      "emptyYear": "Aucun rapport pour cette année. Essayez une autre."
+    },
+    "report": {
+      "back": "Retour aux rapports",
+      "title": "Home Report",
+      "property": "Propriété",
+      "address": "Adresse",
+      "visit": "Visite",
+      "by": "Réalisée par",
+      "download": "Télécharger en PDF",
+      "checklist": "Checklist de la visite",
+      "states": {
+        "ok": "Conforme",
+        "attention": "À surveiller",
+        "na": "Sans objet"
+      },
+      "points": {
+        "doors": "Portes, fenêtres et fermetures",
+        "water": "Eau et fuites",
+        "heating": "Chauffage et eau chaude",
+        "electricity": "Électricité et tableau",
+        "humidity": "Humidité et ventilation",
+        "appliances": "Électroménager",
+        "exterior": "Extérieur et accès",
+        "alarm": "Alarme et caméras"
+      },
+      "photosTitle": "Photographies de la visite",
+      "photosEmpty": "Cette visite ne comprend pas de photographies.",
+      "photoOf": "Photographie {{index}} sur {{total}}",
+      "issuesTitle": "Incidents détectés",
+      "issuesEmpty": "Aucun incident n'a été détecté lors de cette visite.",
+      "issueStatus": {
+        "open": "Ouvert",
+        "inProgress": "En cours",
+        "resolved": "Résolu"
+      },
+      "followUp": "Suivi",
+      "issueTexts": {
+        "boiler": "Pression de la chaudière en dessous de la valeur recommandée.",
+        "terrace": "Joint de la porte de la terrasse usé.",
+        "lamp": "Point lumineux du couloir hors service."
+      },
+      "followUps": {
+        "notified": "Signalé au propriétaire. Devis demandé au technicien.",
+        "scheduled": "Intervention prévue lors de la prochaine visite.",
+        "done": "Remplacé et vérifié lors de la visite suivante."
+      },
+      "notFound": "Ce rapport est introuvable. Revenez à la liste des rapports."
+    },
+    "zones": {
+      "entrance": "Entrée",
+      "living": "Salon",
+      "kitchen": "Cuisine",
+      "bedroom": "Chambre principale",
+      "bathroom": "Salle de bains",
+      "exterior": "Extérieur",
+      "technical": "Local technique"
+    },
+    "arrival": {
+      "title": "Annoncer une arrivée",
+      "intro": "Vos dates suffisent : nous préparons la maison avant votre arrivée.",
+      "checkIn": "Date d'arrivée",
+      "checkOut": "Date de départ",
+      "guests": "Nombre de personnes",
+      "pet": "Avec un animal",
+      "transfer": "Transfert nécessaire",
+      "fridge": "Réfrigérateur approvisionné",
+      "notes": "Notes",
+      "submit": "Annoncer l'arrivée",
+      "sent": "Arrivée annoncée. Nous confirmons la préparation en moins de 24 heures.",
+      "listTitle": "Arrivées annoncées",
+      "empty": "Aucune arrivée annoncée pour l'instant. Dès que vous en annoncerez une, elle apparaîtra ici avec son état.",
+      "prep": {
+        "received": "Reçue",
+        "preparing": "En préparation",
+        "ready": "Maison prête"
+      },
+      "nights": "{{count}} nuits",
+      "errors": {
+        "date": "Indiquez une date.",
+        "order": "Le départ doit suivre l'arrivée.",
+        "guests": "Indiquez le nombre de personnes.",
+        "long": "Le texte est trop long."
+      }
+    },
+    "requests": {
+      "title": "Demander un service",
+      "intro": "Dites-nous ce dont vous avez besoin et nous nous en occupons.",
+      "type": "Type de service",
+      "typePlaceholder": "Sélectionnez une option",
+      "types": {
+        "restaurant": "Restaurant",
+        "wellness": "Bien-être",
+        "ski": "Ski",
+        "chauffeur": "Chauffeur",
+        "shopping": "Courses",
+        "other": "Autre"
+      },
+      "date": "Date",
+      "people": "Nombre de personnes",
+      "details": "Détails",
+      "submit": "Envoyer la demande",
+      "sent": "Demande reçue. Vous la verrez dans la liste avec son état.",
+      "listTitle": "Vos demandes",
+      "empty": "Aucune demande pour l'instant. Dès que vous solliciterez un service, il apparaîtra ici.",
+      "status": {
+        "received": "Reçue",
+        "inProgress": "En cours",
+        "confirmed": "Confirmée"
+      },
+      "errors": {
+        "required": "Sélectionnez une option.",
+        "date": "Indiquez une date.",
+        "people": "Indiquez le nombre de personnes.",
+        "details": "Écrivez quelques lignes sur votre demande.",
+        "long": "Le texte est trop long."
+      }
+    },
+    "property": {
+      "title": "La maison",
+      "details": "Données de la maison",
+      "detailLabels": {
+        "name": "Nom",
+        "address": "Adresse",
+        "parish": "Paroisse",
+        "type": "Type",
+        "area": "Surface",
+        "bedrooms": "Chambres"
+      },
+      "instructions": "Instructions pratiques",
+      "wifi": "Wifi",
+      "wifiNetwork": "Réseau",
+      "wifiPassword": "Mot de passe",
+      "contacts": "Contacts utiles",
+      "documents": "Documents",
+      "documentsEmpty": "Pas encore de documents. Nous les ajouterons au fil des visites.",
+      "ownerOnly": "Les données administratives ne sont visibles que par le titulaire.",
+      "instructionsList": [
+        "Le chauffage se règle depuis le thermostat de l'entrée.",
+        "L'arrivée d'eau se coupe dans le local technique, près de la chaudière.",
+        "La collecte des déchets a lieu le mardi et le vendredi matin.",
+        "La télécommande du garage se trouve dans le tiroir de l'entrée."
+      ],
+      "contactRoles": {
+        "concierge": "Conciergerie JR",
+        "plumber": "Plomberie",
+        "electrician": "Électricité",
+        "emergency": "Urgences"
+      },
+      "documentsList": {
+        "insurance": "Police d'assurance (exemple)",
+        "manual": "Manuel de la chaudière (exemple)",
+        "inventory": "Inventaire de la maison (exemple)"
+      }
+    },
+    "billing": {
+      "title": "Facturation",
+      "invoices": "Factures",
+      "date": "Date",
+      "concept": "Objet",
+      "amount": "Montant",
+      "statusLabel": "État",
+      "paid": "Payée",
+      "pending": "En attente",
+      "subscription": "Abonnement",
+      "plan": "Niveau de service",
+      "renewal": "Prochain renouvellement",
+      "method": "Moyen de paiement",
+      "empty": "Pas encore de factures. La première sera émise après le premier mois de service.",
+      "concepts": {
+        "monthly": "Service mensuel",
+        "extra": "Service complémentaire"
+      }
+    },
+    "people": {
+      "title": "Personnes ayant accès",
+      "intro": "Qui peut voir cette maison et dans quelle mesure.",
+      "person": "Personne",
+      "role": "Rôle",
+      "validity": "Validité",
+      "permanent": "Accès permanent",
+      "until": "Jusqu'au {{date}}",
+      "invite": "Inviter quelqu'un",
+      "inviteNote": "L'invitation est envoyée par email avec une date d'expiration.",
+      "empty": "Pour l'instant, vous êtes seul à avoir accès à cette maison."
+    },
+    "guest": {
+      "welcome": "Bienvenue à {{property}}",
+      "intro": "Tout ce qu'il faut pour votre séjour, sur un seul écran.",
+      "wifi": "Wifi",
+      "instructions": "Instructions pratiques",
+      "concierge": "Contacter le concierge",
+      "expiry": "Votre accès est disponible jusqu'au {{date}}.",
+      "note": "Si vous avez besoin de quoi que ce soit pendant votre séjour, écrivez-nous."
+    }
   }
 }

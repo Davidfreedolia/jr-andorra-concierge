@@ -11,11 +11,22 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as LangRouteImport } from './routes/$lang'
+import { Route as AreaRouteImport } from './routes/area'
 import { Route as LangIndexRouteImport } from './routes/$lang.index'
 import { Route as LangAboutRouteImport } from './routes/$lang.about'
 import { Route as LangConciergerieMobilityRouteImport } from './routes/$lang.conciergerie-mobility'
 import { Route as LangContactRouteImport } from './routes/$lang.contact'
 import { Route as LangHomeStaySafeRouteImport } from './routes/$lang.home-stay-safe'
+import { Route as AreaIndexRouteImport } from './routes/area.index'
+import { Route as AreaFacturacionRouteImport } from './routes/area.facturacion'
+import { Route as AreaInvitadoRouteImport } from './routes/area.invitado'
+import { Route as AreaLlegadaRouteImport } from './routes/area.llegada'
+import { Route as AreaPersonasRouteImport } from './routes/area.personas'
+import { Route as AreaPeticionesRouteImport } from './routes/area.peticiones'
+import { Route as AreaPropiedadRouteImport } from './routes/area.propiedad'
+import { Route as AreaAccesoRouteImport } from './routes/area_.acceso'
+import { Route as AreaInformesIndexRouteImport } from './routes/area.informes.index'
+import { Route as AreaInformesIdRouteImport } from './routes/area.informes.$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -25,6 +36,11 @@ const IndexRoute = IndexRouteImport.update({
 const LangRoute = LangRouteImport.update({
   id: '/$lang',
   path: '/$lang',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AreaRoute = AreaRouteImport.update({
+  id: '/area',
+  path: '/area',
   getParentRoute: () => rootRouteImport,
 } as any)
 const LangIndexRoute = LangIndexRouteImport.update({
@@ -53,15 +69,76 @@ const LangHomeStaySafeRoute = LangHomeStaySafeRouteImport.update({
   path: '/home-stay-safe',
   getParentRoute: () => LangRoute,
 } as any)
+const AreaIndexRoute = AreaIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AreaRoute,
+} as any)
+const AreaFacturacionRoute = AreaFacturacionRouteImport.update({
+  id: '/facturacion',
+  path: '/facturacion',
+  getParentRoute: () => AreaRoute,
+} as any)
+const AreaInvitadoRoute = AreaInvitadoRouteImport.update({
+  id: '/invitado',
+  path: '/invitado',
+  getParentRoute: () => AreaRoute,
+} as any)
+const AreaLlegadaRoute = AreaLlegadaRouteImport.update({
+  id: '/llegada',
+  path: '/llegada',
+  getParentRoute: () => AreaRoute,
+} as any)
+const AreaPersonasRoute = AreaPersonasRouteImport.update({
+  id: '/personas',
+  path: '/personas',
+  getParentRoute: () => AreaRoute,
+} as any)
+const AreaPeticionesRoute = AreaPeticionesRouteImport.update({
+  id: '/peticiones',
+  path: '/peticiones',
+  getParentRoute: () => AreaRoute,
+} as any)
+const AreaPropiedadRoute = AreaPropiedadRouteImport.update({
+  id: '/propiedad',
+  path: '/propiedad',
+  getParentRoute: () => AreaRoute,
+} as any)
+const AreaAccesoRoute = AreaAccesoRouteImport.update({
+  id: '/area_/acceso',
+  path: '/area/acceso',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AreaInformesIndexRoute = AreaInformesIndexRouteImport.update({
+  id: '/informes/',
+  path: '/informes/',
+  getParentRoute: () => AreaRoute,
+} as any)
+const AreaInformesIdRoute = AreaInformesIdRouteImport.update({
+  id: '/informes/$id',
+  path: '/informes/$id',
+  getParentRoute: () => AreaRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/$lang': typeof LangRouteWithChildren
+  '/area': typeof AreaRouteWithChildren
   '/$lang/about': typeof LangAboutRoute
   '/$lang/conciergerie-mobility': typeof LangConciergerieMobilityRoute
   '/$lang/contact': typeof LangContactRoute
   '/$lang/home-stay-safe': typeof LangHomeStaySafeRoute
+  '/area/facturacion': typeof AreaFacturacionRoute
+  '/area/invitado': typeof AreaInvitadoRoute
+  '/area/llegada': typeof AreaLlegadaRoute
+  '/area/personas': typeof AreaPersonasRoute
+  '/area/peticiones': typeof AreaPeticionesRoute
+  '/area/propiedad': typeof AreaPropiedadRoute
+  '/area/acceso': typeof AreaAccesoRoute
   '/$lang/': typeof LangIndexRoute
+  '/area/': typeof AreaIndexRoute
+  '/area/informes/$id': typeof AreaInformesIdRoute
+  '/area/informes/': typeof AreaInformesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -69,28 +146,60 @@ export interface FileRoutesByTo {
   '/$lang/conciergerie-mobility': typeof LangConciergerieMobilityRoute
   '/$lang/contact': typeof LangContactRoute
   '/$lang/home-stay-safe': typeof LangHomeStaySafeRoute
+  '/area/facturacion': typeof AreaFacturacionRoute
+  '/area/invitado': typeof AreaInvitadoRoute
+  '/area/llegada': typeof AreaLlegadaRoute
+  '/area/personas': typeof AreaPersonasRoute
+  '/area/peticiones': typeof AreaPeticionesRoute
+  '/area/propiedad': typeof AreaPropiedadRoute
+  '/area/acceso': typeof AreaAccesoRoute
   '/$lang': typeof LangIndexRoute
+  '/area': typeof AreaIndexRoute
+  '/area/informes/$id': typeof AreaInformesIdRoute
+  '/area/informes': typeof AreaInformesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/$lang': typeof LangRouteWithChildren
+  '/area': typeof AreaRouteWithChildren
   '/$lang/about': typeof LangAboutRoute
   '/$lang/conciergerie-mobility': typeof LangConciergerieMobilityRoute
   '/$lang/contact': typeof LangContactRoute
   '/$lang/home-stay-safe': typeof LangHomeStaySafeRoute
+  '/area/facturacion': typeof AreaFacturacionRoute
+  '/area/invitado': typeof AreaInvitadoRoute
+  '/area/llegada': typeof AreaLlegadaRoute
+  '/area/personas': typeof AreaPersonasRoute
+  '/area/peticiones': typeof AreaPeticionesRoute
+  '/area/propiedad': typeof AreaPropiedadRoute
+  '/area_/acceso': typeof AreaAccesoRoute
   '/$lang/': typeof LangIndexRoute
+  '/area/': typeof AreaIndexRoute
+  '/area/informes/$id': typeof AreaInformesIdRoute
+  '/area/informes/': typeof AreaInformesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
     | '/$lang'
+    | '/area'
     | '/$lang/about'
     | '/$lang/conciergerie-mobility'
     | '/$lang/contact'
     | '/$lang/home-stay-safe'
+    | '/area/facturacion'
+    | '/area/invitado'
+    | '/area/llegada'
+    | '/area/personas'
+    | '/area/peticiones'
+    | '/area/propiedad'
+    | '/area/acceso'
     | '/$lang/'
+    | '/area/'
+    | '/area/informes/$id'
+    | '/area/informes/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -98,21 +207,44 @@ export interface FileRouteTypes {
     | '/$lang/conciergerie-mobility'
     | '/$lang/contact'
     | '/$lang/home-stay-safe'
+    | '/area/facturacion'
+    | '/area/invitado'
+    | '/area/llegada'
+    | '/area/personas'
+    | '/area/peticiones'
+    | '/area/propiedad'
+    | '/area/acceso'
     | '/$lang'
+    | '/area'
+    | '/area/informes/$id'
+    | '/area/informes'
   id:
     | '__root__'
     | '/'
     | '/$lang'
+    | '/area'
     | '/$lang/about'
     | '/$lang/conciergerie-mobility'
     | '/$lang/contact'
     | '/$lang/home-stay-safe'
+    | '/area/facturacion'
+    | '/area/invitado'
+    | '/area/llegada'
+    | '/area/personas'
+    | '/area/peticiones'
+    | '/area/propiedad'
+    | '/area_/acceso'
     | '/$lang/'
+    | '/area/'
+    | '/area/informes/$id'
+    | '/area/informes/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   LangRoute: typeof LangRouteWithChildren
+  AreaRoute: typeof AreaRouteWithChildren
+  AreaAccesoRoute: typeof AreaAccesoRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -129,6 +261,13 @@ declare module '@tanstack/react-router' {
       path: '/$lang'
       fullPath: '/$lang'
       preLoaderRoute: typeof LangRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/area': {
+      id: '/area'
+      path: '/area'
+      fullPath: '/area'
+      preLoaderRoute: typeof AreaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/$lang/': {
@@ -166,6 +305,76 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LangHomeStaySafeRouteImport
       parentRoute: typeof LangRoute
     }
+    '/area/': {
+      id: '/area/'
+      path: '/'
+      fullPath: '/area/'
+      preLoaderRoute: typeof AreaIndexRouteImport
+      parentRoute: typeof AreaRoute
+    }
+    '/area/facturacion': {
+      id: '/area/facturacion'
+      path: '/facturacion'
+      fullPath: '/area/facturacion'
+      preLoaderRoute: typeof AreaFacturacionRouteImport
+      parentRoute: typeof AreaRoute
+    }
+    '/area/invitado': {
+      id: '/area/invitado'
+      path: '/invitado'
+      fullPath: '/area/invitado'
+      preLoaderRoute: typeof AreaInvitadoRouteImport
+      parentRoute: typeof AreaRoute
+    }
+    '/area/llegada': {
+      id: '/area/llegada'
+      path: '/llegada'
+      fullPath: '/area/llegada'
+      preLoaderRoute: typeof AreaLlegadaRouteImport
+      parentRoute: typeof AreaRoute
+    }
+    '/area/personas': {
+      id: '/area/personas'
+      path: '/personas'
+      fullPath: '/area/personas'
+      preLoaderRoute: typeof AreaPersonasRouteImport
+      parentRoute: typeof AreaRoute
+    }
+    '/area/peticiones': {
+      id: '/area/peticiones'
+      path: '/peticiones'
+      fullPath: '/area/peticiones'
+      preLoaderRoute: typeof AreaPeticionesRouteImport
+      parentRoute: typeof AreaRoute
+    }
+    '/area/propiedad': {
+      id: '/area/propiedad'
+      path: '/propiedad'
+      fullPath: '/area/propiedad'
+      preLoaderRoute: typeof AreaPropiedadRouteImport
+      parentRoute: typeof AreaRoute
+    }
+    '/area_/acceso': {
+      id: '/area_/acceso'
+      path: '/area/acceso'
+      fullPath: '/area/acceso'
+      preLoaderRoute: typeof AreaAccesoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/area/informes/': {
+      id: '/area/informes/'
+      path: '/informes'
+      fullPath: '/area/informes/'
+      preLoaderRoute: typeof AreaInformesIndexRouteImport
+      parentRoute: typeof AreaRoute
+    }
+    '/area/informes/$id': {
+      id: '/area/informes/$id'
+      path: '/informes/$id'
+      fullPath: '/area/informes/$id'
+      preLoaderRoute: typeof AreaInformesIdRouteImport
+      parentRoute: typeof AreaRoute
+    }
   }
 }
 
@@ -187,9 +396,37 @@ const LangRouteChildren: LangRouteChildren = {
 
 const LangRouteWithChildren = LangRoute._addFileChildren(LangRouteChildren)
 
+interface AreaRouteChildren {
+  AreaFacturacionRoute: typeof AreaFacturacionRoute
+  AreaInvitadoRoute: typeof AreaInvitadoRoute
+  AreaLlegadaRoute: typeof AreaLlegadaRoute
+  AreaPersonasRoute: typeof AreaPersonasRoute
+  AreaPeticionesRoute: typeof AreaPeticionesRoute
+  AreaPropiedadRoute: typeof AreaPropiedadRoute
+  AreaIndexRoute: typeof AreaIndexRoute
+  AreaInformesIdRoute: typeof AreaInformesIdRoute
+  AreaInformesIndexRoute: typeof AreaInformesIndexRoute
+}
+
+const AreaRouteChildren: AreaRouteChildren = {
+  AreaFacturacionRoute: AreaFacturacionRoute,
+  AreaInvitadoRoute: AreaInvitadoRoute,
+  AreaLlegadaRoute: AreaLlegadaRoute,
+  AreaPersonasRoute: AreaPersonasRoute,
+  AreaPeticionesRoute: AreaPeticionesRoute,
+  AreaPropiedadRoute: AreaPropiedadRoute,
+  AreaIndexRoute: AreaIndexRoute,
+  AreaInformesIdRoute: AreaInformesIdRoute,
+  AreaInformesIndexRoute: AreaInformesIndexRoute,
+}
+
+const AreaRouteWithChildren = AreaRoute._addFileChildren(AreaRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   LangRoute: LangRouteWithChildren,
+  AreaRoute: AreaRouteWithChildren,
+  AreaAccesoRoute: AreaAccesoRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
