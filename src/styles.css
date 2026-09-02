@@ -1115,7 +1115,6 @@
   border: 1px solid var(--jr-gold);
   background: var(--jr-black);
   color: var(--jr-gold);
-  box-shadow: 0 12px 30px color-mix(in srgb, var(--jr-black) 55%, transparent);
   transition: background-color 200ms ease, color 200ms ease, transform 200ms ease;
 
   &:hover {
@@ -1134,7 +1133,6 @@
   border-radius: 14px;
   background: var(--jr-night);
   color: var(--jr-bone);
-  box-shadow: 0 24px 60px color-mix(in srgb, var(--jr-black) 65%, transparent);
   animation: jr-chat-in 320ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
