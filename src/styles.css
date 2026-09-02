@@ -417,6 +417,42 @@
     }
   }
 
+  /* Scroll-driven: the hairline draws itself and each step lands as you scroll. */
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .jr-journey {
+        view-timeline-name: --jr-journey-view;
+        view-timeline-axis: block;
+      }
+
+      .jr-journey::before {
+        animation: jr-journey-draw-y linear both;
+        animation-timeline: --jr-journey-view;
+        animation-range: entry 55% cover 65%;
+      }
+
+      .jr-journey-step {
+        animation: jr-journey-step-in linear both;
+        animation-timeline: view();
+        animation-range: entry 20% cover 42%;
+      }
+
+      .jr-journey-dot {
+        animation:
+          jr-journey-pulse 3.2s ease-in-out infinite,
+          jr-journey-dot-fill linear both;
+        animation-timeline: auto, view();
+        animation-range: normal, entry 25% cover 40%;
+      }
+
+      @media (min-width: 768px) {
+        .jr-journey::before {
+          animation-name: jr-journey-draw-x;
+        }
+      }
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .jr-journey::before,
     .jr-journey-dot {
@@ -428,6 +464,31 @@
     }
   }
 }
+
+@keyframes jr-journey-step-in {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+    filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes jr-journey-dot-fill {
+  from {
+    background: var(--background);
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--jr-gold) 0%, transparent);
+  }
+  to {
+    background: var(--jr-gold);
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--jr-gold) 18%, transparent);
+  }
+}
+
 
 
 /* Fixed mobile action bar: dark, gold hairline on top, two halves. */
