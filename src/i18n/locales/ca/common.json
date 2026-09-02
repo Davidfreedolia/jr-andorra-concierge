@@ -1,0 +1,41 @@
+{
+  "brand": {
+    "name": "JR Hospitality",
+    "tagline": "Hospitality & Customer Experience — Andorra"
+  },
+  "nav": {
+    "home": "Inici",
+    "homeStaySafe": "Home Stay Safe",
+    "conciergerieMobility": "Conciergerie & Mobility",
+    "about": "Sobre JR",
+    "contact": "Contacte",
+    "menu": "Menú",
+    "openMenu": "Obrir el menú de navegació",
+    "closeMenu": "Tancar el menú de navegació",
+    "primary": "Navegació principal",
+    "footer": "Navegació del peu de pàgina",
+    "skipToContent": "Vés al contingut principal"
+  },
+  "language": {
+    "label": "Idioma",
+    "select": "Seleccionar idioma",
+    "current": "Idioma actual: {{language}}",
+    "suggestion": "També disponible en {{language}}."
+  },
+  "pages": {
+    "home": { "title": "Inici", "description": "Oficina privada de home care, conciergerie i mobilitat a Andorra." },
+    "homeStaySafe": { "title": "Home Stay Safe", "description": "Cura discreta de la seva segona residència a Andorra." },
+    "conciergerieMobility": { "title": "Conciergerie & Mobility", "description": "Conciergerie privada i mobilitat per a clients premium a Andorra." },
+    "about": { "title": "Sobre JR", "description": "Una oficina privada al servei de propietaris i clients premium." },
+    "contact": { "title": "Contacte", "description": "Contacti amb la nostra oficina privada a Andorra." }
+  },
+  "footer": {
+    "legal": "Avís legal",
+    "privacy": "Privacitat",
+    "cookies": "Galetes",
+    "rights": "Tots els drets reservats."
+  },
+  "common": {
+    "logoAlt": "JR Hospitality & Customer Experience"
+  }
+}

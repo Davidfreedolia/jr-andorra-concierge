@@ -1,0 +1,41 @@
+{
+  "brand": {
+    "name": "JR Hospitality",
+    "tagline": "Hospitality & Customer Experience — Andorre"
+  },
+  "nav": {
+    "home": "Accueil",
+    "homeStaySafe": "Home Stay Safe",
+    "conciergerieMobility": "Conciergerie & Mobility",
+    "about": "À propos de JR",
+    "contact": "Contact",
+    "menu": "Menu",
+    "openMenu": "Ouvrir le menu de navigation",
+    "closeMenu": "Fermer le menu de navigation",
+    "primary": "Navigation principale",
+    "footer": "Navigation du pied de page",
+    "skipToContent": "Aller au contenu principal"
+  },
+  "language": {
+    "label": "Langue",
+    "select": "Sélectionner la langue",
+    "current": "Langue actuelle : {{language}}",
+    "suggestion": "Également disponible en {{language}}."
+  },
+  "pages": {
+    "home": { "title": "Accueil", "description": "Bureau privé de home care, conciergerie et mobilité en Andorre." },
+    "homeStaySafe": { "title": "Home Stay Safe", "description": "Le soin discret de votre résidence secondaire en Andorre." },
+    "conciergerieMobility": { "title": "Conciergerie & Mobility", "description": "Conciergerie privée et mobilité pour une clientèle premium en Andorre." },
+    "about": { "title": "À propos de JR", "description": "Un bureau privé au service des propriétaires et clients premium." },
+    "contact": { "title": "Contact", "description": "Contactez notre bureau privé en Andorre." }
+  },
+  "footer": {
+    "legal": "Mentions légales",
+    "privacy": "Confidentialité",
+    "cookies": "Cookies",
+    "rights": "Tous droits réservés."
+  },
+  "common": {
+    "logoAlt": "JR Hospitality & Customer Experience"
+  }
+}
