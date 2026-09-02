@@ -125,11 +125,6 @@ export function TransferBooking() {
                         {cells.map((day, index) => {
                           if (day === null)
                             return <span key={`empty-${index}`} className="min-h-[var(--jr-tap)]" />;
-                          const isSelected =
-                            selected &&
-                            selected.getDate() === day &&
-                            selected.getMonth() === cursor.getMonth() &&
-                            selected.getFullYear() === cursor.getFullYear();
                           const disabled = isPast(day);
                           return (
                             <button
@@ -143,9 +138,7 @@ export function TransferBooking() {
                                 "min-h-[var(--jr-tap)] border text-base transition-colors",
                                 disabled
                                   ? "cursor-not-allowed border-transparent text-jr-bone/25"
-                                  : isSelected
-                                    ? "border-jr-gold bg-jr-gold/15 text-jr-gold"
-                                    : "border-[color-mix(in_srgb,var(--jr-gold)_18%,transparent)] text-jr-bone hover:border-jr-gold hover:text-jr-gold",
+                                  : "border-[color-mix(in_srgb,var(--jr-gold)_18%,transparent)] text-jr-bone",
                               ].join(" ")}
                             >
                               {day}
