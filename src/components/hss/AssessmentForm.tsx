@@ -1,7 +1,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { z } from "zod";
 
 import { LANGUAGES } from "@/i18n/config";
@@ -118,7 +118,9 @@ export function AssessmentForm() {
       <div className="jr-container flex flex-col gap-10">
         <div className="flex flex-col gap-4">
           <p className="jr-label">{t("hss.form.label")}</p>
-          <h2 className="jr-display-2 jr-measure text-jr-gold">{t("hss.form.title")}</h2>
+          <h2 className="jr-display-2 jr-measure text-white">
+            <Trans i18nKey="hss.form.title" components={[<span className="text-jr-gold" />]} />
+          </h2>
           <p className="text-muted-foreground">{t("hss.form.promise")}</p>
         </div>
 
