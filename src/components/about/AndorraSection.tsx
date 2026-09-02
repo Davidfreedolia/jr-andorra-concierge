@@ -2,41 +2,38 @@ import { useTranslation } from "react-i18next";
 
 import { GoldText } from "@/components/GoldText";
 import { Reveal } from "@/components/Reveal";
-import andorraJpg from "@/assets/about-andorra.jpg";
-import andorra800 from "@/assets/about-andorra-800.webp";
-import andorra1600 from "@/assets/about-andorra-1600.webp";
+import andorraPoster from "@/assets/about-andorra.jpg";
+import andorraVideo from "@/assets/about-andorra-mountains.mp4.asset.json";
 
 export function AndorraSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="jr-section">
-      <div className="jr-container flex flex-col gap-10">
-        <Reveal className="flex flex-col gap-5">
-          <p className="jr-label">{t("about.andorra.label")}</p>
-          <h2 className="jr-display-1 jr-measure">
-            <GoldText text={t("about.andorra.title")} />
-          </h2>
-          <p className="jr-measure text-lg text-muted-foreground">{t("about.andorra.text")}</p>
-        </Reveal>
+    <section className="relative isolate flex min-h-[68vh] items-center justify-center overflow-hidden bg-jr-black py-20 lg:py-32">
+      <video
+        className="jr-photo-lift absolute inset-0 -z-20 h-full w-full object-cover"
+        src={andorraVideo.url}
+        poster={andorraPoster}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        aria-label={t("about.andorra.imageAlt")}
+      />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-jr-black/90 via-jr-black/50 to-jr-black/60" aria-hidden="true" />
 
-        <Reveal>
-          <picture>
-            <source
-              type="image/webp"
-              srcSet={`${andorra800} 800w, ${andorra1600} 1600w`}
-              sizes="(min-width: 1200px) 1120px, 100vw"
-            />
-            <img
-              src={andorraJpg}
-              alt={t("about.andorra.imageAlt")}
-              width={1920}
-              height={1088}
-              loading="lazy"
-              decoding="async"
-              className="jr-photo-lift w-full object-cover"
-            />
-          </picture>
+      <div className="jr-container relative w-full">
+        <Reveal className="mx-auto max-w-3xl text-center">
+          <div className="jr-panel">
+            <p className="jr-label text-jr-gold">{t("about.andorra.label")}</p>
+            <h2 className="jr-display-1 mt-5 text-jr-white">
+              <GoldText text={t("about.andorra.title")} />
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-jr-bone/80">
+              {t("about.andorra.text")}
+            </p>
+          </div>
         </Reveal>
       </div>
     </section>
