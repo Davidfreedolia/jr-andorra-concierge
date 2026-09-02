@@ -488,6 +488,10 @@
       "title": "Why here and why now",
       "text": "Andorra brings together the mountains, quiet and an international community that spends ever longer seasons here. Houses are used by the week, not by the month, and need someone to keep them alive between stays. We live and work here: we know the valleys, the trades and the trusted people it takes to keep everything running.",
       "imageAlt": "Andorran valley at blue hour with a lit residence among snow-covered mountains"
+    },
+    "hero": {
+      "title": "Thirty years caring for homes and people",
+      "alt": "Andorran valleys at dusk, warm light over the mountains"
     }
   },
   "contact": {
@@ -548,6 +552,10 @@
           "value": "[Registration number pending]"
         }
       ]
+    },
+    "hero": {
+      "title": "Let's talk about your home and your stay",
+      "alt": "Understated private office interior in Andorra in warm light"
     }
   },
   "actionBar": {

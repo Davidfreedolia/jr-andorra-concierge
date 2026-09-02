@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import { AboutHero } from "@/components/about/AboutHero";
 import { AndorraSection } from "@/components/about/AndorraSection";
 import { FounderLetter } from "@/components/about/FounderLetter";
 import { Milestones } from "@/components/about/Milestones";
@@ -16,6 +17,7 @@ export const Route = createFileRoute("/$lang/about")({
 function AboutPage() {
   return (
     <>
+      <AboutHero />
       <FounderLetter />
       <Milestones />
       <Principles />

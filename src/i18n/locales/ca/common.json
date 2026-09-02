@@ -55,8 +55,8 @@
   },
   "home": {
     "hero": {
-      "title": "Your <1>home</1>. Your <2>time</2>. Your <3>Andorra</3>.",
-      "subtitle": "Private Home Care · Conciergerie · Mobility · Experiences",
+      "title": "La teva <1>casa</1>. El teu <2>temps</2>. La teva <3>Andorra</3>.",
+      "subtitle": "Home care privat · Conciergerie · Mobilitat · Experiències",
       "ctaHome": "Home Stay Safe",
       "ctaMobility": "Conciergerie & Mobility",
       "videoAlt": "Residència privada als Pirineus a l'hora blava"
@@ -146,10 +146,10 @@
       "label": "El recorregut",
       "title": "De <0>casa</0> teva a <1>casa</1> teva.",
       "states": [
-        "Home",
-        "Arrival",
-        "Stay",
-        "Departure"
+        "Casa",
+        "Arribada",
+        "Estada",
+        "Sortida"
       ],
       "services": [
         "Home Stay Safe",
@@ -488,6 +488,10 @@
       "title": "Per què aquí i per què ara",
       "text": "Andorra reuneix muntanya, tranquil·litat i una comunitat internacional que hi passa temporades cada cop més llargues. Les cases s'ocupen per setmanes, no per mesos, i necessiten algú que les mantingui vives entre estada i estada. Hi vivim i hi treballem: coneixem les valls, els oficis i les persones de confiança que calen perquè tot funcioni.",
       "imageAlt": "Vall d'Andorra a l'hora blava amb una residència il·luminada entre muntanyes nevades"
+    },
+    "hero": {
+      "title": "Trenta anys tenint cura de cases i persones",
+      "alt": "Valls d'Andorra al capvespre, llum càlida sobre la muntanya"
     }
   },
   "contact": {
@@ -548,6 +552,10 @@
           "value": "[Número de registre pendent]"
         }
       ]
+    },
+    "hero": {
+      "title": "Parlem de casa seva i de la seva estada",
+      "alt": "Interior sobri d'oficina privada a Andorra amb llum càlida"
     }
   },
   "actionBar": {

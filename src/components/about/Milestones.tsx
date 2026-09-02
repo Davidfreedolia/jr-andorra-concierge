@@ -10,7 +10,7 @@ export function Milestones() {
   const items = tList<Milestone>(t, "about.milestones.items");
 
   return (
-    <section className="jr-section jr-surface-bone">
+    <section className="jr-section jr-surface-deep">
       <div className="jr-container flex flex-col gap-12">
         <Reveal className="flex flex-col gap-4">
           <p className="jr-label">{t("about.milestones.label")}</p>

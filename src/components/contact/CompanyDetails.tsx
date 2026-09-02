@@ -10,7 +10,7 @@ export function CompanyDetails() {
   const items = tList<Detail>(t, "contact.company.items");
 
   return (
-    <section className="jr-section jr-surface-bone">
+    <section className="jr-section jr-surface-deep">
       <div className="jr-container flex flex-col gap-8">
         <Reveal className="flex flex-col gap-3">
           <h2 className="jr-display-2">{t("contact.company.title")}</h2>
