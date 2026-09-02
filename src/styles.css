@@ -240,6 +240,20 @@
   color: var(--jr-black);
 }
 
+/* Hero-led alternate surface: still black and gold, one shade lifted. */
+@utility jr-surface-deep {
+  position: relative;
+  background:
+    radial-gradient(
+      120% 90% at 50% 0%,
+      color-mix(in srgb, var(--jr-gold) 9%, transparent) 0%,
+      transparent 60%
+    ),
+    var(--jr-night-deep);
+  color: var(--jr-bone);
+  border-block: 1px solid color-mix(in srgb, var(--jr-gold) 22%, transparent);
+}
+
 @utility jr-display-1 {
   font-family: var(--font-display);
   font-weight: 300;

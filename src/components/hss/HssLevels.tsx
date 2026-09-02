@@ -10,7 +10,7 @@ export function HssLevels() {
   const levels = tList<Level>(t, "hss.levels.items");
 
   return (
-    <section className="jr-section jr-surface-bone">
+    <section className="jr-section jr-surface-deep">
       <div className="jr-container flex flex-col gap-12">
         <Reveal className="flex flex-col gap-4">
           <p className="jr-label text-jr-gold-deep">{t("hss.levels.label")}</p>

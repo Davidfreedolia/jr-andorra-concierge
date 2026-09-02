@@ -58,7 +58,7 @@ export function TransferForm() {
   const errorClass = "text-sm text-destructive";
 
   return (
-    <section id="transfer" className="jr-section jr-surface-bone">
+    <section id="transfer" className="jr-section jr-surface-deep">
       <div className="jr-container flex flex-col gap-10">
         <Reveal className="flex flex-col gap-4">
           <p className="jr-label text-jr-gold-deep">{t("cm.transfer.label")}</p>
