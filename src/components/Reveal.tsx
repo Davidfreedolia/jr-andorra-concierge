@@ -42,7 +42,9 @@ export function Reveal({
     <Tag
       ref={ref as never}
       style={delay ? { transitionDelay: `${delay}ms` } : undefined}
-      className={`jr-reveal${visible ? " jr-reveal-in" : ""}${className ? ` ${className}` : ""}`}
+      className={["jr-reveal", visible ? "jr-reveal-in" : "", className]
+        .filter(Boolean)
+        .join(" ")}
     >
       {children}
     </Tag>
