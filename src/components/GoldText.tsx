@@ -9,7 +9,7 @@ export function GoldText({
   baseClass = "text-jr-white",
   goldClass = "text-jr-gold",
 }: GoldTextProps) {
-  const parts = text.split(/(<gold>.*?<\/gold>)/g);
+  const parts = text.split(/(<gold>.*?<\/gold>)/g).filter(Boolean);
   return (
     <>
       {parts.map((part, index) => {
