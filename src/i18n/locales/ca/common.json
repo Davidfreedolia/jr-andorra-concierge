@@ -465,7 +465,7 @@
   "about": {
     "letter": {
       "label": "Carta del fundador",
-      "title": "Una oficina privada, un únic interlocutor",
+      "title": "Una oficina privada, un únic <gold>interlocutor</gold>",
       "paragraphs": [
         "He passat tota la meva vida professional tenint cura de cases que no són meves i de persones que confien que tot sigui al seu lloc.",
         "Vaig crear JR per oferir a Andorra allò que sempre vaig trobar a faltar: una oficina discreta que respon, s'anticipa i no cal recordar.",

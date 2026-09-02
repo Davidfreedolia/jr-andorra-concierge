@@ -465,7 +465,7 @@
   "about": {
     "letter": {
       "label": "Brief des Gründers",
-      "title": "Ein privates Büro, eine einzige Ansprechperson",
+      "title": "Ein privates Büro, eine einzige <gold>Ansprechperson</gold>",
       "paragraphs": [
         "Ich habe mein gesamtes Berufsleben damit verbracht, Häuser zu betreuen, die nicht meine sind, und Menschen, die darauf vertrauen, dass alles an seinem Platz ist.",
         "Ich habe JR gegründet, um in Andorra das anzubieten, was mir immer gefehlt hat: ein diskretes Büro, das antwortet, vorausdenkt und nie erinnert werden muss.",
