@@ -52,8 +52,15 @@ export function SiteHeader({ lang }: { lang: Language }) {
               </Link>
             ))}
           </nav>
+          <Link
+            to="/area/acceso"
+            className="jr-tap jr-label border border-jr-gold/30 px-3 text-jr-gold-deep hover:border-jr-gold/60"
+          >
+            {t("nav.area")}
+          </Link>
           <LanguageSwitcher lang={lang} />
         </div>
+
       </div>
 
       {open ? (
