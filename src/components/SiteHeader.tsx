@@ -52,8 +52,15 @@ export function SiteHeader({ lang }: { lang: Language }) {
               </Link>
             ))}
           </nav>
+          <Link
+            to="/area/acceso"
+            className="jr-tap jr-label border border-jr-gold/30 px-3 text-jr-gold-deep hover:border-jr-gold/60"
+          >
+            {t("nav.area")}
+          </Link>
           <LanguageSwitcher lang={lang} />
         </div>
+
       </div>
 
       {open ? (
@@ -75,7 +82,15 @@ export function SiteHeader({ lang }: { lang: Language }) {
               {t(`nav.${item.key}`)}
             </Link>
           ))}
+          <Link
+            to="/area/acceso"
+            onClick={() => setOpen(false)}
+            className="jr-tap jr-label justify-start py-3 text-jr-gold-deep"
+          >
+            {t("nav.area")}
+          </Link>
         </nav>
+
       ) : null}
     </header>
   );

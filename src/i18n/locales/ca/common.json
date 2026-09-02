@@ -14,7 +14,8 @@
     "closeMenu": "Tancar el menú de navegació",
     "primary": "Navegació principal",
     "footer": "Navegació del peu de pàgina",
-    "skipToContent": "Vés al contingut principal"
+    "skipToContent": "Vés al contingut principal",
+    "area": "Àrea privada"
   },
   "language": {
     "label": "Idioma",
