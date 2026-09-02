@@ -1,4 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://jr-hospitality.lovable.app/es</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/ca</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/fr</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/en</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/de</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/es/home-stay-safe</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/home-stay-safe"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/ca/home-stay-safe</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/home-stay-safe"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/fr/home-stay-safe</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/home-stay-safe"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/en/home-stay-safe</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/home-stay-safe"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/de/home-stay-safe</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/home-stay-safe"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/home-stay-safe"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/es/conciergerie-mobility</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/conciergerie-mobility"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/ca/conciergerie-mobility</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/conciergerie-mobility"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/fr/conciergerie-mobility</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/conciergerie-mobility"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/en/conciergerie-mobility</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/conciergerie-mobility"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/de/conciergerie-mobility</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/conciergerie-mobility"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/conciergerie-mobility"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/es/about</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/about"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/about"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/ca/about</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/about"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/about"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/fr/about</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/about"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/about"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/about"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/about"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/de/about</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/about"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/about"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/about"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/es/contact</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/contact"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/ca/contact</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/contact"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/fr/contact</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/contact"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/contact"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://jr-hospitality.lovable.app/de/contact</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://jr-hospitality.lovable.app/es/contact"/>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://jr-hospitality.lovable.app/ca/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://jr-hospitality.lovable.app/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jr-hospitality.lovable.app/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://jr-hospitality.lovable.app/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jr-hospitality.lovable.app/es/contact"/>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
