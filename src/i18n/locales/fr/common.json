@@ -331,5 +331,98 @@
         "long": "Le texte est trop long."
       }
     }
+  },
+  "cm": {
+    "hero": {
+      "alt": "Voiture avec chauffeur arrivant devant une résidence privée à l'heure bleue",
+      "title": "Arriver, se déplacer et profiter d'Andorre sans s'occuper de rien."
+    },
+    "mobility": {
+      "label": "Mobility",
+      "title": "Mobilité privée, ponctuelle et discrète.",
+      "blocks": [
+        {
+          "title": "Airport & Long-Distance Transfers",
+          "text": "Transferts privés depuis Barcelone, Toulouse, Lleida ou d'autres points jusqu'en Andorre et retour.",
+          "alt": "Chauffeur ouvrant la portière d'une voiture privée devant le terminal, au crépuscule"
+        },
+        {
+          "title": "Private Chauffeur",
+          "text": "Voiture avec chauffeur pour vos déplacements privés, professionnels, familiaux ou d'accompagnement.",
+          "alt": "Intérieur d'une voiture avec chauffeur la nuit"
+        },
+        {
+          "title": "Mobility in Andorra",
+          "text": "Coordination des déplacements, journées, réunions, restaurants, achats, ski, wellness, événements et activités.",
+          "alt": "Voiture privée sur une route de montagne en Andorre au crépuscule"
+        }
+      ]
+    },
+    "transfer": {
+      "label": "Demande de transfert",
+      "title": "Réservez votre transfert privé.",
+      "promise": "Nous vous confirmons la disponibilité et un prix ferme en moins de 2 heures.",
+      "origin": "Départ",
+      "destination": "Destination",
+      "date": "Date",
+      "time": "Heure",
+      "passengers": "Passagers",
+      "luggage": "Bagages (nombre)",
+      "flight": "Numéro de vol (facultatif)",
+      "name": "Nom",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "consent": "J'accepte que JR traite mes données pour répondre à cette demande.",
+      "submit": "Demander un transfert",
+      "sending": "Envoi…",
+      "success": "Demande reçue. Nous confirmons disponibilité et prix ferme en moins de 2 heures.",
+      "errors": {
+        "required": "Ce champ est obligatoire.",
+        "name": "Indiquez votre nom.",
+        "email": "Indiquez un e-mail valide.",
+        "phone": "Indiquez un téléphone valide.",
+        "passengers": "Indiquez le nombre de passagers.",
+        "luggage": "Indiquez le nombre de bagages.",
+        "consent": "Nous avons besoin de votre consentement pour vous répondre.",
+        "long": "Le texte est trop long."
+      }
+    },
+    "concierge": {
+      "label": "Conciergerie & Experiences",
+      "title": "Tout ce qui entoure un beau séjour.",
+      "items": [
+        {
+          "title": "Gastronomie et réservations",
+          "text": "Tables, chef privé et célébrations."
+        },
+        {
+          "title": "Wellness et bien-être",
+          "text": "Spa, kinésithérapie et soins personnels."
+        },
+        {
+          "title": "Activités, neige et montagne",
+          "text": "Ski, sentiers et guides privés."
+        },
+        {
+          "title": "Vie nocturne et divertissement",
+          "text": "Accès et coordination en toute réserve."
+        },
+        {
+          "title": "Séjours et expériences sur mesure",
+          "text": "Programmes complets pour votre groupe ou famille."
+        },
+        {
+          "title": "Coordination intégrale pendant le séjour",
+          "text": "Un seul interlocuteur du début à la fin."
+        }
+      ],
+      "note": "Pas de catalogue figé, pas de forfaits : chaque demande est étudiée individuellement."
+    },
+    "closing": {
+      "title": "Dites-nous ce dont vous avez besoin.",
+      "text": "Écrivez-nous : nous étudions votre demande en toute discrétion.",
+      "cta": "Aller au formulaire de contact",
+      "whatsapp": "WhatsApp"
+    }
   }
 }
