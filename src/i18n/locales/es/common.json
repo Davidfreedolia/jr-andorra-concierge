@@ -392,7 +392,7 @@
     },
     "concierge": {
       "label": "Conciergerie & Experiences",
-      "title": "Todo lo que rodea a una buena estancia.",
+      "title": "Todo lo que rodea a una <0>buena estancia</0>.",
       "items": [
         {
           "title": "Gastronomía y reservas",

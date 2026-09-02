@@ -392,7 +392,7 @@
     },
     "concierge": {
       "label": "Conciergerie & Experiences",
-      "title": "Alles rund um einen gelungenen Aufenthalt.",
+      "title": "Alles rund um einen <0>gelungenen Aufenthalt</0>.",
       "items": [
         {
           "title": "Gastronomie und Reservierungen",
