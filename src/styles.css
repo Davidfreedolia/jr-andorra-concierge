@@ -611,7 +611,7 @@
 
 @utility jr-area-morerow {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
   padding: 0 var(--jr-gutter) 24px;
 }
@@ -620,6 +620,8 @@
   min-width: 0;
   text-align: center;
   justify-content: center;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 @utility jr-area-timeline {
