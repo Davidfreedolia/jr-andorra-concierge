@@ -58,8 +58,8 @@ export function MobilityCards({ lang }: { lang: Language }) {
             <Reveal
               as="li"
               key={card.title}
-              delay={index * 90}
-              className="jr-panel flex min-w-0 flex-col gap-4"
+              delay={index * 110}
+              className="jr-panel jr-card-hover flex min-w-0 flex-col gap-4"
             >
               <IconTile index={index + 8} />
               <h3 className="font-display text-2xl text-jr-bone">{card.title}</h3>
