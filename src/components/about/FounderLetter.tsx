@@ -26,7 +26,9 @@ export function FounderLetter() {
 
         <Reveal className="flex min-w-0 flex-col gap-6">
           <p className="jr-label">{t("about.letter.label")}</p>
-          <h1 className="jr-display-1 jr-measure text-jr-gold">{t("about.letter.title")}</h1>
+          <h1 className="jr-display-1 jr-measure">
+            <GoldText text={t("about.letter.title")} />
+          </h1>
           <div className="jr-measure flex flex-col gap-4 text-lg text-muted-foreground">
             {paragraphs.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>

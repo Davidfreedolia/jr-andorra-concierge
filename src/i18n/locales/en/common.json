@@ -465,7 +465,7 @@
   "about": {
     "letter": {
       "label": "Founder's letter",
-      "title": "A private office, a single point of contact",
+      "title": "A private office, a single <gold>point of contact</gold>",
       "paragraphs": [
         "I have spent my whole working life looking after houses that are not mine, and after people who trust that everything will be in its place.",
         "I created JR to offer in Andorra what I always missed: a discreet office that answers, anticipates and never needs reminding.",
