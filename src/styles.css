@@ -340,6 +340,20 @@
 
 @utility jr-journey-step {
   position: relative;
+  transition:
+    transform 400ms ease,
+    color 400ms ease;
+
+  &:hover .jr-journey-dot {
+    background: var(--jr-gold);
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--jr-gold) 18%, transparent);
+  }
+
+  @media (min-width: 768px) {
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
 }
 
 @utility jr-journey-dot {
@@ -351,12 +365,70 @@
   border: 1px solid var(--jr-gold);
   border-radius: 50%;
   background: var(--background);
+  transition:
+    background 400ms ease,
+    box-shadow 400ms ease;
+  animation: jr-journey-pulse 3.2s ease-in-out infinite;
 
   @media (min-width: 768px) {
     inset-inline-start: 0;
     top: -28px;
   }
 }
+
+@keyframes jr-journey-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--jr-gold) 30%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 5px color-mix(in srgb, var(--jr-gold) 0%, transparent);
+  }
+}
+
+@keyframes jr-journey-draw-y {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes jr-journey-draw-x {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@layer base {
+  .jr-journey::before {
+    transform-origin: top center;
+    animation: jr-journey-draw-y 1400ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  @media (min-width: 768px) {
+    .jr-journey::before {
+      transform-origin: left center;
+      animation-name: jr-journey-draw-x;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .jr-journey::before,
+    .jr-journey-dot {
+      animation: none;
+    }
+
+    .jr-journey-step:hover {
+      transform: none;
+    }
+  }
+}
+
 
 /* Fixed mobile action bar: dark, gold hairline on top, two halves. */
 @utility jr-actionbar {
