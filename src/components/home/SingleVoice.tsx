@@ -12,10 +12,10 @@ export function SingleVoice() {
           <p className="jr-display-2 max-w-[22ch] text-jr-white">
             <Trans
               i18nKey="home.voice.quote"
-              components={[
-                <span className="text-jr-gold" />,
-                <span className="text-jr-gold" />,
-              ]}
+              components={{
+                1: <span className="text-jr-gold" />,
+                2: <span className="text-jr-gold" />,
+              }}
             />
           </p>
           <hr className="jr-divider w-full" />
