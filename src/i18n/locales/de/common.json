@@ -331,5 +331,98 @@
         "long": "Der Text ist zu lang."
       }
     }
+  },
+  "cm": {
+    "hero": {
+      "alt": "Fahrzeug mit Chauffeur bei der Ankunft an einer privaten Residenz zur blauen Stunde",
+      "title": "Ankommen, unterwegs sein und Andorra genießen, ohne sich um etwas kümmern zu müssen."
+    },
+    "mobility": {
+      "label": "Mobility",
+      "title": "Private Mobilität, pünktlich und diskret.",
+      "blocks": [
+        {
+          "title": "Airport & Long-Distance Transfers",
+          "text": "Private Transfers von Barcelona, Toulouse, Lleida oder anderen Orten nach Andorra und zurück.",
+          "alt": "Chauffeur öffnet die Tür eines privaten Fahrzeugs am Flughafenterminal in der Dämmerung"
+        },
+        {
+          "title": "Private Chauffeur",
+          "text": "Fahrzeug mit Chauffeur für private, berufliche, familiäre oder begleitende Fahrten.",
+          "alt": "Innenraum eines Fahrzeugs mit Chauffeur bei Nacht"
+        },
+        {
+          "title": "Mobility in Andorra",
+          "text": "Koordination von Fahrten, Tagesprogrammen, Terminen, Restaurants, Einkäufen, Ski, Wellness, Events und Aktivitäten.",
+          "alt": "Privates Fahrzeug auf einer Bergstraße in Andorra in der Dämmerung"
+        }
+      ]
+    },
+    "transfer": {
+      "label": "Transferanfrage",
+      "title": "Buchen Sie Ihren privaten Transfer.",
+      "promise": "Wir bestätigen Verfügbarkeit und Festpreis in weniger als 2 Stunden.",
+      "origin": "Abholort",
+      "destination": "Zielort",
+      "date": "Datum",
+      "time": "Uhrzeit",
+      "passengers": "Passagiere",
+      "luggage": "Gepäck (Stück)",
+      "flight": "Flugnummer (optional)",
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "consent": "Ich stimme zu, dass JR meine Daten zur Beantwortung dieser Anfrage verarbeitet.",
+      "submit": "Transfer anfragen",
+      "sending": "Wird gesendet…",
+      "success": "Anfrage erhalten. Wir bestätigen Verfügbarkeit und Festpreis in weniger als 2 Stunden.",
+      "errors": {
+        "required": "Dieses Feld ist erforderlich.",
+        "name": "Bitte geben Sie Ihren Namen an.",
+        "email": "Bitte geben Sie eine gültige E-Mail an.",
+        "phone": "Bitte geben Sie eine gültige Telefonnummer an.",
+        "passengers": "Bitte geben Sie die Anzahl der Passagiere an.",
+        "luggage": "Bitte geben Sie die Anzahl der Gepäckstücke an.",
+        "consent": "Wir benötigen Ihre Einwilligung, um zu antworten.",
+        "long": "Der Text ist zu lang."
+      }
+    },
+    "concierge": {
+      "label": "Conciergerie & Experiences",
+      "title": "Alles rund um einen gelungenen Aufenthalt.",
+      "items": [
+        {
+          "title": "Gastronomie und Reservierungen",
+          "text": "Tische, Privatkoch und Feiern."
+        },
+        {
+          "title": "Wellness und Wohlbefinden",
+          "text": "Spa, Physiotherapie und Körperpflege."
+        },
+        {
+          "title": "Aktivitäten, Schnee und Berge",
+          "text": "Ski, Wanderwege und private Guides."
+        },
+        {
+          "title": "Nachtleben und Unterhaltung",
+          "text": "Zugang und Koordination mit größter Diskretion."
+        },
+        {
+          "title": "Maßgeschneiderte Aufenthalte und Erlebnisse",
+          "text": "Komplette Programme für Ihre Gruppe oder Familie."
+        },
+        {
+          "title": "Umfassende Koordination während des Aufenthalts",
+          "text": "Ein einziger Ansprechpartner von Anfang bis Ende."
+        }
+      ],
+      "note": "Kein festes Katalogangebot, keine Pakete: Jede Anfrage wird individuell geprüft."
+    },
+    "closing": {
+      "title": "Sagen Sie uns, was Sie brauchen.",
+      "text": "Schreiben Sie uns – wir prüfen Ihr Anliegen diskret.",
+      "cta": "Zum Kontaktformular",
+      "whatsapp": "WhatsApp"
+    }
   }
 }

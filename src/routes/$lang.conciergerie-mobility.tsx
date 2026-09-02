@@ -1,11 +1,30 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import { PagePlaceholder } from "@/components/PagePlaceholder";
+import { CmClosing } from "@/components/cm/CmClosing";
+import { CmHero } from "@/components/cm/CmHero";
+import { ConciergerieAreas } from "@/components/cm/ConciergerieAreas";
+import { MobilityBlocks } from "@/components/cm/MobilityBlocks";
+import { TransferForm } from "@/components/cm/TransferForm";
 import { DEFAULT_LANGUAGE, isLanguage } from "@/i18n/config";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/$lang/conciergerie-mobility")({
   head: ({ params }) =>
     pageHead("conciergerieMobility", isLanguage(params.lang) ? params.lang : DEFAULT_LANGUAGE),
-  component: () => <PagePlaceholder titleKey="pages.conciergerieMobility.title" />,
+  component: ConciergerieMobilityPage,
 });
+
+function ConciergerieMobilityPage() {
+  const { lang } = Route.useParams();
+  const language = isLanguage(lang) ? lang : DEFAULT_LANGUAGE;
+
+  return (
+    <>
+      <CmHero />
+      <MobilityBlocks />
+      <TransferForm />
+      <ConciergerieAreas />
+      <CmClosing lang={language} />
+    </>
+  );
+}

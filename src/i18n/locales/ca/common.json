@@ -331,5 +331,98 @@
         "long": "El text és massa llarg."
       }
     }
+  },
+  "cm": {
+    "hero": {
+      "alt": "Vehicle amb xofer arribant a una residència privada a l'hora blava",
+      "title": "Arribar, moure's i gaudir d'Andorra sense ocupar-se de res."
+    },
+    "mobility": {
+      "label": "Mobility",
+      "title": "Mobilitat privada, puntual i discreta.",
+      "blocks": [
+        {
+          "title": "Airport & Long-Distance Transfers",
+          "text": "Trasllats privats des de Barcelona, Tolosa, Lleida o altres punts fins a Andorra i a la inversa.",
+          "alt": "Xofer obrint la porta d'un vehicle privat a la terminal de l'aeroport al vespre"
+        },
+        {
+          "title": "Private Chauffeur",
+          "text": "Vehicle amb xofer per a desplaçaments privats, professionals, familiars o d'acompanyament.",
+          "alt": "Interior d'un vehicle amb xofer de nit"
+        },
+        {
+          "title": "Mobility in Andorra",
+          "text": "Coordinació de desplaçaments, jornades, reunions, restaurants, compres, esquí, wellness, esdeveniments i activitats.",
+          "alt": "Vehicle privat en una carretera de muntanya d'Andorra al capvespre"
+        }
+      ]
+    },
+    "transfer": {
+      "label": "Sol·licitud de transfer",
+      "title": "Reservi el seu trasllat privat.",
+      "promise": "Li confirmem disponibilitat i preu tancat en menys de 2 hores.",
+      "origin": "Origen",
+      "destination": "Destinació",
+      "date": "Data",
+      "time": "Hora",
+      "passengers": "Passatgers",
+      "luggage": "Equipatge (bultos)",
+      "flight": "Número de vol (opcional)",
+      "name": "Nom",
+      "email": "Correu electrònic",
+      "phone": "Telèfon",
+      "consent": "Accepto que JR tracti les meves dades per respondre aquesta sol·licitud.",
+      "submit": "Sol·licitar transfer",
+      "sending": "Enviant…",
+      "success": "Sol·licitud rebuda. Li confirmem disponibilitat i preu tancat en menys de 2 hores.",
+      "errors": {
+        "required": "Aquest camp és obligatori.",
+        "name": "Indiqui el seu nom.",
+        "email": "Indiqui un correu vàlid.",
+        "phone": "Indiqui un telèfon vàlid.",
+        "passengers": "Indiqui el nombre de passatgers.",
+        "luggage": "Indiqui el nombre de bultos.",
+        "consent": "Necessitem el seu consentiment per respondre-li.",
+        "long": "El text és massa llarg."
+      }
+    },
+    "concierge": {
+      "label": "Conciergerie & Experiences",
+      "title": "Tot el que envolta una bona estada.",
+      "items": [
+        {
+          "title": "Gastronomia i reserves",
+          "text": "Taules, xef privat i celebracions."
+        },
+        {
+          "title": "Wellness i benestar",
+          "text": "Spa, fisioteràpia i cura personal."
+        },
+        {
+          "title": "Activitats, neu i muntanya",
+          "text": "Esquí, camins i guies privats."
+        },
+        {
+          "title": "Oci nocturn i entreteniment",
+          "text": "Accés i coordinació amb la màxima reserva."
+        },
+        {
+          "title": "Estades i experiències a mida",
+          "text": "Programes complets per al seu grup o família."
+        },
+        {
+          "title": "Coordinació integral durant l'estada",
+          "text": "Un sol interlocutor de principi a fi."
+        }
+      ],
+      "note": "Sense catàleg tancat, sense paquets: cada petició s'estudia de manera individual."
+    },
+    "closing": {
+      "title": "Expliqui'ns què necessita.",
+      "text": "Escrigui'ns i estudiem el seu cas amb discreció.",
+      "cta": "Anar al formulari de contacte",
+      "whatsapp": "WhatsApp"
+    }
   }
 }

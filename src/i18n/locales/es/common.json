@@ -331,5 +331,98 @@
         "long": "El texto es demasiado largo."
       }
     }
+  },
+  "cm": {
+    "hero": {
+      "alt": "Vehículo con chófer llegando a una residencia privada a la hora azul",
+      "title": "Llegar, moverse y disfrutar Andorra sin ocuparse de nada."
+    },
+    "mobility": {
+      "label": "Mobility",
+      "title": "Movilidad privada, puntual y discreta.",
+      "blocks": [
+        {
+          "title": "Airport & Long-Distance Transfers",
+          "text": "Traslados privados desde Barcelona, Toulouse, Lleida u otros puntos hasta Andorra y viceversa.",
+          "alt": "Chófer abriendo la puerta de un vehículo privado en la terminal del aeropuerto al anochecer"
+        },
+        {
+          "title": "Private Chauffeur",
+          "text": "Vehículo con chófer para desplazamientos privados, profesionales, familiares o de acompañamiento.",
+          "alt": "Interior de un vehículo con chófer de noche"
+        },
+        {
+          "title": "Mobility in Andorra",
+          "text": "Coordinación de desplazamientos, jornadas, reuniones, restaurantes, compras, esquí, wellness, eventos y actividades.",
+          "alt": "Vehículo privado en una carretera de montaña en Andorra al anochecer"
+        }
+      ]
+    },
+    "transfer": {
+      "label": "Solicitud de transfer",
+      "title": "Reserve su traslado privado.",
+      "promise": "Le confirmamos disponibilidad y precio cerrado en menos de 2 horas.",
+      "origin": "Origen",
+      "destination": "Destino",
+      "date": "Fecha",
+      "time": "Hora",
+      "passengers": "Pasajeros",
+      "luggage": "Equipaje (bultos)",
+      "flight": "Número de vuelo (opcional)",
+      "name": "Nombre",
+      "email": "Email",
+      "phone": "Teléfono",
+      "consent": "Acepto que JR trate mis datos para responder a esta solicitud.",
+      "submit": "Solicitar transfer",
+      "sending": "Enviando…",
+      "success": "Solicitud recibida. Le confirmamos disponibilidad y precio cerrado en menos de 2 horas.",
+      "errors": {
+        "required": "Este campo es obligatorio.",
+        "name": "Indique su nombre.",
+        "email": "Indique un email válido.",
+        "phone": "Indique un teléfono válido.",
+        "passengers": "Indique el número de pasajeros.",
+        "luggage": "Indique el número de bultos.",
+        "consent": "Necesitamos su consentimiento para responderle.",
+        "long": "El texto es demasiado largo."
+      }
+    },
+    "concierge": {
+      "label": "Conciergerie & Experiences",
+      "title": "Todo lo que rodea a una buena estancia.",
+      "items": [
+        {
+          "title": "Gastronomía y reservas",
+          "text": "Mesas, chef privado y celebraciones."
+        },
+        {
+          "title": "Wellness y bienestar",
+          "text": "Spa, fisioterapia y cuidado personal."
+        },
+        {
+          "title": "Actividades, nieve y montaña",
+          "text": "Esquí, senderos y guías privados."
+        },
+        {
+          "title": "Ocio nocturno y entretenimiento",
+          "text": "Acceso y coordinación con la máxima reserva."
+        },
+        {
+          "title": "Estancias y experiencias a medida",
+          "text": "Programas completos para su grupo o familia."
+        },
+        {
+          "title": "Coordinación integral durante la estancia",
+          "text": "Un solo interlocutor de principio a fin."
+        }
+      ],
+      "note": "Sin catálogo cerrado, sin paquetes: cada petición se estudia de forma individual."
+    },
+    "closing": {
+      "title": "Cuéntenos qué necesita.",
+      "text": "Escríbanos y estudiamos su caso con discreción.",
+      "cta": "Ir al formulario de contacto",
+      "whatsapp": "WhatsApp"
+    }
   }
 }
