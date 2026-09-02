@@ -14,7 +14,9 @@ export function AndorraSection() {
       <div className="jr-container flex flex-col gap-10">
         <Reveal className="flex flex-col gap-5">
           <p className="jr-label">{t("about.andorra.label")}</p>
-          <h2 className="jr-display-1 jr-measure text-jr-gold">{t("about.andorra.title")}</h2>
+          <h2 className="jr-display-1 jr-measure">
+            <GoldText text={t("about.andorra.title")} />
+          </h2>
           <p className="jr-measure text-lg text-muted-foreground">{t("about.andorra.text")}</p>
         </Reveal>
 
