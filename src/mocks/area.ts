@@ -44,10 +44,10 @@ export type HomeReport = {
 };
 
 export const DEMO_PROPERTY = {
-  name: "Casa Exemple",
-  address: "Carrer Exemple, 00 — Ordino (dirección de ejemplo)",
+  name: "area.demo.propertyName",
+  address: "area.demo.propertyAddress",
   parish: "Ordino",
-  type: "Chalet",
+  type: "area.demo.propertyType",
   area: "320 m²",
   bedrooms: "4",
   wifiNetwork: "CASA-EXEMPLE",
@@ -57,10 +57,10 @@ export const DEMO_PROPERTY = {
 };
 
 export const DEMO_USERS: Record<AreaRole, { name: string; email: string }> = {
-  owner: { name: "Cliente Ejemplo", email: "cliente.ejemplo@example.com" },
-  family: { name: "Familiar Ejemplo", email: "familiar.ejemplo@example.com" },
-  manager: { name: "Gestor Ejemplo", email: "gestor.ejemplo@example.com" },
-  guest: { name: "Invitado Ejemplo", email: "invitado.ejemplo@example.com" },
+  owner: { name: "area.demo.userOwner", email: "cliente.ejemplo@example.com" },
+  family: { name: "area.demo.userFamily", email: "familiar.ejemplo@example.com" },
+  manager: { name: "area.demo.userManager", email: "gestor.ejemplo@example.com" },
+  guest: { name: "area.demo.userGuest", email: "invitado.ejemplo@example.com" },
 };
 
 const CHECKLIST_POINTS = [
@@ -103,7 +103,7 @@ export const DEMO_REPORTS: HomeReport[] = [
     id: "2026-08",
     date: "2026-08-21",
     time: "10:20",
-    technician: "Técnico Ejemplo A",
+    technician: "area.demo.technicianA",
     status: "issue",
     checklist: checklist(["heating"], ["alarm"]),
     photos: photos("2026-08-21", 6),
@@ -121,7 +121,7 @@ export const DEMO_REPORTS: HomeReport[] = [
     id: "2026-07",
     date: "2026-07-17",
     time: "09:40",
-    technician: "Técnico Ejemplo B",
+    technician: "area.demo.technicianB",
     status: "issue",
     checklist: checklist(["doors"]),
     photos: photos("2026-07-17", 5),
@@ -139,7 +139,7 @@ export const DEMO_REPORTS: HomeReport[] = [
     id: "2026-06",
     date: "2026-06-12",
     time: "11:05",
-    technician: "Técnico Ejemplo A",
+    technician: "area.demo.technicianA",
     status: "ok",
     checklist: checklist(),
     photos: photos("2026-06-12", 4),
@@ -149,7 +149,7 @@ export const DEMO_REPORTS: HomeReport[] = [
     id: "2025-12",
     date: "2025-12-19",
     time: "16:30",
-    technician: "Técnico Ejemplo B",
+    technician: "area.demo.technicianB",
     status: "issue",
     checklist: checklist(["electricity"]),
     photos: photos("2025-12-19", 3),
@@ -167,7 +167,7 @@ export const DEMO_REPORTS: HomeReport[] = [
     id: "2025-11",
     date: "2025-11-08",
     time: "10:00",
-    technician: "Técnico Ejemplo A",
+    technician: "area.demo.technicianA",
     status: "ok",
     checklist: checklist([], ["alarm"]),
     photos: photos("2025-11-08", 4),
@@ -199,10 +199,10 @@ export const DEMO_REQUESTS = [
 ];
 
 export const DEMO_CONTACTS = [
-  { id: "c1", roleKey: "concierge", name: "Oficina JR (ejemplo)" },
-  { id: "c2", roleKey: "plumber", name: "Instal·lacions Exemple" },
-  { id: "c3", roleKey: "electrician", name: "Electricitat Exemple" },
-  { id: "c4", roleKey: "emergency", name: "Servicio de ejemplo" },
+  { id: "c1", roleKey: "concierge", name: "area.demo.contactConcierge" },
+  { id: "c2", roleKey: "plumber", name: "area.demo.contactPlumber" },
+  { id: "c3", roleKey: "electrician", name: "area.demo.contactElectrician" },
+  { id: "c4", roleKey: "emergency", name: "area.demo.contactEmergency" },
 ];
 
 export const DEMO_DOCUMENTS = [
@@ -220,14 +220,14 @@ export const DEMO_INVOICES = [
 export const DEMO_SUBSCRIPTION = {
   plan: "Premium",
   renewal: "2026-10-01",
-  method: "Tarjeta terminada en 00 (ejemplo)",
+  method: "area.demo.paymentMethod",
 };
 
 export const DEMO_PEOPLE = [
-  { id: "u1", name: "Cliente Ejemplo", role: "owner" as AreaRole, until: null },
-  { id: "u2", name: "Familiar Ejemplo", role: "family" as AreaRole, until: null },
-  { id: "u3", name: "Gestor Ejemplo", role: "manager" as AreaRole, until: null },
-  { id: "u4", name: "Invitado Ejemplo", role: "guest" as AreaRole, until: "2026-09-26" },
+  { id: "u1", name: "area.demo.userOwner", role: "owner" as AreaRole, until: null },
+  { id: "u2", name: "area.demo.userFamily", role: "family" as AreaRole, until: null },
+  { id: "u3", name: "area.demo.userManager", role: "manager" as AreaRole, until: null },
+  { id: "u4", name: "area.demo.userGuest", role: "guest" as AreaRole, until: "2026-09-26" },
 ];
 
 export const DEMO_GUEST_ACCESS_UNTIL = "2026-09-26";
