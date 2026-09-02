@@ -223,7 +223,7 @@
     },
     "report": {
       "label": "Le Home Report",
-      "title": "La seule chose que vous recevez chaque mois.",
+      "title": "La <0>seule chose</0> que vous recevez chaque mois.",
       "lines": [
         "C'est le rapport que vous recevez chaque mois sur l'état de votre maison.",
         "Des photographies datées de chaque pièce et des extérieurs.",
