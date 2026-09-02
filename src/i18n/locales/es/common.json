@@ -422,7 +422,7 @@
       "note": "Sin catálogo cerrado, sin paquetes: cada petición se estudia de forma individual."
     },
     "closing": {
-      "title": "Cuéntenos qué necesita.",
+      "title": "Cuéntenos qué <gold>necesita</gold>.",
       "text": "Escríbanos y estudiamos su caso con discreción.",
       "cta": "Ir al formulario de contacto",
       "whatsapp": "WhatsApp"

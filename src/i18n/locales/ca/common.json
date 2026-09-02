@@ -422,7 +422,7 @@
       "note": "Sense catàleg tancat, sense paquets: cada petició s'estudia de manera individual."
     },
     "closing": {
-      "title": "Expliqui'ns què necessita.",
+      "title": "Expliqui'ns què <gold>necessita</gold>.",
       "text": "Escrigui'ns i estudiem el seu cas amb discreció.",
       "cta": "Anar al formulari de contacte",
       "whatsapp": "WhatsApp"
