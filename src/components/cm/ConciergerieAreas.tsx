@@ -75,7 +75,7 @@ export function ConciergerieAreas() {
       <div className="jr-container relative z-10 flex flex-col gap-10">
         <Reveal className="flex flex-col gap-4">
           <h2 className="jr-display-2 jr-measure text-jr-white">
-            <Trans i18nKey="cm.concierge.title" components={[<span className="text-jr-gold" />]} />
+            <GoldText text={t("cm.concierge.title")} />
           </h2>
         </Reveal>
 
