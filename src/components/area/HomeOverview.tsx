@@ -27,7 +27,7 @@ export function HomeOverview() {
   return (
     <div className="flex flex-col gap-8">
       <header className="flex flex-col gap-1">
-        <h1 className="jr-area-title">{t("area.home.greeting", { name: user.name })}</h1>
+        <h1 className="jr-area-title">{t("area.home.greeting", { name: t(user.name) })}</h1>
         <p className="text-muted-foreground">{t(DEMO_PROPERTY.name)}</p>
       </header>
 
