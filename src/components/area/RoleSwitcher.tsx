@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 
 import { useRole } from "@/components/area/RoleContext";
 import { LANGUAGES, LANGUAGE_LABELS, type Language } from "@/i18n/config";
+import { AREA_LANG_KEY } from "@/lib/area-lang";
 import { AREA_ROLES, type AreaRole } from "@/mocks/area";
 
 /** Demo-only control: lets anyone preview each role and language. */
