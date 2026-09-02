@@ -494,6 +494,7 @@
 @utility jr-reveal-in {
   opacity: 1;
   transform: none;
+  filter: none;
 }
 
 @layer base {
