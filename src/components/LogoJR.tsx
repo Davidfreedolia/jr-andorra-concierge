@@ -7,7 +7,7 @@ type LogoJRProps = {
 export function LogoJR({ title, className }: LogoJRProps) {
   return (
     <svg
-      viewBox="0 0 120 32"
+      viewBox="0 0 200 32"
       role="img"
       aria-label={title}
       className={className}
@@ -41,7 +41,7 @@ export function LogoJR({ title, className }: LogoJRProps) {
         fontFamily="var(--font-body)"
         fontSize="10"
         fontWeight="500"
-        letterSpacing="3"
+        letterSpacing="2.5"
       >
         HOSPITALITY
       </text>
