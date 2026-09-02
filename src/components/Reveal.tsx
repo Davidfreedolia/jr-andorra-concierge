@@ -46,6 +46,7 @@ export function Reveal({
       className={["jr-reveal", visible ? "jr-reveal-in" : "", className]
         .filter(Boolean)
         .join(" ")}
+      {...rest}
     >
       {children}
     </Tag>
