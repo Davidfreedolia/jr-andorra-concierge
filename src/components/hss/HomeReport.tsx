@@ -26,7 +26,7 @@ export function HomeReport() {
           loading="lazy"
           width={1280}
           height={1600}
-          className="w-full object-cover"
+          className="jr-photo-lift w-full object-cover"
         />
       </div>
     </section>

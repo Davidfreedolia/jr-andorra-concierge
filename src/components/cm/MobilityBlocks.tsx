@@ -33,7 +33,7 @@ export function MobilityBlocks() {
               height={960}
               loading="lazy"
               decoding="async"
-              className={`w-full object-cover ${index % 2 === 1 ? "lg:order-2" : ""}`}
+              className={`jr-photo-lift w-full object-cover ${index % 2 === 1 ? "lg:order-2" : ""}`}
             />
             <div className="flex min-w-0 flex-col gap-4">
               <h3 className="font-display text-3xl text-jr-gold lg:text-4xl">{block.title}</h3>

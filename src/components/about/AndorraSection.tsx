@@ -31,7 +31,7 @@ export function AndorraSection() {
               height={1088}
               loading="lazy"
               decoding="async"
-              className="w-full object-cover"
+              className="jr-photo-lift w-full object-cover"
             />
           </picture>
         </Reveal>
