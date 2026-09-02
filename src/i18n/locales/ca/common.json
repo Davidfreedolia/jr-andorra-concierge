@@ -283,8 +283,8 @@
     },
     "form": {
       "label": "Sol·licitar valoració",
-      "title": "Parlem de la seva propietat.",
-      "promise": "Li responem en menys de 24 hores.",
+      "title": "<0>Parlem</0> de la seva propietat.",
+      "promise": "Li respondrem en menys de 24 hores.",
       "name": "Nom",
       "email": "Email",
       "phone": "Telèfon",

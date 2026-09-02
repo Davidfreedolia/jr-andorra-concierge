@@ -283,7 +283,7 @@
     },
     "form": {
       "label": "Demander une évaluation",
-      "title": "Parlons de votre propriété.",
+      "title": "<0>Parlons</0> de votre propriété.",
       "promise": "Nous vous répondons en moins de 24 heures.",
       "name": "Nom",
       "email": "Email",

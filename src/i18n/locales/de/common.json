@@ -283,7 +283,7 @@
     },
     "form": {
       "label": "Einschätzung anfragen",
-      "title": "Sprechen wir über Ihre Immobilie.",
+      "title": "<0>Sprechen wir</0> über Ihre Immobilie.",
       "promise": "Wir antworten in weniger als 24 Stunden.",
       "name": "Name",
       "email": "E-Mail",
