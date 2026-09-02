@@ -55,7 +55,7 @@
   },
   "home": {
     "hero": {
-      "title": "Your home. Your time. Your Andorra.",
+      "title": "Your <1>home</1>. Your <2>time</2>. Your <3>Andorra</3>.",
       "subtitle": "Private Home Care · Conciergerie · Mobility · Experiences",
       "ctaHome": "Home Stay Safe",
       "ctaMobility": "Conciergerie & Mobility",
