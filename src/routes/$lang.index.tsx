@@ -21,7 +21,7 @@ export const Route = createFileRoute("/$lang/")({
       ...head,
       links: [
         ...head.links,
-        { rel: "preload", as: "image", href: "/hero.jpg", fetchpriority: "high" },
+        { rel: "preload", as: "image", href: "/hero.jpg", fetchPriority: "high" },
       ],
     };
   },
