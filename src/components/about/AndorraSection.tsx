@@ -26,7 +26,7 @@ export function AndorraSection() {
       <div className="jr-container relative w-full">
         <Reveal className="mx-auto max-w-3xl text-center">
           <div className="jr-panel">
-            <p className="jr-label text-jr-gold">{t("about.andorra.label")}</p>
+            <p className="jr-label !text-sm md:!text-base">{t("about.andorra.label")}</p>
             <h2 className="jr-display-1 mt-5 text-jr-white">
               <GoldText text={t("about.andorra.title")} />
             </h2>
