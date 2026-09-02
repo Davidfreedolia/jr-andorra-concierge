@@ -363,7 +363,7 @@
     },
     "transfer": {
       "label": "Transferanfrage",
-      "title": "Buchen Sie Ihren privaten Transfer.",
+      "title": "Buchen Sie Ihren <gold>privaten</gold> Transfer.",
       "promise": "Wir bestätigen Verfügbarkeit und Festpreis in weniger als 2 Stunden.",
       "origin": "Abholort",
       "destination": "Zielort",
