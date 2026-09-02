@@ -25,15 +25,21 @@ export function JourneyDiagram() {
 
         <ol className="jr-journey">
           {states.map((state, index) => (
-            <li key={state} className="jr-journey-step">
+            <Reveal
+              key={state}
+              as="li"
+              delay={index * 160}
+              className="jr-journey-step"
+            >
               <span className="jr-journey-dot" aria-hidden="true" />
               <span className="font-display text-2xl uppercase text-jr-bone lg:text-3xl">
                 {state}
               </span>
               <span className="jr-label mt-2 block text-muted-foreground">{services[index]}</span>
-            </li>
+            </Reveal>
           ))}
         </ol>
+
       </div>
     </section>
   );
