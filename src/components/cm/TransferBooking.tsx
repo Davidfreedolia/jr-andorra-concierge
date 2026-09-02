@@ -125,11 +125,6 @@ export function TransferBooking() {
                         {cells.map((day, index) => {
                           if (day === null)
                             return <span key={`empty-${index}`} className="min-h-[var(--jr-tap)]" />;
-                          const isSelected =
-                            selected &&
-                            selected.getDate() === day &&
-                            selected.getMonth() === cursor.getMonth() &&
-                            selected.getFullYear() === cursor.getFullYear();
                           const disabled = isPast(day);
                           return (
                             <button
