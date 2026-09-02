@@ -1,5 +1,3 @@
-import { useEffect, useRef, useState } from "react";
-
 import { Link } from "@tanstack/react-router";
 import { Trans, useTranslation } from "react-i18next";
 
@@ -13,49 +11,15 @@ import type { Language } from "@/i18n/config";
 
 type Card = { title: string; text: string };
 
-function useParallax(speed = 0.55) {
-  const ref = useRef<HTMLElement>(null);
-  const [offset, setOffset] = useState(0);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    let raf = 0;
-
-    const onScroll = () => {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
-        const rect = el.getBoundingClientRect();
-        const viewportHeight = window.innerHeight;
-        const progress = (viewportHeight - rect.top) / (viewportHeight + rect.height);
-        const clamped = Math.max(0, Math.min(1, progress));
-        setOffset((clamped - 0.5) * speed * 100);
-      });
-    };
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      cancelAnimationFrame(raf);
-    };
-  }, [speed]);
-
-  return { ref, offset };
-}
-
 export function MobilityCards({ lang }: { lang: Language }) {
   const { t } = useTranslation();
   const cards = tList<Card>(t, "home.mobility.cards");
-  const { ref, offset } = useParallax();
 
   return (
-    <section ref={ref} className="jr-section relative overflow-hidden">
-      {/* Background: snowy mountain road with luxury SUV — video with parallax */}
+    <section className="jr-section relative overflow-hidden">
+      {/* Background: snowy mountain road with luxury SUV — fixed video */}
       <div
-        className="absolute inset-x-0 -top-[30%] -bottom-[30%] -z-20"
-        style={{ transform: `translate3d(0, ${offset.toFixed(2)}%, 0)` }}
+        className="absolute inset-0 -z-20"
         aria-hidden="true"
       >
         <video
@@ -69,7 +33,6 @@ export function MobilityCards({ lang }: { lang: Language }) {
           className="h-full w-full object-cover jr-photo-lift"
         />
       </div>
-
 
       {/* Dark reading veil */}
       <div
