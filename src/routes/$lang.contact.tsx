@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { CompanyDetails } from "@/components/contact/CompanyDetails";
 import { ContactForm } from "@/components/contact/ContactForm";
+import { ContactHero } from "@/components/contact/ContactHero";
 import { DEFAULT_LANGUAGE, isLanguage } from "@/i18n/config";
 import { pageHead } from "@/lib/seo";
 
@@ -14,6 +15,7 @@ export const Route = createFileRoute("/$lang/contact")({
 function ContactPage() {
   return (
     <>
+      <ContactHero />
       <ContactForm />
       <CompanyDetails />
     </>
