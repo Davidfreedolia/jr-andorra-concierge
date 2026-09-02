@@ -553,5 +553,274 @@
     "assessment": "Solicitar valoración",
     "whatsapp": "WhatsApp",
     "whatsappAria": "Escribir por WhatsApp"
+  },
+  "area": {
+    "demo": "Interfaz provisional con datos de ejemplo.",
+    "roleLabel": "Ver como",
+    "langLabel": "Idioma",
+    "roles": {
+      "owner": "Titular",
+      "family": "Familiar",
+      "manager": "Gestor",
+      "guest": "Invitado"
+    },
+    "nav": {
+      "home": "Mi casa",
+      "reports": "Informes",
+      "arrival": "Llegada",
+      "requests": "Peticiones",
+      "property": "La casa",
+      "billing": "Facturación",
+      "people": "Personas",
+      "guest": "Vista invitado",
+      "main": "Principal",
+      "more": "Más",
+      "menu": "Navegación del área"
+    },
+    "restricted": "Esta sección no está disponible para su perfil.",
+    "download": "Descargar",
+    "close": "Cerrar",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "access": {
+      "title": "Área privada",
+      "intro": "Le enviamos un enlace de acceso a su correo.",
+      "email": "Email",
+      "submit": "Enviar enlace",
+      "sent": "Si su dirección consta en nuestra oficina, recibirá el enlace en unos minutos.",
+      "error": "Indique un email válido.",
+      "preview": "Entrar a la demostración",
+      "backdropAlt": "Residencia en Andorra a la hora azul"
+    },
+    "home": {
+      "greeting": "Buenos días, {{name}}",
+      "property": "{{property}}",
+      "nextVisit": "Próxima visita",
+      "lastReport": "Último informe",
+      "lastReportLink": "Ver informe",
+      "status": "Estado de la casa",
+      "statusOk": "Todo correcto",
+      "statusIssue": "Incidencia abierta",
+      "level": "Su nivel de servicio",
+      "quickArrival": "Anunciar una llegada",
+      "quickRequest": "Solicitar un servicio",
+      "timeline": "Últimos movimientos",
+      "timelineEmpty": "Todavía no hay movimientos registrados. Aparecerán aquí tras la próxima visita."
+    },
+    "timeline": {
+      "visit": "Visita realizada",
+      "report": "Informe publicado",
+      "issue": "Incidencia registrada",
+      "arrival": "Llegada anunciada",
+      "request": "Petición recibida"
+    },
+    "reports": {
+      "title": "Informes",
+      "intro": "Cada visita queda documentada. El más reciente, arriba.",
+      "year": "Año",
+      "allYears": "Todos",
+      "date": "Fecha",
+      "technician": "Técnico",
+      "photos": "Fotografías",
+      "status": "Estado",
+      "ok": "Correcto",
+      "issue": "Con incidencia",
+      "open": "Abrir informe",
+      "empty": "Todavía no hay informes. El primero llegará tras la próxima visita.",
+      "emptyYear": "No hay informes de este año. Pruebe con otro."
+    },
+    "report": {
+      "back": "Volver a informes",
+      "title": "Home Report",
+      "property": "Propiedad",
+      "address": "Dirección",
+      "visit": "Visita",
+      "by": "Realizada por",
+      "download": "Descargar en PDF",
+      "checklist": "Checklist de la visita",
+      "states": {
+        "ok": "Correcto",
+        "attention": "A revisar",
+        "na": "No aplica"
+      },
+      "points": {
+        "doors": "Puertas, ventanas y cierres",
+        "water": "Agua y fugas",
+        "heating": "Calefacción y agua caliente",
+        "electricity": "Electricidad y cuadro",
+        "humidity": "Humedad y ventilación",
+        "appliances": "Electrodomésticos",
+        "exterior": "Exterior y accesos",
+        "alarm": "Alarma y cámaras"
+      },
+      "photosTitle": "Fotografías de la visita",
+      "photosEmpty": "Esta visita no incluye fotografías.",
+      "photoOf": "Fotografía {{index}} de {{total}}",
+      "issuesTitle": "Incidencias detectadas",
+      "issuesEmpty": "No se detectó ninguna incidencia en esta visita.",
+      "issueStatus": {
+        "open": "Abierta",
+        "inProgress": "En gestión",
+        "resolved": "Resuelta"
+      },
+      "followUp": "Seguimiento",
+      "issueTexts": {
+        "boiler": "Presión de la caldera por debajo del valor recomendado.",
+        "terrace": "Junta de la puerta de la terraza desgastada.",
+        "lamp": "Punto de luz del pasillo sin funcionar."
+      },
+      "followUps": {
+        "notified": "Comunicado a la propiedad. Presupuesto solicitado al técnico.",
+        "scheduled": "Intervención prevista en la próxima visita.",
+        "done": "Sustituido y comprobado en la visita siguiente."
+      },
+      "notFound": "No encontramos este informe. Vuelva a la lista de informes."
+    },
+    "zones": {
+      "entrance": "Entrada",
+      "living": "Salón",
+      "kitchen": "Cocina",
+      "bedroom": "Dormitorio principal",
+      "bathroom": "Baño",
+      "exterior": "Exterior",
+      "technical": "Sala técnica"
+    },
+    "arrival": {
+      "title": "Anunciar una llegada",
+      "intro": "Con conocer sus fechas basta: preparamos la casa antes de que llegue.",
+      "checkIn": "Fecha de entrada",
+      "checkOut": "Fecha de salida",
+      "guests": "Número de personas",
+      "pet": "Vienen con mascota",
+      "transfer": "Necesitan transfer",
+      "fridge": "Nevera abastecida",
+      "notes": "Notas",
+      "submit": "Anunciar llegada",
+      "sent": "Llegada anunciada. Le confirmamos la preparación en menos de 24 horas.",
+      "listTitle": "Llegadas anunciadas",
+      "empty": "Todavía no hay llegadas anunciadas. Cuando anuncie una, aparecerá aquí con su estado.",
+      "prep": {
+        "received": "Recibida",
+        "preparing": "En preparación",
+        "ready": "Casa preparada"
+      },
+      "nights": "{{count}} noches",
+      "errors": {
+        "date": "Indique una fecha.",
+        "order": "La salida debe ser posterior a la entrada.",
+        "guests": "Indique cuántas personas serán.",
+        "long": "El texto es demasiado largo."
+      }
+    },
+    "requests": {
+      "title": "Solicitar un servicio",
+      "intro": "Díganos qué necesita y nos ocupamos de la gestión.",
+      "type": "Tipo de servicio",
+      "typePlaceholder": "Seleccione una opción",
+      "types": {
+        "restaurant": "Restaurante",
+        "wellness": "Wellness",
+        "ski": "Esquí",
+        "chauffeur": "Chófer",
+        "shopping": "Compras",
+        "other": "Otro"
+      },
+      "date": "Fecha",
+      "people": "Número de personas",
+      "details": "Detalles",
+      "submit": "Enviar petición",
+      "sent": "Petición recibida. La verá en la lista con su estado.",
+      "listTitle": "Sus peticiones",
+      "empty": "Todavía no hay peticiones. Cuando solicite un servicio, aparecerá aquí.",
+      "status": {
+        "received": "Recibida",
+        "inProgress": "En gestión",
+        "confirmed": "Confirmada"
+      },
+      "errors": {
+        "required": "Seleccione una opción.",
+        "date": "Indique una fecha.",
+        "people": "Indique cuántas personas serán.",
+        "details": "Escriba unas líneas sobre su petición.",
+        "long": "El texto es demasiado largo."
+      }
+    },
+    "property": {
+      "title": "La casa",
+      "details": "Datos de la casa",
+      "detailLabels": {
+        "name": "Nombre",
+        "address": "Dirección",
+        "parish": "Parroquia",
+        "type": "Tipo",
+        "area": "Superficie",
+        "bedrooms": "Dormitorios"
+      },
+      "instructions": "Instrucciones prácticas",
+      "wifi": "Wifi",
+      "wifiNetwork": "Red",
+      "wifiPassword": "Contraseña",
+      "contacts": "Contactos útiles",
+      "documents": "Documentos",
+      "documentsEmpty": "Todavía no hay documentos. Los iremos añadiendo con cada visita.",
+      "ownerOnly": "Los datos administrativos solo son visibles para el titular.",
+      "instructionsList": [
+        "La calefacción se controla desde el termostato del recibidor.",
+        "El agua general se cierra en la sala técnica, junto a la caldera.",
+        "La recogida de residuos es los martes y los viernes por la mañana.",
+        "El mando del garaje está en el cajón de la entrada."
+      ],
+      "contactRoles": {
+        "concierge": "Conserjería JR",
+        "plumber": "Fontanería",
+        "electrician": "Electricidad",
+        "emergency": "Emergencias"
+      },
+      "documentsList": {
+        "insurance": "Póliza de seguro (ejemplo)",
+        "manual": "Manual de la caldera (ejemplo)",
+        "inventory": "Inventario de la casa (ejemplo)"
+      }
+    },
+    "billing": {
+      "title": "Facturación",
+      "invoices": "Facturas",
+      "date": "Fecha",
+      "concept": "Concepto",
+      "amount": "Importe",
+      "statusLabel": "Estado",
+      "paid": "Pagada",
+      "pending": "Pendiente",
+      "subscription": "Suscripción",
+      "plan": "Nivel de servicio",
+      "renewal": "Próxima renovación",
+      "method": "Método de pago",
+      "empty": "Todavía no hay facturas. La primera se emitirá tras el primer mes de servicio.",
+      "concepts": {
+        "monthly": "Servicio mensual",
+        "extra": "Servicio adicional"
+      }
+    },
+    "people": {
+      "title": "Personas con acceso",
+      "intro": "Quién puede ver esta casa y con qué alcance.",
+      "person": "Persona",
+      "role": "Rol",
+      "validity": "Validez",
+      "permanent": "Acceso permanente",
+      "until": "Hasta el {{date}}",
+      "invite": "Invitar a alguien",
+      "inviteNote": "La invitación se envía por correo con una fecha de caducidad.",
+      "empty": "Solo usted tiene acceso a esta casa por ahora."
+    },
+    "guest": {
+      "welcome": "Bienvenido a {{property}}",
+      "intro": "Todo lo que necesita para su estancia, en una pantalla.",
+      "wifi": "Wifi",
+      "instructions": "Instrucciones prácticas",
+      "concierge": "Contactar con el conserje",
+      "expiry": "Su acceso está disponible hasta el {{date}}.",
+      "note": "Si necesita cualquier cosa durante su estancia, escríbanos."
+    }
   }
 }
