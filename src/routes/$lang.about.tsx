@@ -17,6 +17,7 @@ export const Route = createFileRoute("/$lang/about")({
 function AboutPage() {
   return (
     <>
+      <AboutHero />
       <FounderLetter />
       <Milestones />
       <Principles />
