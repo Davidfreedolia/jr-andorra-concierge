@@ -15,21 +15,19 @@ export function HssIncludes() {
           <h2 className="jr-display-2 jr-measure text-jr-gold">{t("hss.includes.title")}</h2>
         </Reveal>
 
-        <Reveal className="jr-panel">
-          <ul className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {items.map((item, index) => (
-              <Reveal
-                as="li"
-                key={item}
-                delay={index * 70}
-                className="flex min-w-0 flex-col items-start gap-4"
-              >
-                <IconTile index={index} />
-                <p className="text-lg text-jr-bone">{item}</p>
-              </Reveal>
-            ))}
-          </ul>
-        </Reveal>
+        <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {items.map((item, index) => (
+            <Reveal
+              as="li"
+              key={item}
+              delay={index * 110}
+              className="jr-panel jr-card-hover flex min-w-0 flex-col items-start gap-4"
+            >
+              <IconTile index={index} />
+              <p className="text-lg text-jr-bone">{item}</p>
+            </Reveal>
+          ))}
+        </ul>
       </div>
     </section>
   );
