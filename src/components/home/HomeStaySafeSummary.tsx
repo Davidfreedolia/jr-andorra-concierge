@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 import { IconTile } from "@/components/IconTile";
 import { Reveal } from "@/components/Reveal";
@@ -15,7 +15,9 @@ export function HomeStaySafeSummary({ lang }: { lang: Language }) {
     <section className="jr-section">
       <div className="jr-container flex flex-col gap-10">
         <Reveal>
-          <h2 className="jr-display-2 jr-measure text-jr-gold">{t("home.hss.title")}</h2>
+          <h2 className="jr-display-2 jr-measure text-jr-white">
+            <Trans i18nKey="home.hss.title" components={{ gold: <span className="text-jr-gold" /> }} />
+          </h2>
         </Reveal>
 
         <Reveal className="jr-panel">
