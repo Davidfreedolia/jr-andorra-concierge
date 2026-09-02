@@ -1,4 +1,6 @@
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
+
+import { GoldText } from "@/components/GoldText";
 
 /**
  * The site-wide hero treatment, taken from the Home hero:
@@ -51,13 +53,7 @@ export function PageHero({
       <div className="jr-container relative w-full pb-16 lg:pb-24">
         <p className="jr-label text-jr-gold">{t(labelKey)}</p>
         <h1 className="jr-display-1 jr-measure mt-4 text-jr-white">
-          <Trans
-            i18nKey={titleKey}
-            components={[
-              <span className="text-jr-gold" />,
-              <span className="text-jr-gold" />,
-            ]}
-          />
+          <GoldText text={t(titleKey)} />
         </h1>
       </div>
     </section>

@@ -203,7 +203,7 @@
   },
   "hss": {
     "hero": {
-      "title": "Votre maison, <0>soignée</0> pendant votre absence.",
+      "title": "Votre maison, <gold>soignée</gold> pendant votre absence.",
       "alt": "Résidence de montagne fermée, lumière chaude à l'intérieur"
     },
     "promise": {
@@ -341,7 +341,7 @@
   "cm": {
     "hero": {
       "alt": "Voiture avec chauffeur arrivant devant une résidence privée à l'heure bleue",
-      "title": "Arriver, se déplacer et <0>profiter d'Andorre</0> sans s'occuper de rien."
+      "title": "Arriver, se déplacer et <gold>profiter d'Andorre</gold> sans s'occuper de rien."
     },
     "mobility": {
       "label": "Mobility",
@@ -521,12 +521,12 @@
     },
     "andorra": {
       "label": "Andorre",
-      "title": "Pourquoi ici et pourquoi maintenant",
+      "title": "Pourquoi <gold>ici</gold> et pourquoi <gold>maintenant</gold>",
       "text": "L'Andorre réunit la montagne, la tranquillité et une communauté internationale qui y passe des séjours de plus en plus longs. Les maisons s'occupent par semaines, non par mois, et demandent quelqu'un qui les maintienne vivantes entre deux séjours. Nous vivons et travaillons ici : nous connaissons les vallées, les métiers et les personnes de confiance nécessaires pour que tout fonctionne.",
       "imageAlt": "Vallée d'Andorre à l'heure bleue avec une résidence éclairée entre des montagnes enneigées"
     },
     "hero": {
-      "title": "<0>Trente ans</0> <1>au service</1> des maisons et des personnes",
+      "title": "<gold>Trente ans</gold> <gold>au service</gold> des maisons et des personnes",
       "alt": "Vallées d'Andorre au crépuscule, lumière chaude sur la montagne"
     }
   },
