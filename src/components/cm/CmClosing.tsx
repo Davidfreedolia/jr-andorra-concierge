@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 
 import { GoldText } from "@/components/GoldText";
+import { tList } from "@/i18n/list";
 import { WHATSAPP_URL } from "@/lib/contact";
 import closingImage from "@/assets/cm-andorra.jpg";
 
