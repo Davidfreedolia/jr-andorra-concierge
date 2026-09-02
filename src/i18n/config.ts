@@ -46,6 +46,7 @@ if (!i18n.isInitialized) {
     fallbackLng: DEFAULT_LANGUAGE,
     defaultNS: "common",
     supportedLngs: LANGUAGES as unknown as string[],
+    returnObjects: true,
     interpolation: { escapeValue: false },
   });
 }

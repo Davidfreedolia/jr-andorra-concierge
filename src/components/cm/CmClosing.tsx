@@ -19,20 +19,13 @@ export function CmClosing({ lang }: { lang: Language }) {
             <GoldText text={t("cm.closing.title")} />
           </h2>
           <div className="flex flex-col gap-3">
-            {(() => {
-              const raw = t("cm.closing.lines", { returnObjects: true }) as unknown;
-              const lines = Array.isArray(raw)
-                ? (raw as string[])
-                : typeof raw === "string"
-                  ? [raw]
-                  : [];
-              return lines.map((line, idx) => (
-                <p key={idx} className="jr-measure text-muted-foreground">
-                  {line}
-                </p>
-              ));
-            })()}
+            {tList<string>(t, "cm.closing.lines").map((line, idx) => (
+              <p key={idx} className="jr-measure text-muted-foreground">
+                {line}
+              </p>
+            ))}
           </div>
+
 
           <div className="flex flex-col gap-4 sm:flex-row">
             <Link to="/$lang/contact" params={{ lang }} className="jr-button">
