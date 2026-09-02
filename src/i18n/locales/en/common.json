@@ -160,7 +160,7 @@
     },
     "about": {
       "label": "Jaume Roca",
-      "title": "One office, one person you can trust.",
+      "title": "One office, <0>one person you can trust</0>.",
       "lines": [
         "I work with a limited number of families and owners.",
         "Every home has its rhythm; my work is to learn it and respect it.",

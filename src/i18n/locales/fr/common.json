@@ -160,7 +160,7 @@
     },
     "about": {
       "label": "Jaume Roca",
-      "title": "Un bureau, une personne de confiance.",
+      "title": "Un bureau, <0>une personne de confiance</0>.",
       "lines": [
         "Je travaille avec un nombre limité de familles et de propriétaires.",
         "Chaque maison a son rythme ; mon travail est de le connaître et de le respecter.",
