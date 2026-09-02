@@ -233,7 +233,7 @@
     },
     "levels": {
       "label": "Tres niveles",
-      "title": "Essential, Premium y Signature.",
+      "title": "<0>Essential</0>, <0>Premium</0> y <0>Signature</0>.",
       "note": "Cada propiedad es distinta. Le proponemos el nivel adecuado tras conocerla.",
       "featured": "Más elegido",
       "items": [
@@ -269,7 +269,8 @@
             "Disponibilidad ampliada"
           ]
         }
-      ]
+      ],
+      "cta": "Solicitar valoración"
     },
     "keys": {
       "label": "Custodia de llaves",

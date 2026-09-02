@@ -233,7 +233,7 @@
     },
     "levels": {
       "label": "Three levels",
-      "title": "Essential, Premium and Signature.",
+      "title": "<0>Essential</0>, <0>Premium</0> and <0>Signature</0>.",
       "note": "Every property is different. We propose the right level once we know yours.",
       "featured": "Most chosen",
       "items": [
@@ -269,7 +269,8 @@
             "Extended availability"
           ]
         }
-      ]
+      ],
+      "cta": "Request a quote"
     },
     "keys": {
       "label": "Key custody",
