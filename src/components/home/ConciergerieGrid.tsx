@@ -1,10 +1,12 @@
 import { useTranslation } from "react-i18next";
 
+import { tList } from "@/i18n/list";
+
 type Item = { title: string; text: string };
 
 export function ConciergerieGrid() {
   const { t } = useTranslation();
-  const items = t("home.concierge.items", { returnObjects: true }) as Item[];
+  const items = tList<Item>(t, "home.concierge.items");
 
   return (
     <section className="jr-section jr-surface-bone">

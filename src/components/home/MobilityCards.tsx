@@ -1,13 +1,15 @@
 import { Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 
+import { tList } from "@/i18n/list";
+
 import type { Language } from "@/i18n/config";
 
 type Card = { title: string; text: string };
 
 export function MobilityCards({ lang }: { lang: Language }) {
   const { t } = useTranslation();
-  const cards = t("home.mobility.cards", { returnObjects: true }) as Card[];
+  const cards = tList<Card>(t, "home.mobility.cards");
 
   return (
     <section className="jr-section">

@@ -198,5 +198,138 @@
       "sent": "Vielen Dank. Wir antworten Ihnen persönlich.",
       "required": "Pflichtfeld"
     }
+  },
+  "hss": {
+    "hero": {
+      "title": "Ihr Haus, betreut in Ihrer Abwesenheit.",
+      "alt": "Geschlossene Bergresidenz mit warmem Licht im Inneren"
+    },
+    "promise": {
+      "quote": "Kommen Sie an und entspannen Sie sich. Alles ist vorbereitet.",
+      "line": "Ein einziger Ansprechpartner für Ihre Immobilie in Andorra, das ganze Jahr über."
+    },
+    "includes": {
+      "label": "Was enthalten ist",
+      "title": "Die Leistung, Punkt für Punkt.",
+      "items": [
+        "Sichere und kontrollierte Schlüsselverwahrung",
+        "Geplante Besuche mit Kontrolle innen und außen",
+        "Fotografischer Home Report",
+        "Koordination von Reinigung und Dienstleistern",
+        "Vorbereitung der Immobilie vor Ihrer Ankunft",
+        "Kommunikation und Nachverfolgung von Vorfällen"
+      ]
+    },
+    "report": {
+      "label": "Der Home Report",
+      "title": "Das Einzige, was Sie jeden Monat erhalten.",
+      "lines": [
+        "Es ist der Bericht, den Sie monatlich zum Zustand Ihres Hauses erhalten.",
+        "Datierte Fotografien jedes Raumes und der Außenbereiche.",
+        "Alle festgestellten Vorfälle, verfolgt bis zur Behebung."
+      ],
+      "alt": "Gedruckter Monatsbericht in einem schlichten Rahmen"
+    },
+    "levels": {
+      "label": "Drei Stufen",
+      "title": "Essential, Premium und Signature.",
+      "note": "Jede Immobilie ist anders. Wir schlagen Ihnen die passende Stufe vor, sobald wir sie kennen.",
+      "featured": "Am häufigsten gewählt",
+      "items": [
+        {
+          "name": "Essential",
+          "summary": "Die wesentliche Betreuung eines geschlossenen Hauses.",
+          "features": [
+            "Schlüsselverwahrung",
+            "Monatlicher Kontrollbesuch",
+            "Fotografischer Home Report",
+            "Benachrichtigung bei Vorfällen"
+          ]
+        },
+        {
+          "name": "Premium",
+          "summary": "Häufige Kontrolle und Vorbereitung jeder Ankunft.",
+          "features": [
+            "Alles aus Essential",
+            "Besuche alle zwei Wochen",
+            "Koordination von Reinigung und Dienstleistern",
+            "Vorbereitung vor Ihrer Ankunft",
+            "Postbearbeitung"
+          ]
+        },
+        {
+          "name": "Signature",
+          "summary": "Durchgehende Betreuung und vollständige Koordination.",
+          "features": [
+            "Alles aus Premium",
+            "Wöchentliche Besuche",
+            "Begleitung von Bauarbeiten und technischen Diensten",
+            "Koordination mit Conciergerie und Mobility",
+            "Erweiterte Verfügbarkeit"
+          ]
+        }
+      ]
+    },
+    "keys": {
+      "label": "Schlüsselverwahrung",
+      "title": "Wer Ihre Schlüssel hat, und wann.",
+      "lines": [
+        "Jeder Zugang zur Immobilie wird mit Datum, Uhrzeit und Grund erfasst.",
+        "Vollständige Nachvollziehbarkeit: Sie wissen stets, wer eingetreten ist und warum.",
+        "Kein Dienstleister betritt das Haus ohne Genehmigung und Aufsicht."
+      ]
+    },
+    "form": {
+      "label": "Einschätzung anfragen",
+      "title": "Sprechen wir über Ihre Immobilie.",
+      "promise": "Wir antworten in weniger als 24 Stunden.",
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "lang": "Bevorzugte Sprache",
+      "propertyType": "Art der Immobilie",
+      "parish": "Gemeinde",
+      "area": "Ungefähre Fläche (m²)",
+      "bedrooms": "Anzahl der Schlafzimmer",
+      "frequency": "Gewünschte Häufigkeit",
+      "arrival": "Datum Ihrer nächsten Ankunft",
+      "message": "Nachricht",
+      "consent": "Ich bin damit einverstanden, dass JR meine Daten zur Beantwortung dieser Anfrage verarbeitet.",
+      "select": "Bitte auswählen",
+      "submit": "Anfrage senden",
+      "sending": "Wird gesendet…",
+      "success": "Anfrage erhalten. Wir antworten in weniger als 24 Stunden.",
+      "propertyTypes": [
+        "Wohnung",
+        "Haus",
+        "Chalet",
+        "Andere"
+      ],
+      "parishes": [
+        "Andorra la Vella",
+        "Escaldes-Engordany",
+        "Encamp",
+        "La Massana",
+        "Ordino",
+        "Sant Julià de Lòria",
+        "Canillo"
+      ],
+      "frequencies": [
+        "Wöchentlich",
+        "Alle zwei Wochen",
+        "Monatlich",
+        "Noch festzulegen"
+      ],
+      "errors": {
+        "name": "Bitte geben Sie Ihren Namen an.",
+        "email": "Bitte geben Sie eine gültige E-Mail an.",
+        "phone": "Bitte geben Sie eine gültige Telefonnummer an.",
+        "required": "Dieses Feld ist erforderlich.",
+        "area": "Bitte geben Sie eine gültige Fläche an.",
+        "bedrooms": "Bitte geben Sie eine gültige Zahl an.",
+        "consent": "Wir benötigen Ihre Einwilligung, um antworten zu können.",
+        "long": "Der Text ist zu lang."
+      }
+    }
   }
 }
