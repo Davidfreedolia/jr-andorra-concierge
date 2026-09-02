@@ -1,4 +1,6 @@
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
+
+import { GoldText } from "@/components/GoldText";
 
 /**
  * The site-wide hero treatment, taken from the Home hero:
