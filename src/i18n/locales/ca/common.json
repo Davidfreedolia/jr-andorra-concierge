@@ -424,5 +424,134 @@
       "cta": "Anar al formulari de contacte",
       "whatsapp": "WhatsApp"
     }
+  },
+  "about": {
+    "letter": {
+      "label": "Carta del fundador",
+      "title": "Una oficina privada, un únic interlocutor",
+      "paragraphs": [
+        "He passat tota la meva vida professional tenint cura de cases que no són meves i de persones que confien que tot sigui al seu lloc.",
+        "Vaig crear JR per oferir a Andorra allò que sempre vaig trobar a faltar: una oficina discreta que respon, s'anticipa i no cal recordar.",
+        "No treballo amb catàlegs ni amb processos anònims: conec cada casa, cada clau i cada preferència.",
+        "El meu compromís és senzill: que vostè arribi i es relaxi, i que en la seva absència res quedi desatès."
+      ],
+      "signature": "Jaume Roca",
+      "role": "Fundador",
+      "portraitAlt": "Retrat sobri de Jaume Roca, fundador de JR Hospitality, en un interior de llum càlida"
+    },
+    "milestones": {
+      "label": "Trenta anys",
+      "title": "Una trajectòria en tres fites",
+      "items": [
+        {
+          "period": "Els primers anys",
+          "title": "Hoteleria d'alta gamma",
+          "text": "Formació en cases exigents, on el detall s'aprèn servint."
+        },
+        {
+          "period": "L'etapa de direcció",
+          "title": "Direcció d'operacions i experiència de client",
+          "text": "Anys coordinant equips, proveïdors i estàndards per a clients internacionals."
+        },
+        {
+          "period": "Avui",
+          "title": "Oficina privada a Andorra",
+          "text": "Un servei propi, de tracte directe, per a propietaris de segona residència i clients premium."
+        }
+      ]
+    },
+    "principles": {
+      "label": "Els principis",
+      "title": "Quatre maneres de treballar",
+      "items": [
+        {
+          "title": "Confiança",
+          "line": "Les claus d'una casa es lliuren un sol cop; es cuiden sempre."
+        },
+        {
+          "title": "Discreció",
+          "line": "El que passa a casa seva no es comenta enlloc."
+        },
+        {
+          "title": "Excel·lència",
+          "line": "Un estàndard constant, no un esforç puntual."
+        },
+        {
+          "title": "Atenció personalitzada",
+          "line": "Un únic interlocutor que coneix casa seva i les seves preferències."
+        }
+      ]
+    },
+    "andorra": {
+      "label": "Andorra",
+      "title": "Per què aquí i per què ara",
+      "text": "Andorra reuneix muntanya, tranquil·litat i una comunitat internacional que hi passa temporades cada cop més llargues. Les cases s'ocupen per setmanes, no per mesos, i necessiten algú que les mantingui vives entre estada i estada. Hi vivim i hi treballem: coneixem les valls, els oficis i les persones de confiança que calen perquè tot funcioni.",
+      "imageAlt": "Vall d'Andorra a l'hora blava amb una residència il·luminada entre muntanyes nevades"
+    }
+  },
+  "contact": {
+    "label": "Contacte",
+    "title": "Parlem-ne",
+    "intro": "Expliqui'ns què necessita i li proposem la manera més discreta de resoldre-ho.",
+    "promise": "Li responem en menys de 24 hores.",
+    "whatsapp": "Escriure per WhatsApp",
+    "form": {
+      "name": "Nom i cognoms",
+      "email": "Email",
+      "phone": "Telèfon",
+      "service": "Servei d'interès",
+      "servicePlaceholder": "Seleccioni una opció",
+      "services": [
+        "Home Stay Safe",
+        "Conciergerie",
+        "Mobility",
+        "Hospitality Consulting",
+        "Altres"
+      ],
+      "message": "Missatge",
+      "consent": "Accepto que les meves dades es tractin per respondre aquesta sol·licitud, segons la política de privacitat.",
+      "submit": "Enviar",
+      "sent": "Gràcies. Hem rebut el seu missatge i li respondrem en menys de 24 hores.",
+      "errors": {
+        "name": "Indiqui el seu nom.",
+        "email": "Indiqui un email vàlid.",
+        "phone": "Indiqui un telèfon vàlid.",
+        "required": "Seleccioni una opció.",
+        "message": "Escrigui unes línies sobre la seva sol·licitud.",
+        "long": "El text és massa llarg.",
+        "consent": "Necessitem el seu consentiment per respondre-li."
+      }
+    },
+    "company": {
+      "title": "Dades de l'empresa",
+      "note": "Dades pendents de confirmació.",
+      "items": [
+        {
+          "label": "Raó social",
+          "value": "[Raó social pendent]"
+        },
+        {
+          "label": "Adreça",
+          "value": "[Adreça pendent] — Andorra"
+        },
+        {
+          "label": "Telèfon",
+          "value": "[Telèfon pendent]"
+        },
+        {
+          "label": "Email",
+          "value": "[Email pendent]"
+        },
+        {
+          "label": "Número de registre",
+          "value": "[Número de registre pendent]"
+        }
+      ]
+    }
+  },
+  "actionBar": {
+    "assessment": "Sol·licitar valoració",
+    "whatsapp": "WhatsApp",
+    "whatsappAria": "Escriure per WhatsApp"
   }
 }

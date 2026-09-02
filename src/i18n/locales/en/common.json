@@ -424,5 +424,134 @@
       "cta": "Go to the contact form",
       "whatsapp": "WhatsApp"
     }
+  },
+  "about": {
+    "letter": {
+      "label": "Founder's letter",
+      "title": "A private office, a single point of contact",
+      "paragraphs": [
+        "I have spent my whole working life looking after houses that are not mine, and after people who trust that everything will be in its place.",
+        "I created JR to offer in Andorra what I always missed: a discreet office that answers, anticipates and never needs reminding.",
+        "I do not work with catalogues or anonymous processes: I know every house, every key and every preference.",
+        "My commitment is simple: that you arrive and relax, and that nothing is left unattended while you are away."
+      ],
+      "signature": "Jaume Roca",
+      "role": "Founder",
+      "portraitAlt": "Sober portrait of Jaume Roca, founder of JR Hospitality, in a warmly lit interior"
+    },
+    "milestones": {
+      "label": "Thirty years",
+      "title": "A path in three milestones",
+      "items": [
+        {
+          "period": "The early years",
+          "title": "High-end hospitality",
+          "text": "Trained in demanding houses, where detail is learned by serving."
+        },
+        {
+          "period": "The management years",
+          "title": "Operations and customer experience",
+          "text": "Years coordinating teams, suppliers and standards for international clients."
+        },
+        {
+          "period": "Today",
+          "title": "A private office in Andorra",
+          "text": "An owner-led service, in direct contact, for second-home owners and premium clients."
+        }
+      ]
+    },
+    "principles": {
+      "label": "The principles",
+      "title": "Four ways of working",
+      "items": [
+        {
+          "title": "Trust",
+          "line": "The keys to a house are handed over once; they are looked after always."
+        },
+        {
+          "title": "Discretion",
+          "line": "What happens in your home is discussed nowhere."
+        },
+        {
+          "title": "Excellence",
+          "line": "A constant standard, not an occasional effort."
+        },
+        {
+          "title": "Personal attention",
+          "line": "One point of contact who knows your house and your preferences."
+        }
+      ]
+    },
+    "andorra": {
+      "label": "Andorra",
+      "title": "Why here and why now",
+      "text": "Andorra brings together the mountains, quiet and an international community that spends ever longer seasons here. Houses are used by the week, not by the month, and need someone to keep them alive between stays. We live and work here: we know the valleys, the trades and the trusted people it takes to keep everything running.",
+      "imageAlt": "Andorran valley at blue hour with a lit residence among snow-covered mountains"
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's talk",
+    "intro": "Tell us what you need and we will propose the most discreet way to resolve it.",
+    "promise": "We reply in under 24 hours.",
+    "whatsapp": "Message us on WhatsApp",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "service": "Service of interest",
+      "servicePlaceholder": "Select an option",
+      "services": [
+        "Home Stay Safe",
+        "Conciergerie",
+        "Mobility",
+        "Hospitality Consulting",
+        "Other"
+      ],
+      "message": "Message",
+      "consent": "I agree to my data being processed to answer this enquiry, in line with the privacy policy.",
+      "submit": "Send",
+      "sent": "Thank you. We have received your message and will reply in under 24 hours.",
+      "errors": {
+        "name": "Please enter your name.",
+        "email": "Please enter a valid email.",
+        "phone": "Please enter a valid phone number.",
+        "required": "Please select an option.",
+        "message": "Please write a few lines about your enquiry.",
+        "long": "The text is too long.",
+        "consent": "We need your consent in order to reply."
+      }
+    },
+    "company": {
+      "title": "Company details",
+      "note": "Details pending confirmation.",
+      "items": [
+        {
+          "label": "Legal name",
+          "value": "[Legal name pending]"
+        },
+        {
+          "label": "Address",
+          "value": "[Address pending] — Andorra"
+        },
+        {
+          "label": "Phone",
+          "value": "[Phone pending]"
+        },
+        {
+          "label": "Email",
+          "value": "[Email pending]"
+        },
+        {
+          "label": "Registration number",
+          "value": "[Registration number pending]"
+        }
+      ]
+    }
+  },
+  "actionBar": {
+    "assessment": "Request an assessment",
+    "whatsapp": "WhatsApp",
+    "whatsappAria": "Message us on WhatsApp"
   }
 }

@@ -2,6 +2,7 @@ import { Outlet, createFileRoute, redirect } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 
 import { SiteFooter } from "@/components/SiteFooter";
+import { MobileActionBar } from "@/components/MobileActionBar";
 import { SiteHeader } from "@/components/SiteHeader";
 import i18n, { DEFAULT_LANGUAGE, isLanguage, type Language } from "@/i18n/config";
 
@@ -37,6 +38,7 @@ function LanguageLayout() {
         <Outlet />
       </main>
       <SiteFooter lang={language} />
+      <MobileActionBar lang={language} />
     </div>
   );
 }

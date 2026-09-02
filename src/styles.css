@@ -351,3 +351,87 @@
     top: -28px;
   }
 }
+
+/* Fixed mobile action bar: dark, gold hairline on top, two halves. */
+@utility jr-actionbar {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 40;
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  padding: 10px var(--jr-gutter) calc(10px + env(safe-area-inset-bottom));
+  background: var(--jr-black);
+  border-top: 1px solid color-mix(in srgb, var(--jr-gold) 25%, transparent);
+  transform: translateY(110%);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    transform 300ms ease,
+    opacity 300ms ease;
+}
+
+@utility jr-actionbar-in {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* WhatsApp: black circle with a gold border. Never the green bubble. */
+@utility jr-wa-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: var(--jr-tap);
+  height: var(--jr-tap);
+  min-width: var(--jr-tap);
+  border-radius: 999px;
+  border: 1px solid var(--jr-gold);
+  background: var(--jr-black);
+  color: var(--jr-gold);
+  transition:
+    background-color 200ms ease,
+    color 200ms ease;
+
+  &:hover {
+    background: var(--jr-gold);
+    color: var(--jr-black);
+  }
+}
+
+/* Subtle appearance on entering the viewport. CSS only. */
+@utility jr-reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 600ms ease,
+    transform 600ms ease;
+}
+
+@utility jr-reveal-in {
+  opacity: 1;
+  transform: none;
+}
+
+@layer base {
+  /* The fixed bar must never cover the footer content on mobile. */
+  @media (max-width: 767px) {
+    footer {
+      padding-bottom: calc(var(--jr-tap) + 28px + env(safe-area-inset-bottom));
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .jr-reveal,
+    .jr-actionbar {
+      transition: none;
+    }
+
+    .jr-reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

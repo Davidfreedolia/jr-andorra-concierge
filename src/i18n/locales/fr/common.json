@@ -424,5 +424,134 @@
       "cta": "Aller au formulaire de contact",
       "whatsapp": "WhatsApp"
     }
+  },
+  "about": {
+    "letter": {
+      "label": "Lettre du fondateur",
+      "title": "Un bureau privé, un seul interlocuteur",
+      "paragraphs": [
+        "J'ai passé toute ma vie professionnelle à veiller sur des maisons qui ne sont pas les miennes et sur des personnes qui comptent sur moi pour que tout soit à sa place.",
+        "J'ai créé JR pour offrir en Andorre ce qui m'a toujours manqué : un bureau discret qui répond, anticipe et qu'il n'est jamais nécessaire de relancer.",
+        "Je ne travaille ni avec des catalogues ni avec des processus anonymes : je connais chaque maison, chaque clé et chaque préférence.",
+        "Mon engagement est simple : que vous arriviez et vous détendiez, et qu'en votre absence rien ne reste sans réponse."
+      ],
+      "signature": "Jaume Roca",
+      "role": "Fondateur",
+      "portraitAlt": "Portrait sobre de Jaume Roca, fondateur de JR Hospitality, dans un intérieur à la lumière chaude"
+    },
+    "milestones": {
+      "label": "Trente ans",
+      "title": "Un parcours en trois étapes",
+      "items": [
+        {
+          "period": "Les premières années",
+          "title": "Hôtellerie haut de gamme",
+          "text": "Une formation dans des maisons exigeantes, où le détail s'apprend en servant."
+        },
+        {
+          "period": "La direction",
+          "title": "Direction des opérations et expérience client",
+          "text": "Des années à coordonner équipes, prestataires et standards pour une clientèle internationale."
+        },
+        {
+          "period": "Aujourd'hui",
+          "title": "Bureau privé en Andorre",
+          "text": "Un service en propre, en relation directe, pour propriétaires de résidence secondaire et clients premium."
+        }
+      ]
+    },
+    "principles": {
+      "label": "Les principes",
+      "title": "Quatre façons de travailler",
+      "items": [
+        {
+          "title": "Confiance",
+          "line": "Les clés d'une maison ne se confient qu'une fois ; elles se gardent toujours."
+        },
+        {
+          "title": "Discrétion",
+          "line": "Ce qui se passe chez vous ne se commente nulle part."
+        },
+        {
+          "title": "Excellence",
+          "line": "Un standard constant, non un effort ponctuel."
+        },
+        {
+          "title": "Attention personnalisée",
+          "line": "Un seul interlocuteur qui connaît votre maison et vos préférences."
+        }
+      ]
+    },
+    "andorra": {
+      "label": "Andorre",
+      "title": "Pourquoi ici et pourquoi maintenant",
+      "text": "L'Andorre réunit la montagne, la tranquillité et une communauté internationale qui y passe des séjours de plus en plus longs. Les maisons s'occupent par semaines, non par mois, et demandent quelqu'un qui les maintienne vivantes entre deux séjours. Nous vivons et travaillons ici : nous connaissons les vallées, les métiers et les personnes de confiance nécessaires pour que tout fonctionne.",
+      "imageAlt": "Vallée d'Andorre à l'heure bleue avec une résidence éclairée entre des montagnes enneigées"
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Parlons-en",
+    "intro": "Dites-nous ce dont vous avez besoin et nous vous proposons la manière la plus discrète de le résoudre.",
+    "promise": "Nous vous répondons en moins de 24 heures.",
+    "whatsapp": "Écrire sur WhatsApp",
+    "form": {
+      "name": "Nom et prénom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "service": "Service souhaité",
+      "servicePlaceholder": "Sélectionnez une option",
+      "services": [
+        "Home Stay Safe",
+        "Conciergerie",
+        "Mobility",
+        "Hospitality Consulting",
+        "Autre"
+      ],
+      "message": "Message",
+      "consent": "J'accepte que mes données soient traitées pour répondre à cette demande, conformément à la politique de confidentialité.",
+      "submit": "Envoyer",
+      "sent": "Merci. Nous avons bien reçu votre message et vous répondrons en moins de 24 heures.",
+      "errors": {
+        "name": "Indiquez votre nom.",
+        "email": "Indiquez un email valide.",
+        "phone": "Indiquez un téléphone valide.",
+        "required": "Sélectionnez une option.",
+        "message": "Écrivez quelques lignes sur votre demande.",
+        "long": "Le texte est trop long.",
+        "consent": "Nous avons besoin de votre consentement pour vous répondre."
+      }
+    },
+    "company": {
+      "title": "Informations légales",
+      "note": "Informations en attente de confirmation.",
+      "items": [
+        {
+          "label": "Raison sociale",
+          "value": "[Raison sociale à confirmer]"
+        },
+        {
+          "label": "Adresse",
+          "value": "[Adresse à confirmer] — Andorre"
+        },
+        {
+          "label": "Téléphone",
+          "value": "[Téléphone à confirmer]"
+        },
+        {
+          "label": "Email",
+          "value": "[Email à confirmer]"
+        },
+        {
+          "label": "Numéro d'enregistrement",
+          "value": "[Numéro d'enregistrement à confirmer]"
+        }
+      ]
+    }
+  },
+  "actionBar": {
+    "assessment": "Demander une évaluation",
+    "whatsapp": "WhatsApp",
+    "whatsappAria": "Écrire sur WhatsApp"
   }
 }

@@ -1,0 +1,46 @@
+import { useEffect, useRef, useState, type ReactNode } from "react";
+
+/**
+ * Subtle CSS-only appearance on entering the viewport.
+ * No animation library; prefers-reduced-motion is honoured in CSS.
+ */
+export function Reveal({
+  children,
+  className = "",
+  as: Tag = "div",
+}: {
+  children: ReactNode;
+  className?: string;
+  as?: "div" | "section" | "li" | "article";
+}) {
+  const ref = useRef<HTMLElement | null>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const node = ref.current;
+    if (!node || typeof IntersectionObserver === "undefined") {
+      setVisible(true);
+      return;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "0px 0px -10% 0px", threshold: 0.05 },
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <Tag
+      ref={ref as never}
+      className={`jr-reveal${visible ? " jr-reveal-in" : ""}${className ? ` ${className}` : ""}`}
+    >
+      {children}
+    </Tag>
+  );
+}
