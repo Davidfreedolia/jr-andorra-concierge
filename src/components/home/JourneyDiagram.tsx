@@ -1,5 +1,6 @@
 import { Trans, useTranslation } from "react-i18next";
 
+import { Reveal } from "@/components/Reveal";
 import { tList } from "@/i18n/list";
 
 export function JourneyDiagram() {
