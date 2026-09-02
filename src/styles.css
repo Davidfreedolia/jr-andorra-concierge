@@ -245,7 +245,13 @@
 
 @utility jr-logo {
   display: block;
-  width: 168px;
+  width: auto;
+  height: 56px;
   max-width: 100%;
-  height: auto;
+}
+
+@media (min-width: 768px) {
+  .jr-logo {
+    height: 72px;
+  }
 }
