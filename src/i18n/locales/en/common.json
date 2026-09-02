@@ -425,6 +425,36 @@
       "text": "Write to us and we will study your case discreetly.",
       "cta": "Go to the contact form",
       "whatsapp": "WhatsApp"
+    },
+    "booking": {
+      "open": "Book a transfer",
+      "close": "Close",
+      "choose": "Select…",
+      "reserve": "Book",
+      "prevMonth": "Previous month",
+      "nextMonth": "Next month",
+      "loginTitle": "Sign in",
+      "loginText": "Access your private area to confirm the booking.",
+      "password": "Password",
+      "continue": "Continue",
+      "back": "Back",
+      "paymentTitle": "Booking payment",
+      "notIncluded": "Your plan does not include this service. You may pay for it on a one-off basis.",
+      "card": "Card",
+      "expiry": "Expiry",
+      "pay": "Pay and confirm",
+      "places": [
+        "Barcelona Airport",
+        "Toulouse Airport",
+        "Lleida Station",
+        "Andorra la Vella",
+        "Escaldes-Engordany",
+        "Ordino",
+        "Soldeu",
+        "La Massana",
+        "Canillo",
+        "Sant Julià de Lòria"
+      ]
     }
   },
   "about": {

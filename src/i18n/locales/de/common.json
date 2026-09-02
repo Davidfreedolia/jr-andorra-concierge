@@ -425,6 +425,36 @@
       "text": "Schreiben Sie uns – wir prüfen Ihr Anliegen diskret.",
       "cta": "Zum Kontaktformular",
       "whatsapp": "WhatsApp"
+    },
+    "booking": {
+      "open": "Transfer reservieren",
+      "close": "Schließen",
+      "choose": "Bitte auswählen…",
+      "reserve": "Reservieren",
+      "prevMonth": "Voriger Monat",
+      "nextMonth": "Nächster Monat",
+      "loginTitle": "Anmelden",
+      "loginText": "Melden Sie sich in Ihrem privaten Bereich an, um die Reservierung zu bestätigen.",
+      "password": "Passwort",
+      "continue": "Weiter",
+      "back": "Zurück",
+      "paymentTitle": "Zahlung der Reservierung",
+      "notIncluded": "Ihr Leistungspaket umfasst diesen Service nicht. Sie können ihn einzeln bezahlen.",
+      "card": "Karte",
+      "expiry": "Gültig bis",
+      "pay": "Bezahlen und bestätigen",
+      "places": [
+        "Flughafen Barcelona",
+        "Flughafen Toulouse",
+        "Bahnhof Lleida",
+        "Andorra la Vella",
+        "Escaldes-Engordany",
+        "Ordino",
+        "Soldeu",
+        "La Massana",
+        "Canillo",
+        "Sant Julià de Lòria"
+      ]
     }
   },
   "about": {
