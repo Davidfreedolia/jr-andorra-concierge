@@ -211,7 +211,7 @@
     },
     "includes": {
       "label": "Ce que cela comprend",
-      "title": "Le service, point par point.",
+      "title": "Le <0>service</0>, point par point.",
       "items": [
         "Garde sécurisée et contrôlée des clés",
         "Visites programmées et supervision intérieure et extérieure",

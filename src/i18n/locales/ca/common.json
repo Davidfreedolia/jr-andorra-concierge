@@ -211,7 +211,7 @@
     },
     "includes": {
       "label": "Què inclou",
-      "title": "El servei, punt per punt.",
+      "title": "El <0>servei</0>, punt per punt.",
       "items": [
         "Custòdia segura i controlada de claus",
         "Visites programades i supervisió interior i exterior",

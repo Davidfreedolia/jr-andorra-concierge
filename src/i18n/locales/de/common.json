@@ -211,7 +211,7 @@
     },
     "includes": {
       "label": "Was enthalten ist",
-      "title": "Die Leistung, Punkt für Punkt.",
+      "title": "Die <0>Leistung</0>, Punkt für Punkt.",
       "items": [
         "Sichere und kontrollierte Schlüsselverwahrung",
         "Geplante Besuche mit Kontrolle innen und außen",

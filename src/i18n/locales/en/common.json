@@ -211,7 +211,7 @@
     },
     "includes": {
       "label": "What it includes",
-      "title": "The service, point by point.",
+      "title": "The <0>service</0>, point by point.",
       "items": [
         "Secure, controlled key custody",
         "Scheduled visits with interior and exterior supervision",
