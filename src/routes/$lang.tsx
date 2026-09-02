@@ -40,6 +40,7 @@ function LanguageLayout() {
       </main>
       <SiteFooter lang={language} />
       <MobileActionBar lang={language} />
+      <ChatWidget />
     </div>
   );
 }
