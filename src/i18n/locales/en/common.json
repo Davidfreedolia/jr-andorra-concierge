@@ -223,7 +223,7 @@
     },
     "report": {
       "label": "The Home Report",
-      "title": "The one thing you receive every month.",
+      "title": "The <0>one thing</0> you receive every month.",
       "lines": [
         "It is the report you receive each month on the condition of your home.",
         "Dated photographs of every room and of the exterior.",

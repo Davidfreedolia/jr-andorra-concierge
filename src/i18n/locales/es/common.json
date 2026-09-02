@@ -223,7 +223,7 @@
     },
     "report": {
       "label": "El Home Report",
-      "title": "Lo único que usted recibe cada mes.",
+      "title": "Lo <0>único</0> que usted recibe cada mes.",
       "lines": [
         "Es el informe que recibe cada mes con el estado de su casa.",
         "Fotografías fechadas de cada estancia y de los exteriores.",
