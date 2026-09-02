@@ -34,12 +34,12 @@ export function pageHead(page: PageKey, lang: Language) {
       { rel: "canonical", href: canonical },
       ...LANGUAGES.map((code) => ({
         rel: "alternate",
-        hreflang: code,
+        hrefLang: code,
         href: `${SITE_URL}/${code}${path}`,
       })),
       {
         rel: "alternate",
-        hreflang: "x-default",
+        hrefLang: "x-default",
         href: `${SITE_URL}/${DEFAULT_LANGUAGE}${path}`,
       },
     ],

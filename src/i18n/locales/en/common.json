@@ -23,11 +23,26 @@
     "suggestion": "Also available in {{language}}."
   },
   "pages": {
-    "home": { "title": "Home", "description": "A private office for home care, conciergerie and mobility in Andorra." },
-    "homeStaySafe": { "title": "Home Stay Safe", "description": "Discreet care for your second residence in Andorra." },
-    "conciergerieMobility": { "title": "Conciergerie & Mobility", "description": "Private conciergerie and mobility for premium clients in Andorra." },
-    "about": { "title": "About JR", "description": "A private office serving owners and premium clients." },
-    "contact": { "title": "Contact", "description": "Reach our private office in Andorra." }
+    "home": {
+      "title": "Home",
+      "description": "A private office for home care, conciergerie and mobility in Andorra."
+    },
+    "homeStaySafe": {
+      "title": "Home Stay Safe",
+      "description": "Discreet care for your second residence in Andorra."
+    },
+    "conciergerieMobility": {
+      "title": "Conciergerie & Mobility",
+      "description": "Private conciergerie and mobility for premium clients in Andorra."
+    },
+    "about": {
+      "title": "About JR",
+      "description": "A private office serving owners and premium clients."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Reach our private office in Andorra."
+    }
   },
   "footer": {
     "legal": "Legal notice",
@@ -37,5 +52,151 @@
   },
   "common": {
     "logoAlt": "JR Hospitality & Customer Experience"
+  },
+  "home": {
+    "hero": {
+      "title": "Your home. Your time. Your Andorra.",
+      "subtitle": "Private Home Care · Conciergerie · Mobility · Experiences",
+      "ctaHome": "Home Stay Safe",
+      "ctaMobility": "Conciergerie & Mobility",
+      "videoAlt": "Private residence in the Pyrenees at blue hour"
+    },
+    "voice": {
+      "quote": "We look after your home while you are away. And after you when you return.",
+      "line1": "JR is a private office in Andorra serving second-home owners and clients who value discretion.",
+      "line2": "One single point of contact for your home, your mobility and your time."
+    },
+    "doors": {
+      "label": "Two doors",
+      "home": {
+        "title": "Home Stay Safe",
+        "line": "Private home care for your second residence, empty or waiting for you.",
+        "link": "See Home Stay Safe"
+      },
+      "mobility": {
+        "title": "Conciergerie & Mobility",
+        "line": "Transfers, private chauffeur and conciergerie for every stay.",
+        "link": "See Conciergerie & Mobility"
+      }
+    },
+    "hss": {
+      "label": "Home Stay Safe",
+      "title": "Your home in Andorra, cared for even when you are not there.",
+      "items": [
+        "Secure key custody, with controlled access and full traceability.",
+        "Regular visits with interior and exterior inspection.",
+        "Correspondence handling: reception, review and notice.",
+        "Coordination of cleaning and household preparation.",
+        "Supervision of suppliers and technical services.",
+        "Preparation of your arrival and follow-up of any incident."
+      ],
+      "cta": "Request an assessment"
+    },
+    "mobility": {
+      "label": "Mobility",
+      "title": "Private mobility, punctual and discreet.",
+      "cards": [
+        {
+          "title": "Airport & Long-Distance Transfers",
+          "text": "Barcelona, Toulouse, Girona or Madrid, timed to your flight."
+        },
+        {
+          "title": "Private Chauffeur",
+          "text": "A discreet chauffeur at your disposal by the hour or by the day."
+        },
+        {
+          "title": "Mobility in Andorra",
+          "text": "Journeys between valleys, resorts and meetings."
+        }
+      ],
+      "cta": "Request a transfer"
+    },
+    "concierge": {
+      "label": "Conciergerie & Experiences",
+      "title": "Whatever you need, settled before you ask twice.",
+      "items": [
+        {
+          "title": "Dining and reservations",
+          "text": "Tables, private chef and celebrations."
+        },
+        {
+          "title": "Wellness",
+          "text": "Spa, physiotherapy and wellbeing at home."
+        },
+        {
+          "title": "Activities and mountain",
+          "text": "Skiing, trails and private guides."
+        },
+        {
+          "title": "Nightlife",
+          "text": "Access and coordination with complete reserve."
+        },
+        {
+          "title": "Tailored stays",
+          "text": "Complete programmes for your group or family."
+        },
+        {
+          "title": "Full coordination",
+          "text": "A single point of contact for the whole stay."
+        }
+      ],
+      "note": "No fixed catalogue: every request is studied individually."
+    },
+    "journey": {
+      "label": "The journey",
+      "title": "From your home back to your home.",
+      "states": [
+        "Home",
+        "Arrival",
+        "Stay",
+        "Departure"
+      ],
+      "services": [
+        "Home Stay Safe",
+        "Private Transfer",
+        "Mobility / Concierge",
+        "Private Transfer"
+      ]
+    },
+    "about": {
+      "label": "About JR",
+      "title": "One office, one person you can trust.",
+      "lines": [
+        "I work with a limited number of families and owners.",
+        "Every home has its rhythm; my work is to learn it and respect it.",
+        "Discretion is not an extra: it is the foundation of everything we do."
+      ],
+      "link": "Read the letter",
+      "portraitAlt": "Portrait of the founder of JR"
+    },
+    "consulting": {
+      "label": "Hospitality Consulting",
+      "title": "Hospitality consulting.",
+      "line1": "We support residential and hotel projects in shaping their service culture.",
+      "line2": "Work by commission, with a scope defined case by case.",
+      "note": "Information on request."
+    },
+    "contact": {
+      "label": "Contact",
+      "title": "Let us talk, unhurried.",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "service": "Service of interest",
+      "message": "Message",
+      "servicePlaceholder": "Select a service",
+      "services": [
+        "Home Stay Safe",
+        "Conciergerie",
+        "Mobility",
+        "Experiences",
+        "Hospitality Consulting"
+      ],
+      "consent": "I agree that JR may process my data to answer this request.",
+      "submit": "Send message",
+      "whatsapp": "Write on WhatsApp",
+      "sent": "Thank you. We will reply personally.",
+      "required": "Required field"
+    }
   }
 }
