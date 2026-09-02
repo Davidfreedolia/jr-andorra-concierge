@@ -55,8 +55,8 @@
   },
   "home": {
     "hero": {
-      "title": "Your <1>home</1>. Your <2>time</2>. Your <3>Andorra</3>.",
-      "subtitle": "Private Home Care · Conciergerie · Mobility · Experiences",
+      "title": "Votre <1>maison</1>. Votre <2>temps</2>. Votre <3>Andorre</3>.",
+      "subtitle": "Home care privé · Conciergerie · Mobilité · Expériences",
       "ctaHome": "Home Stay Safe",
       "ctaMobility": "Conciergerie & Mobility",
       "videoAlt": "Résidence privée dans les Pyrénées à l'heure bleue"
@@ -146,10 +146,10 @@
       "label": "Le parcours",
       "title": "De <0>chez</0> vous à <1>chez</1> vous.",
       "states": [
-        "Home",
-        "Arrival",
-        "Stay",
-        "Departure"
+        "Maison",
+        "Arrivée",
+        "Séjour",
+        "Départ"
       ],
       "services": [
         "Home Stay Safe",
@@ -488,6 +488,10 @@
       "title": "Pourquoi ici et pourquoi maintenant",
       "text": "L'Andorre réunit la montagne, la tranquillité et une communauté internationale qui y passe des séjours de plus en plus longs. Les maisons s'occupent par semaines, non par mois, et demandent quelqu'un qui les maintienne vivantes entre deux séjours. Nous vivons et travaillons ici : nous connaissons les vallées, les métiers et les personnes de confiance nécessaires pour que tout fonctionne.",
       "imageAlt": "Vallée d'Andorre à l'heure bleue avec une résidence éclairée entre des montagnes enneigées"
+    },
+    "hero": {
+      "title": "Trente ans au service des maisons et des personnes",
+      "alt": "Vallées d'Andorre au crépuscule, lumière chaude sur la montagne"
     }
   },
   "contact": {
@@ -548,6 +552,10 @@
           "value": "[Numéro d'enregistrement à confirmer]"
         }
       ]
+    },
+    "hero": {
+      "title": "Parlons de votre maison et de votre séjour",
+      "alt": "Intérieur sobre d'un bureau privé en Andorre, lumière chaude"
     }
   },
   "actionBar": {
