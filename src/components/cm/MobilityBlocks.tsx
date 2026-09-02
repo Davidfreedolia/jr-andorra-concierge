@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 import andorraImage from "@/assets/cm-andorra.jpg";
 import chauffeurImage from "@/assets/cm-chauffeur.jpg";
