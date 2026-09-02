@@ -14,8 +14,8 @@ export function SiteFooter({ lang }: { lang: Language }) {
     <footer className="border-t">
       <div className="jr-container flex flex-col gap-10 py-16 lg:flex-row lg:justify-between lg:py-20">
         <div className="flex min-w-0 flex-col gap-4 text-primary">
-          <div className="inline-flex rounded-sm border border-jr-gold/15 bg-jr-black p-3">
-            <LogoJR title={t("common.logoAlt")} className="jr-logo" />
+          <div className="inline-flex overflow-hidden rounded-sm border border-jr-gold/15 bg-jr-black p-3">
+            <LogoJR title={t("common.logoAlt")} className="jr-logo scale-[1.12]" />
           </div>
           <p className="jr-measure text-muted-foreground">{t("brand.tagline")}</p>
         </div>
