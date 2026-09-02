@@ -10,33 +10,109 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as LangRouteImport } from './routes/$lang'
+import { Route as LangIndexRouteImport } from './routes/$lang.index'
+import { Route as LangAboutRouteImport } from './routes/$lang.about'
+import { Route as LangConciergerieMobilityRouteImport } from './routes/$lang.conciergerie-mobility'
+import { Route as LangContactRouteImport } from './routes/$lang.contact'
+import { Route as LangHomeStaySafeRouteImport } from './routes/$lang.home-stay-safe'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const LangRoute = LangRouteImport.update({
+  id: '/$lang',
+  path: '/$lang',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LangIndexRoute = LangIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => LangRoute,
+} as any)
+const LangAboutRoute = LangAboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => LangRoute,
+} as any)
+const LangConciergerieMobilityRoute =
+  LangConciergerieMobilityRouteImport.update({
+    id: '/conciergerie-mobility',
+    path: '/conciergerie-mobility',
+    getParentRoute: () => LangRoute,
+  } as any)
+const LangContactRoute = LangContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => LangRoute,
+} as any)
+const LangHomeStaySafeRoute = LangHomeStaySafeRouteImport.update({
+  id: '/home-stay-safe',
+  path: '/home-stay-safe',
+  getParentRoute: () => LangRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/$lang': typeof LangRouteWithChildren
+  '/$lang/about': typeof LangAboutRoute
+  '/$lang/conciergerie-mobility': typeof LangConciergerieMobilityRoute
+  '/$lang/contact': typeof LangContactRoute
+  '/$lang/home-stay-safe': typeof LangHomeStaySafeRoute
+  '/$lang/': typeof LangIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/$lang/about': typeof LangAboutRoute
+  '/$lang/conciergerie-mobility': typeof LangConciergerieMobilityRoute
+  '/$lang/contact': typeof LangContactRoute
+  '/$lang/home-stay-safe': typeof LangHomeStaySafeRoute
+  '/$lang': typeof LangIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/$lang': typeof LangRouteWithChildren
+  '/$lang/about': typeof LangAboutRoute
+  '/$lang/conciergerie-mobility': typeof LangConciergerieMobilityRoute
+  '/$lang/contact': typeof LangContactRoute
+  '/$lang/home-stay-safe': typeof LangHomeStaySafeRoute
+  '/$lang/': typeof LangIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/$lang'
+    | '/$lang/about'
+    | '/$lang/conciergerie-mobility'
+    | '/$lang/contact'
+    | '/$lang/home-stay-safe'
+    | '/$lang/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/$lang/about'
+    | '/$lang/conciergerie-mobility'
+    | '/$lang/contact'
+    | '/$lang/home-stay-safe'
+    | '/$lang'
+  id:
+    | '__root__'
+    | '/'
+    | '/$lang'
+    | '/$lang/about'
+    | '/$lang/conciergerie-mobility'
+    | '/$lang/contact'
+    | '/$lang/home-stay-safe'
+    | '/$lang/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  LangRoute: typeof LangRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +124,72 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/$lang': {
+      id: '/$lang'
+      path: '/$lang'
+      fullPath: '/$lang'
+      preLoaderRoute: typeof LangRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/$lang/': {
+      id: '/$lang/'
+      path: '/'
+      fullPath: '/$lang/'
+      preLoaderRoute: typeof LangIndexRouteImport
+      parentRoute: typeof LangRoute
+    }
+    '/$lang/about': {
+      id: '/$lang/about'
+      path: '/about'
+      fullPath: '/$lang/about'
+      preLoaderRoute: typeof LangAboutRouteImport
+      parentRoute: typeof LangRoute
+    }
+    '/$lang/conciergerie-mobility': {
+      id: '/$lang/conciergerie-mobility'
+      path: '/conciergerie-mobility'
+      fullPath: '/$lang/conciergerie-mobility'
+      preLoaderRoute: typeof LangConciergerieMobilityRouteImport
+      parentRoute: typeof LangRoute
+    }
+    '/$lang/contact': {
+      id: '/$lang/contact'
+      path: '/contact'
+      fullPath: '/$lang/contact'
+      preLoaderRoute: typeof LangContactRouteImport
+      parentRoute: typeof LangRoute
+    }
+    '/$lang/home-stay-safe': {
+      id: '/$lang/home-stay-safe'
+      path: '/home-stay-safe'
+      fullPath: '/$lang/home-stay-safe'
+      preLoaderRoute: typeof LangHomeStaySafeRouteImport
+      parentRoute: typeof LangRoute
+    }
   }
 }
 
+interface LangRouteChildren {
+  LangAboutRoute: typeof LangAboutRoute
+  LangConciergerieMobilityRoute: typeof LangConciergerieMobilityRoute
+  LangContactRoute: typeof LangContactRoute
+  LangHomeStaySafeRoute: typeof LangHomeStaySafeRoute
+  LangIndexRoute: typeof LangIndexRoute
+}
+
+const LangRouteChildren: LangRouteChildren = {
+  LangAboutRoute: LangAboutRoute,
+  LangConciergerieMobilityRoute: LangConciergerieMobilityRoute,
+  LangContactRoute: LangContactRoute,
+  LangHomeStaySafeRoute: LangHomeStaySafeRoute,
+  LangIndexRoute: LangIndexRoute,
+}
+
+const LangRouteWithChildren = LangRoute._addFileChildren(LangRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  LangRoute: LangRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

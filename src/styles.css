@@ -2,143 +2,250 @@
 @source "../src";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
 /*
- * Design system definition.
- *
- * The @theme inline block maps CSS custom properties to Tailwind utility
- * classes (e.g. --color-primary -> bg-primary, text-primary).
- *
- * The :root and .dark blocks define the actual color values using oklch.
- * All colors MUST use oklch format.
- *
- * To add a new semantic color:
- * 1. Add the variable to :root (light value) and .dark (dark value)
- * 2. Register it in @theme inline as --color-<name>: var(--<name>)
+ * JR Hospitality — design system.
+ * Every color, font, spacing and border value lives here as a token.
+ * Components must never hardcode colors or sizes.
  */
 
 @theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --radius-2xl: calc(var(--radius) + 8px);
-  --radius-3xl: calc(var(--radius) + 12px);
-  --radius-4xl: calc(var(--radius) + 16px);
+  --color-jr-black: var(--jr-black);
+  --color-jr-night: var(--jr-night);
+  --color-jr-night-deep: var(--jr-night-deep);
+  --color-jr-gold: var(--jr-gold);
+  --color-jr-gold-deep: var(--jr-gold-deep);
+  --color-jr-bone: var(--jr-bone);
+  --color-jr-white: var(--jr-white);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-input: var(--input);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --color-ring-offset-background: var(--background);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+
+  --radius-sm: var(--jr-radius);
+  --radius-md: var(--jr-radius);
+  --radius-lg: var(--jr-radius);
+  --radius-xl: var(--jr-radius);
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.984 0.003 247.858);
-  --sidebar-foreground: oklch(0.129 0.042 264.695);
-  --sidebar-primary: oklch(0.208 0.042 265.755);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.968 0.007 247.896);
-  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
-  --sidebar-border: oklch(0.929 0.013 255.508);
-  --sidebar-ring: oklch(0.704 0.04 256.788);
+  /* Brand palette */
+  --jr-black: #0b0b0c;
+  --jr-night: #101a2e;
+  --jr-night-deep: #070e1a;
+  --jr-gold: #c6a15b;
+  --jr-gold-deep: #9c7b3c;
+  --jr-bone: #f4f2ee;
+  --jr-white: #ffffff;
+
+  /* Typography — provisional, swap these two lines for the brand fonts */
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Jost", "Helvetica Neue", sans-serif;
+
+  /* Shape & rhythm */
+  --jr-radius: 2px;
+  --jr-hairline: color-mix(in srgb, var(--jr-gold) 25%, transparent);
+  --jr-section-y: 80px;
+  --jr-gutter: 20px;
+  --jr-measure: 62ch;
+  --jr-tap: 44px;
+  --jr-label-tracking: 0.22em;
+
+  /* Semantic mapping (dark by default) */
+  --background: var(--jr-night-deep);
+  --foreground: var(--jr-bone);
+  --card: var(--jr-night);
+  --card-foreground: var(--jr-bone);
+  --popover: var(--jr-night);
+  --popover-foreground: var(--jr-bone);
+  --primary: var(--jr-gold);
+  --primary-foreground: var(--jr-black);
+  --secondary: var(--jr-night);
+  --secondary-foreground: var(--jr-bone);
+  --muted: var(--jr-night);
+  --muted-foreground: color-mix(in srgb, var(--jr-bone) 68%, transparent);
+  --accent: var(--jr-gold);
+  --accent-foreground: var(--jr-black);
+  --border: var(--jr-hairline);
+  --input: var(--jr-hairline);
+  --ring: var(--jr-gold);
+  --destructive: #a13b32;
+  --destructive-foreground: var(--jr-bone);
 }
 
-.dark {
-  --background: oklch(0.129 0.042 264.695);
-  --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.208 0.042 265.755);
-  --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.208 0.042 265.755);
-  --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
-  --secondary: oklch(0.279 0.041 260.031);
-  --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.279 0.041 260.031);
-  --muted-foreground: oklch(0.704 0.04 256.788);
-  --accent: oklch(0.279 0.041 260.031);
-  --accent-foreground: oklch(0.984 0.003 247.858);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.551 0.027 264.364);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.208 0.042 265.755);
-  --sidebar-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.279 0.041 260.031);
-  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.551 0.027 264.364);
+@media (min-width: 1024px) {
+  :root {
+    --jr-section-y: 140px;
+    --jr-gutter: 40px;
+  }
+}
+
+/* German runs 25-35% longer: ease the label tracking so nothing truncates. */
+:root:lang(de),
+[lang="de"] {
+  --jr-label-tracking: 0.14em;
 }
 
 @layer base {
   * {
-    border-color: var(--color-border);
+    border-color: var(--border);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.65;
+    hyphens: auto;
+    overflow-wrap: break-word;
   }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: 0.005em;
+  }
+
+  /* Inputs at 16px so iOS never zooms on focus, one field per row on mobile. */
+  input,
+  select,
+  textarea,
+  button {
+    font-family: inherit;
+    font-size: 16px;
+  }
+
+  :focus-visible {
+    outline: 1px solid var(--jr-gold);
+    outline-offset: 3px;
+  }
+}
+
+@utility jr-section {
+  padding-block: var(--jr-section-y);
+}
+
+@utility jr-container {
+  width: 100%;
+  margin-inline: auto;
+  max-width: 1200px;
+  padding-inline: var(--jr-gutter);
+}
+
+@utility jr-measure {
+  max-width: var(--jr-measure);
+}
+
+@utility jr-label {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: var(--jr-label-tracking);
+  color: var(--jr-gold);
+  hyphens: none;
+}
+
+@utility jr-rule {
+  border: 0;
+  border-top: 1px solid var(--jr-hairline);
+}
+
+@utility jr-tap {
+  min-height: var(--jr-tap);
+  min-width: var(--jr-tap);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@utility jr-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: var(--jr-tap);
+  padding: 12px 24px;
+  border: 1px solid var(--jr-gold);
+  border-radius: var(--jr-radius);
+  background: transparent;
+  color: var(--jr-gold);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: var(--jr-label-tracking);
+  hyphens: none;
+  white-space: normal;
+  transition:
+    background-color 200ms ease,
+    color 200ms ease;
+
+  &:hover {
+    background: var(--jr-gold);
+    color: var(--jr-black);
+  }
+}
+
+@utility jr-surface-bone {
+  background-color: var(--jr-bone);
+  color: var(--jr-black);
+}
+
+@utility jr-display-1 {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 1.05;
+
+  @media (min-width: 768px) {
+    font-size: 64px;
+  }
+}
+
+@utility jr-display-2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.15;
+
+  @media (min-width: 768px) {
+    font-size: 44px;
+  }
+}
+
+@utility jr-logo {
+  display: block;
+  width: 168px;
+  max-width: 100%;
+  height: auto;
 }
