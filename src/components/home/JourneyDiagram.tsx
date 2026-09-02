@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 import { tList } from "@/i18n/list";
 
@@ -12,7 +12,15 @@ export function JourneyDiagram() {
       <div className="jr-container flex flex-col gap-12">
         <div className="flex flex-col gap-4">
           <p className="jr-label">{t("home.journey.label")}</p>
-          <h2 className="jr-display-2 jr-measure text-jr-gold">{t("home.journey.title")}</h2>
+          <h2 className="jr-display-2 jr-measure text-jr-white">
+            <Trans
+              i18nKey="home.journey.title"
+              components={[
+                <span className="text-jr-gold" />,
+                <span className="text-jr-gold" />,
+              ]}
+            />
+          </h2>
         </div>
 
         <ol className="jr-journey">
