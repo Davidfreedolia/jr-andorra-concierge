@@ -1,21 +1,79 @@
+import { useEffect, useRef, useState } from "react";
+
 import { Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 
 import { IconTile } from "@/components/IconTile";
 import { Reveal } from "@/components/Reveal";
 import { tList } from "@/i18n/list";
+import mobilityBgAsset from "@/assets/mobility-bg.jpg.asset.json";
 
 import type { Language } from "@/i18n/config";
 
 type Card = { title: string; text: string };
 
+function useParallax(speed = 0.18) {
+  const ref = useRef<HTMLElement>(null);
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    let raf = 0;
+
+    const onScroll = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const rect = el.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        const progress = (viewportHeight - rect.top) / (viewportHeight + rect.height);
+        const clamped = Math.max(0, Math.min(1, progress));
+        setOffset((clamped - 0.5) * speed * 100);
+      });
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      cancelAnimationFrame(raf);
+    };
+  }, [speed]);
+
+  return { ref, offset };
+}
+
 export function MobilityCards({ lang }: { lang: Language }) {
   const { t } = useTranslation();
   const cards = tList<Card>(t, "home.mobility.cards");
+  const { ref, offset } = useParallax();
 
   return (
-    <section className="jr-section">
-      <div className="jr-container flex flex-col gap-10">
+    <section ref={ref} className="jr-section relative overflow-hidden">
+      {/* Background: snowy mountain road with luxury SUV — subtle motion + parallax */}
+      <div
+        className="absolute inset-[-10%] -z-20"
+        style={{ transform: `translate3d(0, ${offset.toFixed(2)}%, 0)` }}
+        aria-hidden="true"
+      >
+        <img
+          src={mobilityBgAsset.url}
+          alt=""
+          loading="lazy"
+          width={1920}
+          height={820}
+          className="h-full w-full object-cover jr-photo-lift jr-kenburns"
+        />
+      </div>
+
+      {/* Dark reading veil */}
+      <div
+        className="absolute inset-0 -z-10 bg-gradient-to-b from-jr-black/82 via-jr-black/72 to-jr-black/88"
+        aria-hidden="true"
+      />
+
+      <div className="jr-container relative z-10 flex flex-col gap-10">
         <Reveal>
           <h2 className="jr-display-2 jr-measure text-jr-gold">{t("home.mobility.title")}</h2>
         </Reveal>
