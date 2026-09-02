@@ -233,7 +233,7 @@
     },
     "levels": {
       "label": "Tres nivells",
-      "title": "Essential, Premium i Signature.",
+      "title": "<0>Essential</0>, <0>Premium</0> i <0>Signature</0>.",
       "note": "Cada propietat és diferent. Li proposem el nivell adequat després de conèixer-la.",
       "featured": "Més escollit",
       "items": [
@@ -269,7 +269,8 @@
             "Disponibilitat ampliada"
           ]
         }
-      ]
+      ],
+      "cta": "Sol·licitar valoració"
     },
     "keys": {
       "label": "Custòdia de claus",

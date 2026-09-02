@@ -233,7 +233,7 @@
     },
     "levels": {
       "label": "Drei Stufen",
-      "title": "Essential, Premium und Signature.",
+      "title": "<0>Essential</0>, <0>Premium</0> und <0>Signature</0>.",
       "note": "Jede Immobilie ist anders. Wir schlagen Ihnen die passende Stufe vor, sobald wir sie kennen.",
       "featured": "Am häufigsten gewählt",
       "items": [
@@ -269,7 +269,8 @@
             "Erweiterte Verfügbarkeit"
           ]
         }
-      ]
+      ],
+      "cta": "Angebot anfordern"
     },
     "keys": {
       "label": "Schlüsselverwahrung",
