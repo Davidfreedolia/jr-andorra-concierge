@@ -13,7 +13,7 @@ import type { Language } from "@/i18n/config";
 
 type Card = { title: string; text: string };
 
-function useParallax(speed = 0.18) {
+function useParallax(speed = 0.55) {
   const ref = useRef<HTMLElement>(null);
   const [offset, setOffset] = useState(0);
 
@@ -54,7 +54,7 @@ export function MobilityCards({ lang }: { lang: Language }) {
     <section ref={ref} className="jr-section relative overflow-hidden">
       {/* Background: snowy mountain road with luxury SUV — video with parallax */}
       <div
-        className="absolute inset-[-12%] -z-20"
+        className="absolute inset-x-0 -top-[30%] -bottom-[30%] -z-20"
         style={{ transform: `translate3d(0, ${offset.toFixed(2)}%, 0)` }}
         aria-hidden="true"
       >
