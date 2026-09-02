@@ -821,6 +821,40 @@
   color: var(--jr-black);
 }
 
+/* Lift + glow on hover for card panels. */
+@utility jr-card-hover {
+  transition:
+    transform 420ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 420ms ease,
+    border-color 420ms ease;
+  will-change: transform;
+
+  &:hover {
+    transform: translateY(-8px) scale(1.015);
+    border-color: color-mix(in srgb, var(--jr-gold) 70%, transparent);
+    box-shadow:
+      0 20px 44px color-mix(in srgb, var(--jr-black) 45%, transparent),
+      inset 0 1px 0 0 color-mix(in srgb, var(--jr-gold) 12%, transparent);
+  }
+
+  &:hover .jr-icon-tile svg {
+    transform: translateY(-3px) rotate(5deg);
+    transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &,
+    &:hover {
+      transform: none;
+      box-shadow: none;
+    }
+
+    &:hover .jr-icon-tile svg {
+      transform: none;
+    }
+  }
+}
+
 @utility jr-icon-tile {
   display: inline-flex;
   align-items: center;

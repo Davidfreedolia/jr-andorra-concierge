@@ -21,12 +21,12 @@ export function HssLevels() {
           {levels.map((level, index) => {
             const featured = index === 1;
             return (
-              <Reveal as="li" key={level.name} delay={index * 120}>
+              <Reveal as="li" key={level.name} delay={index * 140}>
               <div
                 className={
                   featured
-                    ? "flex flex-col gap-5 border border-jr-gold p-7 lg:p-9"
-                    : "flex flex-col gap-5 border p-7 lg:p-9"
+                    ? "jr-card-hover flex flex-col gap-5 border border-jr-gold bg-jr-night p-7 lg:p-9"
+                    : "jr-card-hover flex flex-col gap-5 border bg-jr-night p-7 lg:p-9"
                 }
               >
                 <span className="jr-label min-h-[16px] text-jr-gold-deep">

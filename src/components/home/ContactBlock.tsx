@@ -111,7 +111,7 @@ export function ContactBlock() {
           </form>
         </Reveal>
 
-        <Reveal className="flex flex-col gap-4 border p-6 lg:self-start" delay={120}>
+        <Reveal className="jr-panel jr-card-hover flex flex-col gap-4 p-6 lg:self-start" delay={160}>
           <p className="jr-label">WhatsApp</p>
           <p className="text-muted-foreground">{t("home.voice.line2")}</p>
           <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="jr-button">

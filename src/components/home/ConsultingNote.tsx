@@ -10,7 +10,7 @@ export function ConsultingNote({ lang }: { lang: Language }) {
   return (
     <section className="jr-section">
       <div className="jr-container">
-        <Reveal className="jr-panel mx-auto flex max-w-3xl flex-col items-center gap-5 text-center md:gap-6">
+        <Reveal className="jr-panel jr-card-hover mx-auto flex max-w-3xl flex-col items-center gap-5 text-center md:gap-6">
           <p className="jr-label">{t("home.consulting.label")}</p>
           <h2 className="jr-display-2 text-jr-gold">{t("home.consulting.title")}</h2>
           <p className="jr-measure text-balance opacity-80">

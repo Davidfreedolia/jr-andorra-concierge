@@ -20,21 +20,19 @@ export function HomeStaySafeSummary({ lang }: { lang: Language }) {
           </h2>
         </Reveal>
 
-        <Reveal className="jr-panel">
-          <ul className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {items.map((item, index) => (
-              <Reveal
-                as="li"
-                key={item}
-                delay={index * 70}
-                className="flex min-w-0 flex-col items-start gap-4"
-              >
-                <IconTile index={index} />
-                <p className="text-jr-bone">{item}</p>
-              </Reveal>
-            ))}
-          </ul>
-        </Reveal>
+        <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {items.map((item, index) => (
+            <Reveal
+              as="li"
+              key={item}
+              delay={index * 110}
+              className="jr-panel jr-card-hover flex min-w-0 flex-col items-start gap-4"
+            >
+              <IconTile index={index} />
+              <p className="text-jr-bone">{item}</p>
+            </Reveal>
+          ))}
+        </ul>
 
         <Reveal>
           <Link to="/$lang/home-stay-safe" params={{ lang }} className="jr-button">
