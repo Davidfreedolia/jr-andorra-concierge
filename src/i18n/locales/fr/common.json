@@ -102,15 +102,15 @@
       "title": "Une mobilité <0>privée</0>, ponctuelle et <1>discrète</1>.",
       "cards": [
         {
-          "title": "Airport & Long-Distance Transfers",
+          "title": "Transferts aéroport et longue distance",
           "text": "Barcelone, Toulouse, Gérone ou Madrid, aux horaires de votre vol."
         },
         {
-          "title": "Private Chauffeur",
+          "title": "Chauffeur privé",
           "text": "Chauffeur discret à votre disposition à l'heure ou à la journée."
         },
         {
-          "title": "Mobility in Andorra",
+          "title": "Mobilité en Andorre",
           "text": "Déplacements entre vallées, stations et rendez-vous."
         }
       ],
@@ -158,9 +158,9 @@
       ],
       "services": [
         "Home Stay Safe",
-        "Private Transfer",
-        "Mobility / Concierge",
-        "Private Transfer"
+        "Transfert privé",
+        "Mobilité / Conciergerie",
+        "Transfert privé"
       ]
     },
     "about": {

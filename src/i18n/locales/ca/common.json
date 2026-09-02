@@ -19,7 +19,7 @@
   },
   "language": {
     "label": "Idioma",
-    "select": "Seleccionar idioma",
+    "select": "Selecciona idioma",
     "current": "Idioma actual: {{language}}",
     "suggestion": "També disponible en {{language}}."
   },
@@ -102,15 +102,15 @@
       "title": "Mobilitat <0>privada</0>, puntual i <1>discreta</1>.",
       "cards": [
         {
-          "title": "Airport & Long-Distance Transfers",
+          "title": "Trasllats a aeroport i llarga distància",
           "text": "Barcelona, Tolosa, Girona o Madrid, amb horaris ajustats al teu vol."
         },
         {
-          "title": "Private Chauffeur",
+          "title": "Xofer privat",
           "text": "Xofer discret a la teva disposició per hores o per jornada."
         },
         {
-          "title": "Mobility in Andorra",
+          "title": "Mobilitat a Andorra",
           "text": "Desplaçaments interns entre valls, estacions i reunions."
         }
       ],
@@ -158,9 +158,9 @@
       ],
       "services": [
         "Home Stay Safe",
-        "Private Transfer",
-        "Mobility / Concierge",
-        "Private Transfer"
+        "Trasllat privat",
+        "Mobilitat / Conciergerie",
+        "Trasllat privat"
       ]
     },
     "about": {
@@ -705,7 +705,7 @@
       "visit": "Visita",
       "by": "Realitzada per",
       "download": "Descarregar en PDF",
-      "checklist": "Checklist de la visita",
+      "checklist": "Llista de comprovació de la visita",
       "states": {
         "ok": "Correcte",
         "attention": "A revisar",

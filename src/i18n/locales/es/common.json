@@ -102,15 +102,15 @@
       "title": "Movilidad <0>privada</0>, puntual y <1>discreta</1>.",
       "cards": [
         {
-          "title": "Airport & Long-Distance Transfers",
+          "title": "Traslados a aeropuerto y larga distancia",
           "text": "Barcelona, Toulouse, Girona o Madrid, con horarios ajustados a tu vuelo."
         },
         {
-          "title": "Private Chauffeur",
+          "title": "Chófer privado",
           "text": "Chófer discreto a tu disposición por horas o por jornada."
         },
         {
-          "title": "Mobility in Andorra",
+          "title": "Movilidad en Andorra",
           "text": "Desplazamientos internos entre valles, estaciones y reuniones."
         }
       ],
@@ -158,9 +158,9 @@
       ],
       "services": [
         "Home Stay Safe",
-        "Private Transfer",
-        "Mobility / Concierge",
-        "Private Transfer"
+        "Traslado privado",
+        "Movilidad / Conciergerie",
+        "Traslado privado"
       ]
     },
     "about": {
