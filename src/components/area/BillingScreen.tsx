@@ -12,7 +12,7 @@ export function BillingScreen() {
   const subscription = [
     { label: t("area.billing.plan"), value: DEMO_SUBSCRIPTION.plan },
     { label: t("area.billing.renewal"), value: formatDate(DEMO_SUBSCRIPTION.renewal, i18n.language) },
-    { label: t("area.billing.method"), value: DEMO_SUBSCRIPTION.method },
+    { label: t("area.billing.method"), value: t(DEMO_SUBSCRIPTION.method) },
   ];
 
   return (
