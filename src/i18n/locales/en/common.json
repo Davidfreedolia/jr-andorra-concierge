@@ -425,7 +425,8 @@
       "title": "Tell us what you <gold>need</gold>.",
       "text": "Write to us and we will study your case discreetly.",
       "cta": "Go to the contact form",
-      "whatsapp": "WhatsApp"
+      "whatsapp": "WhatsApp",
+      "alt": "Luxury vehicle in an Andorran mountain setting"
     },
     "booking": {
       "open": "Book",
