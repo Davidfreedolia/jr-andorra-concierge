@@ -16,7 +16,7 @@ export function HomeStaySafeSummary({ lang }: { lang: Language }) {
       <div className="jr-container flex flex-col gap-10">
         <Reveal>
           <h2 className="jr-display-2 jr-measure text-jr-white">
-            <Trans i18nKey="home.hss.title" components={{ gold: <span className="text-jr-gold" /> }} />
+            <Trans i18nKey="home.hss.title" components={[<span className="text-jr-gold" />]} />
           </h2>
         </Reveal>
 

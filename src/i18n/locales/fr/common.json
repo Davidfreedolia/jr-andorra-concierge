@@ -81,7 +81,7 @@
     },
     "hss": {
       "label": "Home Stay Safe",
-      "title": "Votre maison en Andorre, <gold>veillée</gold> même en votre absence.",
+      "title": "Votre maison en Andorre, <1>veillée</1> même en votre absence.",
       "items": [
         "Garde sécurisée des clés, accès contrôlé et traçabilité.",
         "Visites régulières avec inspection intérieure et extérieure.",
