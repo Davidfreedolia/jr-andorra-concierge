@@ -34,7 +34,7 @@ export function AccessScreen() {
 
       <div className="jr-access-panel">
         <LogoJR title={t("common.logoAlt")} className="jr-logo mx-auto" />
-        <h1 className="jr-display-2 text-center text-jr-bone">{t("area.access.title")}</h1>
+        <h1 className="jr-display-2 text-center text-jr-gold">{t("area.access.title")}</h1>
         <p className="text-center text-muted-foreground">{t("area.access.intro")}</p>
 
         <form noValidate onSubmit={onSubmit} className="flex w-full flex-col gap-4">

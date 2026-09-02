@@ -14,7 +14,7 @@ export function Principles() {
     <section className="jr-section">
       <div className="jr-container flex flex-col gap-12">
         <Reveal>
-          <h2 className="jr-display-1 jr-measure text-jr-bone">{t("about.principles.title")}</h2>
+          <h2 className="jr-display-1 jr-measure text-jr-gold">{t("about.principles.title")}</h2>
         </Reveal>
 
         <ul className="grid grid-cols-1 gap-5 md:grid-cols-2">
@@ -26,7 +26,7 @@ export function Principles() {
               className="jr-panel flex min-w-0 flex-col gap-4"
             >
               <IconTile index={index + 6} />
-              <h3 className="jr-display-2 text-jr-bone">{item.title}</h3>
+              <h3 className="jr-display-2 text-jr-gold">{item.title}</h3>
               <p className="text-lg text-muted-foreground">{item.line}</p>
             </Reveal>
           ))}

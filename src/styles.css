@@ -124,6 +124,12 @@
     overflow-wrap: break-word;
   }
 
+  strong,
+  b {
+    color: var(--jr-gold);
+    font-weight: 400;
+  }
+
   h1,
   h2,
   h3,
@@ -280,10 +286,10 @@
       to bottom,
       transparent 0%,
       transparent 62%,
-      color-mix(in srgb, var(--jr-black) 70%, transparent) 84%,
+      color-mix(in srgb, var(--jr-black) 55%, transparent) 86%,
       var(--jr-black) 100%
     ),
-    color-mix(in srgb, var(--jr-black) 20%, transparent);
+    color-mix(in srgb, var(--jr-black) 8%, transparent);
 }
 
 @utility jr-door-veil {
@@ -293,8 +299,8 @@
   pointer-events: none;
   background: linear-gradient(
     to bottom,
-    color-mix(in srgb, var(--jr-black) 30%, transparent) 0%,
-    var(--jr-black) 100%
+    color-mix(in srgb, var(--jr-black) 10%, transparent) 0%,
+    color-mix(in srgb, var(--jr-black) 88%, transparent) 100%
   );
 }
 
@@ -742,22 +748,23 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 34px;
+  height: 34px;
   flex: 0 0 auto;
-  border: 2px solid color-mix(in srgb, var(--jr-gold) 55%, transparent);
-  border-radius: 12px;
   color: var(--jr-gold);
-  background:
-    radial-gradient(
-      140% 140% at 30% 20%,
-      color-mix(in srgb, var(--jr-gold) 18%, transparent) 0%,
-      color-mix(in srgb, var(--jr-gold) 6%, transparent) 55%,
-      transparent 100%
-    );
-  box-shadow:
-    inset 0 1px 0 0 color-mix(in srgb, var(--jr-gold) 22%, transparent),
-    0 8px 24px -8px color-mix(in srgb, var(--jr-gold) 18%, transparent);
+  background: none;
+  border: 0;
+}
+
+/* Palabras destacadas en oro dentro de un texto. */
+@utility jr-em {
+  color: var(--jr-gold);
+  font-weight: 400;
+}
+
+/* Fotografías: un punto más de luz, sin perder la atmósfera. */
+@utility jr-photo-lift {
+  filter: brightness(1.28) contrast(1.02) saturate(1.05);
 }
 
 @utility jr-badge {

@@ -6,7 +6,7 @@ export function HssPromise() {
   return (
     <section className="jr-section">
       <div className="jr-container flex flex-col items-center gap-8 text-center">
-        <p className="jr-display-2 max-w-[20ch] text-jr-bone">{t("hss.promise.quote")}</p>
+        <p className="jr-display-2 max-w-[20ch] text-jr-gold">{t("hss.promise.quote")}</p>
         <p className="jr-measure text-muted-foreground">{t("hss.promise.line")}</p>
       </div>
     </section>

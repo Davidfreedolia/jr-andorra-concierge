@@ -41,7 +41,7 @@ export function TwoDoors({ lang }: { lang: Language }) {
             loading="lazy"
             width={1440}
             height={1080}
-            className="absolute inset-0 -z-10 h-full w-full object-cover opacity-45 transition-opacity duration-500 group-hover:opacity-60"
+            className="absolute inset-0 -z-10 h-full w-full object-cover jr-kenburns jr-photo-lift opacity-80 transition-opacity duration-500 group-hover:opacity-95"
           />
           <div className="jr-door-veil" aria-hidden="true" />
           <div className="relative flex flex-col gap-3">

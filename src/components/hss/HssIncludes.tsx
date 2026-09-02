@@ -12,7 +12,7 @@ export function HssIncludes() {
     <section className="jr-section">
       <div className="jr-container flex flex-col gap-12">
         <Reveal>
-          <h2 className="jr-display-2 jr-measure text-jr-bone">{t("hss.includes.title")}</h2>
+          <h2 className="jr-display-2 jr-measure text-jr-gold">{t("hss.includes.title")}</h2>
         </Reveal>
 
         <Reveal className="jr-panel">

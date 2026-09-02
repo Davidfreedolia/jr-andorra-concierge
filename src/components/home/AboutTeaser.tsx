@@ -24,7 +24,7 @@ export function AboutTeaser({ lang }: { lang: Language }) {
 
         <div className="flex min-w-0 flex-col gap-5">
           <p className="jr-label">{t("home.about.label")}</p>
-          <h2 className="jr-display-2 text-jr-bone">{t("home.about.title")}</h2>
+          <h2 className="jr-display-2 text-jr-gold">{t("home.about.title")}</h2>
           <div className="jr-measure flex flex-col gap-2 text-muted-foreground">
             {lines.map((line) => (
               <p key={line}>{line}</p>

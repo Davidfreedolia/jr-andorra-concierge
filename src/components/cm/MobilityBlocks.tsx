@@ -18,7 +18,7 @@ export function MobilityBlocks() {
       <div className="jr-container flex flex-col gap-12 lg:gap-20">
         <div className="flex flex-col gap-4">
           <p className="jr-label">{t("cm.mobility.label")}</p>
-          <h2 className="jr-display-2 jr-measure text-jr-bone">{t("cm.mobility.title")}</h2>
+          <h2 className="jr-display-2 jr-measure text-jr-gold">{t("cm.mobility.title")}</h2>
         </div>
 
         {blocks.map((block, index) => (
@@ -33,10 +33,10 @@ export function MobilityBlocks() {
               height={960}
               loading="lazy"
               decoding="async"
-              className={`w-full object-cover ${index % 2 === 1 ? "lg:order-2" : ""}`}
+              className={`jr-photo-lift w-full object-cover ${index % 2 === 1 ? "lg:order-2" : ""}`}
             />
             <div className="flex min-w-0 flex-col gap-4">
-              <h3 className="font-display text-3xl text-jr-bone lg:text-4xl">{block.title}</h3>
+              <h3 className="font-display text-3xl text-jr-gold lg:text-4xl">{block.title}</h3>
               <p className="jr-measure text-muted-foreground">{block.text}</p>
             </div>
           </article>
