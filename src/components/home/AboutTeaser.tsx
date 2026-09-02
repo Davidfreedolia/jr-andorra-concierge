@@ -5,6 +5,7 @@ import { tList } from "@/i18n/list";
 
 import founder from "@/assets/founder.jpg.asset.json";
 import type { Language } from "@/i18n/config";
+import { Reveal } from "@/components/Reveal";
 
 export function AboutTeaser({ lang }: { lang: Language }) {
   const { t } = useTranslation();
@@ -13,6 +14,7 @@ export function AboutTeaser({ lang }: { lang: Language }) {
   return (
     <section className="jr-section">
       <div className="jr-container grid grid-cols-1 items-center gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
+        <Reveal>
         <img
           src={founder.url}
           alt={t("home.about.portraitAlt")}
@@ -21,8 +23,9 @@ export function AboutTeaser({ lang }: { lang: Language }) {
           height={1200}
           className="w-full max-w-sm object-cover"
         />
+        </Reveal>
 
-        <div className="flex min-w-0 flex-col gap-5">
+        <Reveal className="flex min-w-0 flex-col gap-5" delay={120}>
           <p className="jr-label">{t("home.about.label")}</p>
           <h2 className="jr-display-2 text-jr-white">
             <Trans i18nKey="home.about.title" components={[<span className="text-jr-gold" />]} />
@@ -37,7 +40,7 @@ export function AboutTeaser({ lang }: { lang: Language }) {
               {t("home.about.link")}
             </Link>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

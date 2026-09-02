@@ -4,13 +4,14 @@ import { useTranslation } from "react-i18next";
 import { WHATSAPP_URL } from "@/lib/contact";
 
 import type { Language } from "@/i18n/config";
+import { Reveal } from "@/components/Reveal";
 
 export function CmClosing({ lang }: { lang: Language }) {
   const { t } = useTranslation();
 
   return (
     <section className="jr-section">
-      <div className="jr-container flex flex-col gap-6">
+      <Reveal className="jr-container flex flex-col gap-6">
         <h2 className="jr-display-2 jr-measure text-jr-gold">{t("cm.closing.title")}</h2>
         <p className="jr-measure text-muted-foreground">{t("cm.closing.text")}</p>
         <div className="flex flex-col gap-4 sm:flex-row">
@@ -26,7 +27,7 @@ export function CmClosing({ lang }: { lang: Language }) {
             {t("cm.closing.whatsapp")}
           </a>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

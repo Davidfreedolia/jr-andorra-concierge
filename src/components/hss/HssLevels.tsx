@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 import { tList } from "@/i18n/list";
+import { Reveal } from "@/components/Reveal";
 
 type Level = { name: string; summary: string; features: string[] };
 
@@ -11,17 +12,17 @@ export function HssLevels() {
   return (
     <section className="jr-section jr-surface-bone">
       <div className="jr-container flex flex-col gap-12">
-        <div className="flex flex-col gap-4">
+        <Reveal className="flex flex-col gap-4">
           <p className="jr-label text-jr-gold-deep">{t("hss.levels.label")}</p>
           <h2 className="jr-display-2 jr-measure">{t("hss.levels.title")}</h2>
-        </div>
+        </Reveal>
 
         <ul className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           {levels.map((level, index) => {
             const featured = index === 1;
             return (
-              <li
-                key={level.name}
+              <Reveal as="li" key={level.name} delay={index * 120}>
+              <div
                 className={
                   featured
                     ? "flex flex-col gap-5 border border-jr-gold p-7 lg:p-9"
@@ -40,7 +41,8 @@ export function HssLevels() {
                     </li>
                   ))}
                 </ul>
-              </li>
+              </div>
+              </Reveal>
             );
           })}
         </ul>

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { z } from "zod";
+import { Reveal } from "@/components/Reveal";
 
 function buildSchema(e: (key: string) => string) {
   const count = (min: number, max: number, key: string) =>
@@ -59,13 +60,13 @@ export function TransferForm() {
   return (
     <section id="transfer" className="jr-section jr-surface-bone">
       <div className="jr-container flex flex-col gap-10">
-        <div className="flex flex-col gap-4">
+        <Reveal className="flex flex-col gap-4">
           <p className="jr-label text-jr-gold-deep">{t("cm.transfer.label")}</p>
           <h2 className="jr-display-2 jr-measure">{t("cm.transfer.title")}</h2>
           <p className="jr-measure border-l-2 border-jr-gold py-2 pl-4 font-display text-2xl lg:text-3xl">
             {t("cm.transfer.promise")}
           </p>
-        </div>
+        </Reveal>
 
         <form noValidate onSubmit={onSubmit} className="grid grid-cols-1 gap-5 md:grid-cols-2">
           <div className="flex flex-col gap-2">
