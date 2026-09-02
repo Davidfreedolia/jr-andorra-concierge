@@ -274,7 +274,7 @@
     },
     "keys": {
       "label": "Schlüsselverwahrung",
-      "title": "Wer Ihre Schlüssel hat, und wann.",
+      "title": "Wer <0>Ihre Schlüssel</0> hat, und wann.",
       "lines": [
         "Jeder Zugang zur Immobilie wird mit Datum, Uhrzeit und Grund erfasst.",
         "Vollständige Nachvollziehbarkeit: Sie wissen stets, wer eingetreten ist und warum.",
