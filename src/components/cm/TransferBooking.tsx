@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 import { Reveal } from "@/components/Reveal";
 import { tList } from "@/i18n/list";
@@ -61,7 +61,9 @@ export function TransferBooking() {
       <div className="jr-container flex flex-col gap-10">
         <Reveal className="flex flex-col gap-4">
           <p className="jr-label text-jr-gold-deep">{t("cm.transfer.label")}</p>
-          <h2 className="jr-display-2 jr-measure text-jr-white">{t("cm.transfer.title")}</h2>
+          <h2 className="jr-display-2 jr-measure text-jr-white">
+            <Trans i18nKey="cm.transfer.title" components={{ gold: <span className="text-jr-gold-deep" /> }} />
+          </h2>
           <p className="jr-measure border-l-2 border-jr-gold py-2 pl-4 font-display text-2xl text-jr-white lg:text-3xl">
             {t("cm.transfer.promise")}
           </p>
