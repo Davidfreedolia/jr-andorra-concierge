@@ -422,7 +422,7 @@
       "note": "Pas de catalogue figé, pas de forfaits : chaque demande est étudiée individuellement."
     },
     "closing": {
-      "title": "Dites-nous ce dont vous avez besoin.",
+      "title": "Dites-nous ce dont vous <gold>avez besoin</gold>.",
       "text": "Écrivez-nous : nous étudions votre demande en toute discrétion.",
       "cta": "Aller au formulaire de contact",
       "whatsapp": "WhatsApp"

@@ -422,7 +422,7 @@
       "note": "No fixed catalogue, no packages: every request is studied individually."
     },
     "closing": {
-      "title": "Tell us what you need.",
+      "title": "Tell us what you <gold>need</gold>.",
       "text": "Write to us and we will study your case discreetly.",
       "cta": "Go to the contact form",
       "whatsapp": "WhatsApp"

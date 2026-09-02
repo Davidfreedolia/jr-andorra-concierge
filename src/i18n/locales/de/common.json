@@ -422,7 +422,7 @@
       "note": "Kein festes Katalogangebot, keine Pakete: Jede Anfrage wird individuell geprüft."
     },
     "closing": {
-      "title": "Sagen Sie uns, was Sie brauchen.",
+      "title": "Sagen Sie uns, was Sie <gold>brauchen</gold>.",
       "text": "Schreiben Sie uns – wir prüfen Ihr Anliegen diskret.",
       "cta": "Zum Kontaktformular",
       "whatsapp": "WhatsApp"
