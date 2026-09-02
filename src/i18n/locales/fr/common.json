@@ -425,7 +425,8 @@
       "title": "Dites-nous ce dont vous <gold>avez besoin</gold>.",
       "text": "Écrivez-nous : nous étudions votre demande en toute discrétion.",
       "cta": "Aller au formulaire de contact",
-      "whatsapp": "WhatsApp"
+      "whatsapp": "WhatsApp",
+      "alt": "Véhicule de luxe dans un environnement montagneux andorran"
     },
     "booking": {
       "open": "Réserver",
