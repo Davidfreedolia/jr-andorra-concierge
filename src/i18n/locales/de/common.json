@@ -206,8 +206,9 @@
       "alt": "Geschlossene Bergresidenz mit warmem Licht im Inneren"
     },
     "promise": {
-      "quote": "Kommen Sie an und <0>entspannen Sie sich</0>. Alles ist vorbereitet.",
-      "line": "Ein einziger Ansprechpartner für Ihre Immobilie in Andorra, das ganze Jahr über."
+      "quote": "Kommen Sie an und entspannen Sie sich. Alles ist <gold>vorbereitet</gold>.",
+      "line": "Ein einziger Ansprechpartner für Ihre Immobilie in Andorra, das ganze Jahr über.",
+      "alt": "Innenraum einer Premium-Residenz, die auf Ihre Ankunft vorbereitet ist"
     },
     "includes": {
       "label": "Was enthalten ist",

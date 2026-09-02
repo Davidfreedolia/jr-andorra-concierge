@@ -206,8 +206,9 @@
       "alt": "Closed mountain residence with warm light inside"
     },
     "promise": {
-      "quote": "Arrive and <0>relax</0>. Everything is ready.",
-      "line": "One point of contact for your property in Andorra, all year round."
+      "quote": "Arrive and relax. Everything is <gold>ready</gold>.",
+      "line": "One point of contact for your property in Andorra, all year round.",
+      "alt": "Interior of a premium residence prepared for your arrival"
     },
     "includes": {
       "label": "What it includes",
