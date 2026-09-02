@@ -14,7 +14,8 @@
     "closeMenu": "Cerrar el menú de navegación",
     "primary": "Navegación principal",
     "footer": "Navegación del pie de página",
-    "skipToContent": "Ir al contenido principal"
+    "skipToContent": "Ir al contenido principal",
+    "area": "Área privada"
   },
   "language": {
     "label": "Idioma",

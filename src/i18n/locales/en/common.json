@@ -14,7 +14,8 @@
     "closeMenu": "Close the navigation menu",
     "primary": "Primary navigation",
     "footer": "Footer navigation",
-    "skipToContent": "Skip to main content"
+    "skipToContent": "Skip to main content",
+    "area": "Private area"
   },
   "language": {
     "label": "Language",
