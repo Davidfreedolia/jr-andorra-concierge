@@ -15,7 +15,7 @@ export function SiteHeader({ lang }: { lang: Language }) {
     <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur">
       <div className="jr-container grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-4">
         <Link
-          to="/$lang/"
+          to="/$lang"
           params={{ lang }}
           className="jr-tap min-w-0 justify-start text-primary"
           aria-label={t("common.logoAlt")}

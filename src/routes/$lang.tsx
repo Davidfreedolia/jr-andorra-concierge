@@ -8,7 +8,7 @@ import i18n, { DEFAULT_LANGUAGE, isLanguage, type Language } from "@/i18n/config
 export const Route = createFileRoute("/$lang")({
   beforeLoad: ({ params, location }) => {
     if (!isLanguage(params.lang)) {
-      throw redirect({ to: "/$lang/", params: { lang: DEFAULT_LANGUAGE } });
+      throw redirect({ to: "/$lang", params: { lang: DEFAULT_LANGUAGE } });
     }
     if (i18n.language !== params.lang) {
       void i18n.changeLanguage(params.lang);
