@@ -62,7 +62,7 @@
       "videoAlt": "Private Residenz in den Pyrenäen zur blauen Stunde"
     },
     "voice": {
-      "quote": "Wir kümmern uns um Ihr Haus, wenn Sie fort sind. Und um Sie, wenn Sie zurückkehren.",
+      "quote": "<1>Wir kümmern uns</1> um Ihr Haus, wenn Sie fort sind. Und <2>wir kümmern uns</2> um Sie, wenn Sie zurückkehren.",
       "line1": "JR ist ein privates Büro in Andorra für Eigentümer von Zweitwohnsitzen und für Kunden, die Diskretion schätzen.",
       "line2": "Ein einziger Ansprechpartner für Ihr Zuhause, Ihre Mobilität und Ihre Zeit."
     },
