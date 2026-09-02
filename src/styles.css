@@ -160,17 +160,11 @@
     background-size: 160px 160px;
   }
 
-  @media (prefers-reduced-motion: no-preference) {
-    body::before {
-      background-attachment: fixed;
-  }
-
   body > * {
     position: relative;
     z-index: 1;
   }
 
-  }
 
 
   strong,
