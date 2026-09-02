@@ -9,7 +9,7 @@ export function HssIncludes() {
   const items = tList<string>(t, "hss.includes.items");
 
   return (
-    <section className="jr-section">
+    <section id="servicios" className="jr-section">
       <div className="jr-container flex flex-col gap-12">
         <Reveal>
           <h2 className="jr-display-2 jr-measure text-jr-white">
