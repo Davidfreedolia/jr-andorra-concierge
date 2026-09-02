@@ -39,7 +39,7 @@ export function IconTile({ index, className = "" }: { index: number; className?:
   const Icon = ICONS[index % ICONS.length]!;
   return (
     <span className={cn("jr-icon-tile", className)} aria-hidden="true">
-      <Icon size={28} strokeWidth={1.6} />
+      <Icon size={30} strokeWidth={1.5} />
     </span>
   );
 }
