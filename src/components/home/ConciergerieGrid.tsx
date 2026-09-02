@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 import { IconTile } from "@/components/IconTile";
 import { Reveal } from "@/components/Reveal";
@@ -14,7 +14,9 @@ export function ConciergerieGrid() {
     <section className="jr-section">
       <div className="jr-container flex flex-col gap-10">
         <Reveal>
-          <h2 className="jr-display-2 jr-measure text-jr-gold">{t("home.concierge.title")}</h2>
+          <h2 className="jr-display-2 jr-measure text-jr-white">
+            <Trans i18nKey="home.concierge.title" components={[<span className="text-jr-gold" />]} />
+          </h2>
         </Reveal>
 
         <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

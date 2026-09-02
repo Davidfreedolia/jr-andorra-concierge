@@ -113,7 +113,7 @@
     },
     "concierge": {
       "label": "Conciergerie & Experiences",
-      "title": "Ce dont vous avez besoin, réglé avant la seconde demande.",
+      "title": "Ce dont vous avez besoin, <0>réglé</0> avant la seconde demande.",
       "items": [
         {
           "title": "Gastronomie et réservations",

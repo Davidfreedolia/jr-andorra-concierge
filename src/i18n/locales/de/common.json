@@ -113,7 +113,7 @@
     },
     "concierge": {
       "label": "Conciergerie & Experiences",
-      "title": "Was Sie brauchen, geregelt, bevor Sie zweimal fragen.",
+      "title": "Was Sie brauchen, <0>geregelt</0>, bevor Sie zweimal fragen.",
       "items": [
         {
           "title": "Gastronomie und Reservierungen",
