@@ -49,7 +49,10 @@
     "privacy": "Privacitat",
     "cookies": "Galetes",
     "rights": "Tots els drets reservats.",
-    "credits": "Disseny i desenvolupament per Freedolia"
+    "credits": "Disseny i desenvolupament per Freedolia",
+    "socialLabel": "Segueix-nos a les xarxes socials",
+    "socialInstagram": "Instagram de JR Hospitality",
+    "socialLinkedin": "LinkedIn de JR Hospitality"
   },
   "common": {
     "logoAlt": "JR Hospitality & Customer Experience"

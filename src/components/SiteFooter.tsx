@@ -7,21 +7,71 @@ import { NAV_ITEMS } from "@/lib/routes";
 
 const LEGAL_KEYS = ["legal", "privacy", "cookies"] as const;
 
+function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+      <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" strokeWidth="1.75" />
+      <circle cx="12" cy="12" r="4.25" stroke="currentColor" strokeWidth="1.75" />
+      <circle cx="18.5" cy="5.5" r="1.25" fill="currentColor" />
+    </svg>
+  );
+}
+
+function LinkedInIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+      <rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" strokeWidth="1.75" />
+      <path
+        d="M7.5 10v6M7.5 7.25V7.3M12 16v-3a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v3"
+        stroke="currentColor"
+        strokeWidth="1.75"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+      <circle cx="7.5" cy="7.25" r="0.75" fill="currentColor" />
+    </svg>
+  );
+}
+
 export function SiteFooter({ lang }: { lang: Language }) {
   const { t } = useTranslation();
 
   return (
     <footer className="border-t">
-      <div className="jr-container flex flex-col gap-10 py-16 lg:flex-row lg:justify-between lg:py-20">
-        <div className="flex min-w-0 flex-col gap-4 text-primary">
-          <div className="inline-flex overflow-hidden rounded-sm border border-jr-gold/15 bg-jr-black p-3">
+      <div className="jr-container flex flex-col gap-6 py-8 lg:flex-row lg:items-start lg:justify-between lg:py-10">
+        <div className="flex min-w-0 flex-col gap-3 text-primary">
+          <div className="inline-flex overflow-hidden rounded-sm border border-jr-gold/15 bg-jr-black p-1.5">
             <LogoJR
               title={t("common.logoAlt")}
-              className="jr-logo"
+              className="jr-logo w-32"
               style={{ clipPath: "polygon(11% 0, 89% 0, 89% 100%, 11% 100%)" }}
             />
           </div>
-          <p className="jr-measure text-muted-foreground">{t("brand.tagline")}</p>
+          <p className="jr-measure max-w-[28ch] text-muted-foreground">{t("brand.tagline")}</p>
+
+          <nav aria-label={t("footer.socialLabel")}>
+            <ul className="flex items-center gap-3">
+              <li>
+                <a
+                  href="#"
+                  aria-label={t("footer.socialInstagram")}
+                  className="jr-tap inline-flex text-jr-gold-deep transition-colors duration-200 hover:text-jr-gold"
+                >
+                  <InstagramIcon className="h-5 w-5" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-label={t("footer.socialLinkedin")}
+                  className="jr-tap inline-flex text-jr-gold-deep transition-colors duration-200 hover:text-jr-gold"
+                >
+                  <LinkedInIcon className="h-5 w-5" />
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
         <nav aria-label={t("nav.footer")} className="flex flex-col gap-1">
@@ -46,14 +96,12 @@ export function SiteFooter({ lang }: { lang: Language }) {
         </nav>
       </div>
 
-      <div className="jr-container border-t py-6">
+      <div className="jr-container border-t py-4">
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
           <p className="jr-label text-muted-foreground">
             © {new Date().getFullYear()} {t("brand.name")} · {t("footer.rights")}
           </p>
-          <p className="jr-label text-muted-foreground">
-            {t("footer.credits")}
-          </p>
+          <p className="jr-label text-muted-foreground">{t("footer.credits")}</p>
         </div>
       </div>
     </footer>
