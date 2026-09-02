@@ -832,5 +832,32 @@
       "expiry": "Su acceso está disponible hasta el {{date}}.",
       "note": "Si necesita cualquier cosa durante su estancia, escríbanos."
     }
+  },
+  "chat": {
+    "title": "Conserjería JR",
+    "subtitle": "Atención privada, respuesta discreta",
+    "open": "Abrir el chat",
+    "close": "Cerrar el chat",
+    "greeting": "Buenos días. Soy la conserjería de JR. ¿En qué puedo ayudarle?",
+    "whatsapp": "Continuar por WhatsApp",
+    "note": "Le respondemos en menos de 24 horas.",
+    "topics": [
+      {
+        "q": "Home Stay Safe",
+        "a": "Cuidamos su residencia cuando no está: visitas periódicas, custodia de llaves, home report e incidencias resueltas."
+      },
+      {
+        "q": "Transfers y chófer",
+        "a": "Transfers de aeropuerto, chófer privado y movilidad en Andorra. Confirmamos disponibilidad en menos de 2 horas."
+      },
+      {
+        "q": "Conciergerie",
+        "a": "Gastronomía, wellness, montaña, reservas y encargos. Sin catálogo cerrado: nos adapta­mos a lo que necesita."
+      },
+      {
+        "q": "Hablar con una persona",
+        "a": "Con mucho gusto. Escríbanos por WhatsApp o desde el formulario de contacto y le atendemos personalmente."
+      }
+    ]
   }
 }

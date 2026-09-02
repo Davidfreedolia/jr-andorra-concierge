@@ -832,5 +832,32 @@
       "expiry": "Votre accès est disponible jusqu'au {{date}}.",
       "note": "Si vous avez besoin de quoi que ce soit pendant votre séjour, écrivez-nous."
     }
+  },
+  "chat": {
+    "title": "Conciergerie JR",
+    "subtitle": "Attention privée, réponse discrète",
+    "open": "Ouvrir le chat",
+    "close": "Fermer le chat",
+    "greeting": "Bonjour. Ici la conciergerie JR. Comment puis-je vous aider ?",
+    "whatsapp": "Continuer sur WhatsApp",
+    "note": "Nous vous répondons en moins de 24 heures.",
+    "topics": [
+      {
+        "q": "Home Stay Safe",
+        "a": "Nous veillons sur votre résidence en votre absence : visites régulières, garde des clés, home report et incidents résolus."
+      },
+      {
+        "q": "Transferts et chauffeur",
+        "a": "Transferts aéroport, chauffeur privé et mobilité en Andorre. Disponibilité confirmée en moins de 2 heures."
+      },
+      {
+        "q": "Conciergerie",
+        "a": "Gastronomie, bien-être, montagne, réservations et demandes sur mesure. Aucun catalogue fermé."
+      },
+      {
+        "q": "Parler à une personne",
+        "a": "Avec plaisir. Écrivez-nous sur WhatsApp ou via le formulaire de contact, nous vous répondons personnellement."
+      }
+    ]
   }
 }
