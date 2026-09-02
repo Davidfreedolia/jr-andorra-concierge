@@ -17,6 +17,9 @@ export function HssPromise() {
           <p className="jr-measure text-muted-foreground">
             {t("hss.promise.line")}
           </p>
+          <a href="#servicios" className="jr-button w-fit">
+            {t("hss.promise.cta")}
+          </a>
         </Reveal>
 
         <Reveal delay={120}>
