@@ -25,7 +25,7 @@ export function CmClosing({ lang }: { lang: Language }) {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="jr-button jr-button-quiet"
+            className="jr-button"
           >
             {t("cm.closing.whatsapp")}
           </a>
