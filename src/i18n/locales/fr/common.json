@@ -144,7 +144,7 @@
     },
     "journey": {
       "label": "Le parcours",
-      "title": "De chez vous à chez vous.",
+      "title": "De <0>chez</0> vous à <1>chez</1> vous."
       "states": [
         "Home",
         "Arrival",
