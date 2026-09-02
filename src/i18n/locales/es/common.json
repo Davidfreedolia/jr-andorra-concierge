@@ -160,7 +160,7 @@
     },
     "about": {
       "label": "Jaume Roca",
-      "title": "Una oficina, una persona de confianza.",
+      "title": "Una oficina, <0>una persona de confianza</0>.",
       "lines": [
         "Trabajo con un número limitado de familias y propietarios.",
         "Cada casa tiene su ritmo; mi trabajo es conocerlo y respetarlo.",

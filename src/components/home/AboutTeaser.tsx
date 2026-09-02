@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 import { tList } from "@/i18n/list";
 
@@ -24,7 +24,9 @@ export function AboutTeaser({ lang }: { lang: Language }) {
 
         <div className="flex min-w-0 flex-col gap-5">
           <p className="jr-label">{t("home.about.label")}</p>
-          <h2 className="jr-display-2 text-jr-gold">{t("home.about.title")}</h2>
+          <h2 className="jr-display-2 text-jr-white">
+            <Trans i18nKey="home.about.title" components={[<span className="text-jr-gold" />]} />
+          </h2>
           <div className="jr-measure flex flex-col gap-2 text-muted-foreground">
             {lines.map((line) => (
               <p key={line}>{line}</p>
