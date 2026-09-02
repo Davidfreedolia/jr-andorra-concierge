@@ -6,14 +6,13 @@ import { SiteHeader } from "@/components/SiteHeader";
 import i18n, { DEFAULT_LANGUAGE, isLanguage, type Language } from "@/i18n/config";
 
 export const Route = createFileRoute("/$lang")({
-  beforeLoad: ({ params, location }) => {
+  beforeLoad: ({ params }) => {
     if (!isLanguage(params.lang)) {
       throw redirect({ to: "/$lang", params: { lang: DEFAULT_LANGUAGE } });
     }
     if (i18n.language !== params.lang) {
       void i18n.changeLanguage(params.lang);
     }
-    return { lang: params.lang as Language, pathname: location.pathname };
   },
   component: LanguageLayout,
 });
@@ -24,7 +23,7 @@ function LanguageLayout() {
   const { t } = useTranslation();
 
   if (i18n.language !== language) {
-    i18n.changeLanguage(language);
+    void i18n.changeLanguage(language);
   }
 
   return (
