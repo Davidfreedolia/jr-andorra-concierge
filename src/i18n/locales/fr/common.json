@@ -206,7 +206,7 @@
       "alt": "Résidence de montagne fermée, lumière chaude à l'intérieur"
     },
     "promise": {
-      "quote": "Arrivez et détendez-vous. Tout est <gold>prêt</gold>.",
+      "quote": "<gold>Arrivez</gold> et <gold>détendez-vous</gold>. Tout est <gold>prêt</gold>.",
       "line": "Un seul interlocuteur pour votre propriété en Andorre, toute l'année.",
       "alt": "Intérieur d'une résidence premium préparée pour votre arrivée"
     },
