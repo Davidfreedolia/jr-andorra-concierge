@@ -610,9 +610,16 @@
 }
 
 @utility jr-area-morerow {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 8px;
   padding: 0 var(--jr-gutter) 24px;
+}
+
+.jr-area-morerow > * {
+  min-width: 0;
+  text-align: center;
+  justify-content: center;
 }
 
 @utility jr-area-timeline {
