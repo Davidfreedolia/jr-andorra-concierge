@@ -14,7 +14,7 @@ export function HssHero() {
         height={1080}
         fetchPriority="high"
         decoding="async"
-        className="absolute inset-0 -z-20 h-full w-full object-cover"
+        className="jr-kenburns absolute inset-0 -z-20 h-full w-full object-cover"
       />
       <div className="jr-hero-veil" aria-hidden="true" />
 
