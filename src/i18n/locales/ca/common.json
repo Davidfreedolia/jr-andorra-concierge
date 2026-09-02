@@ -274,7 +274,7 @@
     },
     "keys": {
       "label": "Custòdia de claus",
-      "title": "Qui té les seves claus, i quan.",
+      "title": "Qui té les <0>seves claus</0>, i quan.",
       "lines": [
         "Registre de cada accés a la propietat, amb data, hora i motiu.",
         "Traçabilitat completa: vostè sap sempre qui hi ha entrat i per què.",

@@ -274,7 +274,7 @@
     },
     "keys": {
       "label": "Key custody",
-      "title": "Who holds your keys, and when.",
+      "title": "Who holds <0>your keys</0>, and when.",
       "lines": [
         "Every access to the property is logged with date, time and reason.",
         "Full traceability: you always know who entered and why.",

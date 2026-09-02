@@ -274,7 +274,7 @@
     },
     "keys": {
       "label": "Garde des clés",
-      "title": "Qui détient vos clés, et quand.",
+      "title": "Qui détient <0>vos clés</0>, et quand.",
       "lines": [
         "Registre de chaque accès à la propriété, avec date, heure et motif.",
         "Traçabilité complète : vous savez toujours qui est entré et pourquoi.",
