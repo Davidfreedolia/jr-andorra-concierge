@@ -94,7 +94,7 @@
     },
     "mobility": {
       "label": "Mobility",
-      "title": "Movilidad privada, puntual y discreta.",
+      "title": "Movilidad <0>privada</0>, puntual y <1>discreta</1>.",
       "cards": [
         {
           "title": "Airport & Long-Distance Transfers",

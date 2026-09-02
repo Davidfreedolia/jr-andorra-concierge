@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 import { Link } from "@tanstack/react-router";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 import { IconTile } from "@/components/IconTile";
 import { Reveal } from "@/components/Reveal";
@@ -75,7 +75,15 @@ export function MobilityCards({ lang }: { lang: Language }) {
 
       <div className="jr-container relative z-10 flex flex-col gap-10">
         <Reveal>
-          <h2 className="jr-display-2 jr-measure text-jr-gold">{t("home.mobility.title")}</h2>
+          <h2 className="jr-display-2 jr-measure text-jr-white">
+            <Trans
+              i18nKey="home.mobility.title"
+              components={[
+                <span className="text-jr-gold" />,
+                <span className="text-jr-gold" />,
+              ]}
+            />
+          </h2>
         </Reveal>
 
         <ul className="grid grid-cols-1 gap-5 md:grid-cols-3">
