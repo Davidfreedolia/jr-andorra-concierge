@@ -429,7 +429,11 @@
     },
     "closing": {
       "title": "Sagen Sie uns, was Sie <gold>brauchen</gold>.",
-      "text": "Schreiben Sie uns – wir prüfen Ihr Anliegen diskret.",
+      "lines": [
+        "Schreiben Sie uns – wir prüfen Ihr Anliegen diskret.",
+        "Wir antworten in weniger als 24 Stunden.",
+        "Jeder Vorschlag wird maßgeschneidert erstellt, unverbindlich."
+      ],
       "cta": "Zum Kontaktformular",
       "whatsapp": "WhatsApp",
       "alt": "Luxusfahrzeug in einer andorranischen Berglandschaft"

@@ -18,7 +18,13 @@ export function CmClosing({ lang }: { lang: Language }) {
           <h2 className="jr-display-2 jr-measure text-jr-white">
             <GoldText text={t("cm.closing.title")} />
           </h2>
-          <p className="jr-measure text-muted-foreground">{t("cm.closing.text")}</p>
+          <div className="flex flex-col gap-3">
+            {(t("cm.closing.lines", { returnObjects: true }) as string[]).map((line, idx) => (
+              <p key={idx} className="jr-measure text-muted-foreground">
+                {line}
+              </p>
+            ))}
+          </div>
           <div className="flex flex-col gap-4 sm:flex-row">
             <Link to="/$lang/contact" params={{ lang }} className="jr-button">
               {t("cm.closing.cta")}
