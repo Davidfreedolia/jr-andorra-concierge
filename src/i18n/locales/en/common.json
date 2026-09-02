@@ -144,7 +144,7 @@
     },
     "journey": {
       "label": "The journey",
-      "title": "From your <0>home</0> back to your <1>home</1>."
+      "title": "From your <0>home</0> back to your <1>home</1>",
       "states": [
         "Home",
         "Arrival",
