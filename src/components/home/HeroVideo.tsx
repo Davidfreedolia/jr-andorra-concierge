@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 import type { Language } from "@/i18n/config";
 
@@ -73,7 +73,16 @@ export function HeroVideo({ lang }: { lang: Language }) {
       <div className="jr-hero-veil" aria-hidden="true" />
 
       <div className="jr-container relative w-full pb-16 lg:pb-24">
-        <h1 className="jr-display-1 jr-measure text-jr-white">{t("home.hero.title")}</h1>
+        <h1 className="jr-display-1 jr-measure text-jr-white">
+          <Trans
+            i18nKey="home.hero.title"
+            components={{
+              1: <span className="text-jr-gold" />,
+              2: <span className="text-jr-gold" />,
+              3: <span className="text-jr-gold" />,
+            }}
+          />
+        </h1>
         <p className="jr-label mt-6">{t("home.hero.subtitle")}</p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <Link to="/$lang/home-stay-safe" params={{ lang }} className="jr-button">
