@@ -19,7 +19,7 @@
   },
   "language": {
     "label": "Idioma",
-    "select": "Seleccionar idioma",
+    "select": "Selecciona idioma",
     "current": "Idioma actual: {{language}}",
     "suggestion": "També disponible en {{language}}."
   },
@@ -102,15 +102,15 @@
       "title": "Mobilitat <0>privada</0>, puntual i <1>discreta</1>.",
       "cards": [
         {
-          "title": "Airport & Long-Distance Transfers",
+          "title": "Trasllats a aeroport i llarga distància",
           "text": "Barcelona, Tolosa, Girona o Madrid, amb horaris ajustats al teu vol."
         },
         {
-          "title": "Private Chauffeur",
+          "title": "Xofer privat",
           "text": "Xofer discret a la teva disposició per hores o per jornada."
         },
         {
-          "title": "Mobility in Andorra",
+          "title": "Mobilitat a Andorra",
           "text": "Desplaçaments interns entre valls, estacions i reunions."
         }
       ],
@@ -158,9 +158,9 @@
       ],
       "services": [
         "Home Stay Safe",
-        "Private Transfer",
-        "Mobility / Concierge",
-        "Private Transfer"
+        "Trasllat privat",
+        "Mobilitat / Conciergerie",
+        "Trasllat privat"
       ]
     },
     "about": {
@@ -608,7 +608,22 @@
     "whatsappAria": "Escriure per WhatsApp"
   },
   "area": {
-    "demo": "Interfície provisional amb dades d'exemple.",
+    "demo": {
+      "propertyName": "Casa Exemple",
+      "propertyAddress": "Carrer Exemple, 00 — Ordino (adreça d’exemple)",
+      "propertyType": "Xalet",
+      "userOwner": "Client Exemple",
+      "userFamily": "Familiar Exemple",
+      "userManager": "Gestor Exemple",
+      "userGuest": "Convidat Exemple",
+      "technicianA": "Tècnic Exemple A",
+      "technicianB": "Tècnic Exemple B",
+      "contactConcierge": "Oficina JR (exemple)",
+      "contactPlumber": "Lampisteria Exemple",
+      "contactElectrician": "Electricitat Exemple",
+      "contactEmergency": "Servei d’exemple",
+      "paymentMethod": "Targeta acabada en 00 (exemple)"
+    },
     "roleLabel": "Veure com",
     "langLabel": "Idioma",
     "roles": {
@@ -690,7 +705,7 @@
       "visit": "Visita",
       "by": "Realitzada per",
       "download": "Descarregar en PDF",
-      "checklist": "Checklist de la visita",
+      "checklist": "Llista de comprovació de la visita",
       "states": {
         "ok": "Correcte",
         "attention": "A revisar",

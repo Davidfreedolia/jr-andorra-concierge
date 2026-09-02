@@ -26,7 +26,7 @@ export function PeopleScreen() {
               className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between"
             >
               <span className="flex min-w-0 flex-col gap-1">
-                <span className="jr-area-figure">{person.name}</span>
+                <span className="jr-area-figure">{t(person.name)}</span>
                 <span className="jr-label">{t(`area.roles.${person.role}`)}</span>
               </span>
               <span className="text-sm text-muted-foreground">

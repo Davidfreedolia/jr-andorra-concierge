@@ -13,7 +13,7 @@ export function GuestScreen() {
   return (
     <div className="flex flex-col gap-8">
       <header className="flex flex-col gap-2">
-        <h1 className="jr-area-title">{t("area.guest.welcome", { property: DEMO_PROPERTY.name })}</h1>
+        <h1 className="jr-area-title">{t("area.guest.welcome", { property: t(DEMO_PROPERTY.name) })}</h1>
         <p className="jr-measure text-muted-foreground">{t("area.guest.intro")}</p>
       </header>
 

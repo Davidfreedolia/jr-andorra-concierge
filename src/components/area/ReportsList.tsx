@@ -65,7 +65,7 @@ export function ReportsList() {
                 <span className="flex min-w-0 flex-col gap-1">
                   <span className="jr-area-figure">{formatDate(report.date, i18n.language)}</span>
                   <span className="text-sm text-muted-foreground">
-                    {t("area.reports.technician")}: {report.technician}
+                    {t("area.reports.technician")}: {t(report.technician)}
                   </span>
                 </span>
                 <span className="flex flex-wrap items-center gap-3">

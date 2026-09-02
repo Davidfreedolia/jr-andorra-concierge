@@ -14,10 +14,10 @@ export function PropertyScreen() {
   const isOwner = role === "owner";
 
   const details = [
-    { key: "name", value: DEMO_PROPERTY.name },
-    { key: "address", value: DEMO_PROPERTY.address },
+    { key: "name", value: t(DEMO_PROPERTY.name) },
+    { key: "address", value: t(DEMO_PROPERTY.address) },
     { key: "parish", value: DEMO_PROPERTY.parish },
-    { key: "type", value: DEMO_PROPERTY.type },
+    { key: "type", value: t(DEMO_PROPERTY.type) },
     { key: "area", value: DEMO_PROPERTY.area },
     { key: "bedrooms", value: DEMO_PROPERTY.bedrooms },
   ].filter((row) => isOwner || !["address"].includes(row.key));
@@ -78,7 +78,7 @@ export function PropertyScreen() {
           {DEMO_CONTACTS.map((contact) => (
             <AreaCard as="li" key={contact.id} className="flex flex-col gap-1">
               <span className="jr-label">{t(`area.property.contactRoles.${contact.roleKey}`)}</span>
-              <span className="text-foreground">{contact.name}</span>
+              <span className="text-foreground">{t(contact.name)}</span>
             </AreaCard>
           ))}
         </ul>

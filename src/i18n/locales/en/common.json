@@ -158,9 +158,9 @@
       ],
       "services": [
         "Home Stay Safe",
-        "Private Transfer",
+        "Private transfer",
         "Mobility / Concierge",
-        "Private Transfer"
+        "Private transfer"
       ]
     },
     "about": {
@@ -608,7 +608,22 @@
     "whatsappAria": "Message us on WhatsApp"
   },
   "area": {
-    "demo": "Provisional interface with sample data.",
+    "demo": {
+      "propertyName": "Sample House",
+      "propertyAddress": "Sample Street, 00 — Ordino (sample address)",
+      "propertyType": "Chalet",
+      "userOwner": "Sample Owner",
+      "userFamily": "Sample Family Member",
+      "userManager": "Sample Manager",
+      "userGuest": "Sample Guest",
+      "technicianA": "Sample Technician A",
+      "technicianB": "Sample Technician B",
+      "contactConcierge": "JR Office (sample)",
+      "contactPlumber": "Sample Plumbing",
+      "contactElectrician": "Sample Electrics",
+      "contactEmergency": "Sample service",
+      "paymentMethod": "Card ending in 00 (sample)"
+    },
     "roleLabel": "View as",
     "langLabel": "Language",
     "roles": {

@@ -28,10 +28,10 @@ export function ReportDetail({ id }: { id: string }) {
   }
 
   const header = [
-    { label: t("area.report.property"), value: DEMO_PROPERTY.name },
-    { label: t("area.report.address"), value: DEMO_PROPERTY.address },
+    { label: t("area.report.property"), value: t(DEMO_PROPERTY.name) },
+    { label: t("area.report.address"), value: t(DEMO_PROPERTY.address) },
     { label: t("area.report.visit"), value: `${formatDate(report.date, lang)} — ${report.time}` },
-    { label: t("area.report.by"), value: report.technician },
+    { label: t("area.report.by"), value: t(report.technician) },
   ];
 
   return (
