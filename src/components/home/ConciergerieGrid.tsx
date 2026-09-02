@@ -13,8 +13,7 @@ export function ConciergerieGrid() {
   return (
     <section className="jr-section">
       <div className="jr-container flex flex-col gap-10">
-        <Reveal className="flex flex-col gap-4">
-          <p className="jr-badge">{t("home.concierge.label")}</p>
+        <Reveal>
           <h2 className="jr-display-2 jr-measure text-jr-bone">{t("home.concierge.title")}</h2>
         </Reveal>
 

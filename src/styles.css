@@ -713,16 +713,19 @@
 
 @utility jr-panel {
   position: relative;
-  border: 1px solid color-mix(in srgb, var(--jr-gold) 30%, transparent);
+  border: 2px solid color-mix(in srgb, var(--jr-gold) 32%, transparent);
   border-radius: 14px;
   background:
     linear-gradient(
       180deg,
-      color-mix(in srgb, var(--jr-gold) 4%, transparent) 0%,
+      color-mix(in srgb, var(--jr-gold) 5%, transparent) 0%,
       transparent 60%
     ),
     var(--jr-night);
   padding: 28px 22px;
+  box-shadow:
+    inset 0 1px 0 0 color-mix(in srgb, var(--jr-gold) 8%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--jr-black) 60%, transparent);
 
   @media (min-width: 768px) {
     padding: 40px 36px;
@@ -739,13 +742,22 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
+  width: 60px;
+  height: 60px;
   flex: 0 0 auto;
-  border: 1px solid color-mix(in srgb, var(--jr-gold) 45%, transparent);
+  border: 2px solid color-mix(in srgb, var(--jr-gold) 55%, transparent);
   border-radius: 12px;
   color: var(--jr-gold);
-  background: color-mix(in srgb, var(--jr-gold) 6%, transparent);
+  background:
+    radial-gradient(
+      140% 140% at 30% 20%,
+      color-mix(in srgb, var(--jr-gold) 18%, transparent) 0%,
+      color-mix(in srgb, var(--jr-gold) 6%, transparent) 55%,
+      transparent 100%
+    );
+  box-shadow:
+    inset 0 1px 0 0 color-mix(in srgb, var(--jr-gold) 22%, transparent),
+    0 8px 24px -8px color-mix(in srgb, var(--jr-gold) 18%, transparent);
 }
 
 @utility jr-badge {

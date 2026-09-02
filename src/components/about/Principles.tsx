@@ -13,8 +13,7 @@ export function Principles() {
   return (
     <section className="jr-section">
       <div className="jr-container flex flex-col gap-12">
-        <Reveal className="flex flex-col gap-4">
-          <p className="jr-badge">{t("about.principles.label")}</p>
+        <Reveal>
           <h2 className="jr-display-1 jr-measure text-jr-bone">{t("about.principles.title")}</h2>
         </Reveal>
 
