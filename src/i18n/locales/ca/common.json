@@ -81,7 +81,7 @@
     },
     "hss": {
       "label": "Home Stay Safe",
-      "title": "La teva casa a Andorra, <1>cuidada</1> encara que no hi siguis.",
+      "title": "La teva casa a Andorra, <0>cuidada</0> encara que no hi siguis.",
       "items": [
         "Custòdia segura de claus, amb accés controlat i traçabilitat.",
         "Visites periòdiques amb supervisió interior i exterior.",
