@@ -425,6 +425,36 @@
       "text": "Écrivez-nous : nous étudions votre demande en toute discrétion.",
       "cta": "Aller au formulaire de contact",
       "whatsapp": "WhatsApp"
+    },
+    "booking": {
+      "open": "Réserver un transfert",
+      "close": "Fermer",
+      "choose": "Sélectionnez…",
+      "reserve": "Réserver",
+      "prevMonth": "Mois précédent",
+      "nextMonth": "Mois suivant",
+      "loginTitle": "Identifiez-vous",
+      "loginText": "Accédez à votre espace privé pour confirmer la réservation.",
+      "password": "Mot de passe",
+      "continue": "Continuer",
+      "back": "Retour",
+      "paymentTitle": "Paiement de la réservation",
+      "notIncluded": "Votre formule n’inclut pas ce service. Vous pouvez le régler ponctuellement.",
+      "card": "Carte",
+      "expiry": "Expiration",
+      "pay": "Payer et confirmer",
+      "places": [
+        "Aéroport de Barcelone",
+        "Aéroport de Toulouse",
+        "Gare de Lleida",
+        "Andorre-la-Vieille",
+        "Escaldes-Engordany",
+        "Ordino",
+        "Soldeu",
+        "La Massana",
+        "Canillo",
+        "Sant Julià de Lòria"
+      ]
     }
   },
   "about": {

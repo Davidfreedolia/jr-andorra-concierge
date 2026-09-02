@@ -4,7 +4,7 @@ import { CmClosing } from "@/components/cm/CmClosing";
 import { CmHero } from "@/components/cm/CmHero";
 import { ConciergerieAreas } from "@/components/cm/ConciergerieAreas";
 import { MobilityBlocks } from "@/components/cm/MobilityBlocks";
-import { TransferForm } from "@/components/cm/TransferForm";
+import { TransferBooking } from "@/components/cm/TransferBooking";
 import { DEFAULT_LANGUAGE, isLanguage } from "@/i18n/config";
 import { pageHead } from "@/lib/seo";
 
@@ -22,7 +22,7 @@ function ConciergerieMobilityPage() {
     <>
       <CmHero />
       <MobilityBlocks />
-      <TransferForm />
+      <TransferBooking />
       <ConciergerieAreas />
       <CmClosing lang={language} />
     </>
