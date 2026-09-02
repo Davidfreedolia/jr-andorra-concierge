@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
+import { GoldText } from "@/components/GoldText";
 import { IconTile } from "@/components/IconTile";
 import { Reveal } from "@/components/Reveal";
 import { tList } from "@/i18n/list";
