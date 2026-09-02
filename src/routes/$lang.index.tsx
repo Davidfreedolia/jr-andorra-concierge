@@ -42,7 +42,7 @@ function HomePage() {
       <ConciergerieGrid />
       <JourneyDiagram />
       <AboutTeaser lang={language} />
-      <ConsultingNote />
+      <ConsultingNote lang={language} />
       <ContactBlock />
     </>
   );
