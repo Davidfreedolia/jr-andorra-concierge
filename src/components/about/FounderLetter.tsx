@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 
+import { GoldText } from "@/components/GoldText";
 import { Reveal } from "@/components/Reveal";
 import founder from "@/assets/founder.jpg.asset.json";
 import { tList } from "@/i18n/list";
@@ -32,7 +33,9 @@ export function FounderLetter() {
             ))}
           </div>
           <p className="mt-2 flex flex-col gap-1">
-            <span className="jr-display-2 text-jr-gold">{t("about.letter.signature")}</span>
+            <span className="jr-display-2">
+              <GoldText text={t("about.letter.signature")} />
+            </span>
             <span className="jr-label">{t("about.letter.role")}</span>
           </p>
         </Reveal>
