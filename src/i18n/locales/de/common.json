@@ -608,7 +608,22 @@
     "whatsappAria": "Über WhatsApp schreiben"
   },
   "area": {
-    "demo": "Vorläufige Oberfläche mit Beispieldaten.",
+    "demo": {
+      "propertyName": "Beispielhaus",
+      "propertyAddress": "Beispielstraße 00 — Ordino (Beispieladresse)",
+      "propertyType": "Chalet",
+      "userOwner": "Beispielkunde",
+      "userFamily": "Beispiel-Angehörige/r",
+      "userManager": "Beispiel-Verwalter",
+      "userGuest": "Beispielgast",
+      "technicianA": "Beispiel-Techniker A",
+      "technicianB": "Beispiel-Techniker B",
+      "contactConcierge": "JR Büro (Beispiel)",
+      "contactPlumber": "Beispiel-Sanitär",
+      "contactElectrician": "Beispiel-Elektrik",
+      "contactEmergency": "Beispielservice",
+      "paymentMethod": "Karte endend auf 00 (Beispiel)"
+    },
     "roleLabel": "Ansicht als",
     "langLabel": "Sprache",
     "roles": {

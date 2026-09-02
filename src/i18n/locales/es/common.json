@@ -608,7 +608,22 @@
     "whatsappAria": "Escribir por WhatsApp"
   },
   "area": {
-    "demo": "Interfaz provisional con datos de ejemplo.",
+    "demo": {
+      "propertyName": "Casa Ejemplo",
+      "propertyAddress": "Calle Ejemplo, 00 — Ordino (dirección de ejemplo)",
+      "propertyType": "Chalet",
+      "userOwner": "Cliente Ejemplo",
+      "userFamily": "Familiar Ejemplo",
+      "userManager": "Gestor Ejemplo",
+      "userGuest": "Invitado Ejemplo",
+      "technicianA": "Técnico Ejemplo A",
+      "technicianB": "Técnico Ejemplo B",
+      "contactConcierge": "Oficina JR (ejemplo)",
+      "contactPlumber": "Fontanería Ejemplo",
+      "contactElectrician": "Electricidad Ejemplo",
+      "contactEmergency": "Servicio de ejemplo",
+      "paymentMethod": "Tarjeta terminada en 00 (ejemplo)"
+    },
     "roleLabel": "Ver como",
     "langLabel": "Idioma",
     "roles": {

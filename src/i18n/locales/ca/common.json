@@ -608,7 +608,22 @@
     "whatsappAria": "Escriure per WhatsApp"
   },
   "area": {
-    "demo": "Interfície provisional amb dades d'exemple.",
+    "demo": {
+      "propertyName": "Casa Exemple",
+      "propertyAddress": "Carrer Exemple, 00 — Ordino (adreça d’exemple)",
+      "propertyType": "Xalet",
+      "userOwner": "Client Exemple",
+      "userFamily": "Familiar Exemple",
+      "userManager": "Gestor Exemple",
+      "userGuest": "Convidat Exemple",
+      "technicianA": "Tècnic Exemple A",
+      "technicianB": "Tècnic Exemple B",
+      "contactConcierge": "Oficina JR (exemple)",
+      "contactPlumber": "Lampisteria Exemple",
+      "contactElectrician": "Electricitat Exemple",
+      "contactEmergency": "Servei d’exemple",
+      "paymentMethod": "Targeta acabada en 00 (exemple)"
+    },
     "roleLabel": "Veure com",
     "langLabel": "Idioma",
     "roles": {
