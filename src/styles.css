@@ -255,3 +255,86 @@
     height: 72px;
   }
 }
+
+/* Hero: 20% black veil plus a vertical fade into --jr-black on the lower third. */
+@utility jr-hero-veil {
+  position: absolute;
+  inset: 0;
+  z-index: -5;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 62%,
+      color-mix(in srgb, var(--jr-black) 70%, transparent) 84%,
+      var(--jr-black) 100%
+    ),
+    color-mix(in srgb, var(--jr-black) 20%, transparent);
+}
+
+@utility jr-door-veil {
+  position: absolute;
+  inset: 0;
+  z-index: -5;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--jr-black) 30%, transparent) 0%,
+    var(--jr-black) 100%
+  );
+}
+
+/* The journey: a hairline of gold linking the four states. Vertical on mobile. */
+@utility jr-journey {
+  display: grid;
+  gap: 32px;
+  position: relative;
+  padding-inline-start: 28px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset-block: 6px;
+    inset-inline-start: 5px;
+    width: 1px;
+    background: var(--jr-gold);
+    opacity: 0.5;
+  }
+
+  @media (min-width: 768px) {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 24px;
+    padding-inline-start: 0;
+    padding-block-start: 28px;
+
+    &::before {
+      inset-block: auto;
+      inset-inline: 5px;
+      top: 5px;
+      width: auto;
+      height: 1px;
+    }
+  }
+}
+
+@utility jr-journey-step {
+  position: relative;
+}
+
+@utility jr-journey-dot {
+  position: absolute;
+  inset-inline-start: -28px;
+  top: 10px;
+  width: 11px;
+  height: 11px;
+  border: 1px solid var(--jr-gold);
+  border-radius: 50%;
+  background: var(--background);
+
+  @media (min-width: 768px) {
+    inset-inline-start: 0;
+    top: -28px;
+  }
+}
