@@ -342,7 +342,7 @@
     },
     "mobility": {
       "label": "Mobility",
-      "title": "Private Mobilität, pünktlich und diskret.",
+      "title": "<0>Private</0> Mobilität, <1>pünktlich</1> und <2>diskret</2>.",
       "blocks": [
         {
           "title": "Airport & Long-Distance Transfers",
