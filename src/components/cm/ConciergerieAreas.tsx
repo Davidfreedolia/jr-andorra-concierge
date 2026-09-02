@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import { GoldText } from "@/components/GoldText";
 import { IconTile } from "@/components/IconTile";
 import { Reveal } from "@/components/Reveal";
 import { tList } from "@/i18n/list";
@@ -73,7 +74,9 @@ export function ConciergerieAreas() {
 
       <div className="jr-container relative z-10 flex flex-col gap-10">
         <Reveal className="flex flex-col gap-4">
-          <h2 className="jr-display-2 jr-measure text-jr-gold">{t("cm.concierge.title")}</h2>
+          <h2 className="jr-display-2 jr-measure text-jr-white">
+            <GoldText text={t("cm.concierge.title")} />
+          </h2>
         </Reveal>
 
         <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

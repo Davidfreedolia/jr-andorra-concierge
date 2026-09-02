@@ -342,7 +342,7 @@
     },
     "mobility": {
       "label": "Mobility",
-      "title": "Mobilitat <0>privada</0>, <1>puntual</1> i <2>discreta</2>.",
+      "title": "Mobilitat <gold>privada</gold>, <gold>puntual</gold> i <gold>discreta</gold>.",
       "blocks": [
         {
           "title": "Trasllats d'aeroport i llarga distància",
@@ -392,7 +392,7 @@
     },
     "concierge": {
       "label": "Conciergerie & Experiences",
-      "title": "Tot el que envolta una bona estada.",
+      "title": "Tot el que envolta una <gold>bona estada</gold>.",
       "items": [
         {
           "title": "Gastronomia i reserves",

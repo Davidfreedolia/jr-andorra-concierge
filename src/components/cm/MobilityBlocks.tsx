@@ -1,4 +1,6 @@
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
+
+import { GoldText } from "@/components/GoldText";
 
 import andorraImage from "@/assets/cm-andorra.jpg";
 import chauffeurImage from "@/assets/cm-chauffeur.jpg";
@@ -20,14 +22,7 @@ export function MobilityBlocks() {
         <Reveal className="flex flex-col gap-4">
           <p className="jr-label">{t("cm.mobility.label")}</p>
           <h2 className="jr-display-2 jr-measure text-jr-white">
-            <Trans
-              i18nKey="cm.mobility.title"
-              components={[
-                <span className="text-jr-gold" />,
-                <span className="text-jr-gold" />,
-                <span className="text-jr-gold" />,
-              ]}
-            />
+            <GoldText text={t("cm.mobility.title")} />
           </h2>
         </Reveal>
 

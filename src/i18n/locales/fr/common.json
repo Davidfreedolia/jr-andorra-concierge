@@ -342,7 +342,7 @@
     },
     "mobility": {
       "label": "Mobility",
-      "title": "Mobilité <0>privée</0>, <1>ponctuelle</1> et <2>discrète</2>.",
+      "title": "Mobilité <gold>privée</gold>, <gold>ponctuelle</gold> et <gold>discrète</gold>.",
       "blocks": [
         {
           "title": "Transferts aéroport et longue distance",
@@ -392,7 +392,7 @@
     },
     "concierge": {
       "label": "Conciergerie & Experiences",
-      "title": "Tout ce qui entoure un beau séjour.",
+      "title": "Tout ce qui entoure un <gold>beau séjour</gold>.",
       "items": [
         {
           "title": "Gastronomie et réservations",
