@@ -275,6 +275,7 @@
     "keys": {
       "label": "Garde des clés",
       "title": "Qui détient <0>vos clés</0>, et quand.",
+      "alt": "Clé élégante sur une surface sombre, symbole de la garde sécurisée de la propriété.",
       "lines": [
         "Registre de chaque accès à la propriété, avec date, heure et motif.",
         "Traçabilité complète : vous savez toujours qui est entré et pourquoi.",

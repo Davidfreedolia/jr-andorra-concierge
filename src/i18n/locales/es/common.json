@@ -275,6 +275,7 @@
     "keys": {
       "label": "Custodia de llaves",
       "title": "Quién tiene <0>sus llaves</0>, y cuándo.",
+      "alt": "Llave elegante sobre una superficie oscura, símbolo de la custodia segura de la propiedad.",
       "lines": [
         "Registro de cada acceso a la propiedad, con fecha, hora y motivo.",
         "Trazabilidad completa: usted sabe siempre quién ha entrado y por qué.",
