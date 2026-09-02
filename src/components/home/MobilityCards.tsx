@@ -51,21 +51,24 @@ export function MobilityCards({ lang }: { lang: Language }) {
 
   return (
     <section ref={ref} className="jr-section relative overflow-hidden">
-      {/* Background: snowy mountain road with luxury SUV — subtle motion + parallax */}
+      {/* Background: snowy mountain road with luxury SUV — video with parallax */}
       <div
-        className="absolute inset-[-10%] -z-20"
+        className="absolute inset-[-12%] -z-20"
         style={{ transform: `translate3d(0, ${offset.toFixed(2)}%, 0)` }}
         aria-hidden="true"
       >
-        <img
-          src={mobilityBgAsset.url}
-          alt=""
-          loading="lazy"
-          width={1920}
-          height={820}
-          className="h-full w-full object-cover jr-photo-lift jr-kenburns"
+        <video
+          src={mobilityVideoAsset.url}
+          poster={mobilityBgAsset.url}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className="h-full w-full object-cover jr-photo-lift"
         />
       </div>
+
 
       {/* Dark reading veil */}
       <div
