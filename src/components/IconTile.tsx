@@ -38,7 +38,7 @@ const ICONS: LucideIcon[] = [
 export function IconTile({ index, className = "" }: { index: number; className?: string }) {
   const Icon = ICONS[index % ICONS.length]!;
   return (
-    <span className={`jr-icon-tile${className ? ` ${className}` : ""}`} aria-hidden="true">
+    <span className={cn("jr-icon-tile", className)} aria-hidden="true">
       <Icon size={28} strokeWidth={1.6} />
     </span>
   );
