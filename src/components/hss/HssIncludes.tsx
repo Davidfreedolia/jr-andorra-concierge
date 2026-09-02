@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
 
+import { IconTile } from "@/components/IconTile";
+import { Reveal } from "@/components/Reveal";
 import { tList } from "@/i18n/list";
 
 export function HssIncludes() {
@@ -7,20 +9,28 @@ export function HssIncludes() {
   const items = tList<string>(t, "hss.includes.items");
 
   return (
-    <section className="jr-section jr-surface-bone">
+    <section className="jr-section">
       <div className="jr-container flex flex-col gap-12">
-        <div className="flex flex-col gap-4">
-          <p className="jr-label text-jr-gold-deep">{t("hss.includes.label")}</p>
-          <h2 className="jr-display-2 jr-measure">{t("hss.includes.title")}</h2>
-        </div>
+        <Reveal className="flex flex-col gap-4">
+          <p className="jr-badge">{t("hss.includes.label")}</p>
+          <h2 className="jr-display-2 jr-measure text-jr-bone">{t("hss.includes.title")}</h2>
+        </Reveal>
 
-        <ul className="flex flex-col border-t">
-          {items.map((item) => (
-            <li key={item} className="border-b py-7 text-lg lg:py-9">
-              {item}
-            </li>
-          ))}
-        </ul>
+        <Reveal className="jr-panel">
+          <ul className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {items.map((item, index) => (
+              <Reveal
+                as="li"
+                key={item}
+                delay={index * 70}
+                className="flex min-w-0 flex-col items-start gap-4"
+              >
+                <IconTile index={index} />
+                <p className="text-lg text-jr-bone">{item}</p>
+              </Reveal>
+            ))}
+          </ul>
+        </Reveal>
       </div>
     </section>
   );
