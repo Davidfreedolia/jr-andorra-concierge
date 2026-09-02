@@ -832,5 +832,32 @@
       "expiry": "Your access is available until {{date}}.",
       "note": "If you need anything during your stay, just write to us."
     }
+  },
+  "chat": {
+    "title": "JR Concierge",
+    "subtitle": "Private attention, discreet reply",
+    "open": "Open the chat",
+    "close": "Close the chat",
+    "greeting": "Good morning. This is the JR concierge. How may I help you?",
+    "whatsapp": "Continue on WhatsApp",
+    "note": "We reply in under 24 hours.",
+    "topics": [
+      {
+        "q": "Home Stay Safe",
+        "a": "We look after your residence while you are away: regular visits, key custody, home report and incidents resolved."
+      },
+      {
+        "q": "Transfers & chauffeur",
+        "a": "Airport transfers, private chauffeur and mobility in Andorra. Availability confirmed in under 2 hours."
+      },
+      {
+        "q": "Conciergerie",
+        "a": "Gastronomy, wellness, mountain, reservations and errands. No closed catalogue: we adapt to what you need."
+      },
+      {
+        "q": "Speak to a person",
+        "a": "Gladly. Write to us on WhatsApp or through the contact form and we will attend to you personally."
+      }
+    ]
   }
 }
