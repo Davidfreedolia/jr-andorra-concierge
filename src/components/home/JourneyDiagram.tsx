@@ -1,9 +1,11 @@
 import { useTranslation } from "react-i18next";
 
+import { tList } from "@/i18n/list";
+
 export function JourneyDiagram() {
   const { t } = useTranslation();
-  const states = t("home.journey.states", { returnObjects: true }) as string[];
-  const services = t("home.journey.services", { returnObjects: true }) as string[];
+  const states = tList<string>(t, "home.journey.states");
+  const services = tList<string>(t, "home.journey.services");
 
   return (
     <section className="jr-section">

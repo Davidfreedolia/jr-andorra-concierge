@@ -1,12 +1,14 @@
 import { useState, type FormEvent } from "react";
 import { useTranslation } from "react-i18next";
 
+import { tList } from "@/i18n/list";
+
 import { WHATSAPP_URL } from "@/lib/contact";
 
 export function ContactBlock() {
   const { t } = useTranslation();
   const [sent, setSent] = useState(false);
-  const services = t("home.contact.services", { returnObjects: true }) as string[];
+  const services = tList<string>(t, "home.contact.services");
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();

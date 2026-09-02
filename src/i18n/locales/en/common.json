@@ -198,5 +198,138 @@
       "sent": "Thank you. We will reply personally.",
       "required": "Required field"
     }
+  },
+  "hss": {
+    "hero": {
+      "title": "Your home, cared for while you are away.",
+      "alt": "Closed mountain residence with warm light inside"
+    },
+    "promise": {
+      "quote": "Arrive and relax. Everything is ready.",
+      "line": "One point of contact for your property in Andorra, all year round."
+    },
+    "includes": {
+      "label": "What it includes",
+      "title": "The service, point by point.",
+      "items": [
+        "Secure, controlled key custody",
+        "Scheduled visits with interior and exterior supervision",
+        "Photographic Home Report",
+        "Coordination of cleaning and suppliers",
+        "Preparation of the property before your arrival",
+        "Communication and follow-up on incidents"
+      ]
+    },
+    "report": {
+      "label": "The Home Report",
+      "title": "The one thing you receive every month.",
+      "lines": [
+        "It is the report you receive each month on the condition of your home.",
+        "Dated photographs of every room and of the exterior.",
+        "Any incident detected, followed through to resolution."
+      ],
+      "alt": "Printed monthly report in a sober frame"
+    },
+    "levels": {
+      "label": "Three levels",
+      "title": "Essential, Premium and Signature.",
+      "note": "Every property is different. We propose the right level once we know yours.",
+      "featured": "Most chosen",
+      "items": [
+        {
+          "name": "Essential",
+          "summary": "The essential supervision of a closed house.",
+          "features": [
+            "Key custody",
+            "Monthly supervision visit",
+            "Photographic Home Report",
+            "Incident alerts"
+          ]
+        },
+        {
+          "name": "Premium",
+          "summary": "Frequent supervision and preparation for every arrival.",
+          "features": [
+            "Everything in Essential",
+            "Fortnightly visits",
+            "Coordination of cleaning and suppliers",
+            "Preparation before your arrival",
+            "Mail handling"
+          ]
+        },
+        {
+          "name": "Signature",
+          "summary": "Continuous attention and full coordination.",
+          "features": [
+            "Everything in Premium",
+            "Weekly visits",
+            "Oversight of works and technical services",
+            "Coordination with conciergerie and mobility",
+            "Extended availability"
+          ]
+        }
+      ]
+    },
+    "keys": {
+      "label": "Key custody",
+      "title": "Who holds your keys, and when.",
+      "lines": [
+        "Every access to the property is logged with date, time and reason.",
+        "Full traceability: you always know who entered and why.",
+        "No supplier enters without authorisation and supervision."
+      ]
+    },
+    "form": {
+      "label": "Request an assessment",
+      "title": "Let's talk about your property.",
+      "promise": "We reply within 24 hours.",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "lang": "Preferred language",
+      "propertyType": "Property type",
+      "parish": "Parish",
+      "area": "Approximate area (m²)",
+      "bedrooms": "Number of bedrooms",
+      "frequency": "Desired frequency",
+      "arrival": "Date of your next arrival",
+      "message": "Message",
+      "consent": "I agree that JR may process my data to answer this request.",
+      "select": "Select an option",
+      "submit": "Send request",
+      "sending": "Sending…",
+      "success": "Request received. We reply within 24 hours.",
+      "propertyTypes": [
+        "Apartment",
+        "House",
+        "Chalet",
+        "Other"
+      ],
+      "parishes": [
+        "Andorra la Vella",
+        "Escaldes-Engordany",
+        "Encamp",
+        "La Massana",
+        "Ordino",
+        "Sant Julià de Lòria",
+        "Canillo"
+      ],
+      "frequencies": [
+        "Weekly",
+        "Fortnightly",
+        "Monthly",
+        "To be defined"
+      ],
+      "errors": {
+        "name": "Please enter your name.",
+        "email": "Please enter a valid email.",
+        "phone": "Please enter a valid phone number.",
+        "required": "This field is required.",
+        "area": "Please enter a valid area.",
+        "bedrooms": "Please enter a valid number.",
+        "consent": "We need your consent in order to reply.",
+        "long": "This text is too long."
+      }
+    }
   }
 }

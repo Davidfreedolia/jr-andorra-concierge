@@ -198,5 +198,138 @@
       "sent": "Gracias. Le responderemos personalmente.",
       "required": "Campo obligatorio"
     }
+  },
+  "hss": {
+    "hero": {
+      "title": "Su casa, cuidada mientras usted no está.",
+      "alt": "Residencia de montaña cerrada, con luz cálida en el interior"
+    },
+    "promise": {
+      "quote": "Llegue y relájese. Todo está preparado.",
+      "line": "Un solo interlocutor para su propiedad en Andorra, durante todo el año."
+    },
+    "includes": {
+      "label": "Qué incluye",
+      "title": "El servicio, punto por punto.",
+      "items": [
+        "Custodia segura y controlada de llaves",
+        "Visitas programadas y supervisión interior y exterior",
+        "Home Report fotográfico",
+        "Coordinación de limpieza y proveedores",
+        "Preparación de la propiedad antes de su llegada",
+        "Comunicación y seguimiento de incidencias"
+      ]
+    },
+    "report": {
+      "label": "El Home Report",
+      "title": "Lo único que usted recibe cada mes.",
+      "lines": [
+        "Es el informe que recibe cada mes con el estado de su casa.",
+        "Fotografías fechadas de cada estancia y de los exteriores.",
+        "Las incidencias detectadas, con su seguimiento hasta la resolución."
+      ],
+      "alt": "Informe mensual impreso dentro de un marco sobrio"
+    },
+    "levels": {
+      "label": "Tres niveles",
+      "title": "Essential, Premium y Signature.",
+      "note": "Cada propiedad es distinta. Le proponemos el nivel adecuado tras conocerla.",
+      "featured": "Más elegido",
+      "items": [
+        {
+          "name": "Essential",
+          "summary": "La supervisión esencial de una casa cerrada.",
+          "features": [
+            "Custodia de llaves",
+            "Visita mensual de supervisión",
+            "Home Report fotográfico",
+            "Aviso de incidencias"
+          ]
+        },
+        {
+          "name": "Premium",
+          "summary": "Supervisión frecuente y preparación de cada llegada.",
+          "features": [
+            "Todo lo de Essential",
+            "Visitas quincenales",
+            "Coordinación de limpieza y proveedores",
+            "Preparación previa a su llegada",
+            "Gestión de correspondencia"
+          ]
+        },
+        {
+          "name": "Signature",
+          "summary": "Atención continua y coordinación integral.",
+          "features": [
+            "Todo lo de Premium",
+            "Visitas semanales",
+            "Seguimiento de obras y servicios técnicos",
+            "Coordinación con conciergerie y mobility",
+            "Disponibilidad ampliada"
+          ]
+        }
+      ]
+    },
+    "keys": {
+      "label": "Custodia de llaves",
+      "title": "Quién tiene sus llaves, y cuándo.",
+      "lines": [
+        "Registro de cada acceso a la propiedad, con fecha, hora y motivo.",
+        "Trazabilidad completa: usted sabe siempre quién ha entrado y por qué.",
+        "Ningún proveedor accede sin autorización y sin supervisión."
+      ]
+    },
+    "form": {
+      "label": "Solicitar valoración",
+      "title": "Hablemos de su propiedad.",
+      "promise": "Le respondemos en menos de 24 horas.",
+      "name": "Nombre",
+      "email": "Email",
+      "phone": "Teléfono",
+      "lang": "Idioma preferido",
+      "propertyType": "Tipo de propiedad",
+      "parish": "Parroquia",
+      "area": "Superficie aproximada (m²)",
+      "bedrooms": "Número de dormitorios",
+      "frequency": "Frecuencia deseada",
+      "arrival": "Fecha de su próxima llegada",
+      "message": "Mensaje",
+      "consent": "Acepto que JR trate mis datos para responder a esta solicitud.",
+      "select": "Seleccione una opción",
+      "submit": "Enviar solicitud",
+      "sending": "Enviando…",
+      "success": "Solicitud recibida. Le respondemos en menos de 24 horas.",
+      "propertyTypes": [
+        "Piso",
+        "Casa",
+        "Chalet",
+        "Otro"
+      ],
+      "parishes": [
+        "Andorra la Vella",
+        "Escaldes-Engordany",
+        "Encamp",
+        "La Massana",
+        "Ordino",
+        "Sant Julià de Lòria",
+        "Canillo"
+      ],
+      "frequencies": [
+        "Semanal",
+        "Quincenal",
+        "Mensual",
+        "A definir"
+      ],
+      "errors": {
+        "name": "Indique su nombre.",
+        "email": "Indique un email válido.",
+        "phone": "Indique un teléfono válido.",
+        "required": "Este campo es obligatorio.",
+        "area": "Indique una superficie válida.",
+        "bedrooms": "Indique un número válido.",
+        "consent": "Necesitamos su consentimiento para responderle.",
+        "long": "El texto es demasiado largo."
+      }
+    }
   }
 }

@@ -1,11 +1,13 @@
 import { Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 
+import { tList } from "@/i18n/list";
+
 import type { Language } from "@/i18n/config";
 
 export function HomeStaySafeSummary({ lang }: { lang: Language }) {
   const { t } = useTranslation();
-  const items = t("home.hss.items", { returnObjects: true }) as string[];
+  const items = tList<string>(t, "home.hss.items");
 
   return (
     <section className="jr-section jr-surface-bone">

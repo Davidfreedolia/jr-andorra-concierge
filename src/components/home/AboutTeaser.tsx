@@ -1,12 +1,14 @@
 import { Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 
+import { tList } from "@/i18n/list";
+
 import founder from "@/assets/founder.jpg.asset.json";
 import type { Language } from "@/i18n/config";
 
 export function AboutTeaser({ lang }: { lang: Language }) {
   const { t } = useTranslation();
-  const lines = t("home.about.lines", { returnObjects: true }) as string[];
+  const lines = tList<string>(t, "home.about.lines");
 
   return (
     <section className="jr-section">
