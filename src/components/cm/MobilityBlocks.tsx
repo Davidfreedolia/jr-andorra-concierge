@@ -22,26 +22,31 @@ export function MobilityBlocks() {
           <h2 className="jr-display-2 jr-measure text-jr-gold">{t("cm.mobility.title")}</h2>
         </Reveal>
 
-        {blocks.map((block, index) => (
-          <Reveal as="article"
-            key={block.title}
-            className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-16"
-          >
-            <img
-              src={IMAGES[index] ?? transfersImage}
-              alt={block.alt}
-              width={1280}
-              height={960}
-              loading="lazy"
-              decoding="async"
-              className={`jr-photo-lift w-full object-cover ${index % 2 === 1 ? "lg:order-2" : ""}`}
-            />
-            <div className="flex min-w-0 flex-col gap-4">
-              <h3 className="font-display text-3xl text-jr-gold lg:text-4xl">{block.title}</h3>
-              <p className="jr-measure text-muted-foreground">{block.text}</p>
-            </div>
-          </Reveal>
-        ))}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {blocks.map((block, index) => (
+            <Reveal as="article"
+              key={block.title}
+              className="jr-panel jr-card-hover group flex flex-col overflow-hidden p-0"
+            >
+              <div className="relative aspect-[4/3] w-full overflow-hidden">
+                <img
+                  src={IMAGES[index] ?? transfersImage}
+                  alt={block.alt}
+                  width={1280}
+                  height={960}
+                  loading="lazy"
+                  decoding="async"
+                  className="jr-photo-lift h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+                <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-jr-gold/50 to-transparent" />
+              </div>
+              <div className="flex flex-col gap-4 p-6 lg:p-8">
+                <h3 className="font-display text-2xl text-jr-gold lg:text-3xl">{block.title}</h3>
+                <p className="jr-measure text-jr-white/85">{block.text}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );
