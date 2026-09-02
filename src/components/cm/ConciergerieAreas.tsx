@@ -23,7 +23,7 @@ export function ConciergerieAreas() {
               as="li"
               key={area.title}
               delay={index * 70}
-              className="jr-panel flex min-w-0 flex-col gap-4"
+              className="jr-panel jr-card-hover flex min-w-0 flex-col gap-4"
             >
               <IconTile index={index + 10} />
               <h3 className="font-display text-2xl text-jr-bone">{area.title}</h3>

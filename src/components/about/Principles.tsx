@@ -23,7 +23,7 @@ export function Principles() {
               as="li"
               key={item.title}
               delay={index * 80}
-              className="jr-panel flex min-w-0 flex-col gap-4"
+              className="jr-panel jr-card-hover flex min-w-0 flex-col gap-4"
             >
               <IconTile index={index + 6} />
               <h3 className="jr-display-2 text-jr-gold">{item.title}</h3>
