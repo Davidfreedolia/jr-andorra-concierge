@@ -363,7 +363,7 @@
     },
     "transfer": {
       "label": "Transfer request",
-      "title": "Book your <gold>private</gold> transfer.",
+      "title": "Book your <0>private</0> transfer.",
       "promise": "We confirm availability and a fixed price in under 2 hours.",
       "origin": "Pick-up",
       "destination": "Destination",

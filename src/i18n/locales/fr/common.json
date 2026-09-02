@@ -363,7 +363,7 @@
     },
     "transfer": {
       "label": "Demande de transfert",
-      "title": "Réservez votre transfert <gold>privé</gold>.",
+      "title": "Réservez votre transfert <0>privé</0>.",
       "promise": "Nous vous confirmons la disponibilité et un prix ferme en moins de 2 heures.",
       "origin": "Départ",
       "destination": "Destination",
