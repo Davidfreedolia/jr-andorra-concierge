@@ -203,7 +203,7 @@
   },
   "hss": {
     "hero": {
-      "title": "Your home, <0>cared for</0> while you are away.",
+      "title": "Your home, <gold>cared for</gold> even when you are not there.",
       "alt": "Closed mountain residence with warm light inside"
     },
     "promise": {
@@ -521,12 +521,12 @@
     },
     "andorra": {
       "label": "Andorra",
-      "title": "Why here and why now",
+      "title": "Why <gold>here</gold> and why <gold>now</gold>",
       "text": "Andorra brings together the mountains, quiet and an international community that spends ever longer seasons here. Houses are used by the week, not by the month, and need someone to keep them alive between stays. We live and work here: we know the valleys, the trades and the trusted people it takes to keep everything running.",
       "imageAlt": "Andorran valley at blue hour with a lit residence among snow-covered mountains"
     },
     "hero": {
-      "title": "<0>Thirty</0> years <1>caring</1> for homes and people",
+      "title": "<gold>Thirty</gold> years <gold>caring</gold> for homes and people",
       "alt": "Andorran valleys at dusk, warm light over the mountains"
     }
   },

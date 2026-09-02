@@ -203,7 +203,7 @@
   },
   "hss": {
     "hero": {
-      "title": "La seva casa, <0>cuidada</0> mentre vostè no hi és.",
+      "title": "La seva casa, <gold>cuidada</gold> mentre vostè no hi és.",
       "alt": "Residència de muntanya tancada, amb llum càlida a l'interior"
     },
     "promise": {
@@ -521,12 +521,12 @@
     },
     "andorra": {
       "label": "Andorra",
-      "title": "Per què aquí i per què ara",
+      "title": "Per què <gold>aquí</gold> i per què <gold>ara</gold>",
       "text": "Andorra reuneix muntanya, tranquil·litat i una comunitat internacional que hi passa temporades cada cop més llargues. Les cases s'ocupen per setmanes, no per mesos, i necessiten algú que les mantingui vives entre estada i estada. Hi vivim i hi treballem: coneixem les valls, els oficis i les persones de confiança que calen perquè tot funcioni.",
       "imageAlt": "Vall d'Andorra a l'hora blava amb una residència il·luminada entre muntanyes nevades"
     },
     "hero": {
-      "title": "<0>Trenta</0> anys <1>tenint cura</1> de cases i persones",
+      "title": "<gold>Trenta</gold> anys <gold>tenint cura</gold> de cases i persones",
       "alt": "Valls d'Andorra al capvespre, llum càlida sobre la muntanya"
     }
   },

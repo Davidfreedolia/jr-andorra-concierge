@@ -203,7 +203,7 @@
   },
   "hss": {
     "hero": {
-      "title": "Ihr Zuhause, <0>gepflegt</0>, während Sie nicht da sind.",
+      "title": "Ihr Zuhause, <gold>gepflegt</gold>, während Sie nicht da sind.",
       "alt": "Geschlossene Bergresidenz mit warmem Licht im Inneren"
     },
     "promise": {
@@ -521,12 +521,12 @@
     },
     "andorra": {
       "label": "Andorra",
-      "title": "Warum hier und warum jetzt",
+      "title": "Warum <gold>hier</gold> und warum <gold>jetzt</gold>",
       "text": "Andorra verbindet Berge, Ruhe und eine internationale Gemeinschaft, die immer längere Zeiträume hier verbringt. Häuser werden wochenweise genutzt, nicht monatelang, und brauchen jemanden, der sie zwischen den Aufenthalten lebendig hält. Wir leben und arbeiten hier: Wir kennen die Täler, die Gewerke und die vertrauenswürdigen Menschen, die es braucht, damit alles funktioniert.",
       "imageAlt": "Andorranisches Tal zur blauen Stunde mit beleuchteter Residenz zwischen verschneiten Bergen"
     },
     "hero": {
-      "title": "<0>Dreißig</0> Jahre <1>Sorge</1> für Häuser und Menschen",
+      "title": "<gold>Dreißig</gold> Jahre <gold>Sorge</gold> für Häuser und Menschen",
       "alt": "Täler Andorras in der Dämmerung, warmes Licht über den Bergen"
     }
   },
