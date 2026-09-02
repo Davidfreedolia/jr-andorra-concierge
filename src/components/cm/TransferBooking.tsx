@@ -62,7 +62,7 @@ export function TransferBooking() {
         <Reveal className="flex flex-col gap-4">
           <p className="jr-label text-jr-gold-deep">{t("cm.transfer.label")}</p>
           <h2 className="jr-display-2 jr-measure text-jr-white">
-            <Trans i18nKey="cm.transfer.title" components={{ gold: <span className="text-jr-gold-deep" /> }} />
+            <Trans i18nKey="cm.transfer.title" components={[<span className="text-jr-gold-deep" />]} />
           </h2>
           <p className="jr-measure border-l-2 border-jr-gold py-2 pl-4 font-display text-2xl text-jr-white lg:text-3xl">
             {t("cm.transfer.promise")}

@@ -363,7 +363,7 @@
     },
     "transfer": {
       "label": "Sol·licitud de transfer",
-      "title": "Reservi el seu trasllat <gold>privat</gold>.",
+      "title": "Reservi el seu trasllat <0>privat</0>.",
       "promise": "Li confirmem disponibilitat i preu tancat en menys de 2 hores.",
       "origin": "Origen",
       "destination": "Destinació",
