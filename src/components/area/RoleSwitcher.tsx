@@ -43,7 +43,11 @@ export function RoleSwitcher() {
           <select
             className={selectClass}
             value={i18n.language as Language}
-            onChange={(event) => void i18n.changeLanguage(event.target.value)}
+            onChange={(event) => {
+              const next = event.target.value;
+              window.localStorage.setItem(AREA_LANG_KEY, next);
+              void i18n.changeLanguage(next);
+            }}
           >
             {LANGUAGES.map((code) => (
               <option key={code} value={code}>
