@@ -71,7 +71,7 @@ export function ConciergerieAreas() {
       {/* Section background changes on card hover — only one image at a time */}
       <div className="absolute inset-0 -z-[15]" aria-hidden="true">
         <img
-          src={AREA_IMAGES[displayIndex].src}
+          src={AREA_IMAGES[displayIndex]!.src}
           alt=""
           loading="eager"
           width={1600}
