@@ -170,6 +170,20 @@
     font-size: 16px;
   }
 
+  /* Native dropdowns: keep the dark/gold world, never a white list. */
+  select {
+    color-scheme: dark;
+    background-color: var(--jr-black);
+    color: var(--jr-bone);
+  }
+
+  select option,
+  select optgroup {
+    background-color: var(--jr-black);
+    color: var(--jr-bone);
+  }
+
+
   :focus-visible {
     outline: 1px solid var(--jr-gold);
     outline-offset: 3px;
