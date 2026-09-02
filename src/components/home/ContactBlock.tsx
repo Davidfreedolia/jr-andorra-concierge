@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { tList } from "@/i18n/list";
 
 import { WHATSAPP_URL } from "@/lib/contact";
+import { Reveal } from "@/components/Reveal";
 
 export function ContactBlock() {
   const { t } = useTranslation();
@@ -21,7 +22,7 @@ export function ContactBlock() {
   return (
     <section className="jr-section">
       <div className="jr-container grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)]">
-        <div className="flex min-w-0 flex-col gap-6">
+        <Reveal className="flex min-w-0 flex-col gap-6">
           <div className="flex flex-col gap-4">
             <p className="jr-label">{t("home.contact.label")}</p>
             <h2 className="jr-display-2 text-jr-gold">{t("home.contact.title")}</h2>
@@ -108,15 +109,15 @@ export function ContactBlock() {
               {sent ? t("home.contact.sent") : ""}
             </p>
           </form>
-        </div>
+        </Reveal>
 
-        <div className="flex flex-col gap-4 border p-6 lg:self-start">
+        <Reveal className="flex flex-col gap-4 border p-6 lg:self-start" delay={120}>
           <p className="jr-label">WhatsApp</p>
           <p className="text-muted-foreground">{t("home.voice.line2")}</p>
           <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className="jr-button">
             {t("home.contact.whatsapp")}
           </a>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

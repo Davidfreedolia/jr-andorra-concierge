@@ -4,6 +4,7 @@ import andorraImage from "@/assets/cm-andorra.jpg";
 import chauffeurImage from "@/assets/cm-chauffeur.jpg";
 import transfersImage from "@/assets/cm-transfers.jpg";
 import { tList } from "@/i18n/list";
+import { Reveal } from "@/components/Reveal";
 
 type Block = { title: string; text: string; alt: string };
 
@@ -16,13 +17,13 @@ export function MobilityBlocks() {
   return (
     <section id="mobility" className="jr-section">
       <div className="jr-container flex flex-col gap-12 lg:gap-20">
-        <div className="flex flex-col gap-4">
+        <Reveal className="flex flex-col gap-4">
           <p className="jr-label">{t("cm.mobility.label")}</p>
           <h2 className="jr-display-2 jr-measure text-jr-gold">{t("cm.mobility.title")}</h2>
-        </div>
+        </Reveal>
 
         {blocks.map((block, index) => (
-          <article
+          <Reveal as="article"
             key={block.title}
             className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-16"
           >
@@ -39,7 +40,7 @@ export function MobilityBlocks() {
               <h3 className="font-display text-3xl text-jr-gold lg:text-4xl">{block.title}</h3>
               <p className="jr-measure text-muted-foreground">{block.text}</p>
             </div>
-          </article>
+          </Reveal>
         ))}
       </div>
     </section>

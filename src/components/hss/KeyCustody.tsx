@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 import { tList } from "@/i18n/list";
+import { Reveal } from "@/components/Reveal";
 
 export function KeyCustody() {
   const { t } = useTranslation();
@@ -8,7 +9,7 @@ export function KeyCustody() {
 
   return (
     <section className="jr-section">
-      <div className="jr-container flex flex-col gap-6">
+      <Reveal className="jr-container flex flex-col gap-6">
         <p className="jr-label">{t("hss.keys.label")}</p>
         <h2 className="jr-display-2 jr-measure text-jr-gold">{t("hss.keys.title")}</h2>
         <div className="jr-measure flex flex-col gap-3 text-muted-foreground">
@@ -16,7 +17,7 @@ export function KeyCustody() {
             <p key={line}>{line}</p>
           ))}
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

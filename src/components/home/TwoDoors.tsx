@@ -5,6 +5,8 @@ import doorHome from "@/assets/door-home.jpg.asset.json";
 import doorMobility from "@/assets/door-mobility.jpg.asset.json";
 import type { Language } from "@/i18n/config";
 
+import { Reveal } from "@/components/Reveal";
+
 export function TwoDoors({ lang }: { lang: Language }) {
   const { t } = useTranslation();
 
@@ -27,12 +29,12 @@ export function TwoDoors({ lang }: { lang: Language }) {
 
   return (
     <section aria-label={t("home.doors.label")} className="grid grid-cols-1 md:grid-cols-2">
-      {doors.map((door) => (
+      {doors.map((door, index) => (
+        <Reveal key={door.title} className="flex" delay={index * 120}>
         <Link
-          key={door.title}
           to={door.to}
           params={{ lang }}
-          className="group relative isolate flex min-h-[52vh] flex-col justify-end overflow-hidden bg-jr-black p-6 lg:p-12"
+          className="group relative isolate flex w-full min-h-[52vh] flex-col justify-end overflow-hidden bg-jr-black p-6 lg:p-12"
         >
           <img
             src={door.image}
@@ -50,6 +52,7 @@ export function TwoDoors({ lang }: { lang: Language }) {
             <span className="jr-label">{door.link}</span>
           </div>
         </Link>
+        </Reveal>
       ))}
     </section>
   );
