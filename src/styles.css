@@ -235,10 +235,53 @@
 
 
 
+@utility jr-field {
+  color-scheme: dark;
+  min-height: var(--jr-tap);
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  color: var(--jr-bone);
+  background: color-mix(in srgb, var(--jr-black) 65%, transparent);
+  border: 1px solid color-mix(in srgb, var(--jr-gold) 30%, transparent);
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+
+  &::placeholder {
+    color: color-mix(in srgb, var(--jr-bone) 45%, transparent);
+  }
+
+  &:hover {
+    border-color: color-mix(in srgb, var(--jr-gold) 50%, transparent);
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    border-color: var(--jr-gold);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--jr-gold) 18%, transparent);
+  }
+
+  & option {
+    background: var(--jr-black);
+    color: var(--jr-bone);
+  }
+
+  &::-webkit-calendar-picker-indicator {
+    filter: invert(1) sepia(1) saturate(3) hue-rotate(5deg);
+    opacity: 0.8;
+  }
+}
+
+@utility jr-check {
+  color-scheme: dark;
+  accent-color: var(--jr-gold);
+}
+
 @utility jr-surface-bone {
   background-color: var(--jr-bone);
   color: var(--jr-black);
 }
+
 
 /* Hero-led alternate surface: still black and gold, one shade lifted. */
 @utility jr-surface-deep {
