@@ -62,7 +62,7 @@
       "videoAlt": "Résidence privée dans les Pyrénées à l'heure bleue"
     },
     "voice": {
-      "quote": "Nous veillons sur votre maison en votre absence. Et sur vous à votre retour.",
+      "quote": "<1>Nous veillons</1> sur votre maison en votre absence. Et <2>nous veillons</2> sur vous à votre retour.",
       "line1": "JR est un bureau privé en Andorre au service des propriétaires de résidence secondaire et des clients attachés à la discrétion.",
       "line2": "Un interlocuteur unique pour votre maison, votre mobilité et votre temps."
     },
