@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 
+import { GoldText } from "@/components/GoldText";
 import { Reveal } from "@/components/Reveal";
 import andorraJpg from "@/assets/about-andorra.jpg";
 import andorra800 from "@/assets/about-andorra-800.webp";
