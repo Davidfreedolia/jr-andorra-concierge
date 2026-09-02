@@ -39,18 +39,18 @@ export function SiteFooter({ lang }: { lang: Language }) {
 
   return (
     <footer className="border-t">
-      <div className="jr-container flex flex-col gap-8 py-10 lg:flex-row lg:justify-between lg:py-12">
-        <div className="flex min-w-0 flex-col gap-4 text-primary">
-          <div className="inline-flex overflow-hidden rounded-sm border border-jr-gold/15 bg-jr-black p-2">
+      <div className="jr-container flex flex-col gap-6 py-8 lg:flex-row lg:items-start lg:justify-between lg:py-10">
+        <div className="flex min-w-0 flex-col gap-3 text-primary">
+          <div className="inline-flex overflow-hidden rounded-sm border border-jr-gold/15 bg-jr-black p-1.5">
             <LogoJR
               title={t("common.logoAlt")}
-              className="jr-logo"
+              className="jr-logo w-32"
               style={{ clipPath: "polygon(11% 0, 89% 0, 89% 100%, 11% 100%)" }}
             />
           </div>
-          <p className="jr-measure max-w-[32ch] text-muted-foreground">{t("brand.tagline")}</p>
+          <p className="jr-measure max-w-[28ch] text-muted-foreground">{t("brand.tagline")}</p>
 
-          <nav aria-label={t("footer.socialLabel")} className="mt-1">
+          <nav aria-label={t("footer.socialLabel")}>
             <ul className="flex items-center gap-3">
               <li>
                 <a
