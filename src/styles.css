@@ -47,10 +47,10 @@
 }
 
 :root {
-  /* Brand palette */
-  --jr-black: #0b0b0c;
-  --jr-night: #101a2e;
-  --jr-night-deep: #070e1a;
+  /* Brand palette — negro y oro, sin azul */
+  --jr-black: #0a0a0a;
+  --jr-night: #141311;
+  --jr-night-deep: #0d0c0b;
   --jr-gold: #c6a15b;
   --jr-gold-deep: #9c7b3c;
   --jr-bone: #f4f2ee;
