@@ -34,6 +34,35 @@ function buildSchema(e: (key: string) => string) {
 
 type FormValues = z.input<ReturnType<typeof buildSchema>>;
 
+function Step({
+  index,
+  open,
+  children,
+}: {
+  index: string;
+  open: boolean;
+  children: React.ReactNode;
+}) {
+  return (
+    <div
+      aria-hidden={!open}
+      className={[
+        "grid transition-all duration-700 ease-out",
+        open
+          ? "grid-rows-[1fr] opacity-100 translate-y-0 blur-0"
+          : "pointer-events-none grid-rows-[0fr] opacity-0 translate-y-4 blur-[4px]",
+      ].join(" ")}
+    >
+      <div className="overflow-hidden">
+        <div className="flex items-start gap-4 border-t border-[color-mix(in_srgb,var(--jr-gold)_22%,transparent)] pt-8">
+          <span className="jr-label shrink-0 text-jr-gold">{index}</span>
+          <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2">{children}</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function TransferForm() {
   const { t } = useTranslation();
   const [sent, setSent] = useState(false);
@@ -44,8 +73,25 @@ export function TransferForm() {
     register,
     handleSubmit,
     reset,
+    watch,
     formState: { errors, isSubmitting },
-  } = useForm<FormValues>({ resolver: zodResolver(schema), mode: "onBlur" });
+  } = useForm<FormValues>({
+    resolver: zodResolver(schema),
+    mode: "onBlur",
+  });
+
+  const values = watch();
+  const stepTwoOpen =
+    String(values.origin ?? "").trim().length >= 2 &&
+    String(values.destination ?? "").trim().length >= 2 &&
+    Boolean(values.date) &&
+    Boolean(values.time);
+  const stepThreeOpen =
+    stepTwoOpen &&
+    !Number.isNaN(Number(values.passengers)) &&
+    Number(values.passengers) >= 1 &&
+    !Number.isNaN(Number(values.luggage)) &&
+    Number(values.luggage) >= 0;
 
   const onSubmit = handleSubmit(() => {
     // Delivery is wired later; the form only validates and confirms for now.
@@ -53,8 +99,8 @@ export function TransferForm() {
     reset();
   });
 
-  const fieldClass = "min-h-[var(--jr-tap)] w-full border bg-transparent px-3 py-2 text-foreground";
-  const labelClass = "jr-label text-muted-foreground";
+  const fieldClass = "jr-field";
+  const labelClass = "jr-label text-jr-bone/70";
   const errorClass = "text-sm text-destructive";
 
   return (
@@ -62,151 +108,160 @@ export function TransferForm() {
       <div className="jr-container flex flex-col gap-10">
         <Reveal className="flex flex-col gap-4">
           <p className="jr-label text-jr-gold-deep">{t("cm.transfer.label")}</p>
-          <h2 className="jr-display-2 jr-measure">{t("cm.transfer.title")}</h2>
-          <p className="jr-measure border-l-2 border-jr-gold py-2 pl-4 font-display text-2xl lg:text-3xl">
+          <h2 className="jr-display-2 jr-measure text-jr-white">{t("cm.transfer.title")}</h2>
+          <p className="jr-measure border-l-2 border-jr-gold py-2 pl-4 font-display text-2xl text-jr-white lg:text-3xl">
             {t("cm.transfer.promise")}
           </p>
         </Reveal>
 
-        <form noValidate onSubmit={onSubmit} className="grid grid-cols-1 gap-5 md:grid-cols-2">
-          <div className="flex flex-col gap-2">
-            <label htmlFor="tr-origin" className={labelClass}>
-              {t("cm.transfer.origin")}
-            </label>
-            <input id="tr-origin" className={fieldClass} {...register("origin")} />
-            {errors.origin ? <p className={errorClass}>{errors.origin.message}</p> : null}
-          </div>
+        <form noValidate onSubmit={onSubmit} className="flex flex-col gap-8">
+          <div className="flex items-start gap-4">
+            <span className="jr-label shrink-0 text-jr-gold">01</span>
+            <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="tr-origin" className={labelClass}>
+                  {t("cm.transfer.origin")}
+                </label>
+                <input id="tr-origin" className={fieldClass} {...register("origin")} />
+                {errors.origin ? <p className={errorClass}>{errors.origin.message}</p> : null}
+              </div>
 
-          <div className="flex flex-col gap-2">
-            <label htmlFor="tr-destination" className={labelClass}>
-              {t("cm.transfer.destination")}
-            </label>
-            <input id="tr-destination" className={fieldClass} {...register("destination")} />
-            {errors.destination ? <p className={errorClass}>{errors.destination.message}</p> : null}
-          </div>
+              <div className="flex flex-col gap-2">
+                <label htmlFor="tr-destination" className={labelClass}>
+                  {t("cm.transfer.destination")}
+                </label>
+                <input id="tr-destination" className={fieldClass} {...register("destination")} />
+                {errors.destination ? <p className={errorClass}>{errors.destination.message}</p> : null}
+              </div>
 
-          <div className="flex flex-col gap-2">
-            <label htmlFor="tr-date" className={labelClass}>
-              {t("cm.transfer.date")}
-            </label>
-            <input id="tr-date" type="date" className={fieldClass} {...register("date")} />
-            {errors.date ? <p className={errorClass}>{errors.date.message}</p> : null}
-          </div>
+              <div className="flex flex-col gap-2">
+                <label htmlFor="tr-date" className={labelClass}>
+                  {t("cm.transfer.date")}
+                </label>
+                <input id="tr-date" type="date" className={fieldClass} {...register("date")} />
+                {errors.date ? <p className={errorClass}>{errors.date.message}</p> : null}
+              </div>
 
-          <div className="flex flex-col gap-2">
-            <label htmlFor="tr-time" className={labelClass}>
-              {t("cm.transfer.time")}
-            </label>
-            <input id="tr-time" type="time" className={fieldClass} {...register("time")} />
-            {errors.time ? <p className={errorClass}>{errors.time.message}</p> : null}
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <label htmlFor="tr-passengers" className={labelClass}>
-              {t("cm.transfer.passengers")}
-            </label>
-            <input
-              id="tr-passengers"
-              type="number"
-              inputMode="numeric"
-              min={1}
-              max={20}
-              className={fieldClass}
-              {...register("passengers")}
-            />
-            {errors.passengers ? <p className={errorClass}>{errors.passengers.message}</p> : null}
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <label htmlFor="tr-luggage" className={labelClass}>
-              {t("cm.transfer.luggage")}
-            </label>
-            <input
-              id="tr-luggage"
-              type="number"
-              inputMode="numeric"
-              min={0}
-              max={30}
-              className={fieldClass}
-              {...register("luggage")}
-            />
-            {errors.luggage ? <p className={errorClass}>{errors.luggage.message}</p> : null}
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <label htmlFor="tr-flight" className={labelClass}>
-              {t("cm.transfer.flight")}
-            </label>
-            <input
-              id="tr-flight"
-              autoCapitalize="characters"
-              className={fieldClass}
-              {...register("flight")}
-            />
-            {errors.flight ? <p className={errorClass}>{errors.flight.message}</p> : null}
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <label htmlFor="tr-name" className={labelClass}>
-              {t("cm.transfer.name")}
-            </label>
-            <input id="tr-name" autoComplete="name" className={fieldClass} {...register("name")} />
-            {errors.name ? <p className={errorClass}>{errors.name.message}</p> : null}
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <label htmlFor="tr-email" className={labelClass}>
-              {t("cm.transfer.email")}
-            </label>
-            <input
-              id="tr-email"
-              type="email"
-              inputMode="email"
-              autoComplete="email"
-              className={fieldClass}
-              {...register("email")}
-            />
-            {errors.email ? <p className={errorClass}>{errors.email.message}</p> : null}
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <label htmlFor="tr-phone" className={labelClass}>
-              {t("cm.transfer.phone")}
-            </label>
-            <input
-              id="tr-phone"
-              type="tel"
-              inputMode="tel"
-              autoComplete="tel"
-              className={fieldClass}
-              {...register("phone")}
-            />
-            {errors.phone ? <p className={errorClass}>{errors.phone.message}</p> : null}
-          </div>
-
-          <div className="flex flex-col gap-2 md:col-span-2">
-            <div className="flex items-start gap-3">
-              <input
-                id="tr-consent"
-                type="checkbox"
-                className="mt-1 h-5 w-5 shrink-0"
-                {...register("consent")}
-              />
-              <label htmlFor="tr-consent" className="opacity-80">
-                {t("cm.transfer.consent")}
-              </label>
+              <div className="flex flex-col gap-2">
+                <label htmlFor="tr-time" className={labelClass}>
+                  {t("cm.transfer.time")}
+                </label>
+                <input id="tr-time" type="time" className={fieldClass} {...register("time")} />
+                {errors.time ? <p className={errorClass}>{errors.time.message}</p> : null}
+              </div>
             </div>
-            {errors.consent ? <p className={errorClass}>{errors.consent.message}</p> : null}
           </div>
 
-          <div className="flex flex-col gap-4 md:col-span-2">
-            <button type="submit" className="jr-button self-start" disabled={isSubmitting}>
-              {isSubmitting ? t("cm.transfer.sending") : t("cm.transfer.submit")}
-            </button>
-            <p aria-live="polite" className="jr-label text-jr-gold-deep">
-              {sent ? t("cm.transfer.success") : ""}
-            </p>
-          </div>
+          <Step index="02" open={stepTwoOpen}>
+            <div className="flex flex-col gap-2">
+              <label htmlFor="tr-passengers" className={labelClass}>
+                {t("cm.transfer.passengers")}
+              </label>
+              <input
+                id="tr-passengers"
+                type="number"
+                inputMode="numeric"
+                min={1}
+                max={20}
+                className={fieldClass}
+                {...register("passengers")}
+              />
+              {errors.passengers ? <p className={errorClass}>{errors.passengers.message}</p> : null}
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label htmlFor="tr-luggage" className={labelClass}>
+                {t("cm.transfer.luggage")}
+              </label>
+              <input
+                id="tr-luggage"
+                type="number"
+                inputMode="numeric"
+                min={0}
+                max={30}
+                className={fieldClass}
+                {...register("luggage")}
+              />
+              {errors.luggage ? <p className={errorClass}>{errors.luggage.message}</p> : null}
+            </div>
+
+            <div className="flex flex-col gap-2 md:col-span-2">
+              <label htmlFor="tr-flight" className={labelClass}>
+                {t("cm.transfer.flight")}
+              </label>
+              <input
+                id="tr-flight"
+                autoCapitalize="characters"
+                className={fieldClass}
+                {...register("flight")}
+              />
+              {errors.flight ? <p className={errorClass}>{errors.flight.message}</p> : null}
+            </div>
+          </Step>
+
+          <Step index="03" open={stepThreeOpen}>
+            <div className="flex flex-col gap-2">
+              <label htmlFor="tr-name" className={labelClass}>
+                {t("cm.transfer.name")}
+              </label>
+              <input id="tr-name" autoComplete="name" className={fieldClass} {...register("name")} />
+              {errors.name ? <p className={errorClass}>{errors.name.message}</p> : null}
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label htmlFor="tr-email" className={labelClass}>
+                {t("cm.transfer.email")}
+              </label>
+              <input
+                id="tr-email"
+                type="email"
+                inputMode="email"
+                autoComplete="email"
+                className={fieldClass}
+                {...register("email")}
+              />
+              {errors.email ? <p className={errorClass}>{errors.email.message}</p> : null}
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <label htmlFor="tr-phone" className={labelClass}>
+                {t("cm.transfer.phone")}
+              </label>
+              <input
+                id="tr-phone"
+                type="tel"
+                inputMode="tel"
+                autoComplete="tel"
+                className={fieldClass}
+                {...register("phone")}
+              />
+              {errors.phone ? <p className={errorClass}>{errors.phone.message}</p> : null}
+            </div>
+
+            <div className="flex flex-col gap-2 md:col-span-2">
+              <div className="flex items-start gap-3">
+                <input
+                  id="tr-consent"
+                  type="checkbox"
+                  className="jr-check mt-1 h-5 w-5 shrink-0"
+                  {...register("consent")}
+                />
+                <label htmlFor="tr-consent" className="text-jr-bone/80">
+                  {t("cm.transfer.consent")}
+                </label>
+              </div>
+              {errors.consent ? <p className={errorClass}>{errors.consent.message}</p> : null}
+            </div>
+
+            <div className="flex flex-col gap-4 md:col-span-2">
+              <button type="submit" className="jr-button self-start" disabled={isSubmitting}>
+                {isSubmitting ? t("cm.transfer.sending") : t("cm.transfer.submit")}
+              </button>
+              <p aria-live="polite" className="jr-label text-jr-gold-deep">
+                {sent ? t("cm.transfer.success") : ""}
+              </p>
+            </div>
+          </Step>
         </form>
       </div>
     </section>
