@@ -1,7 +1,7 @@
 import { Outlet, createFileRoute, redirect } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 
-import { ChatWidget } from "@/components/ChatWidget";
+
 import { SiteFooter } from "@/components/SiteFooter";
 import { MobileActionBar } from "@/components/MobileActionBar";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -40,7 +40,7 @@ function LanguageLayout() {
       </main>
       <SiteFooter lang={language} />
       <MobileActionBar lang={language} />
-      <ChatWidget />
+
     </div>
   );
 }
