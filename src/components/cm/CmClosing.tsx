@@ -33,7 +33,7 @@ export function CmClosing({ lang }: { lang: Language }) {
             </a>
           </div>
         </div>
-        <div className="jr-panel overflow-hidden">
+        <div className="overflow-hidden">
           <img
             src={closingImage}
             alt={t("cm.closing.alt")}
