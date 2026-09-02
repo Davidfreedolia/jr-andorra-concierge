@@ -49,7 +49,7 @@ export function HeroVideo({ lang }: { lang: Language }) {
         height={1088}
         fetchPriority="high"
         decoding="async"
-        className="absolute inset-0 -z-20 h-full w-full object-cover"
+        className="jr-kenburns absolute inset-0 -z-20 h-full w-full object-cover"
       />
 
       {source ? (

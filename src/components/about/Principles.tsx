@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 
+import { IconTile } from "@/components/IconTile";
 import { Reveal } from "@/components/Reveal";
 import { tList } from "@/i18n/list";
 
@@ -11,21 +12,23 @@ export function Principles() {
 
   return (
     <section className="jr-section">
-      <div className="jr-container flex flex-col gap-14">
+      <div className="jr-container flex flex-col gap-12">
         <Reveal className="flex flex-col gap-4">
-          <p className="jr-label">{t("about.principles.label")}</p>
+          <p className="jr-badge">{t("about.principles.label")}</p>
           <h2 className="jr-display-1 jr-measure text-jr-bone">{t("about.principles.title")}</h2>
         </Reveal>
 
-        <ul className="flex flex-col gap-12 md:gap-16">
-          {items.map((item) => (
+        <ul className="grid grid-cols-1 gap-5 md:grid-cols-2">
+          {items.map((item, index) => (
             <Reveal
               as="li"
               key={item.title}
-              className="flex min-w-0 flex-col gap-3 border-t pt-8 md:flex-row md:items-baseline md:gap-12"
+              delay={index * 80}
+              className="jr-panel flex min-w-0 flex-col gap-4"
             >
-              <h3 className="jr-display-2 text-jr-bone md:basis-1/3">{item.title}</h3>
-              <p className="jr-measure text-lg text-muted-foreground md:basis-2/3">{item.line}</p>
+              <IconTile index={index + 6} />
+              <h3 className="jr-display-2 text-jr-bone">{item.title}</h3>
+              <p className="text-lg text-muted-foreground">{item.line}</p>
             </Reveal>
           ))}
         </ul>

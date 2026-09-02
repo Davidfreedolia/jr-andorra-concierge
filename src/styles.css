@@ -47,10 +47,10 @@
 }
 
 :root {
-  /* Brand palette */
-  --jr-black: #0b0b0c;
-  --jr-night: #101a2e;
-  --jr-night-deep: #070e1a;
+  /* Brand palette — negro y oro, sin azul */
+  --jr-black: #0a0a0a;
+  --jr-night: #141311;
+  --jr-night-deep: #0d0c0b;
   --jr-gold: #c6a15b;
   --jr-gold-deep: #9c7b3c;
   --jr-bone: #f4f2ee;
@@ -705,4 +705,96 @@
   background: color-mix(in srgb, var(--jr-night) 92%, transparent);
   border: 1px solid var(--jr-hairline);
   padding: 28px 20px;
+}
+
+/* ---------------------------------------------------------------------------
+   MARCOS Y ICONOS — negro y oro, todo dentro de cuadros amplios.
+--------------------------------------------------------------------------- */
+
+@utility jr-panel {
+  position: relative;
+  border: 1px solid color-mix(in srgb, var(--jr-gold) 30%, transparent);
+  border-radius: 14px;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--jr-gold) 4%, transparent) 0%,
+      transparent 60%
+    ),
+    var(--jr-night);
+  padding: 28px 22px;
+
+  @media (min-width: 768px) {
+    padding: 40px 36px;
+  }
+}
+
+@utility jr-panel-bone {
+  border-color: color-mix(in srgb, var(--jr-gold-deep) 45%, transparent);
+  background: var(--jr-bone);
+  color: var(--jr-black);
+}
+
+@utility jr-icon-tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  flex: 0 0 auto;
+  border: 1px solid color-mix(in srgb, var(--jr-gold) 45%, transparent);
+  border-radius: 12px;
+  color: var(--jr-gold);
+  background: color-mix(in srgb, var(--jr-gold) 6%, transparent);
+}
+
+@utility jr-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  padding: 8px 20px;
+  border: 1px solid color-mix(in srgb, var(--jr-gold) 55%, transparent);
+  border-radius: 999px;
+  color: var(--jr-gold);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: var(--jr-label-tracking);
+  hyphens: none;
+}
+
+@utility jr-divider {
+  height: 1px;
+  border: 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    color-mix(in srgb, var(--jr-gold) 45%, transparent),
+    transparent
+  );
+}
+
+/* Heroes con movimiento lento (ken burns). */
+@utility jr-kenburns {
+  animation: jr-kenburns 26s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes jr-kenburns {
+  from {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.09) translate3d(0, -1.5%, 0);
+  }
+}
+
+@layer base {
+  @media (prefers-reduced-motion: reduce) {
+    .jr-kenburns {
+      animation: none;
+    }
+  }
 }
