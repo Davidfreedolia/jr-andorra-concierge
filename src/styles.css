@@ -216,6 +216,19 @@
   }
 }
 
+@utility jr-button-quiet {
+  border-color: color-mix(in srgb, var(--jr-gold) 40%, transparent);
+  color: var(--jr-bone);
+
+  &:hover {
+    background: transparent;
+    border-color: var(--jr-gold);
+    color: var(--jr-gold);
+  }
+}
+
+
+
 @utility jr-surface-bone {
   background-color: var(--jr-bone);
   color: var(--jr-black);
