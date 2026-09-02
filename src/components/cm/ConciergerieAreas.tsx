@@ -5,8 +5,6 @@ import { IconTile } from "@/components/IconTile";
 import { Reveal } from "@/components/Reveal";
 import { tList } from "@/i18n/list";
 
-import bgNightPoster from "@/assets/cc-bg-night.jpg";
-import bgNightVideo from "@/assets/cc-bg-night.mp4.asset.json";
 import ccCasino from "@/assets/cc-casino.jpg";
 import ccCoordination from "@/assets/cc-coordination.jpg";
 import ccGastronomy from "@/assets/cc-gastronomy.jpg";
@@ -54,22 +52,8 @@ export function ConciergerieAreas() {
 
   return (
     <section className="jr-section relative overflow-hidden">
-      {/* Background: exclusive Andorra by night — video */}
-      <div className="absolute inset-0 -z-20" aria-hidden="true">
-        <video
-          src={bgNightVideo.url}
-          poster={bgNightPoster}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          className="h-full w-full object-cover"
-        />
-      </div>
-
-      {/* Section background changes on card hover — only one image at a time */}
-      <div className="absolute inset-0 -z-[15]" aria-hidden="true">
+      {/* Single section background: switches between area images, no overlap */}
+      <div className="absolute inset-0 -z-20 bg-jr-black" aria-hidden="true">
         <img
           src={AREA_IMAGES[displayIndex]!.src}
           alt=""
@@ -77,13 +61,13 @@ export function ConciergerieAreas() {
           width={1600}
           height={1067}
           className={`h-full w-full object-cover transition-opacity duration-700 ease-out ${
-            visible ? "opacity-45" : "opacity-0"
+            visible ? "opacity-100" : "opacity-0"
           }`}
         />
       </div>
 
       <div
-        className="absolute inset-0 -z-10 bg-gradient-to-b from-jr-black/90 via-jr-black/82 to-jr-black/94"
+        className="absolute inset-0 -z-10 bg-gradient-to-b from-jr-black/80 via-jr-black/70 to-jr-black/88"
         aria-hidden="true"
       />
 
