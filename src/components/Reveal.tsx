@@ -8,10 +8,13 @@ export function Reveal({
   children,
   className = "",
   as: Tag = "div",
+  delay = 0,
 }: {
   children: ReactNode;
   className?: string;
   as?: "div" | "section" | "li" | "article";
+  /** Stagger in ms for lists of cards. */
+  delay?: number;
 }) {
   const ref = useRef<HTMLElement | null>(null);
   const [visible, setVisible] = useState(false);
@@ -38,6 +41,7 @@ export function Reveal({
   return (
     <Tag
       ref={ref as never}
+      style={delay ? { transitionDelay: `${delay}ms` } : undefined}
       className={`jr-reveal${visible ? " jr-reveal-in" : ""}${className ? ` ${className}` : ""}`}
     >
       {children}
