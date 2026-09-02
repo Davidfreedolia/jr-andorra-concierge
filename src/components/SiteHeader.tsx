@@ -82,7 +82,15 @@ export function SiteHeader({ lang }: { lang: Language }) {
               {t(`nav.${item.key}`)}
             </Link>
           ))}
+          <Link
+            to="/area/acceso"
+            onClick={() => setOpen(false)}
+            className="jr-tap jr-label justify-start py-3 text-jr-gold-deep"
+          >
+            {t("nav.area")}
+          </Link>
         </nav>
+
       ) : null}
     </header>
   );
