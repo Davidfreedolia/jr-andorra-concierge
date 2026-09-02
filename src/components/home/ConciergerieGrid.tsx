@@ -24,8 +24,8 @@ export function ConciergerieGrid() {
             <Reveal
               as="li"
               key={item.title}
-              delay={index * 70}
-              className="jr-panel flex min-w-0 flex-col gap-4"
+              delay={index * 110}
+              className="jr-panel jr-card-hover flex min-w-0 flex-col gap-4"
             >
               <IconTile index={index + 8} />
               <h3 className="font-display text-2xl text-jr-bone">{item.title}</h3>
