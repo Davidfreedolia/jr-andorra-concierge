@@ -113,7 +113,7 @@
     },
     "concierge": {
       "label": "Conciergerie & Experiences",
-      "title": "El que necessitis, resolt abans de demanar-ho dues vegades.",
+      "title": "El que necessitis, <0>resolt</0> abans de demanar-ho dues vegades.",
       "items": [
         {
           "title": "Gastronomia i reserves",
