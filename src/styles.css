@@ -713,16 +713,19 @@
 
 @utility jr-panel {
   position: relative;
-  border: 1px solid color-mix(in srgb, var(--jr-gold) 30%, transparent);
+  border: 2px solid color-mix(in srgb, var(--jr-gold) 32%, transparent);
   border-radius: 14px;
   background:
     linear-gradient(
       180deg,
-      color-mix(in srgb, var(--jr-gold) 4%, transparent) 0%,
+      color-mix(in srgb, var(--jr-gold) 5%, transparent) 0%,
       transparent 60%
     ),
     var(--jr-night);
   padding: 28px 22px;
+  box-shadow:
+    inset 0 1px 0 0 color-mix(in srgb, var(--jr-gold) 8%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--jr-black) 60%, transparent);
 
   @media (min-width: 768px) {
     padding: 40px 36px;
