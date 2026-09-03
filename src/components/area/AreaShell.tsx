@@ -4,7 +4,6 @@ import type { ReactNode } from "react";
 
 import { AreaIcon } from "@/components/area/AreaIcon";
 import { useRole } from "@/components/area/RoleContext";
-import { RoleSwitcher } from "@/components/area/RoleSwitcher";
 import { LogoJR } from "@/components/LogoJR";
 import {
   AREA_GUEST_NAV,
@@ -68,7 +67,6 @@ export function AreaShell({ children }: { children: ReactNode }) {
           <Link to="/area" className="md:hidden">
             <LogoJR title={t("common.logoAlt")} className="jr-area-logo" />
           </Link>
-          <RoleSwitcher />
         </header>
 
         <div className="jr-area-content">{children}</div>
