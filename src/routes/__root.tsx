@@ -1,6 +1,6 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import i18n, { DEFAULT_LANGUAGE } from "@/i18n/config";
 import { AuthProvider } from "@/lib/auth";
-import { ChatWidget } from "@/components/ChatWidget";
 import {
   Outlet,
   Link,
@@ -110,7 +110,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang={i18n.language || DEFAULT_LANGUAGE}>
       <head>
         <HeadContent />
       </head>
@@ -132,7 +132,6 @@ function RootComponent() {
         <PageTransition>
           <Outlet />
         </PageTransition>
-        <ChatWidget />
       </AuthProvider>
     </QueryClientProvider>
   );

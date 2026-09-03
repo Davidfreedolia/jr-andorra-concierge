@@ -1302,3 +1302,203 @@
   border-top: 1px solid color-mix(in srgb, var(--jr-gold) 20%, transparent);
   background: var(--jr-black);
 }
+
+/* ---------------------------------------------------------------------------
+   ADMINISTRACIO — mateix mon, mes densitat i taules.
+--------------------------------------------------------------------------- */
+
+@utility jr-admin-kpi {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  line-height: 1.1;
+  color: var(--jr-bone);
+}
+
+@utility jr-admin-user {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--jr-gold) 15%, transparent);
+  border-radius: var(--jr-radius);
+}
+
+@utility jr-admin-link {
+  color: var(--jr-bone);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: color-mix(in srgb, var(--jr-gold) 55%, transparent);
+}
+
+.jr-admin-link:hover {
+  color: var(--jr-gold);
+}
+
+@utility jr-admin-tablewrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid color-mix(in srgb, var(--jr-gold) 15%, transparent);
+  border-radius: var(--jr-radius);
+  background: var(--jr-night);
+}
+
+@utility jr-admin-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.jr-admin-table th {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: var(--jr-label-tracking);
+  color: var(--jr-gold);
+  text-align: left;
+  padding: 12px 14px;
+  white-space: nowrap;
+  border-bottom: 1px solid color-mix(in srgb, var(--jr-gold) 18%, transparent);
+}
+
+.jr-admin-table td {
+  padding: 12px 14px;
+  vertical-align: top;
+  color: color-mix(in srgb, var(--jr-bone) 88%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--jr-gold) 8%, transparent);
+}
+
+.jr-admin-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.jr-admin-num {
+  text-align: right;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.jr-admin-mono {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  color: color-mix(in srgb, var(--jr-bone) 70%, transparent);
+}
+
+.jr-admin-clickable {
+  cursor: pointer;
+}
+
+.jr-admin-clickable:hover,
+.jr-admin-clickable[data-active="true"] {
+  background: color-mix(in srgb, var(--jr-gold) 8%, transparent);
+}
+
+@utility jr-admin-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@utility jr-admin-filter {
+  min-height: 38px;
+  padding: 6px 14px;
+  border: 1px solid color-mix(in srgb, var(--jr-gold) 22%, transparent);
+  border-radius: var(--jr-radius);
+  background: transparent;
+  color: color-mix(in srgb, var(--jr-bone) 75%, transparent);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.jr-admin-filter:hover {
+  color: var(--jr-bone);
+}
+
+.jr-admin-filter[data-active="true"] {
+  border-color: var(--jr-gold);
+  color: var(--jr-gold);
+  background: color-mix(in srgb, var(--jr-gold) 10%, transparent);
+}
+
+@utility jr-admin-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--jr-gold) 10%, transparent);
+}
+
+.jr-admin-row:last-child {
+  border-bottom: 0;
+}
+
+@utility jr-admin-line {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2px 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--jr-gold) 10%, transparent);
+}
+
+.jr-admin-line > span:nth-child(2) {
+  grid-column: 1;
+}
+
+.jr-admin-line > span:nth-child(3) {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+}
+
+@utility jr-admin-check {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--jr-gold) 12%, transparent);
+}
+
+@media (min-width: 640px) {
+  .jr-admin-check {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+}
+
+.jr-admin-check:last-child {
+  border-bottom: 0;
+}
+
+@utility jr-admin-seg {
+  display: inline-flex;
+  flex: none;
+  border: 1px solid color-mix(in srgb, var(--jr-gold) 22%, transparent);
+  border-radius: var(--jr-radius);
+  overflow: hidden;
+}
+
+.jr-admin-seg > button {
+  min-height: var(--jr-tap);
+  padding: 8px 14px;
+  background: transparent;
+  color: color-mix(in srgb, var(--jr-bone) 70%, transparent);
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-right: 1px solid color-mix(in srgb, var(--jr-gold) 18%, transparent);
+}
+
+.jr-admin-seg > button:last-child {
+  border-right: 0;
+}
+
+.jr-admin-seg > button[data-active="true"] {
+  background: color-mix(in srgb, var(--jr-gold) 16%, transparent);
+  color: var(--jr-gold);
+}

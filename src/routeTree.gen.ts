@@ -11,12 +11,19 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as LangRouteImport } from './routes/$lang'
+import { Route as AdminRouteImport } from './routes/admin'
 import { Route as AreaRouteImport } from './routes/area'
 import { Route as LangIndexRouteImport } from './routes/$lang.index'
 import { Route as LangAboutRouteImport } from './routes/$lang.about'
 import { Route as LangConciergerieMobilityRouteImport } from './routes/$lang.conciergerie-mobility'
 import { Route as LangContactRouteImport } from './routes/$lang.contact'
 import { Route as LangHomeStaySafeRouteImport } from './routes/$lang.home-stay-safe'
+import { Route as AdminIndexRouteImport } from './routes/admin.index'
+import { Route as AdminEquipRouteImport } from './routes/admin.equip'
+import { Route as AdminFacturacioRouteImport } from './routes/admin.facturacio'
+import { Route as AdminMarquetingRouteImport } from './routes/admin.marqueting'
+import { Route as AdminSolicitudsRouteImport } from './routes/admin.solicituds'
+import { Route as AdminVisitesRouteImport } from './routes/admin.visites'
 import { Route as AreaIndexRouteImport } from './routes/area.index'
 import { Route as AreaFacturacionRouteImport } from './routes/area.facturacion'
 import { Route as AreaInvitadoRouteImport } from './routes/area.invitado'
@@ -25,6 +32,8 @@ import { Route as AreaPersonasRouteImport } from './routes/area.personas'
 import { Route as AreaPeticionesRouteImport } from './routes/area.peticiones'
 import { Route as AreaPropiedadRouteImport } from './routes/area.propiedad'
 import { Route as AreaAccesoRouteImport } from './routes/area_.acceso'
+import { Route as AdminPropietatsIndexRouteImport } from './routes/admin.propietats.index'
+import { Route as AdminPropietatsIdRouteImport } from './routes/admin.propietats.$id'
 import { Route as AreaInformesIndexRouteImport } from './routes/area.informes.index'
 import { Route as AreaInformesIdRouteImport } from './routes/area.informes.$id'
 
@@ -36,6 +45,11 @@ const IndexRoute = IndexRouteImport.update({
 const LangRoute = LangRouteImport.update({
   id: '/$lang',
   path: '/$lang',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AreaRoute = AreaRouteImport.update({
@@ -68,6 +82,36 @@ const LangHomeStaySafeRoute = LangHomeStaySafeRouteImport.update({
   id: '/home-stay-safe',
   path: '/home-stay-safe',
   getParentRoute: () => LangRoute,
+} as any)
+const AdminIndexRoute = AdminIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminEquipRoute = AdminEquipRouteImport.update({
+  id: '/equip',
+  path: '/equip',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminFacturacioRoute = AdminFacturacioRouteImport.update({
+  id: '/facturacio',
+  path: '/facturacio',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminMarquetingRoute = AdminMarquetingRouteImport.update({
+  id: '/marqueting',
+  path: '/marqueting',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminSolicitudsRoute = AdminSolicitudsRouteImport.update({
+  id: '/solicituds',
+  path: '/solicituds',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminVisitesRoute = AdminVisitesRouteImport.update({
+  id: '/visites',
+  path: '/visites',
+  getParentRoute: () => AdminRoute,
 } as any)
 const AreaIndexRoute = AreaIndexRouteImport.update({
   id: '/',
@@ -109,6 +153,16 @@ const AreaAccesoRoute = AreaAccesoRouteImport.update({
   path: '/area/acceso',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminPropietatsIndexRoute = AdminPropietatsIndexRouteImport.update({
+  id: '/propietats/',
+  path: '/propietats/',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminPropietatsIdRoute = AdminPropietatsIdRouteImport.update({
+  id: '/propietats/$id',
+  path: '/propietats/$id',
+  getParentRoute: () => AdminRoute,
+} as any)
 const AreaInformesIndexRoute = AreaInformesIndexRouteImport.update({
   id: '/informes/',
   path: '/informes/',
@@ -123,11 +177,17 @@ const AreaInformesIdRoute = AreaInformesIdRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/$lang': typeof LangRouteWithChildren
+  '/admin': typeof AdminRouteWithChildren
   '/area': typeof AreaRouteWithChildren
   '/$lang/about': typeof LangAboutRoute
   '/$lang/conciergerie-mobility': typeof LangConciergerieMobilityRoute
   '/$lang/contact': typeof LangContactRoute
   '/$lang/home-stay-safe': typeof LangHomeStaySafeRoute
+  '/admin/equip': typeof AdminEquipRoute
+  '/admin/facturacio': typeof AdminFacturacioRoute
+  '/admin/marqueting': typeof AdminMarquetingRoute
+  '/admin/solicituds': typeof AdminSolicitudsRoute
+  '/admin/visites': typeof AdminVisitesRoute
   '/area/facturacion': typeof AreaFacturacionRoute
   '/area/invitado': typeof AreaInvitadoRoute
   '/area/llegada': typeof AreaLlegadaRoute
@@ -136,8 +196,11 @@ export interface FileRoutesByFullPath {
   '/area/propiedad': typeof AreaPropiedadRoute
   '/area/acceso': typeof AreaAccesoRoute
   '/$lang/': typeof LangIndexRoute
+  '/admin/': typeof AdminIndexRoute
   '/area/': typeof AreaIndexRoute
+  '/admin/propietats/$id': typeof AdminPropietatsIdRoute
   '/area/informes/$id': typeof AreaInformesIdRoute
+  '/admin/propietats/': typeof AdminPropietatsIndexRoute
   '/area/informes/': typeof AreaInformesIndexRoute
 }
 export interface FileRoutesByTo {
@@ -146,6 +209,11 @@ export interface FileRoutesByTo {
   '/$lang/conciergerie-mobility': typeof LangConciergerieMobilityRoute
   '/$lang/contact': typeof LangContactRoute
   '/$lang/home-stay-safe': typeof LangHomeStaySafeRoute
+  '/admin/equip': typeof AdminEquipRoute
+  '/admin/facturacio': typeof AdminFacturacioRoute
+  '/admin/marqueting': typeof AdminMarquetingRoute
+  '/admin/solicituds': typeof AdminSolicitudsRoute
+  '/admin/visites': typeof AdminVisitesRoute
   '/area/facturacion': typeof AreaFacturacionRoute
   '/area/invitado': typeof AreaInvitadoRoute
   '/area/llegada': typeof AreaLlegadaRoute
@@ -154,19 +222,28 @@ export interface FileRoutesByTo {
   '/area/propiedad': typeof AreaPropiedadRoute
   '/area/acceso': typeof AreaAccesoRoute
   '/$lang': typeof LangIndexRoute
+  '/admin': typeof AdminIndexRoute
   '/area': typeof AreaIndexRoute
+  '/admin/propietats/$id': typeof AdminPropietatsIdRoute
   '/area/informes/$id': typeof AreaInformesIdRoute
+  '/admin/propietats': typeof AdminPropietatsIndexRoute
   '/area/informes': typeof AreaInformesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/$lang': typeof LangRouteWithChildren
+  '/admin': typeof AdminRouteWithChildren
   '/area': typeof AreaRouteWithChildren
   '/$lang/about': typeof LangAboutRoute
   '/$lang/conciergerie-mobility': typeof LangConciergerieMobilityRoute
   '/$lang/contact': typeof LangContactRoute
   '/$lang/home-stay-safe': typeof LangHomeStaySafeRoute
+  '/admin/equip': typeof AdminEquipRoute
+  '/admin/facturacio': typeof AdminFacturacioRoute
+  '/admin/marqueting': typeof AdminMarquetingRoute
+  '/admin/solicituds': typeof AdminSolicitudsRoute
+  '/admin/visites': typeof AdminVisitesRoute
   '/area/facturacion': typeof AreaFacturacionRoute
   '/area/invitado': typeof AreaInvitadoRoute
   '/area/llegada': typeof AreaLlegadaRoute
@@ -175,8 +252,11 @@ export interface FileRoutesById {
   '/area/propiedad': typeof AreaPropiedadRoute
   '/area_/acceso': typeof AreaAccesoRoute
   '/$lang/': typeof LangIndexRoute
+  '/admin/': typeof AdminIndexRoute
   '/area/': typeof AreaIndexRoute
+  '/admin/propietats/$id': typeof AdminPropietatsIdRoute
   '/area/informes/$id': typeof AreaInformesIdRoute
+  '/admin/propietats/': typeof AdminPropietatsIndexRoute
   '/area/informes/': typeof AreaInformesIndexRoute
 }
 export interface FileRouteTypes {
@@ -184,11 +264,17 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/$lang'
+    | '/admin'
     | '/area'
     | '/$lang/about'
     | '/$lang/conciergerie-mobility'
     | '/$lang/contact'
     | '/$lang/home-stay-safe'
+    | '/admin/equip'
+    | '/admin/facturacio'
+    | '/admin/marqueting'
+    | '/admin/solicituds'
+    | '/admin/visites'
     | '/area/facturacion'
     | '/area/invitado'
     | '/area/llegada'
@@ -197,8 +283,11 @@ export interface FileRouteTypes {
     | '/area/propiedad'
     | '/area/acceso'
     | '/$lang/'
+    | '/admin/'
     | '/area/'
+    | '/admin/propietats/$id'
     | '/area/informes/$id'
+    | '/admin/propietats/'
     | '/area/informes/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -207,6 +296,11 @@ export interface FileRouteTypes {
     | '/$lang/conciergerie-mobility'
     | '/$lang/contact'
     | '/$lang/home-stay-safe'
+    | '/admin/equip'
+    | '/admin/facturacio'
+    | '/admin/marqueting'
+    | '/admin/solicituds'
+    | '/admin/visites'
     | '/area/facturacion'
     | '/area/invitado'
     | '/area/llegada'
@@ -215,18 +309,27 @@ export interface FileRouteTypes {
     | '/area/propiedad'
     | '/area/acceso'
     | '/$lang'
+    | '/admin'
     | '/area'
+    | '/admin/propietats/$id'
     | '/area/informes/$id'
+    | '/admin/propietats'
     | '/area/informes'
   id:
     | '__root__'
     | '/'
     | '/$lang'
+    | '/admin'
     | '/area'
     | '/$lang/about'
     | '/$lang/conciergerie-mobility'
     | '/$lang/contact'
     | '/$lang/home-stay-safe'
+    | '/admin/equip'
+    | '/admin/facturacio'
+    | '/admin/marqueting'
+    | '/admin/solicituds'
+    | '/admin/visites'
     | '/area/facturacion'
     | '/area/invitado'
     | '/area/llegada'
@@ -235,14 +338,18 @@ export interface FileRouteTypes {
     | '/area/propiedad'
     | '/area_/acceso'
     | '/$lang/'
+    | '/admin/'
     | '/area/'
+    | '/admin/propietats/$id'
     | '/area/informes/$id'
+    | '/admin/propietats/'
     | '/area/informes/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   LangRoute: typeof LangRouteWithChildren
+  AdminRoute: typeof AdminRouteWithChildren
   AreaRoute: typeof AreaRouteWithChildren
   AreaAccesoRoute: typeof AreaAccesoRoute
 }
@@ -261,6 +368,13 @@ declare module '@tanstack/react-router' {
       path: '/$lang'
       fullPath: '/$lang'
       preLoaderRoute: typeof LangRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/area': {
@@ -304,6 +418,48 @@ declare module '@tanstack/react-router' {
       fullPath: '/$lang/home-stay-safe'
       preLoaderRoute: typeof LangHomeStaySafeRouteImport
       parentRoute: typeof LangRoute
+    }
+    '/admin/': {
+      id: '/admin/'
+      path: '/'
+      fullPath: '/admin/'
+      preLoaderRoute: typeof AdminIndexRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/equip': {
+      id: '/admin/equip'
+      path: '/equip'
+      fullPath: '/admin/equip'
+      preLoaderRoute: typeof AdminEquipRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/facturacio': {
+      id: '/admin/facturacio'
+      path: '/facturacio'
+      fullPath: '/admin/facturacio'
+      preLoaderRoute: typeof AdminFacturacioRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/marqueting': {
+      id: '/admin/marqueting'
+      path: '/marqueting'
+      fullPath: '/admin/marqueting'
+      preLoaderRoute: typeof AdminMarquetingRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/solicituds': {
+      id: '/admin/solicituds'
+      path: '/solicituds'
+      fullPath: '/admin/solicituds'
+      preLoaderRoute: typeof AdminSolicitudsRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/visites': {
+      id: '/admin/visites'
+      path: '/visites'
+      fullPath: '/admin/visites'
+      preLoaderRoute: typeof AdminVisitesRouteImport
+      parentRoute: typeof AdminRoute
     }
     '/area/': {
       id: '/area/'
@@ -361,6 +517,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AreaAccesoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin/propietats/': {
+      id: '/admin/propietats/'
+      path: '/propietats'
+      fullPath: '/admin/propietats/'
+      preLoaderRoute: typeof AdminPropietatsIndexRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/propietats/$id': {
+      id: '/admin/propietats/$id'
+      path: '/propietats/$id'
+      fullPath: '/admin/propietats/$id'
+      preLoaderRoute: typeof AdminPropietatsIdRouteImport
+      parentRoute: typeof AdminRoute
+    }
     '/area/informes/': {
       id: '/area/informes/'
       path: '/informes'
@@ -396,6 +566,30 @@ const LangRouteChildren: LangRouteChildren = {
 
 const LangRouteWithChildren = LangRoute._addFileChildren(LangRouteChildren)
 
+interface AdminRouteChildren {
+  AdminEquipRoute: typeof AdminEquipRoute
+  AdminFacturacioRoute: typeof AdminFacturacioRoute
+  AdminMarquetingRoute: typeof AdminMarquetingRoute
+  AdminSolicitudsRoute: typeof AdminSolicitudsRoute
+  AdminVisitesRoute: typeof AdminVisitesRoute
+  AdminIndexRoute: typeof AdminIndexRoute
+  AdminPropietatsIdRoute: typeof AdminPropietatsIdRoute
+  AdminPropietatsIndexRoute: typeof AdminPropietatsIndexRoute
+}
+
+const AdminRouteChildren: AdminRouteChildren = {
+  AdminEquipRoute: AdminEquipRoute,
+  AdminFacturacioRoute: AdminFacturacioRoute,
+  AdminMarquetingRoute: AdminMarquetingRoute,
+  AdminSolicitudsRoute: AdminSolicitudsRoute,
+  AdminVisitesRoute: AdminVisitesRoute,
+  AdminIndexRoute: AdminIndexRoute,
+  AdminPropietatsIdRoute: AdminPropietatsIdRoute,
+  AdminPropietatsIndexRoute: AdminPropietatsIndexRoute,
+}
+
+const AdminRouteWithChildren = AdminRoute._addFileChildren(AdminRouteChildren)
+
 interface AreaRouteChildren {
   AreaFacturacionRoute: typeof AreaFacturacionRoute
   AreaInvitadoRoute: typeof AreaInvitadoRoute
@@ -425,6 +619,7 @@ const AreaRouteWithChildren = AreaRoute._addFileChildren(AreaRouteChildren)
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   LangRoute: LangRouteWithChildren,
+  AdminRoute: AdminRouteWithChildren,
   AreaRoute: AreaRouteWithChildren,
   AreaAccesoRoute: AreaAccesoRoute,
 }

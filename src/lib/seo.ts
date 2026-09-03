@@ -1,6 +1,6 @@
 import i18n, { DEFAULT_LANGUAGE, LANGUAGES, type Language } from "@/i18n/config";
 
-export const SITE_URL = "https://jr-hospitality.lovable.app";
+export const SITE_URL = "https://jr-andorra-concierge.vercel.app";
 
 type PageKey = "home" | "homeStaySafe" | "conciergerieMobility" | "about" | "contact";
 
