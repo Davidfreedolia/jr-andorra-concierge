@@ -41,13 +41,7 @@ export function SiteFooter({ lang }: { lang: Language }) {
     <footer className="border-t">
       <div className="jr-container flex flex-col gap-6 py-8 lg:flex-row lg:items-start lg:justify-between lg:py-10">
         <div className="flex min-w-0 flex-col gap-3 text-primary">
-          <div className="inline-flex overflow-hidden rounded-sm border border-jr-gold/15 bg-jr-black p-1.5">
-            <LogoJR
-              title={t("common.logoAlt")}
-              className="jr-logo w-32"
-              style={{ clipPath: "polygon(11% 0, 89% 0, 89% 100%, 11% 100%)" }}
-            />
-          </div>
+          <LogoJR title={t("common.logoAlt")} className="jr-logo jr-logo-lg" />
           <p className="jr-measure max-w-[28ch] text-muted-foreground">{t("brand.tagline")}</p>
 
           <nav aria-label={t("footer.socialLabel")}>
