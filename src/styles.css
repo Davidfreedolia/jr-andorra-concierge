@@ -1502,3 +1502,40 @@
   background: color-mix(in srgb, var(--jr-gold) 16%, transparent);
   color: var(--jr-gold);
 }
+
+/* Bloc de sessio de l'area: qui ets i en quin idioma ho veus. */
+@utility jr-area-foot {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.jr-area-foot .jr-area-exit {
+  margin-top: 0;
+}
+
+@utility jr-area-session {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 24px;
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--jr-gold) 15%, transparent);
+  border-radius: var(--jr-radius);
+}
+
+@utility jr-area-select {
+  min-height: 38px;
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid color-mix(in srgb, var(--jr-gold) 22%, transparent);
+  border-radius: var(--jr-radius);
+  background: transparent;
+  color: var(--jr-bone);
+  font-size: 0.85rem;
+}
+
+.jr-area-select option {
+  background: var(--jr-night);
+  color: var(--jr-bone);
+}

@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import type { ReactNode } from "react";
 
 import { AreaIcon } from "@/components/area/AreaIcon";
+import { AreaSession } from "@/components/area/AreaSession";
 import { useAreaLang } from "@/lib/area-lang";
 import { useRole } from "@/components/area/RoleContext";
 import { LogoJR } from "@/components/LogoJR";
@@ -68,15 +69,19 @@ export function AreaShell({ children }: { children: ReactNode }) {
           </>
         ) : null}
 
-        <Link
-          to="/$lang"
-          params={{ lang }}
-          className="jr-area-sidelink jr-area-exit"
-          aria-label={t("area.nav.exitAria")}
-        >
-          <AreaIcon name="exit" />
-          <span className="jr-area-sidelabel">{t("area.nav.exit")}</span>
-        </Link>
+        <div className="jr-area-foot">
+          <AreaSession />
+
+          <Link
+            to="/$lang"
+            params={{ lang }}
+            className="jr-area-sidelink jr-area-exit"
+            aria-label={t("area.nav.exitAria")}
+          >
+            <AreaIcon name="exit" />
+            <span className="jr-area-sidelabel">{t("area.nav.exit")}</span>
+          </Link>
+        </div>
       </aside>
 
       <div className="jr-area-main">
@@ -92,6 +97,9 @@ export function AreaShell({ children }: { children: ReactNode }) {
           >
             {t("area.nav.exit")}
           </Link>
+          <div className="w-full md:hidden">
+            <AreaSession />
+          </div>
         </header>
 
         <div className="jr-area-content">{children}</div>
