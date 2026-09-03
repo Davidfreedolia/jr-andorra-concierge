@@ -3,7 +3,7 @@ import { Trans, useTranslation } from "react-i18next";
 
 import { tList } from "@/i18n/list";
 
-import founder from "@/assets/founder.jpg.asset.json";
+import founder from "@/assets/founder.jpg";
 import type { Language } from "@/i18n/config";
 import { Reveal } from "@/components/Reveal";
 
@@ -16,7 +16,7 @@ export function AboutTeaser({ lang }: { lang: Language }) {
       <div className="jr-container grid grid-cols-1 items-center gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)]">
         <Reveal className="flex justify-center md:justify-start">
           <img
-            src={founder.url}
+            src={founder}
             alt={t("home.about.portraitAlt")}
             loading="lazy"
             decoding="async"

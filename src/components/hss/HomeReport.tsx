@@ -1,6 +1,6 @@
 import { Trans, useTranslation } from "react-i18next";
 
-import reportImage from "@/assets/hss-report.jpg.asset.json";
+import reportImage from "@/assets/hss-report.jpg";
 import { tList } from "@/i18n/list";
 import { Reveal } from "@/components/Reveal";
 
@@ -28,7 +28,7 @@ export function HomeReport() {
 
         <Reveal delay={120}>
         <img
-          src={reportImage.url}
+          src={reportImage}
           alt={t("hss.report.alt")}
           loading="lazy"
           width={1280}

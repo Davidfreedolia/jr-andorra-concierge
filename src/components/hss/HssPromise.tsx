@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-import promiseImage from "@/assets/hss-promise.jpg.asset.json";
+import promiseImage from "@/assets/hss-promise.jpg";
 import { GoldText } from "@/components/GoldText";
 import { Reveal } from "@/components/Reveal";
 
@@ -24,7 +24,7 @@ export function HssPromise() {
 
         <Reveal delay={120}>
           <img
-            src={promiseImage.url}
+            src={promiseImage}
             alt={t("hss.promise.alt")}
             loading="lazy"
             width={1024}

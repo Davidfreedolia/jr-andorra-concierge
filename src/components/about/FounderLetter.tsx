@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import { GoldText } from "@/components/GoldText";
 import { Reveal } from "@/components/Reveal";
-import founder from "@/assets/founder.jpg.asset.json";
+import founder from "@/assets/founder.jpg";
 import { tList } from "@/i18n/list";
 
 export function FounderLetter() {
@@ -14,7 +14,7 @@ export function FounderLetter() {
       <div className="jr-container grid grid-cols-1 items-start gap-12 md:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:gap-20">
         <Reveal>
           <img
-            src={founder.url}
+            src={founder}
             alt={t("about.letter.portraitAlt")}
             width={960}
             height={1200}

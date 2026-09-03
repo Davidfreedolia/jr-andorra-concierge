@@ -1,6 +1,6 @@
 import type { CSSProperties } from "react";
 
-import logoAsset from "@/assets/jr-logo.png.asset.json";
+import logoAsset from "@/assets/jr-logo.png";
 
 type LogoJRProps = {
   title: string;
@@ -10,5 +10,5 @@ type LogoJRProps = {
 
 /** Final brand mark — used as supplied, never redrawn. */
 export function LogoJR({ title, className, style }: LogoJRProps) {
-  return <img src={logoAsset.url} alt={title} className={className} style={style} />;
+  return <img src={logoAsset} alt={title} className={className} style={style} />;
 }

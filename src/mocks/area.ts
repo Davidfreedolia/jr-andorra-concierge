@@ -5,9 +5,9 @@
  * Los nombres son deliberadamente de ejemplo.
  */
 
-import photoLiving from "@/assets/hss-report.jpg.asset.json";
-import photoExterior from "@/assets/hss-hero.jpg.asset.json";
-import photoTechnical from "@/assets/door-home.jpg.asset.json";
+import photoLiving from "@/assets/hss-report.jpg";
+import photoExterior from "@/assets/hss-hero.jpg";
+import photoTechnical from "@/assets/door-home.jpg";
 
 export type AreaRole = "owner" | "family" | "manager" | "guest";
 
@@ -86,12 +86,12 @@ function checklist(attention: string[] = [], na: string[] = []) {
 }
 
 const PHOTOS = [
-  { id: "p1", url: photoLiving.url, zoneKey: "living" },
-  { id: "p2", url: photoExterior.url, zoneKey: "exterior" },
-  { id: "p3", url: photoTechnical.url, zoneKey: "technical" },
-  { id: "p4", url: photoLiving.url, zoneKey: "kitchen" },
-  { id: "p5", url: photoExterior.url, zoneKey: "entrance" },
-  { id: "p6", url: photoTechnical.url, zoneKey: "bedroom" },
+  { id: "p1", url: photoLiving, zoneKey: "living" },
+  { id: "p2", url: photoExterior, zoneKey: "exterior" },
+  { id: "p3", url: photoTechnical, zoneKey: "technical" },
+  { id: "p4", url: photoLiving, zoneKey: "kitchen" },
+  { id: "p5", url: photoExterior, zoneKey: "entrance" },
+  { id: "p6", url: photoTechnical, zoneKey: "bedroom" },
 ];
 
 function photos(date: string, count: number): ReportPhoto[] {

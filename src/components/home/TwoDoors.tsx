@@ -1,8 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 
-import doorHome from "@/assets/door-home.jpg.asset.json";
-import doorMobility from "@/assets/door-mobility.jpg.asset.json";
+import doorHome from "@/assets/door-home.jpg";
+import doorMobility from "@/assets/door-mobility.jpg";
 import type { Language } from "@/i18n/config";
 
 import { Reveal } from "@/components/Reveal";
@@ -13,14 +13,14 @@ export function TwoDoors({ lang }: { lang: Language }) {
   const doors = [
     {
       to: "/$lang/home-stay-safe" as const,
-      image: doorHome.url,
+      image: doorHome,
       title: t("home.doors.home.title"),
       line: t("home.doors.home.line"),
       link: t("home.doors.home.link"),
     },
     {
       to: "/$lang/conciergerie-mobility" as const,
-      image: doorMobility.url,
+      image: doorMobility,
       title: t("home.doors.mobility.title"),
       line: t("home.doors.mobility.line"),
       link: t("home.doors.mobility.link"),

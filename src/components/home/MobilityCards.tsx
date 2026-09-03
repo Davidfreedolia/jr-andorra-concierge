@@ -4,8 +4,8 @@ import { Trans, useTranslation } from "react-i18next";
 import { IconTile } from "@/components/IconTile";
 import { Reveal } from "@/components/Reveal";
 import { tList } from "@/i18n/list";
-import mobilityBgAsset from "@/assets/mobility-bg.jpg.asset.json";
-import mobilityVideoAsset from "@/assets/mobility-bg.mp4.asset.json";
+import mobilityBgAsset from "@/assets/mobility-bg.jpg";
+import mobilityVideoAsset from "@/assets/mobility-bg.mp4";
 
 import type { Language } from "@/i18n/config";
 
@@ -23,8 +23,8 @@ export function MobilityCards({ lang }: { lang: Language }) {
         aria-hidden="true"
       >
         <video
-          src={mobilityVideoAsset.url}
-          poster={mobilityBgAsset.url}
+          src={mobilityVideoAsset}
+          poster={mobilityBgAsset}
           autoPlay
           muted
           loop

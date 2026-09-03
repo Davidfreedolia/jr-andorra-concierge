@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { GoldText } from "@/components/GoldText";
 import { Reveal } from "@/components/Reveal";
 import andorraPoster from "@/assets/about-andorra.jpg";
-import andorraVideo from "@/assets/about-andorra-mountains.mp4.asset.json";
+import andorraVideo from "@/assets/about-andorra-mountains.mp4";
 
 export function AndorraSection() {
   const { t } = useTranslation();
@@ -12,7 +12,7 @@ export function AndorraSection() {
     <section className="relative isolate flex min-h-[68vh] items-center justify-center overflow-hidden bg-jr-black py-20 lg:py-32">
       <video
         className="jr-photo-lift absolute inset-0 -z-20 h-full w-full object-cover"
-        src={andorraVideo.url}
+        src={andorraVideo}
         poster={andorraPoster}
         autoPlay
         muted

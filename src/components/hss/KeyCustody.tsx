@@ -1,6 +1,6 @@
 import { Trans, useTranslation } from "react-i18next";
 
-import keysImage from "@/assets/hss-keys.jpg.asset.json";
+import keysImage from "@/assets/hss-keys.jpg";
 import { tList } from "@/i18n/list";
 import { Reveal } from "@/components/Reveal";
 
@@ -13,7 +13,7 @@ export function KeyCustody() {
       <div className="jr-container grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20">
         <Reveal>
           <img
-            src={keysImage.url}
+            src={keysImage}
             alt={t("hss.keys.alt")}
             loading="lazy"
             width={1280}
