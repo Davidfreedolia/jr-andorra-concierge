@@ -176,7 +176,7 @@ export const ADMIN_PROPERTIES: PropertyRecord[] = [
   {
     id: "p2",
     ref: "PRO-011",
-    name: "Atic La Massana",
+    name: "Àtic La Massana",
     owner: "Client exemple B",
     parish: "La Massana",
     address: "Avinguda d'exemple 3, La Massana",
@@ -273,7 +273,7 @@ export const ADMIN_VISITS: Visit[] = [
     id: "v2",
     ref: "VIS-2026-117",
     propertyId: "p2",
-    propertyName: "Atic La Massana",
+    propertyName: "Àtic La Massana",
     date: "2026-09-11",
     time: "11:00",
     technician: "Tècnic exemple 2",
@@ -375,7 +375,7 @@ export const ADMIN_INVOICES: Invoice[] = [
     number: "2026/0182",
     client: "Client exemple B",
     nrt: "A-000002-X",
-    propertyName: "Atic La Massana",
+    propertyName: "Àtic La Massana",
     date: "2026-08-01",
     dueDate: "2026-08-15",
     status: "overdue",
@@ -400,23 +400,42 @@ export function invoiceTotals(invoice: Invoice) {
   return { base, igi, total: base + igi };
 }
 
+export type ExpenseCategory =
+  | "Manteniment"
+  | "Mobilitat"
+  | "Exterior"
+  | "Estructura"
+  | "Subcontractes";
+
 export type Expense = {
   id: string;
   date: string;
   supplier: string;
+  supplierNrt: string;
+  docRef: string;
   concept: string;
   amount: number;
   igi: number;
-  category: string;
+  category: ExpenseCategory;
   propertyName: string;
+  rebillable: boolean;
   status: "pending" | "accounted";
+  receipt: boolean;
 };
 
 export const ADMIN_EXPENSES: Expense[] = [
-  { id: "e1", date: "2026-09-01", supplier: "Proveïdor exemple 1", concept: "Material de fontaneria", amount: 84.5, igi: 4.5, category: "Manteniment", propertyName: "Casa Ordino", status: "accounted" },
-  { id: "e2", date: "2026-08-29", supplier: "Proveïdor exemple 2", concept: "Combustible flota", amount: 132.0, igi: 4.5, category: "Mobilitat", propertyName: "—", status: "accounted" },
-  { id: "e3", date: "2026-09-02", supplier: "Proveïdor exemple 3", concept: "Poda i retirada de branques", amount: 260.0, igi: 4.5, category: "Exterior", propertyName: "Xalet Canillo", status: "pending" },
+  { id: "e1", date: "2026-09-01", supplier: "Proveïdor exemple 1", supplierNrt: "A-100000-B", docRef: "F-2026/812", concept: "Material de fontaneria", amount: 84.5, igi: 4.5, category: "Manteniment", propertyName: "Casa Ordino", rebillable: true, status: "accounted", receipt: true },
+  { id: "e2", date: "2026-08-29", supplier: "Proveïdor exemple 2", supplierNrt: "A-100001-B", docRef: "T-99412", concept: "Combustible flota", amount: 132.0, igi: 4.5, category: "Mobilitat", propertyName: "—", rebillable: false, status: "accounted", receipt: true },
+  { id: "e3", date: "2026-09-02", supplier: "Proveïdor exemple 3", supplierNrt: "A-100002-B", docRef: "F-2026/145", concept: "Poda i retirada de branques", amount: 260.0, igi: 4.5, category: "Exterior", propertyName: "Xalet Canillo", rebillable: true, status: "pending", receipt: true },
+  { id: "e4", date: "2026-08-31", supplier: "Proveïdor exemple 4", supplierNrt: "A-100003-B", docRef: "F-2026/0088", concept: "Assegurança de responsabilitat civil", amount: 410.0, igi: 4.5, category: "Estructura", propertyName: "—", rebillable: false, status: "accounted", receipt: true },
+  { id: "e5", date: "2026-09-02", supplier: "Proveïdor exemple 5", supplierNrt: "A-100004-B", docRef: "—", concept: "Servei de neteja subcontractat", amount: 185.0, igi: 4.5, category: "Subcontractes", propertyName: "Àtic La Massana", rebillable: true, status: "pending", receipt: false },
 ];
+
+export function expenseTotals(list: Expense[]) {
+  const base = list.reduce((s, e) => s + e.amount, 0);
+  const igi = list.reduce((s, e) => s + (e.amount * e.igi) / 100, 0);
+  return { base, igi, total: base + igi };
+}
 
 export type Campaign = {
   id: string;
@@ -446,6 +465,12 @@ export function money(value: number): string {
   return new Intl.NumberFormat("ca-AD", { style: "currency", currency: "EUR", maximumFractionDigits: 2 }).format(value);
 }
 
+export function fullDate(iso: string): string {
+  const d = new Date(`${iso}T00:00:00`);
+  if (Number.isNaN(d.getTime())) return iso;
+  return new Intl.DateTimeFormat("ca-AD", { day: "2-digit", month: "short", year: "numeric" }).format(d);
+}
+
 export function shortDate(iso: string): string {
   const d = new Date(`${iso}T00:00:00`);
   if (Number.isNaN(d.getTime())) return iso;
@@ -467,3 +492,160 @@ export const LEAD_SOURCE_LABEL: Record<LeadSource, string> = {
   referral: "Referència",
   agency: "Agència",
 };
+
+
+/* ---------------------------------------------------------------------------
+   CLIENTS — la fitxa fiscal, separada de la propietat.
+   Una persona pot tenir dues cases; una casa pot canviar de mans.
+--------------------------------------------------------------------------- */
+
+export type ClientStatus = "active" | "prospect" | "paused";
+
+export type Client = {
+  id: string;
+  name: string;
+  legalName: string;
+  nrt: string;
+  billingAddress: string;
+  country: string;
+  email: string;
+  phone: string;
+  contactName: string;
+  language: "ca" | "es" | "fr" | "en" | "de";
+  status: ClientStatus;
+  since: string;
+  paymentTerms: string;
+  mandate: string;
+  notes: string;
+};
+
+export const ADMIN_CLIENTS: Client[] = [
+  {
+    id: "cl1",
+    name: "Client exemple E",
+    legalName: "Societat Exemple E, SLU",
+    nrt: "A-000000-X",
+    billingAddress: "Carrer d'exemple 14, AD300 Ordino",
+    country: "Andorra",
+    email: "exemple.e@example.com",
+    phone: "+376 000 005",
+    contactName: "Client exemple E",
+    language: "ca",
+    status: "active",
+    since: "2026-08-14",
+    paymentTerms: "15 dies",
+    mandate: "SEPA signat — 14/08/2026",
+    notes: "Factura a nom de la societat. Còpia al gestor patrimonial.",
+  },
+  {
+    id: "cl2",
+    name: "Client exemple D",
+    legalName: "Exemple D Family Office, SL",
+    nrt: "A-000001-X",
+    billingAddress: "Passeig d'exemple 8, 08006 Barcelona",
+    country: "Espanya",
+    email: "exemple.d@example.com",
+    phone: "+376 000 004",
+    contactName: "Family office",
+    language: "es",
+    status: "active",
+    since: "2025-12-19",
+    paymentTerms: "30 dies",
+    mandate: "Transferència — sense mandat",
+    notes: "Totes les factures passen pel family office abans de pagar-se.",
+  },
+  {
+    id: "cl3",
+    name: "Client exemple B",
+    legalName: "Client exemple B",
+    nrt: "A-000002-X",
+    billingAddress: "Avinguda d'exemple 3, AD400 La Massana",
+    country: "Andorra",
+    email: "exemple.b@example.com",
+    phone: "+376 000 002",
+    contactName: "Client exemple B",
+    language: "fr",
+    status: "paused",
+    since: "2026-05-02",
+    paymentTerms: "15 dies",
+    mandate: "SEPA signat — 02/05/2026",
+    notes: "Factura d'agost vençuda. Segon avís enviat.",
+  },
+  {
+    id: "cl4",
+    name: "Client exemple A",
+    legalName: "—",
+    nrt: "—",
+    billingAddress: "—",
+    country: "Andorra",
+    email: "exemple.a@example.com",
+    phone: "+376 000 001",
+    contactName: "Client exemple A",
+    language: "en",
+    status: "prospect",
+    since: "2026-09-02",
+    paymentTerms: "—",
+    mandate: "—",
+    notes: "Sol·licitud entrada per la web. Pendent de visita de valoració.",
+  },
+];
+
+export const CLIENT_STATUS_LABEL: Record<ClientStatus, string> = {
+  active: "Actiu",
+  prospect: "Potencial",
+  paused: "En pausa",
+};
+
+/* ---------------------------------------------------------------------------
+   L'EMPRESA — dades fiscals, sèries i tipus d'IGI per línia de servei.
+   Res d'això s'escriu al codi: viu en configuració i ho valida la gestoria.
+--------------------------------------------------------------------------- */
+
+export const COMPANY = {
+  legalName: "JR Hospitality & Customer Experience, SLU",
+  tradeName: "JR Hospitality",
+  nrt: "A-999999-Z",
+  address: "Adreça fiscal d'exemple, AD500 Andorra la Vella",
+  country: "Andorra",
+  email: "administracio@example.com",
+  phone: "+376 000 000",
+  bank: "Entitat d'exemple — AD00 0000 0000 0000 0000 0000",
+  registry: "Registre de Societats — dada pendent",
+  activity: "Property care, conciergerie i mobilitat",
+  fiscalYear: "1 de gener — 31 de desembre",
+  igiPeriod: "Liquidació semestral (a confirmar amb la gestoria)",
+};
+
+export type InvoiceSeries = {
+  code: string;
+  name: string;
+  next: number;
+  lastIssued: string;
+  locked: boolean;
+};
+
+export const INVOICE_SERIES: InvoiceSeries[] = [
+  { code: "2026", name: "Factures de servei", next: 185, lastIssued: "2026/0184", locked: false },
+  { code: "ESB", name: "Esborranys", next: 3, lastIssued: "ESB-2026/0185", locked: false },
+  { code: "REC", name: "Rectificatives", next: 1, lastIssued: "—", locked: false },
+  { code: "2025", name: "Exercici tancat", next: 0, lastIssued: "2025/0412", locked: true },
+];
+
+export type ServiceTax = {
+  line: string;
+  rate: number;
+  note: string;
+  validFrom: string;
+};
+
+export const SERVICE_TAXES: ServiceTax[] = [
+  { line: "Quotes de property care", rate: 4.5, note: "Tipus general", validFrom: "2026-01-01" },
+  { line: "Coordinació d'obra i manteniment", rate: 4.5, note: "Tipus general", validFrom: "2026-01-01" },
+  { line: "Transport de passatgers i trasllats", rate: 0, note: "A confirmar per la gestoria", validFrom: "2026-01-01" },
+  { line: "Lloguer de vehicle amb conductor", rate: 4.5, note: "A confirmar per la gestoria", validFrom: "2026-01-01" },
+  { line: "Intermediació i comissions", rate: 4.5, note: "Tipus general", validFrom: "2026-01-01" },
+];
+
+export function clientByName(name: string): Client | undefined {
+  return ADMIN_CLIENTS.find((c) => c.name === name);
+}

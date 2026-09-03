@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 
 import { AdminIcon } from "@/components/admin/AdminIcon";
 import { LogoJR } from "@/components/LogoJR";
-import { ADMIN_NAV } from "@/lib/admin-nav";
+import { ADMIN_NAV, ADMIN_NAV_COMPANY } from "@/lib/admin-nav";
 
 export function AdminShell({ children }: { children: ReactNode }) {
   return (
@@ -20,6 +20,21 @@ export function AdminShell({ children }: { children: ReactNode }) {
               key={item.key}
               to={item.to}
               activeOptions={{ exact: item.to === "/admin" }}
+              activeProps={{ "data-active": "true" }}
+              className="jr-area-sidelink"
+            >
+              <AdminIcon name={item.key} />
+              <span className="jr-area-sidelabel">{item.label}</span>
+            </Link>
+          ))}
+        </nav>
+
+        <p className="jr-label mt-6 mb-2 px-3">Empresa</p>
+        <nav className="flex flex-col gap-1">
+          {ADMIN_NAV_COMPANY.map((item) => (
+            <Link
+              key={item.key}
+              to={item.to}
               activeProps={{ "data-active": "true" }}
               className="jr-area-sidelink"
             >
@@ -54,8 +69,16 @@ export function AdminShell({ children }: { children: ReactNode }) {
 
         <div className="jr-area-content">{children}</div>
 
+        <nav aria-label="Empresa" className="jr-area-morerow md:hidden">
+          {ADMIN_NAV_COMPANY.map((item) => (
+            <Link key={item.key} to={item.to} className="jr-button jr-button-quiet flex-1">
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+
         <nav aria-label="Menú d'administració" className="jr-area-tabbar md:hidden">
-          {ADMIN_NAV.slice(0, 5).map((item) => (
+          {ADMIN_NAV.map((item) => (
             <Link
               key={item.key}
               to={item.to}

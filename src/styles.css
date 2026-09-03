@@ -1539,3 +1539,35 @@
   background: var(--jr-night);
   color: var(--jr-bone);
 }
+
+/* Distintius d'estat. Al negre i or nomes hi ha un accent: l'or es el que
+   demana atencio. La resta es queda en to os, sense cridar. */
+@utility jr-pill {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  width: fit-content;
+  white-space: nowrap;
+  padding: 3px 10px;
+  border: 1px solid transparent;
+  border-radius: var(--jr-radius);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.jr-pill-neutral {
+  border-color: color-mix(in srgb, var(--jr-bone) 18%, transparent);
+  color: color-mix(in srgb, var(--jr-bone) 62%, transparent);
+}
+
+.jr-pill-good {
+  border-color: color-mix(in srgb, var(--jr-bone) 30%, transparent);
+  color: color-mix(in srgb, var(--jr-bone) 88%, transparent);
+}
+
+.jr-pill-warn {
+  border-color: color-mix(in srgb, var(--jr-gold) 55%, transparent);
+  background: color-mix(in srgb, var(--jr-gold) 10%, transparent);
+  color: var(--jr-gold);
+}

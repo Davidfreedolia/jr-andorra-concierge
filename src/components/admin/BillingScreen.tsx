@@ -1,10 +1,11 @@
+import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 
 import { AdminHead, Kpi, Row, Section, TableWrap } from "@/components/admin/AdminUI";
 import { StatusPill } from "@/components/area/StatusPill";
 import {
-  ADMIN_EXPENSES,
   ADMIN_INVOICES,
+  clientByName,
   IGI_RATES,
   invoiceTotals,
   money,
@@ -30,13 +31,13 @@ export function BillingScreen() {
     (s, i) => s + invoiceTotals(i).total,
     0,
   );
-  const expenses = ADMIN_EXPENSES.reduce((s, e) => s + e.amount, 0);
+  const draft = ADMIN_INVOICES.filter((i) => i.status === "draft");
 
   return (
     <>
       <AdminHead
-        title="Facturació i despeses"
-        intro="Facturació andorrana: IGI per línia, NRT a cada factura i una exportació neta per a la gestoria."
+        title="Factures"
+        intro="Facturació andorrana: IGI per línia, NRT a cada factura, sèries sense forats i una exportació neta per a la gestoria."
         action={
           <button type="button" className="jr-button jr-button-quiet">
             Exportar per a la gestoria
@@ -48,7 +49,7 @@ export function BillingScreen() {
         <Kpi label="Facturat" value={money(billed)} hint="Factures emeses" />
         <Kpi label="IGI repercutit" value={money(igiDue)} hint="Pendent de liquidar" />
         <Kpi label="Pendent de cobrar" value={money(pending)} hint="Emeses i vençudes" />
-        <Kpi label="Despeses" value={money(expenses)} hint={`${ADMIN_EXPENSES.length} apunts`} />
+        <Kpi label="Esborranys" value={String(draft.length)} hint="Pendents d'emetre" />
       </div>
 
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1.3fr_1fr]">
@@ -76,7 +77,17 @@ export function BillingScreen() {
                   >
                     <td className="jr-admin-mono">{i.number}</td>
                     <td>
-                      {i.client}
+                      {clientByName(i.client) ? (
+                        <Link
+                          to="/admin/clients/$id"
+                          params={{ id: clientByName(i.client)!.id }}
+                          className="jr-admin-link"
+                        >
+                          {i.client}
+                        </Link>
+                      ) : (
+                        i.client
+                      )}
                       <span className="block text-xs text-muted-foreground">{i.propertyName}</span>
                     </td>
                     <td>{shortDate(i.date)}</td>
@@ -140,41 +151,19 @@ export function BillingScreen() {
       <div className="mt-10">
         <Section
           title="Despeses"
-          aside={<span className="text-xs text-muted-foreground">El gestor extern només veu aquesta secció i les factures</span>}
+          aside={
+            <Link to="/admin/despeses" className="jr-area-inline-link">
+              Anar a despeses
+            </Link>
+          }
         >
-          <TableWrap>
-            <thead>
-              <tr>
-                <th>Data</th>
-                <th>Proveïdor</th>
-                <th>Concepte</th>
-                <th>Categoria</th>
-                <th>Propietat</th>
-                <th>Estat</th>
-                <th className="jr-admin-num">Import</th>
-              </tr>
-            </thead>
-            <tbody>
-              {ADMIN_EXPENSES.map((e) => (
-                <tr key={e.id}>
-                  <td>{shortDate(e.date)}</td>
-                  <td>{e.supplier}</td>
-                  <td>{e.concept}</td>
-                  <td>{e.category}</td>
-                  <td>{e.propertyName}</td>
-                  <td>
-                    <StatusPill
-                      tone={e.status === "accounted" ? "good" : "warn"}
-                      label={e.status === "accounted" ? "Comptabilitzada" : "Pendent"}
-                    />
-                  </td>
-                  <td className="jr-admin-num">{money(e.amount)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </TableWrap>
+          <p className="jr-measure text-sm text-muted-foreground">
+            Les despeses viuen a la seva pantalla, amb el justificant, l'IGI suportat i la casa a qui
+            pertoquen. D'aquí surt l'altra meitat del que necessita la gestoria.
+          </p>
         </Section>
       </div>
+
     </>
   );
 }
