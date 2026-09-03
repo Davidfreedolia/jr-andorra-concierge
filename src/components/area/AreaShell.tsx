@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import type { ReactNode } from "react";
 
 import { AreaIcon } from "@/components/area/AreaIcon";
+import { useAreaLang } from "@/lib/area-lang";
 import { useRole } from "@/components/area/RoleContext";
 import { LogoJR } from "@/components/LogoJR";
 import {
@@ -38,6 +39,7 @@ function NavLinks({ items, variant }: { items: AreaNavItem[]; variant: "side" | 
 export function AreaShell({ children }: { children: ReactNode }) {
   const { t } = useTranslation();
   const { role, can } = useRole();
+  const lang = useAreaLang();
 
   const isGuest = role === "guest";
   const mainNav = isGuest ? AREA_GUEST_NAV : AREA_MAIN_NAV;
@@ -46,7 +48,12 @@ export function AreaShell({ children }: { children: ReactNode }) {
   return (
     <div className="jr-area">
       <aside className="jr-area-sidebar" aria-label={t("area.nav.menu")}>
-        <Link to="/area" className="mb-6 block">
+        <Link
+          to="/$lang"
+          params={{ lang }}
+          className="mb-6 block"
+          aria-label={t("area.nav.exitAria")}
+        >
           <LogoJR title={t("common.logoAlt")} className="jr-area-logo" />
         </Link>
         <nav className="flex flex-col gap-1">
@@ -60,12 +67,30 @@ export function AreaShell({ children }: { children: ReactNode }) {
             </nav>
           </>
         ) : null}
+
+        <Link
+          to="/$lang"
+          params={{ lang }}
+          className="jr-area-sidelink jr-area-exit"
+          aria-label={t("area.nav.exitAria")}
+        >
+          <AreaIcon name="exit" />
+          <span className="jr-area-sidelabel">{t("area.nav.exit")}</span>
+        </Link>
       </aside>
 
       <div className="jr-area-main">
         <header className="jr-area-topbar">
-          <Link to="/area" className="md:hidden">
+          <Link to="/area" className="md:hidden" aria-label={t("area.nav.menu")}>
             <LogoJR title={t("common.logoAlt")} className="jr-area-logo" />
+          </Link>
+          <Link
+            to="/$lang"
+            params={{ lang }}
+            className="jr-area-inline-link md:hidden"
+            aria-label={t("area.nav.exitAria")}
+          >
+            {t("area.nav.exit")}
           </Link>
         </header>
 

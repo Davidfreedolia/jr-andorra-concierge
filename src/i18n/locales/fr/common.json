@@ -643,7 +643,9 @@
       "guest": "Vue invité",
       "main": "Principal",
       "more": "Plus",
-      "menu": "Navigation de l'espace"
+      "menu": "Navigation de l'espace",
+      "exit": "Retour au site",
+      "exitAria": "Quitter l'espace privé et revenir au site"
     },
     "restricted": "Cette section n'est pas disponible pour votre profil.",
     "download": "Télécharger",

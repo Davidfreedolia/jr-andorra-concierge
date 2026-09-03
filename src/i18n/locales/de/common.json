@@ -643,7 +643,9 @@
       "guest": "Gastansicht",
       "main": "Hauptbereich",
       "more": "Mehr",
-      "menu": "Navigation im Bereich"
+      "menu": "Navigation im Bereich",
+      "exit": "Zurück zur Website",
+      "exitAria": "Den privaten Bereich verlassen"
     },
     "restricted": "Dieser Bereich steht Ihrem Profil nicht zur Verfügung.",
     "download": "Herunterladen",

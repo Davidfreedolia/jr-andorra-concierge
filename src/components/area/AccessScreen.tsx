@@ -61,9 +61,14 @@ export function AccessScreen() {
           ) : null}
         </form>
 
-        <Link to="/area" className="jr-area-inline-link">
-          {t("area.access.preview")}
-        </Link>
+        <div className="flex flex-col items-center gap-3">
+          <Link to="/area" className="jr-area-inline-link">
+            {t("area.access.preview")}
+          </Link>
+          <Link to="/" className="jr-label text-muted-foreground hover:text-jr-gold">
+            {t("area.nav.exit")}
+          </Link>
+        </div>
       </div>
     </main>
   );

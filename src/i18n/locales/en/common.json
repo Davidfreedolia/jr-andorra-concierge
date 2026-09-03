@@ -643,7 +643,9 @@
       "guest": "Guest view",
       "main": "Main",
       "more": "More",
-      "menu": "Private area navigation"
+      "menu": "Private area navigation",
+      "exit": "Back to the site",
+      "exitAria": "Leave the private area and return to the site"
     },
     "restricted": "This section is not available for your profile.",
     "download": "Download",

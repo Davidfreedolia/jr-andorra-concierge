@@ -643,7 +643,9 @@
       "guest": "Vista convidat",
       "main": "Principal",
       "more": "Més",
-      "menu": "Navegació de l'àrea"
+      "menu": "Navegació de l'àrea",
+      "exit": "Tornar al web",
+      "exitAria": "Sortir de l'àrea privada i tornar al web"
     },
     "restricted": "Aquesta secció no està disponible per al seu perfil.",
     "download": "Descarregar",

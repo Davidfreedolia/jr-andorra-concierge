@@ -701,7 +701,8 @@
 
 @media (min-width: 768px) {
   .jr-area-sidebar {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 232px;
     flex: none;
     padding: 24px 12px;
@@ -826,6 +827,21 @@
 
 @utility jr-area-sidelabel {
   font-size: 0.95rem;
+}
+
+/* La sortida cap al lloc public viu al peu de la barra, separada de la
+   navegacio: sempre hi ha una manera de sortir de l'area. */
+@utility jr-area-exit {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--jr-hairline);
+  border-radius: 0;
+  color: color-mix(in srgb, var(--jr-bone) 60%, transparent);
+}
+
+.jr-area-exit:hover {
+  background: transparent;
+  color: var(--jr-gold);
 }
 
 .jr-area-sidelink:hover,
