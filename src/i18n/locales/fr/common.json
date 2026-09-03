@@ -889,7 +889,8 @@
       "concierge": "Contacter le concierge",
       "expiry": "Votre accès est disponible jusqu'au {{date}}.",
       "note": "Si vous avez besoin de quoi que ce soit pendant votre séjour, écrivez-nous."
-    }
+    },
+    "demoLabel": "Vue de démonstration"
   },
   "chat": {
     "title": "Conciergerie JR",

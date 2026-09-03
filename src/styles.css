@@ -868,6 +868,26 @@
   padding-left: 16px;
 }
 
+@utility jr-area-timeline-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+
+@media (min-width: 640px) {
+  .jr-area-timeline-item {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 18px;
+  }
+
+  .jr-area-timeline-item > .jr-label {
+    flex: 0 0 auto;
+    min-width: 17ch;
+  }
+}
+
 @utility jr-area-checklist {
   display: flex;
   flex-direction: column;

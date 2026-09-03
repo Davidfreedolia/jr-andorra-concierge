@@ -889,7 +889,8 @@
       "concierge": "Contactar amb el conserge",
       "expiry": "El seu accés està disponible fins al {{date}}.",
       "note": "Si necessita qualsevol cosa durant la seva estada, escrigui'ns."
-    }
+    },
+    "demoLabel": "Vista de demostració"
   },
   "chat": {
     "title": "Consergeria JR",
