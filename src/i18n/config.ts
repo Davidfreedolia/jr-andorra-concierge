@@ -7,20 +7,49 @@ import fr from "./locales/fr/common.json";
 import en from "./locales/en/common.json";
 import de from "./locales/de/common.json";
 
-export const LANGUAGES = ["es", "ca", "fr", "en", "de"] as const;
+// Ordre del selector: el catala primer, per ser la llengua oficial d'Andorra.
+export const LANGUAGES = ["ca", "es", "fr", "de", "en"] as const;
 export type Language = (typeof LANGUAGES)[number];
-export const DEFAULT_LANGUAGE: Language = "es";
+export const DEFAULT_LANGUAGE: Language = "ca";
 
 export const LANGUAGE_LABELS: Record<Language, string> = {
-  es: "ES",
   ca: "CA",
+  es: "ES",
   fr: "FR",
-  en: "EN",
   de: "DE",
+  en: "EN",
 };
 
 export function isLanguage(value: string | undefined): value is Language {
   return !!value && (LANGUAGES as readonly string[]).includes(value);
+}
+
+/**
+ * Llegeix la capçalera Accept-Language del navegador i retorna el primer idioma
+ * que tenim, respectant l'ordre de preferencia (q=) que envia el navegador.
+ * Si el visitant no en te cap dels nostres, retorna null i decideix qui crida.
+ */
+export function languageFromAcceptLanguage(header: string | undefined | null): Language | null {
+  if (!header) return null;
+
+  const ranked = header
+    .split(",")
+    .map((part) => {
+      const [tag, ...params] = part.trim().split(";");
+      const q = params.find((param) => param.trim().startsWith("q="));
+      const quality = q ? Number.parseFloat(q.trim().slice(2)) : 1;
+      return {
+        base: tag?.trim().toLowerCase().split("-")[0] ?? "",
+        quality: Number.isFinite(quality) ? quality : 0,
+      };
+    })
+    .filter((entry) => entry.base.length > 0 && entry.quality > 0)
+    .sort((first, second) => second.quality - first.quality);
+
+  for (const entry of ranked) {
+    if (isLanguage(entry.base)) return entry.base;
+  }
+  return null;
 }
 
 /** Browser hint only — never used to redirect automatically. */

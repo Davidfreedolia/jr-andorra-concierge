@@ -2,6 +2,7 @@ import "./lib/error-capture";
 
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
+import { DEFAULT_LANGUAGE, languageFromAcceptLanguage } from "./i18n/config";
 
 type ServerEntry = {
   fetch: (request: Request, env: unknown, ctx: unknown) => Promise<Response> | Response;
@@ -44,9 +45,44 @@ function isH3SwallowedErrorBody(body: string): boolean {
   }
 }
 
+/**
+ * "/" reparteix per idioma del navegador.
+ *
+ * Es resol aqui, al servidor, i no dins del router: la capçalera Accept-Language
+ * nomes existeix al servidor, i resolent-ho abans el visitant ja rep la pagina
+ * en el seu idioma, sense pampallugues ni un salt visible.
+ *
+ * Si el navegador no demana cap dels cinc idiomes, cau al catala, que es la
+ * llengua oficial d'Andorra. Nomes afecta l'arrel: un enllaç a /es o a /de mana
+ * sempre sobre la deteccio, perque qui comparteix una adreça comparteix
+ * l'idioma que hi ha escrit.
+ */
+function languageRedirect(request: Request): Response | null {
+  const url = new URL(request.url);
+  if (url.pathname !== "/") return null;
+
+  const lang =
+    languageFromAcceptLanguage(request.headers.get("accept-language")) ?? DEFAULT_LANGUAGE;
+
+  url.pathname = `/${lang}`;
+  return new Response(null, {
+    status: 307,
+    headers: {
+      location: url.toString(),
+      // La resposta depen de la capçalera: sense aixo, una cache intermedia
+      // serviria el mateix idioma a tothom.
+      vary: "accept-language",
+      "cache-control": "no-store",
+    },
+  });
+}
+
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
+      const redirected = languageRedirect(request);
+      if (redirected) return redirected;
+
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
       return await normalizeCatastrophicSsrResponse(response);

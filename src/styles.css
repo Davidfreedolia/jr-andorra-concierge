@@ -121,7 +121,10 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 1.65;
-    hyphens: auto;
+    /* Cap paraula partida amb guionet: si no hi cap, passa sencera a la linia
+       seguent. overflow-wrap nomes actua amb una paraula mes llarga que la
+       columna, per no trencar el disseny a 375px en alemany. */
+    hyphens: manual;
     overflow-wrap: break-word;
   }
 
@@ -354,29 +357,31 @@
   }
 }
 
+/* El logotip definitiu es un bloc apaisat amb el text i el lema: necessita mes
+   alcada que una marca solta per llegir-se. Proporcio 1,30:1. */
 @utility jr-logo {
   display: block;
   width: auto;
-  height: 48px;
+  height: 60px;
   max-width: 100%;
   object-fit: contain;
 }
 
 @media (min-width: 768px) {
   .jr-logo {
-    height: 58px;
+    height: 76px;
   }
 }
 
 /* El logo es fa servir tal com es rep: mai estirat, mai retallat, mai dins
    d'una altra caixa. Nomes se n'ajusta l'alcada. */
 @utility jr-logo-lg {
-  height: 84px;
+  height: 116px;
 }
 
 @media (min-width: 768px) {
   .jr-logo-lg {
-    height: 96px;
+    height: 148px;
   }
 }
 
@@ -759,7 +764,7 @@
 }
 
 @utility jr-area-logo {
-  height: 40px;
+  height: 52px;
   width: auto;
   object-fit: contain;
 }
