@@ -8,7 +8,7 @@ import en from "./locales/en/common.json";
 import de from "./locales/de/common.json";
 
 // Ordre del selector: el catala primer, per ser la llengua oficial d'Andorra.
-export const LANGUAGES = ["ca", "es", "fr", "de", "en"] as const;
+export const LANGUAGES = ["ca", "es", "fr", "en", "de"] as const;
 export type Language = (typeof LANGUAGES)[number];
 export const DEFAULT_LANGUAGE: Language = "ca";
 
@@ -16,8 +16,8 @@ export const LANGUAGE_LABELS: Record<Language, string> = {
   ca: "CA",
   es: "ES",
   fr: "FR",
-  de: "DE",
   en: "EN",
+  de: "DE",
 };
 
 export function isLanguage(value: string | undefined): value is Language {

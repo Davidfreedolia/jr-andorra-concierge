@@ -20,7 +20,7 @@ export function SiteHeader({ lang }: { lang: Language }) {
           className="jr-tap min-w-0 justify-start text-primary"
           aria-label={t("common.logoAlt")}
         >
-          <LogoJR title={t("common.logoAlt")} className="jr-logo" />
+          <LogoJR title={t("common.logoAlt")} variant="horizontal" className="jr-logo" />
         </Link>
 
         <div className="flex items-center gap-2 lg:hidden">

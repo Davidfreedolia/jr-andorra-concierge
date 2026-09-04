@@ -536,6 +536,15 @@
     "hero": {
       "title": "<gold>Trente ans</gold> <gold>au service</gold> des maisons et des personnes",
       "alt": "Vallées d'Andorre au crépuscule, lumière chaude sur la montagne"
+    },
+    "team": {
+      "label": "L'équipe",
+      "title": "Découvrez qui se cache derrière",
+      "intro": "Une maison n'est pas entretenue par une entreprise : elle l'est par des personnes qui ont un nom. Les voici.",
+      "contact": "Écrire",
+      "contactAria": "Écrire à {{name}}",
+      "photoPending": "Photographie à venir",
+      "provisional": "Fiche provisoire : photographies et adresses de contact en attente."
     }
   },
   "contact": {

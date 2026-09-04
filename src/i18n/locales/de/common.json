@@ -536,6 +536,15 @@
     "hero": {
       "title": "<gold>Dreißig</gold> Jahre <gold>Sorge</gold> für Häuser und Menschen",
       "alt": "Täler Andorras in der Dämmerung, warmes Licht über den Bergen"
+    },
+    "team": {
+      "label": "Das Team",
+      "title": "Lernen Sie die Menschen dahinter kennen",
+      "intro": "Ein Haus wird nicht von einem Unternehmen betreut, sondern von Menschen mit Namen. Von diesen.",
+      "contact": "Schreiben",
+      "contactAria": "An {{name}} schreiben",
+      "photoPending": "Foto ausstehend",
+      "provisional": "Vorläufige Seite: Fotos und Kontaktadressen stehen noch aus."
     }
   },
   "contact": {

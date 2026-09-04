@@ -55,7 +55,7 @@ export function AreaShell({ children }: { children: ReactNode }) {
           className="mb-6 block"
           aria-label={t("area.nav.exitAria")}
         >
-          <LogoJR title={t("common.logoAlt")} className="jr-area-logo" />
+          <LogoJR title={t("common.logoAlt")} variant="horizontal" className="jr-area-logo" />
         </Link>
         <nav className="flex flex-col gap-1">
           <NavLinks items={mainNav} variant="side" />
@@ -87,7 +87,7 @@ export function AreaShell({ children }: { children: ReactNode }) {
       <div className="jr-area-main">
         <header className="jr-area-topbar">
           <Link to="/area" className="md:hidden" aria-label={t("area.nav.menu")}>
-            <LogoJR title={t("common.logoAlt")} className="jr-area-logo" />
+            <LogoJR title={t("common.logoAlt")} variant="horizontal" className="jr-area-logo" />
           </Link>
           <Link
             to="/$lang"

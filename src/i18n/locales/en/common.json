@@ -536,6 +536,15 @@
     "hero": {
       "title": "<gold>Thirty</gold> years <gold>caring</gold> for homes and people",
       "alt": "Andorran valleys at dusk, warm light over the mountains"
+    },
+    "team": {
+      "label": "The team",
+      "title": "Meet the people behind it",
+      "intro": "A house is not looked after by a company. It is looked after by people with names. These ones.",
+      "contact": "Write",
+      "contactAria": "Write to {{name}}",
+      "photoPending": "Photograph pending",
+      "provisional": "Provisional page: photographs and contact addresses still pending."
     }
   },
   "contact": {

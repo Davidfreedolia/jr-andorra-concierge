@@ -536,6 +536,15 @@
     "hero": {
       "title": "<gold>Treinta</gold> años <gold>cuidando</gold> casas y personas",
       "alt": "Valles de Andorra al atardecer, luz cálida sobre la montaña"
+    },
+    "team": {
+      "label": "El equipo",
+      "title": "Conoce a quien hay detrás",
+      "intro": "Una casa no la cuida una empresa: la cuidan personas con nombre. Estas.",
+      "contact": "Escribir",
+      "contactAria": "Escribir a {{name}}",
+      "photoPending": "Fotografía pendiente",
+      "provisional": "Ficha provisional: fotografías y direcciones de contacto pendientes."
     }
   },
   "contact": {

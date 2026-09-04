@@ -10,7 +10,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
     <div className="jr-area">
       <aside className="jr-area-sidebar" aria-label="Menú d'administració">
         <Link to="/admin" className="mb-1 block" aria-label="Panell">
-          <LogoJR title="JR Hospitality" className="jr-area-logo" />
+          <LogoJR title="JR Hospitality" variant="horizontal" className="jr-area-logo" />
         </Link>
         <p className="jr-label mb-6 px-3">Administració</p>
 
@@ -59,7 +59,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
       <div className="jr-area-main">
         <header className="jr-area-topbar">
           <Link to="/admin" className="flex items-center gap-3" aria-label="Panell">
-            <LogoJR title="JR Hospitality" className="jr-area-logo" />
+            <LogoJR title="JR Hospitality" variant="horizontal" className="jr-area-logo" />
             <span className="jr-label">Administració</span>
           </Link>
           <Link to="/$lang" params={{ lang: "ca" }} className="jr-area-inline-link">

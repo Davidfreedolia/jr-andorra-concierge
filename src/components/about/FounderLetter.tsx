@@ -16,8 +16,8 @@ export function FounderLetter() {
           <img
             src={founder}
             alt={t("about.letter.portraitAlt")}
-            width={960}
-            height={1200}
+            width={900}
+            height={1353}
             loading="lazy"
             decoding="async"
             className="w-full max-w-sm object-cover"

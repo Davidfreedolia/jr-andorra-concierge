@@ -536,6 +536,15 @@
     "hero": {
       "title": "<gold>Trenta</gold> anys <gold>tenint cura</gold> de cases i persones",
       "alt": "Valls d'Andorra al capvespre, llum càlida sobre la muntanya"
+    },
+    "team": {
+      "label": "L'equip",
+      "title": "Coneix qui hi ha darrere",
+      "intro": "Una casa no la cuida una empresa: la cuiden persones amb nom. Aquestes.",
+      "contact": "Escriure",
+      "contactAria": "Escriure a {{name}}",
+      "photoPending": "Fotografia pendent",
+      "provisional": "Fitxa provisional: fotografies i adreces de contacte pendents."
     }
   },
   "contact": {
