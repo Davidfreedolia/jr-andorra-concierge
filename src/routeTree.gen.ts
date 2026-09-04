@@ -17,6 +17,7 @@ import { Route as LangIndexRouteImport } from './routes/$lang.index'
 import { Route as LangAboutRouteImport } from './routes/$lang.about'
 import { Route as LangConciergerieMobilityRouteImport } from './routes/$lang.conciergerie-mobility'
 import { Route as LangContactRouteImport } from './routes/$lang.contact'
+import { Route as LangEquipoRouteImport } from './routes/$lang.equipo'
 import { Route as LangHomeStaySafeRouteImport } from './routes/$lang.home-stay-safe'
 import { Route as AdminIndexRouteImport } from './routes/admin.index'
 import { Route as AdminDespesesRouteImport } from './routes/admin.despeses'
@@ -80,6 +81,11 @@ const LangConciergerieMobilityRoute =
 const LangContactRoute = LangContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => LangRoute,
+} as any)
+const LangEquipoRoute = LangEquipoRouteImport.update({
+  id: '/equipo',
+  path: '/equipo',
   getParentRoute: () => LangRoute,
 } as any)
 const LangHomeStaySafeRoute = LangHomeStaySafeRouteImport.update({
@@ -206,6 +212,7 @@ export interface FileRoutesByFullPath {
   '/$lang/about': typeof LangAboutRoute
   '/$lang/conciergerie-mobility': typeof LangConciergerieMobilityRoute
   '/$lang/contact': typeof LangContactRoute
+  '/$lang/equipo': typeof LangEquipoRoute
   '/$lang/home-stay-safe': typeof LangHomeStaySafeRoute
   '/admin/despeses': typeof AdminDespesesRoute
   '/admin/empresa': typeof AdminEmpresaRoute
@@ -236,6 +243,7 @@ export interface FileRoutesByTo {
   '/$lang/about': typeof LangAboutRoute
   '/$lang/conciergerie-mobility': typeof LangConciergerieMobilityRoute
   '/$lang/contact': typeof LangContactRoute
+  '/$lang/equipo': typeof LangEquipoRoute
   '/$lang/home-stay-safe': typeof LangHomeStaySafeRoute
   '/admin/despeses': typeof AdminDespesesRoute
   '/admin/empresa': typeof AdminEmpresaRoute
@@ -270,6 +278,7 @@ export interface FileRoutesById {
   '/$lang/about': typeof LangAboutRoute
   '/$lang/conciergerie-mobility': typeof LangConciergerieMobilityRoute
   '/$lang/contact': typeof LangContactRoute
+  '/$lang/equipo': typeof LangEquipoRoute
   '/$lang/home-stay-safe': typeof LangHomeStaySafeRoute
   '/admin/despeses': typeof AdminDespesesRoute
   '/admin/empresa': typeof AdminEmpresaRoute
@@ -305,6 +314,7 @@ export interface FileRouteTypes {
     | '/$lang/about'
     | '/$lang/conciergerie-mobility'
     | '/$lang/contact'
+    | '/$lang/equipo'
     | '/$lang/home-stay-safe'
     | '/admin/despeses'
     | '/admin/empresa'
@@ -335,6 +345,7 @@ export interface FileRouteTypes {
     | '/$lang/about'
     | '/$lang/conciergerie-mobility'
     | '/$lang/contact'
+    | '/$lang/equipo'
     | '/$lang/home-stay-safe'
     | '/admin/despeses'
     | '/admin/empresa'
@@ -368,6 +379,7 @@ export interface FileRouteTypes {
     | '/$lang/about'
     | '/$lang/conciergerie-mobility'
     | '/$lang/contact'
+    | '/$lang/equipo'
     | '/$lang/home-stay-safe'
     | '/admin/despeses'
     | '/admin/empresa'
@@ -458,6 +470,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/$lang/contact'
       preLoaderRoute: typeof LangContactRouteImport
+      parentRoute: typeof LangRoute
+    }
+    '/$lang/equipo': {
+      id: '/$lang/equipo'
+      path: '/equipo'
+      fullPath: '/$lang/equipo'
+      preLoaderRoute: typeof LangEquipoRouteImport
       parentRoute: typeof LangRoute
     }
     '/$lang/home-stay-safe': {
@@ -628,6 +647,7 @@ interface LangRouteChildren {
   LangAboutRoute: typeof LangAboutRoute
   LangConciergerieMobilityRoute: typeof LangConciergerieMobilityRoute
   LangContactRoute: typeof LangContactRoute
+  LangEquipoRoute: typeof LangEquipoRoute
   LangHomeStaySafeRoute: typeof LangHomeStaySafeRoute
   LangIndexRoute: typeof LangIndexRoute
 }
@@ -636,6 +656,7 @@ const LangRouteChildren: LangRouteChildren = {
   LangAboutRoute: LangAboutRoute,
   LangConciergerieMobilityRoute: LangConciergerieMobilityRoute,
   LangContactRoute: LangContactRoute,
+  LangEquipoRoute: LangEquipoRoute,
   LangHomeStaySafeRoute: LangHomeStaySafeRoute,
   LangIndexRoute: LangIndexRoute,
 }
