@@ -7,6 +7,7 @@ export const NAV_ITEMS = [
     suffix: "/conciergerie-mobility",
   },
   { key: "about", to: "/$lang/about", suffix: "/about" },
+  { key: "team", to: "/$lang/equipo", suffix: "/equipo" },
   { key: "contact", to: "/$lang/contact", suffix: "/contact" },
 ] as const;
 

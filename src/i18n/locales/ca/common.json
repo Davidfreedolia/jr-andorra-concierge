@@ -8,6 +8,7 @@
     "homeStaySafe": "Home Stay Safe",
     "conciergerieMobility": "Conciergerie & Mobility",
     "about": "Sobre JR",
+    "team": "L'equip",
     "contact": "Contacte",
     "menu": "Menú",
     "openMenu": "Obrir el menú de navegació",
@@ -39,6 +40,10 @@
     "about": {
       "title": "Sobre JR",
       "description": "Una oficina privada al servei de propietaris i clients premium."
+    },
+    "team": {
+      "title": "L'equip",
+      "description": "Les persones que hi ha darrere de cada casa que cuidem."
     },
     "contact": {
       "title": "Contacte",

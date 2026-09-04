@@ -23,7 +23,7 @@ export function SiteHeader({ lang }: { lang: Language }) {
           <LogoJR title={t("common.logoAlt")} variant="horizontal" className="jr-logo" />
         </Link>
 
-        <div className="flex items-center gap-2 lg:hidden">
+        <div className="flex items-center gap-2 xl:hidden">
           <LanguageSwitcher lang={lang} />
           <button
             type="button"
@@ -37,7 +37,7 @@ export function SiteHeader({ lang }: { lang: Language }) {
           </button>
         </div>
 
-        <div className="hidden items-center gap-8 lg:flex">
+        <div className="hidden items-center gap-8 xl:flex">
           <nav aria-label={t("nav.primary")} className="flex flex-wrap items-center gap-6">
             {NAV_ITEMS.map((item) => (
               <Link
@@ -67,7 +67,7 @@ export function SiteHeader({ lang }: { lang: Language }) {
         <nav
           id="jr-mobile-nav"
           aria-label={t("nav.primary")}
-          className="jr-container flex flex-col border-t py-2 lg:hidden"
+          className="jr-container flex flex-col border-t py-2 xl:hidden"
         >
           {NAV_ITEMS.map((item) => (
             <Link

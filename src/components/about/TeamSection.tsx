@@ -21,12 +21,6 @@ export function TeamSection({ lang: langProp }: { lang?: string }) {
   return (
     <section className="jr-section">
       <div className="jr-container flex flex-col gap-12">
-        <Reveal className="flex flex-col gap-5">
-          <p className="jr-label">{t("about.team.label")}</p>
-          <h2 className="jr-display-1 jr-measure text-jr-gold">{t("about.team.title")}</h2>
-          <p className="jr-measure text-lg text-muted-foreground">{t("about.team.intro")}</p>
-        </Reveal>
-
         <ul className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           {members.map((member, index) => (
             <Reveal

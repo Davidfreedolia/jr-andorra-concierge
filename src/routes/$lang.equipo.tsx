@@ -1,22 +1,30 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import { TeamHero } from "@/components/about/TeamHero";
 import { TeamSection } from "@/components/about/TeamSection";
+import { DEFAULT_LANGUAGE, isLanguage } from "@/i18n/config";
+import { pageHead } from "@/lib/seo";
 
 /**
- * Maqueta de la seccio d'equip. Encara no penja del menu: es una pantalla per
- * ensenyar i decidir, amb fotografies i adreces de contacte pendents.
+ * Pagina d'equip. Penja del menu principal, pero encara no s'indexa: quatre de
+ * les cinc fotografies son d'estoc i les adreces de contacte no existeixen.
+ * Quan arribin les fotografies reals, es treu la linia de robots i prou.
  */
 export const Route = createFileRoute("/$lang/equipo")({
-  head: () => ({
-    meta: [
-      { title: "Equipo — JR Hospitality" },
-      { name: "robots", content: "noindex, nofollow" },
-    ],
-  }),
+  head: ({ params }) => {
+    const lang = isLanguage(params.lang) ? params.lang : DEFAULT_LANGUAGE;
+    const head = pageHead("team", lang);
+    return { ...head, meta: [...head.meta, { name: "robots", content: "noindex, nofollow" }] };
+  },
   component: TeamPage,
 });
 
 function TeamPage() {
   const { lang } = Route.useParams();
-  return <TeamSection lang={lang} />;
+  return (
+    <>
+      <TeamHero />
+      <TeamSection lang={lang} />
+    </>
+  );
 }

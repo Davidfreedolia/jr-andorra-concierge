@@ -2,7 +2,13 @@ import i18n, { DEFAULT_LANGUAGE, LANGUAGES, type Language } from "@/i18n/config"
 
 export const SITE_URL = "https://jr-andorra-concierge.vercel.app";
 
-type PageKey = "home" | "homeStaySafe" | "conciergerieMobility" | "about" | "contact";
+type PageKey =
+  | "home"
+  | "homeStaySafe"
+  | "conciergerieMobility"
+  | "about"
+  | "team"
+  | "contact";
 
 /** Path suffix after the language prefix, "" for the home page. */
 export const PAGE_PATHS: Record<PageKey, string> = {
@@ -10,6 +16,7 @@ export const PAGE_PATHS: Record<PageKey, string> = {
   homeStaySafe: "/home-stay-safe",
   conciergerieMobility: "/conciergerie-mobility",
   about: "/about",
+  team: "/equipo",
   contact: "/contact",
 };
 
