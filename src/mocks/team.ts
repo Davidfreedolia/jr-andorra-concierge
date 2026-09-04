@@ -10,6 +10,15 @@
 
 import type { Language } from "@/i18n/config";
 import portraitFounder from "@/assets/founder.jpg";
+/**
+ * PROVISIONAL: retrats d'estoc (Unsplash, llicencia lliure) per veure la
+ * seccio muntada. S'han de substituir per les fotografies reals de cadascu
+ * abans de publicar. Nomes la d'en Jaume es real.
+ */
+import stockReno from "@/assets/team-isabel-reno.jpg";
+import stockSandra from "@/assets/team-sandra-roca.jpg";
+import stockCasanovas from "@/assets/team-isabel-casanovas.jpg";
+import stockDavid from "@/assets/team-david-castella.jpg";
 
 export type Localised = Record<Language, string>;
 
@@ -72,7 +81,7 @@ export const TEAM: TeamMember[] = [
       de: "Das erste Gespräch mit einem neuen Eigentümer und die Beziehung danach.",
     },
     email: "comercial@example.com",
-    photo: null,
+    photo: stockReno,
     published: true,
   },
   {
@@ -95,7 +104,7 @@ export const TEAM: TeamMember[] = [
       de: "Verträge, Abrechnung und die Sorgfalt, die ein Service dieser Klasse voraussetzt.",
     },
     email: "administracio@example.com",
-    photo: null,
+    photo: stockSandra,
     published: true,
   },
   {
@@ -118,7 +127,7 @@ export const TEAM: TeamMember[] = [
       de: "Das Haus bereit vor der Ankunft, und ein Aufenthalt, der nichts verlangt.",
     },
     email: "experiencia@example.com",
-    photo: null,
+    photo: stockCasanovas,
     published: true,
   },
   {
@@ -141,7 +150,7 @@ export const TEAM: TeamMember[] = [
       de: "FREEDOLIA. Die Website, der Kundenbereich und das Betriebssystem, mit dem das Team arbeitet.",
     },
     email: "david@freedolia.com",
-    photo: null,
+    photo: stockDavid,
     published: true,
   },
 ];
