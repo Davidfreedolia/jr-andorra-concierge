@@ -1638,3 +1638,79 @@
   font-size: 0.8rem;
   color: color-mix(in srgb, var(--jr-bone) 45%, transparent);
 }
+
+/* --- Equip assignat, comunicacio interna i avisos de l'administrador --- */
+
+/* Etiqueta d'area de servei. Radi maxim 2px com la resta del sistema. */
+@utility jr-admin-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  border: 1px solid color-mix(in srgb, var(--jr-gold) 22%, transparent);
+  border-radius: var(--jr-radius);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--jr-bone) 80%, transparent);
+  white-space: nowrap;
+}
+
+/* Inicials. Quadrat amb filet: cap cercle, cap ombra. */
+@utility jr-admin-avatar {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid color-mix(in srgb, var(--jr-gold) 30%, transparent);
+  border-radius: var(--jr-radius);
+  font-family: var(--font-display);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--jr-gold);
+  background: var(--jr-night-deep);
+}
+
+/* Fila d'assignacio: area, persona i condicio. */
+@utility jr-admin-assign {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--jr-gold) 10%, transparent);
+}
+
+@utility jr-admin-note {
+  display: flex;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--jr-gold) 10%, transparent);
+}
+
+@utility jr-admin-notemeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+/* Marca de nivell a l'esquerra de l'avis. Nomes color, cap icona de farciment. */
+@utility jr-admin-alert {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 0 14px 14px;
+  border-left: 2px solid color-mix(in srgb, var(--jr-bone) 25%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--jr-gold) 10%, transparent);
+}
+
+.jr-admin-alert[data-level="urgent"] {
+  border-left-color: var(--jr-gold);
+}
+
+.jr-admin-alert[data-level="warn"] {
+  border-left-color: color-mix(in srgb, var(--jr-gold) 55%, transparent);
+}

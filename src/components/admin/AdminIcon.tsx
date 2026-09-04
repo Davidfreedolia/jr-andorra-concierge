@@ -13,6 +13,7 @@ const PATHS: Record<AdminIconName, string> = {
   billing: "M4 5h16v14H4V5Zm0 5h16M8 15h5",
   marketing: "M4 10v4h3l6 4V6l-6 4H4Zm13-1a4 4 0 0 1 0 6",
   team: "M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM2 20c0-3 2.7-5 6-5s6 2 6 5m2-5c3 0 6 2 6 5",
+  alerts: "M12 4a5 5 0 0 1 5 5c0 4 2 5 2 5H5s2-1 2-5a5 5 0 0 1 5-5Zm-2 14a2 2 0 0 0 4 0",
   exit: "M14 4h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-4M10 16l-4-4 4-4M6 12h10",
 };
 

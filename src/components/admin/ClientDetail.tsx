@@ -1,6 +1,9 @@
 import { Link } from "@tanstack/react-router";
 
 import { AdminHead, Row, Section, TableWrap } from "@/components/admin/AdminUI";
+import { AlertItem } from "@/components/admin/AlertItem";
+import { ClientNotes } from "@/components/admin/ClientNotes";
+import { ClientTeam } from "@/components/admin/ClientTeam";
 import { StatusPill } from "@/components/area/StatusPill";
 import {
   ADMIN_CLIENTS,
@@ -12,6 +15,7 @@ import {
   money,
   shortDate,
 } from "@/mocks/admin";
+import { alertsForClient } from "@/mocks/staff";
 
 const INVOICE_LABEL = {
   draft: "Esborrany",
@@ -37,6 +41,7 @@ export function ClientDetail({ id }: { id: string }) {
   const properties = ADMIN_PROPERTIES.filter((p) => p.owner === client.name);
   const invoices = ADMIN_INVOICES.filter((i) => i.client === client.name);
   const requests = ADMIN_REQUESTS.filter((r) => r.name === client.name);
+  const alerts = alertsForClient(client.id);
   const outstanding = invoices
     .filter((i) => i.status === "issued" || i.status === "overdue")
     .reduce((s, i) => s + invoiceTotals(i).total, 0);
@@ -83,6 +88,22 @@ export function ClientDetail({ id }: { id: string }) {
       </div>
 
       <div className="mt-10 flex flex-col gap-10">
+        <ClientTeam clientId={client.id} />
+
+        <Section title="Avisos oberts">
+          {alerts.length === 0 ? (
+            <p className="jr-area-empty jr-measure">Res pendent d'aquest client.</p>
+          ) : (
+            <div className="flex flex-col">
+              {alerts.map((alert) => (
+                <AlertItem key={alert.id} alert={alert} showClient={false} />
+              ))}
+            </div>
+          )}
+        </Section>
+
+        <ClientNotes clientId={client.id} />
+
         <Section title="Propietats">
           {properties.length === 0 ? (
             <p className="jr-area-empty jr-measure">Encara no té cap propietat donada d'alta.</p>

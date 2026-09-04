@@ -20,6 +20,7 @@ import { Route as LangContactRouteImport } from './routes/$lang.contact'
 import { Route as LangEquipoRouteImport } from './routes/$lang.equipo'
 import { Route as LangHomeStaySafeRouteImport } from './routes/$lang.home-stay-safe'
 import { Route as AdminIndexRouteImport } from './routes/admin.index'
+import { Route as AdminAvisosRouteImport } from './routes/admin.avisos'
 import { Route as AdminDespesesRouteImport } from './routes/admin.despeses'
 import { Route as AdminEmpresaRouteImport } from './routes/admin.empresa'
 import { Route as AdminEquipRouteImport } from './routes/admin.equip'
@@ -96,6 +97,11 @@ const LangHomeStaySafeRoute = LangHomeStaySafeRouteImport.update({
 const AdminIndexRoute = AdminIndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => AdminRoute,
+} as any)
+const AdminAvisosRoute = AdminAvisosRouteImport.update({
+  id: '/avisos',
+  path: '/avisos',
   getParentRoute: () => AdminRoute,
 } as any)
 const AdminDespesesRoute = AdminDespesesRouteImport.update({
@@ -214,6 +220,7 @@ export interface FileRoutesByFullPath {
   '/$lang/contact': typeof LangContactRoute
   '/$lang/equipo': typeof LangEquipoRoute
   '/$lang/home-stay-safe': typeof LangHomeStaySafeRoute
+  '/admin/avisos': typeof AdminAvisosRoute
   '/admin/despeses': typeof AdminDespesesRoute
   '/admin/empresa': typeof AdminEmpresaRoute
   '/admin/equip': typeof AdminEquipRoute
@@ -245,6 +252,7 @@ export interface FileRoutesByTo {
   '/$lang/contact': typeof LangContactRoute
   '/$lang/equipo': typeof LangEquipoRoute
   '/$lang/home-stay-safe': typeof LangHomeStaySafeRoute
+  '/admin/avisos': typeof AdminAvisosRoute
   '/admin/despeses': typeof AdminDespesesRoute
   '/admin/empresa': typeof AdminEmpresaRoute
   '/admin/equip': typeof AdminEquipRoute
@@ -280,6 +288,7 @@ export interface FileRoutesById {
   '/$lang/contact': typeof LangContactRoute
   '/$lang/equipo': typeof LangEquipoRoute
   '/$lang/home-stay-safe': typeof LangHomeStaySafeRoute
+  '/admin/avisos': typeof AdminAvisosRoute
   '/admin/despeses': typeof AdminDespesesRoute
   '/admin/empresa': typeof AdminEmpresaRoute
   '/admin/equip': typeof AdminEquipRoute
@@ -316,6 +325,7 @@ export interface FileRouteTypes {
     | '/$lang/contact'
     | '/$lang/equipo'
     | '/$lang/home-stay-safe'
+    | '/admin/avisos'
     | '/admin/despeses'
     | '/admin/empresa'
     | '/admin/equip'
@@ -347,6 +357,7 @@ export interface FileRouteTypes {
     | '/$lang/contact'
     | '/$lang/equipo'
     | '/$lang/home-stay-safe'
+    | '/admin/avisos'
     | '/admin/despeses'
     | '/admin/empresa'
     | '/admin/equip'
@@ -381,6 +392,7 @@ export interface FileRouteTypes {
     | '/$lang/contact'
     | '/$lang/equipo'
     | '/$lang/home-stay-safe'
+    | '/admin/avisos'
     | '/admin/despeses'
     | '/admin/empresa'
     | '/admin/equip'
@@ -491,6 +503,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/admin/'
       preLoaderRoute: typeof AdminIndexRouteImport
+      parentRoute: typeof AdminRoute
+    }
+    '/admin/avisos': {
+      id: '/admin/avisos'
+      path: '/avisos'
+      fullPath: '/admin/avisos'
+      preLoaderRoute: typeof AdminAvisosRouteImport
       parentRoute: typeof AdminRoute
     }
     '/admin/despeses': {
@@ -664,6 +683,7 @@ const LangRouteChildren: LangRouteChildren = {
 const LangRouteWithChildren = LangRoute._addFileChildren(LangRouteChildren)
 
 interface AdminRouteChildren {
+  AdminAvisosRoute: typeof AdminAvisosRoute
   AdminDespesesRoute: typeof AdminDespesesRoute
   AdminEmpresaRoute: typeof AdminEmpresaRoute
   AdminEquipRoute: typeof AdminEquipRoute
@@ -679,6 +699,7 @@ interface AdminRouteChildren {
 }
 
 const AdminRouteChildren: AdminRouteChildren = {
+  AdminAvisosRoute: AdminAvisosRoute,
   AdminDespesesRoute: AdminDespesesRoute,
   AdminEmpresaRoute: AdminEmpresaRoute,
   AdminEquipRoute: AdminEquipRoute,

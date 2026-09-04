@@ -4,6 +4,7 @@ export type AdminNavKey =
   | "clients"
   | "properties"
   | "visits"
+  | "alerts"
   | "billing"
   | "expenses"
   | "marketing"
@@ -19,6 +20,7 @@ export type AdminNavItem = {
     | "/admin/clients"
     | "/admin/propietats"
     | "/admin/visites"
+    | "/admin/avisos"
     | "/admin/facturacio"
     | "/admin/despeses"
     | "/admin/marqueting"
@@ -33,6 +35,7 @@ export const ADMIN_NAV: AdminNavItem[] = [
   { key: "clients", label: "Clients", to: "/admin/clients" },
   { key: "properties", label: "Propietats", to: "/admin/propietats" },
   { key: "visits", label: "Visites", to: "/admin/visites" },
+  { key: "alerts", label: "Avisos", to: "/admin/avisos" },
 ];
 
 /** Administració de l'empresa. */

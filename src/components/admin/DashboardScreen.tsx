@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 
 import { AdminHead, Kpi, Section, TableWrap } from "@/components/admin/AdminUI";
+import { AlertItem } from "@/components/admin/AlertItem";
 import { StatusPill } from "@/components/area/StatusPill";
 import {
   ADMIN_INVOICES,
@@ -13,6 +14,7 @@ import {
   money,
   shortDate,
 } from "@/mocks/admin";
+import { openAlerts } from "@/mocks/staff";
 
 export function DashboardScreen() {
   const open = ADMIN_REQUESTS.filter((r) => !["won", "lost"].includes(r.status));
@@ -23,6 +25,8 @@ export function DashboardScreen() {
     (i) => i.status !== "draft" && i.date.startsWith("2026-09"),
   ).reduce((sum, i) => sum + invoiceTotals(i).total, 0);
   const overdue = ADMIN_INVOICES.filter((i) => i.status === "overdue");
+  const alerts = openAlerts();
+  const urgent = alerts.filter((alert) => alert.level === "urgent");
 
   return (
     <>
@@ -31,7 +35,7 @@ export function DashboardScreen() {
         intro="Tot el que passa avui a JR: què entra per la web, què s'ha de visitar i què està pendent de cobrar."
       />
 
-      <div className="mb-10 grid grid-cols-2 gap-3 lg:grid-cols-4">
+      <div className="mb-10 grid grid-cols-2 gap-3 lg:grid-cols-5">
         <Kpi
           label="Sol·licituds obertes"
           value={String(open.length)}
@@ -48,6 +52,11 @@ export function DashboardScreen() {
           hint={`${ADMIN_PROPERTIES.length} propietats sota contracte`}
         />
         <Kpi
+          label="Avisos oberts"
+          value={String(alerts.length)}
+          hint={urgent.length ? `${urgent.length} urgents` : "Cap urgent"}
+        />
+        <Kpi
           label="Facturat aquest mes"
           value={money(billedMonth)}
           hint={overdue.length ? `${overdue.length} factura vençuda` : "Res vençut"}
@@ -55,6 +64,25 @@ export function DashboardScreen() {
       </div>
 
       <div className="flex flex-col gap-10">
+        <Section
+          title="El que reclama atenció"
+          aside={
+            <Link to="/admin/avisos" className="jr-area-inline-link">
+              Tots els avisos
+            </Link>
+          }
+        >
+          {alerts.length === 0 ? (
+            <p className="jr-area-empty jr-measure">Res pendent.</p>
+          ) : (
+            <div className="flex flex-col">
+              {alerts.slice(0, 4).map((alert) => (
+                <AlertItem key={alert.id} alert={alert} />
+              ))}
+            </div>
+          )}
+        </Section>
+
         <Section
           title="Entrades recents des de la web"
           aside={
