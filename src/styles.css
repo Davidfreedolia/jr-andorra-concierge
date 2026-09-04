@@ -373,6 +373,28 @@
   }
 }
 
+/* Logo de la barra superior. Mes gran que la resta: es la primera marca que
+   es veu i la barra es fixa. Nomes se n'ajusta l'alcada. */
+@utility jr-logo-bar {
+  display: block;
+  width: auto;
+  height: 62px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .jr-logo-bar {
+    height: 76px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .jr-logo-bar {
+    height: 84px;
+  }
+}
+
 /* El logo es fa servir tal com es rep: mai estirat, mai retallat, mai dins
    d'una altra caixa. Nomes se n'ajusta l'alcada. */
 @utility jr-logo-lg {

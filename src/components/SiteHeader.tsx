@@ -13,14 +13,14 @@ export function SiteHeader({ lang }: { lang: Language }) {
 
   return (
     <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur">
-      <div className="jr-container grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-4">
+      <div className="jr-container flex items-center justify-between gap-4 py-3">
         <Link
           to="/$lang"
           params={{ lang }}
-          className="jr-tap min-w-0 justify-start text-primary"
+          className="jr-tap shrink-0 justify-start text-primary"
           aria-label={t("common.logoAlt")}
         >
-          <LogoJR title={t("common.logoAlt")} variant="horizontal" className="jr-logo" />
+          <LogoJR title={t("common.logoAlt")} variant="horizontal" className="jr-logo-bar" />
         </Link>
 
         <div className="flex items-center gap-2 xl:hidden">
@@ -37,8 +37,8 @@ export function SiteHeader({ lang }: { lang: Language }) {
           </button>
         </div>
 
-        <div className="hidden items-center gap-8 xl:flex">
-          <nav aria-label={t("nav.primary")} className="flex flex-wrap items-center gap-6">
+        <div className="hidden items-center gap-4 xl:flex">
+          <nav aria-label={t("nav.primary")} className="flex flex-wrap items-center gap-4">
             {NAV_ITEMS.map((item) => (
               <Link
                 key={item.key}
@@ -54,7 +54,7 @@ export function SiteHeader({ lang }: { lang: Language }) {
           </nav>
           <Link
             to="/area/acceso"
-            className="jr-tap jr-label border border-jr-gold/30 px-3 text-jr-gold-deep hover:border-jr-gold/60"
+            className="jr-tap jr-label border border-jr-gold/30 px-3 whitespace-nowrap text-jr-gold-deep hover:border-jr-gold/60"
           >
             {t("nav.area")}
           </Link>
